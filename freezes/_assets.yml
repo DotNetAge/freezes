@@ -1,0 +1,9 @@
+js:
+    output: "%(app)s/site.min.js"
+    contents: "%(app)s/scripts/*.coffee"
+    filters: coffeescript,jsmin
+css:
+    output: "%(app)s/site.min.css"
+    contents: "%(app)s/styles/*.less"
+    filters: less,cssprefixer,cssmin
+

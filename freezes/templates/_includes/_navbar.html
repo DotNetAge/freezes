@@ -1,0 +1,47 @@
+<div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                {% for p in site.menus(page.path) %}
+                    {% if page.path is defined %}
+                        <li {% if (page.path==p.path and p._top==True) or (p._top==False and page.path.startswith(p.path)) %}class="active"{% endif %}>
+                            <a href="{{ url_for('.index',page_path=p.path) }}">{{ p.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="divider visible-xs"></li>
+                {% if site.facebook %}
+                    <li data-toggle="tooltip" data-placement="top" title="Follow me on facebook">
+                        <a href="http://www.facebook.com/{{ site.facebook }}" target="_blank" rel="nofollow"><i
+                                class="fa fa-facebook"></i> <span class="visible-xs-inline">me@facebook</span></a>
+                    </li>
+                {% endif %}
+                {% if site.twitter %}
+                    <li data-toggle="tooltip" data-placement="top" title="Follow me on twitter">
+                        <a href="http://www.twitter.com/{{ site.twitter }}" target="_blank" rel="nofollow"><i
+                                class="fa fa-twitter"></i> <span class="visible-xs-inline">me@twitter</span></a>
+                    </li>
+                {% endif %}
+                {% if site.github %}
+                    <li data-toggle="tooltip" data-placement="top" title="Fork me on github">
+                        <a href="http://www.github.com/{{ site.github }}" target="_blank" rel="nofollow"><i
+                                class="fa fa-github"></i> <span class="visible-xs-inline">me@github</span></a>
+                    </li>
+                {% endif %}
+                <li data-toggle="tooltip" data-placement="top" title="Subscript changes">
+                    <a href="{{ url_for('feed',name='recent') }}"><i class="fa fa-rss"></i> <span
+                            class="visible-xs-inline">Subscript</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

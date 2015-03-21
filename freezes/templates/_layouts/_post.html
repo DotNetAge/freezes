@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% import "_macros/disqus.html" as disqus %}
+{% import "_macros/posts.html" as posts %}
+{% block content %}
+    {{ super() }}
+    <div class="relative-posts">
+        {{ posts.relatives(page) }}
+    </div>
+    {% include "_includes/_post_nav.html" %}
+    {% if site.disqus_shortname %}
+        <div>
+            {{ disqus.comments(site.disqus_shortname) }}
+        </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2 class="text-center">所有归档</h2>
+    <ul class="archive-list">
+        {% for archive in site.archives %}
+            <li class="archive">
+                <h3 class="archive-heading">{{ archive.title }}</h3>
+                <ul class="archive-items">
+                    {% for p in archive.posts %}
+                        <li><a href="{{ p.url }}">- {{ p.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

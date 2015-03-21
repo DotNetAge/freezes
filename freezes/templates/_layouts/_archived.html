@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% import "_macros/posts.html" as posts %}
+{% block content %}
+    <h2>{{ archive.title }}的归档</h2>
+    <h3>共{{ archive.count }}篇</h3>
+    {{ posts.list(archive.posts) }}
+{% endblock %}

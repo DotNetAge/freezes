@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block body_attrs %}class="error"{% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="page-wrapper">
+            <div class="page-content">
+                <h1>404 </h1>
+
+                <h2>OOPS!</h2>
+
+                <p class="size-larger text-center">SOMETHING WENT WRONG, OR THAT PAGE DOESN'T EXIST... YET</p>
+
+                <p>This page will be auto back to home page after <span id="remain">10</span> sec. </p>
+                <a href="{{ site.url }}">[ Back to home ]</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    {{ super() }}
+    <script type="text/javascript">
+        $(function () {
+            var remaining = 10;
+            setInterval(function () {
+                $("#remain").text(remaining);
+                remaining--;
+            }, 1000);
+            setTimeout(function () {
+                location = '{{ site.url }}';
+            }, 10000);
+        });
+    </script>
+{% endblock %}

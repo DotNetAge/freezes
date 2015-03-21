@@ -1,0 +1,44 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>联系信息</h3>
+                <ul class="list-unstyled">
+                    <li>{{ site.title }}</li>
+                    {% if site.tel %}
+                        <li><span class="fa fa-tel"></span> {{ site.tel }}</li>
+                    {% endif %}
+                    <li><a href="mailto:{{ site.email }}"><span class="fa fa-mail"></span> {{ site.email }}</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h3><a href="{{ url_for('.archives') }}">最近归档</a></h3>
+                <ul class="list-unstyled archives">
+                    {% for archive in site.archives %}
+                        {% if loop.index <=5 %}
+                            <li><a href="{{ url_for('.archive',name=archive.title) }}"><span
+                                    class="fa fa-archive"></span> <span>{{ archive.title }}</span><span
+                                    class="pull-right badge">{{ archive.count }}</span></a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h3><a href="{{ url_for('.tags') }}">热门标签</a></h3>
+                {% if site.tags|count>0 %}
+                    {% for t in site.tags[0:10] %}
+                        <a href="{{ url_for('.tag',name=t) }}" class="label label-info">{{ t }}</a>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% if site.copyright %}
+        <p class="text-center">
+            copyright by {{ site.copyright }}
+        </p>
+    {% endif %}
+    <p class="text-center">Powered by Freezes</p>
+</footer>

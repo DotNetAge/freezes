@@ -1,0 +1,3 @@
+{% for t in site.tags %}
+    <a href="{{ url_for('.tag',name=t) }}" class="label label-info">{{ t }}</a>
+{% endfor %}

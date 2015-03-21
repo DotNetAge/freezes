@@ -1,0 +1,105 @@
+{% macro list(post_items,excludes=[]) %}
+{% for p in post_items if p.path not in excludes %}
+<div class="post-item">
+    {% if p.cover %}
+        <div class="post-cover">
+            <a href="{{ p.url }}">
+                <img src="{{ p.name+'/'+p.cover }}" class="img-responsive"/></a>
+        </div>
+    {% endif %}
+    <h3 class="post-heading">
+        <a href="{{ p.url }}">{{ p.title }}</a>
+    </h3>
+    {% if p.summary %}
+        <h4 class="post-summary">{{ p.summary }}</h4>
+    {% endif %}
+    <p class="post-content">
+        {% autoescape false %}
+        {{ p.excerpt }}
+        {% endautoescape %}
+    </p>
+
+    <p>
+        <a href="{{ p.url }}">阅读全文 <span class="fa fa-chevron-right"></span></a>
+    </p>
+    {% if p.date %}
+        <div class="post-date">
+            <small>{{ p.date }}</small>
+        </div>
+    {% endif %}
+    {% if p.tags %}
+        <div class="post-tags">
+            <span class="fa fa-tag"></span> <span>主题词 : </span>
+            {% for t in p.tags.split(',') %}
+                <a href="{{ url_for('.tag',name=t) }}" class="label label-info post-tag">{{ t }}</a>
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>
+{% endfor %}
+{% endmacro %}
+
+{% macro gallery(post_items,excludes=[]) %}
+    <div class="row">
+        {% for p in post_items if p.path not in excludes %}
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                <a href="{{ p.url }}">
+                    <img src="
+                            {% if p.thumbnail %}{{ p.name+'/'+ p.thumbnail }}{% else %}{{ p.name+'/'+p.name+'.png' }}{% endif %}"
+                         alt="{{ p.title }}">
+</a>
+                    <div class="caption">
+                        <h3>{{ p.title }}</h3>
+
+                        <p>{{ p.summary }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endmacro %}
+
+{% macro tags() %}
+    <ul>
+        {% for t in site.tags %}
+            <li><a href="{{ url_for('.tag',name=t) }}">{{ t }}</a></li>
+        {% endfor %}
+    </ul>
+{% endmacro %}
+
+{% macro relatives(post) %}
+
+    {% if post and post.relatives %}
+        <h3>相关阅读</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    {% for p in post.relatives[0:4] %}
+                        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    {% for p in post.relatives[5:9] %}
+                        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <hr>
+    {% endif %}
+{% endmacro %}
+
+{% macro crumb(site,_path) %}
+    <ol class="breadcrumb">
+        <li><a href="{{ url_for('.index') }}"><span class="fa fa-home"></span> {{ site.title }}
+        </a></li>
+        {% if _path.startswith('posts')!=true %}
+            {% for p in site.get_pages_path(_path) %}
+                <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+            {% endfor %}
+        {% endif %}
+    </ol>
+{% endmacro %}

@@ -1,0 +1,65 @@
+{
+  "dirs": [
+    "static",
+    "templates",
+    "data",
+    "pages",
+    "pages/posts",
+    "static/images",
+    "static/scripts",
+    "static/styles",
+    "templates/includes",
+    "templates/layouts"
+  ],
+  "files": [
+    {
+      "cwd": "",
+      "src": [
+        "__init__.py",
+        "_config.yml"
+      ],
+      "dest": ""
+    },
+    {
+      "cwd": "layouts",
+      "src": [
+        "page.html",
+        "post.html",
+        "archived.html",
+        "archives.html",
+        "recent.html",
+        "tagged.html",
+        "tags.html"
+      ],
+      "dest": "templates/layouts"
+    },
+    {
+      "cwd": "layouts",
+      "src": ["404.html"],
+      "dest": "templates"
+    },
+    {
+      "cwd": "static/images",
+      "src": ["blockquote.png"],
+      "dest": "static/images"
+    },
+    {
+      "cwd": "static/_styles",
+      "src": ["site.less"],
+      "dest": "static/styles"
+    },
+    {
+      "cwd": "static/_scripts",
+      "src": ["startup.coffee"],
+      "dest": "static/scripts"
+    },
+    {
+      "cwd": "seeds",
+      "src": [
+        "index.md",
+        "about.md"
+      ],
+      "dest": "pages"
+    }
+  ]
+}

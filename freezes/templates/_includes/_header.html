@@ -1,0 +1,14 @@
+{% import "_macros/posts.html" as posts %}
+
+<div class="page-header">
+    {% if page.path!='' and page._is_default==False %}
+        <h1>
+            {{ posts.crumb(site,page.path) }}
+            <div>{{ page.title }}</div>
+        </h1>
+        <p class="lead">{{ page.summary }}</p>
+    {% else %}
+        <h1>{{ site.title }}</h1>
+        <p class="lead">{{ site.description }}</p>
+    {% endif %}
+</div>

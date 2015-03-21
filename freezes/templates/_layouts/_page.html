@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% import "_macros/posts.html" as posts %}
+{% block content %}
+    {{ super() }}
+    {{ posts.list(site.query(page.path)) }}
+    {% include "_includes/_post_nav.html" %}
+{% endblock %}

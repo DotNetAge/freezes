@@ -1,0 +1,11 @@
+<div class="line-holder">
+    {% if page._top==False %}
+        {% if page.prev and page.prev!=None %}
+            <a href="{{ page.prev.url }}"><span class="fa fa-arrow-left"></span> 上一篇:{{ page.prev.title }}</a>
+        {% endif %}
+        {% if page.next and page.next!=None %}
+            <a href="{{ page.next.url }}" class="pull-right">下一篇:{{ page.next.title }} <span
+                    class="fa fa-arrow-right"></span></a>
+        {% endif %}
+    {% endif %}
+</div>
