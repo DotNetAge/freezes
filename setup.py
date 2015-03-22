@@ -18,14 +18,11 @@ with open(os.path.join(os.path.dirname(__file__),
                        'freezes', '__init__.py')) as init_py:
     VERSION = re.search("VERSION = '([^']+)'", init_py.read()).group(1)
 
-with open('README.md') as readme_file:
+with open('README.rst') as readme_file:
     README = readme_file.read().strip()
 
 PROJECT = README.strip('#').split('\n')[0].strip().split()[0].lower()
-DESCRIPTION = README.split('\n')[2]
-
-# with open('%s/VERSION' % PROJECT) as version_file:
-#    VERSION = version_file.read().strip()
+DESCRIPTION = README.split('\n')[3]
 
 with open('requirements.txt') as reqs_file:
     REQS = reqs_file.read()
@@ -33,9 +30,8 @@ with open('requirements.txt') as reqs_file:
 setup(
     name='Freezes',
     version=VERSION,
-    packages=find_packages(exclude=['tests','ray']),
+    packages=find_packages(exclude=['tests']),
     install_requires=REQS,
-    include_package_data=True,
     package_data={
         '': ['*.yml',
              '*.json',
@@ -55,7 +51,7 @@ setup(
             'eggsecutable = freezes.server:main'
         ]
     },
-    url='http://www.github.com/open-tech/freezes',
+    url='https://github.com/DotNetAge/freezes',
     license='BSD',
     author='Ray',
     author_email='csharp2002@hotmail.com',

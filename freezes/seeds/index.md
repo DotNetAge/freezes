@@ -27,6 +27,6 @@ Then copy all files in `builds` folder to your web server to deploy your static 
 
 ## Useful links
 
-- [Freezes](http://open-tech.github.io)
-- [Freezes@github](http://www.github.com/open-tech/freezes)
+- [Freezes](http://dotnetage.github.io/freezes)
+- [Freezes@github](https://github.com/dotnetage/freezes)
 - [Freezes@pypi](https://pypi.python.org/pypi/Freezes)
