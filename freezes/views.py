@@ -25,14 +25,23 @@ def create_views(name, app):
                      static_url_path='/static',
                      static_folder='static')
 
-    if app.config['TESTING'] is False:
-        import imp
-        ext_module = imp.load_source(name, path.join(app.path, '__init__.py'))
-        routes_func_name = 'register'
-        if hasattr(ext_module, routes_func_name) and callable(getattr(ext_module, routes_func_name)):
-            ext_module.register(main)
+    try:
+        if app.config['TESTING'] is False:
+            pkg_file = path.join(app.path, '__init__.py')
+            if path.exists(pkg_file):
+                import imp
+
+                ext_module = imp.load_source(name, pkg_file)
+                routes_func_name = 'register'
+                if hasattr(ext_module, routes_func_name) and callable(getattr(ext_module, routes_func_name)):
+                    ext_module.register(main)
+    finally:
+        __init_views(main, app)
+        app.register_blueprint(main)
+        return main
 
 
+def __init_views(main, app):
     @main.route('/')
     @main.route('/<path:page_path>/')
     def index(page_path='index'):
@@ -161,6 +170,3 @@ def create_views(name, app):
         return feed.get_response()
 
 
-    app.register_blueprint(main)
-
-    return main
