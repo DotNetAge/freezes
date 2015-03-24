@@ -51,7 +51,7 @@ setup(
             'eggsecutable = freezes.server:main'
         ]
     },
-    url='https://github.com/DotNetAge/freezes',
+    url='http://freezes.dotnetage.com',
     license='BSD',
     author='Ray',
     author_email='csharp2002@hotmail.com',

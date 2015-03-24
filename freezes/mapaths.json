@@ -45,7 +45,7 @@
     },
     {
       "cwd": "static/_styles",
-      "src": ["site.less"],
+      "src": ["elements.less","errors.less","pages.less","posts.less"],
       "dest": "static/styles"
     },
     {

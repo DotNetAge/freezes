@@ -1,0 +1,140 @@
+.navbar-default.navbar {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.navbar-default .navbar-nav {
+  & > .active {
+    & > a, & > a:hover, & > a:focus {
+      box-shadow: 0 0 10px #888 inset;
+    }
+  }
+}
+
+
+.post-item {
+  padding: 20px 0px;
+  position: relative;
+
+  &:last-child {
+    border-bottom: none;
+  }
+  & .post-heading {
+    padding-bottom: 20px;
+    font-size: 30px;
+    & a {
+      color: #000;
+    }
+  }
+  & .post-summary {
+    padding: 5px 0px;
+    color: #F92672;
+    line-height: 1.8em !important;
+  }
+  & .post-excerpt {
+    color: #888;
+    padding: 8px 0px 20px 0px;
+  }
+  & .post-date {
+    position: absolute;
+    right: -85px;
+    background: #afd9ee;
+    padding: 8px 12px;
+    color: #fff;
+    box-shadow: 1px -2px 2px #ccc;
+    top: 30px;
+  }
+  & .post-tag {
+    padding: 5px 10px;
+  }
+}
+
+& .post-cover {
+  margin: auto -85px;
+  & a {
+    display: block;
+    width: 80%;
+    height: 300px;
+    background: #fff;
+    box-shadow: 2px 2px 5px #ccc;
+    overflow: hidden;
+    & > img {
+      vertical-align: middle;
+    }
+  }
+}
+
+.toc {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  max-height: 80vh;
+  overflow: auto;
+  width: 300px;
+  padding: 15px;
+  & > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 100%;
+    & ul {
+      padding-left: 10px;
+    }
+    & li {
+      list-style: none;
+      & > a {
+        transition: 0.5s;
+        font-size: 1em;
+        color: #888;
+        font-weight: 100;
+        opacity: .5;
+        &.active {
+          font-size: 1.6em;
+          font-weight: bold;
+          opacity: 1;
+          color: #F92672;
+        }
+
+        &:hover {
+          opacity: 1;
+          color: #000;
+        }
+      }
+
+    }
+  }
+
+}
+
+.relative-posts {
+  & ul:first-child {
+    margin-left: 20px;
+  }
+}
+
+.line-holder {
+  min-height: 32px;
+}
+
+.breadcrumb {
+  background: none;
+  & a {
+    font-size: 0.8em;
+    color: #ccc;
+    &:hover {
+      color: #F92672;
+    }
+  }
+}
+
+.footnote {
+  font-size: 14px;
+  color: #666;
+}
+
+.archive-list {
+  &.archive-heading {
+  }
+  &.archive-items {
+  }
+}

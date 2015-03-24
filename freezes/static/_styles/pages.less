@@ -1,0 +1,119 @@
+.page-wrapper {
+  margin: 40px 0px;
+  background: #efefef;
+  box-shadow: 0 0 20px #888;
+  border: 1px solid #efefef;
+
+  position: relative;
+
+  &:before, &:after {
+    content: "";
+    background: #efefef;
+    box-shadow: 0 0 20px #888;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 50%;
+    max-height: 600px;
+    width: 90%;
+    z-index: -1;
+  }
+  &:before {
+    left: auto;
+    right: 0px;
+    transform: rotateZ(2deg);
+  }
+  &:after {
+    transform: rotateZ(-2deg);
+  }
+
+  & h2.title {
+    font-size: 40px;
+    padding: 20px 0px;
+  }
+
+  & img {
+    max-width: 100%;
+  }
+}
+
+.page-cover {
+  position: relative;
+  margin-top: -50px;
+  &:before, &:after {
+    content: "";
+    top: 0px;
+    left: 0px;
+    height: 20px;
+    right: 0px;
+    background: #efefef;
+    z-index: 1;
+    position: absolute;
+  }
+  &:before {
+    border-bottom: 1px solid #e0e0e0;
+    left: -10px;
+    right: -10px;
+
+  }
+  &:after {
+    border-radius: 20%;
+    box-shadow: 0 8px 10px #ccc;
+    z-index: 0;
+    top: -2px;
+  }
+}
+
+.page-header {
+  padding: 0px 80px 20px 80px;
+  position: relative;
+  border: none;
+  z-index: 2;
+  & > h1 {
+    font-size: 50px;
+    margin: 0px;
+    margin-bottom: 30px;
+    padding: 25px 0px;
+
+    .breadcrumb {
+      font-size: 16px;
+    }
+    & > a {
+      color: #333;
+    }
+  }
+}
+
+.page-content {
+  padding: 35px 80px;
+  & p, & ul, & ol, & blockquote, & table {
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  & > h1, & > h2, & > h3, & > h4, & > h5, & > h6 {
+    margin: 30px 0px 25px 0px;
+  }
+
+  & h4, & h5 {
+    line-height: 1.6em;
+  }
+  & img {
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0 0 20px #ccc;
+  }
+  & table {
+    width: 100%;
+    & th {
+      font-size: 20px;
+
+    }
+    & th, & td {
+      padding: 8px 12px;
+    }
+    & td, & th {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+}

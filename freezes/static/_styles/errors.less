@@ -1,0 +1,31 @@
+@error_body_bg: rgb(226, 52, 47);
+@error_page_bg: darken(rgb(226, 52, 47), 10%);
+@error_page_border: darken(rgb(226, 52, 47), 20%);
+@error_shadow: darken(rgb(226, 52, 47), 20%);
+
+body.error {
+  color: #fff;
+  background: @error_body_bg;
+  & .page-wrapper {
+    text-align:center;
+    margin-top: 60px;
+    background: @error_page_bg;
+    border-color: @error_page_border;
+    box-shadow: 0 0 10px @error_shadow;
+    &:after, &:before {
+      background-color: @error_page_bg;
+      box-shadow: 0 0 10px @error_shadow;
+    }
+
+    & h1 {
+      font-size: 200px;
+    }
+    & h2 {
+      font-size: 50px;
+    }
+    & a {
+      color:#fff;
+      text-transform: uppercase;
+    }
+  }
+}
