@@ -29,7 +29,7 @@ class SiteGenerator(Command):
             for p in app.pages:
                 if p.path == 'index':
                     yield '/'
-                #logging.info('Generating %s' % p.url)
+                # logging.info('Generating %s' % p.url)
                 yield p.url
 
         @freezer.register_generator
@@ -38,6 +38,18 @@ class SiteGenerator(Command):
             yield '/api/posts.json'
             for p in app.pages:
                 yield '/api/pages/%s.json' % p.path
+
+        @freezer.register_generator
+        def generate_attachments():
+            for p in app.pages:
+                res_path = path.join(path.dirname(p._filename), p.name)
+                if path.exists(res_path):
+                    for root, dirs, files in walk(res_path):
+                        for f in files:
+                            if not f.endswith('.md'):
+                                f_p = path.join(path.dirname(p._filename), p.name, f)
+                                if path.exists(f_p):
+                                    yield p.url + '/' + f
 
         freezer.freeze()
         logging.info('Generation completed.Doing cleanup....')
@@ -50,7 +62,7 @@ class SiteGenerator(Command):
             for f in files:
                 if path.splitext(f)[1] in ['.less', '.scss', '.coffee']:
                     remove(path.join(root, f))
-        #logging.info('Static site generation done!')
+                    # logging.info('Static site generation done!')
 
 
 class SkeletonGenerator(Command):
@@ -67,8 +79,8 @@ class SkeletonGenerator(Command):
         """
         logging.getLogger().setLevel(logging.INFO)
 
-        cwd =self.app.path
-        #getcwd()
+        cwd = self.app.path
+        # getcwd()
         basedir = path.abspath(path.dirname(__file__))
         target = cwd
 
@@ -108,7 +120,8 @@ class SkeletonGenerator(Command):
         logging.info('All done! congratulations! Your web has created in %s.' % target)
 
         self.app.init()
-        #ManageAssets(self.app.assets_env).run(['build'])
+        # ManageAssets(self.app.assets_env).run(['build'])
+
 
 def create_scripts(app):
     manager = Manager(app)
