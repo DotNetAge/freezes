@@ -7,7 +7,7 @@ Transform the plain text or blog to static website.
 Links
 `````
 
-* `documentation <http://packages.python.org/Freezes>`_
+* `documentation <http://freezes.dotnetage.com>`_
 """
 
 import os
@@ -35,12 +35,16 @@ setup(
     package_data={
         '': ['*.yml',
              '*.json',
+             '*.cfg',
              'layouts/*',
              'seeds/*',
              'static/**/*.*',
              'templates/*.html',
              'templates/*.xml',
-             'templates/**/*.*'
+             'templates/**/*.*',
+             'translations/*.*',
+             'translations/zh/LC_MESSAGES/*'
+
         ]
     },
     entry_points={

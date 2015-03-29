@@ -9,11 +9,11 @@ import logging
 
 from os import path, getcwd
 
-from flask import Flask
+from flask import Flask, g
 from flask_flatpages import FlatPages
 from flask_bootstrap import Bootstrap
 from flask_assets import Environment, YAMLLoader
-
+from flask_babel import Babel
 from livereload import Server
 from werkzeug.routing import BaseConverter
 from sites import Site
@@ -50,6 +50,9 @@ def create_app(config):
         if path.exists(config_file):
             settings = yaml.load(open(config_file).read())
             app.site = Site(**settings)
+            if app.site.lang != '':
+                g.lang = app.site.lang
+                app.config['BABEL_DEFAULT_LOCALE'] = g.lang
         else:
             raise IOError('System initialize fail: the `_config.yml` can not be found in the root of current website.')
 
@@ -64,12 +67,22 @@ def create_app(config):
     app.config.from_object(config)
 
     Bootstrap(app)
+    babel = Babel(app)
     app.pages = FlatPages(app)
     app.assets_env = Environment(app)
     app.path = config.APP_PATH
     app.init = lambda: _initialize(app)
     app.initialized = False
     app.url_map.converters['regex'] = RegexConverter
+
+    @babel.localeselector
+    def get_local():
+        _lang = getattr(g, 'lang', '')
+
+        if _lang != '':
+            return g.lang
+
+        return 'en'
 
     return app
 
@@ -80,7 +93,7 @@ def keep_alive(app, build_func):
     """
     live_server = Server(app.wsgi_app)
 
-    #[live_server.watch(path.join(app.path, p), build_func) for p in
+    # [live_server.watch(path.join(app.path, p), build_func) for p in
     # ['pages', 'static', 'templates', '_assets.yml', '_config.yml']]
 
     live_server.watch(app.path)

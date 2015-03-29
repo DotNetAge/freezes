@@ -6,12 +6,12 @@
             <div class="page-content">
                 <h1>404 </h1>
 
-                <h2>OOPS!</h2>
+                <h2>{{ gettext('OOPS!') }}</h2>
 
-                <p class="size-larger text-center">SOMETHING WENT WRONG, OR THAT PAGE DOESN'T EXIST... YET</p>
+                <p class="size-larger text-center">{{ gettext("SOMETHING WENT WRONG, OR THAT PAGE DOESN'T EXIST... YET") }}</p>
 
                 <p>This page will be auto back to home page after <span id="remain">10</span> sec. </p>
-                <a href="{{ site.url }}">[ Back to home ]</a>
+                <a href="{{ site.url }}">[ {{ gettext('Back to home') }} ]</a>
             </div>
         </div>
     </div>

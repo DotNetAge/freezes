@@ -1,12 +1,13 @@
 __author__ = 'Ray'
 
-from flask import render_template, send_from_directory, Blueprint, current_app, url_for, jsonify
+from flask import g, render_template, send_from_directory, Blueprint, current_app, url_for, jsonify
 from os import path
 from urlparse import urljoin
 from werkzeug.contrib.atom import AtomFeed
 from fnmatch import fnmatch
 from datetime import datetime
 from werkzeug.exceptions import abort
+from flask_babel import gettext, refresh
 
 
 class SimplePage(object):
@@ -17,6 +18,12 @@ class SimplePage(object):
 
     def __init__(self, title=''):
         self.title = title
+
+
+def set_lang(locale_name):
+    if locale_name != '':
+        g.lang = locale_name.split('-')[0]
+        refresh()
 
 
 def create_views(name, app):
@@ -56,6 +63,8 @@ def __init_views(main, app):
         if page._is_post:
             default_layout = 'post'
 
+        set_lang(page._locale)
+
         template = 'layouts/%s.html' % page.meta.get('layout', default_layout)
         return render_template(template, page=page, locale=page._locale, site=current_app.site)
 
@@ -76,6 +85,8 @@ def __init_views(main, app):
     @main.route('/<regex("[a-z]{2}-[A-Z]{2}"):locale_name>/tags/')
     @main.route('/tags/')
     def tags(locale_name=''):
+        set_lang(locale_name)
+
         return render_template('layouts/tags.html',
                                page=SimplePage('All tags'),
                                site=current_app.site,
@@ -84,11 +95,12 @@ def __init_views(main, app):
     @main.route('/<regex("[a-z]{2}-[A-Z]{2}"):locale_name>/tags/<name>/')
     @main.route('/tags/<name>/')
     def tag(name, locale_name=''):
+        set_lang(locale_name)
         if (name is None) or name == '':
             abort(404)
 
         return render_template('layouts/tagged.html',
-                               page=SimplePage('Article tagged with:' + name),
+                               page=SimplePage(gettext(u'Articles tagged with:%(value)s', value=name)),
                                tag=name,
                                locale=locale_name,
                                site=current_app.site)
@@ -96,8 +108,9 @@ def __init_views(main, app):
     @main.route('/<regex("[a-z]{2}-[A-Z]{2}"):locale_name>/archives/')
     @main.route('/archives/')
     def archives(locale_name=''):
+        set_lang(locale_name)
         return render_template('layouts/archives.html',
-                               page=SimplePage('All archives'),
+                               page=SimplePage(gettext(u'All archives')),
                                locale=locale_name,
                                site=current_app.site)
 
@@ -105,14 +118,14 @@ def __init_views(main, app):
     @main.route('/archives/<name>')
     def archive(name, locale_name=''):
 
-
+        set_lang(locale_name)
         results = [a for a in current_app.site.archives if a.title == name]
 
         if len(results) == 0:
             abort(404)
 
         return render_template('layouts/archived.html',
-                               page=SimplePage('Archive:%s' % name),
+                               page=SimplePage(gettext(u'Archive:%(value)s', value=name)),
                                locale=locale_name,
                                archive=results[0],
                                site=current_app.site)
@@ -120,7 +133,7 @@ def __init_views(main, app):
     def render_404():
         """Render the not found page
         """
-        return render_template('404.html', page={'title': 'Page not found', 'path': '404'},
+        return render_template('404.html', page={'title': gettext(u'Page not found'), 'path': '404'},
                                locale='',
                                site=current_app.site)
 
@@ -150,7 +163,7 @@ def __init_views(main, app):
         if name != 'recent':
             _posts = current_app.site.query(name, all=True)
 
-        feed = AtomFeed('Recent posts',
+        feed = AtomFeed(gettext('Recent posts'),
                         feed_url=_feed_url,
                         url=current_app.site.url)
 

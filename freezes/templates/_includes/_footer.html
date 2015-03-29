@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <h3>联系信息</h3>
+                <h3>{{ gettext('Contacts') }}</h3>
                 <ul class="list-unstyled">
                     <li>{{ site.title }}</li>
                     {% if site.tel %}
@@ -13,7 +13,7 @@
             </div>
 
             <div class="col-md-4">
-                <h3><a href="{{ url_for('.archives') }}">最近归档</a></h3>
+                <h3><a href="{{ url_for('.archives') }}">{{ gettext('Archives') }}</a></h3>
                 <ul class="list-unstyled archives">
                     {% for archive in site.archives %}
                         {% if loop.index <=5 %}
@@ -26,7 +26,7 @@
             </div>
 
             <div class="col-md-4">
-                <h3><a href="{{ url_for('.tags') }}">热门标签</a></h3>
+                <h3><a href="{{ url_for('.tags') }}">{{ gettext('Popular tags') }}</a></h3>
                 {% if site.tags|count>0 %}
                     {% for t in site.tags[0:10] %}
                         <a href="{{ url_for('.tag',name=t) }}" class="label label-info">{{ t }}</a>
@@ -37,8 +37,8 @@
     </div>
     {% if site.copyright %}
         <p class="text-center">
-            copyright by {{ site.copyright }}
+            {{ gettext('© copyright by %(value)s',value=site.copyright) }}
         </p>
     {% endif %}
-    <p class="text-center">Powered by Freezes</p>
+    <p class="text-center">Powered by <a href="http://freezes.dotnetage.com">Freezes</a></p>
 </footer>

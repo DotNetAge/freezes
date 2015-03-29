@@ -35,6 +35,7 @@ def _extract_local(terms):
 
 class Site(object):
     _data = None
+    lang = ''
 
     def __init__(self, **kwargs):
         self.__dict__.__init__(**kwargs)
@@ -48,7 +49,7 @@ class Site(object):
         if _locale is None:
             _locale = ''
 
-        #current_app.logger.info(_locale)
+        # current_app.logger.info(_locale)
 
         return sorted([sp for sp in [p for p in current_app.pages if p._has_title and p._top and p._locale == _locale]],
                       key=lambda sp: sp._id)

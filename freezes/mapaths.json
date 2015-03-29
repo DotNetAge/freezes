@@ -2,6 +2,9 @@
   "dirs": [
     "static",
     "templates",
+    "translations",
+    "translations/zh",
+    "translations/zh/LC_MESSAGES",
     "data",
     "pages",
     "pages/posts",
@@ -52,6 +55,16 @@
       "cwd": "static/_scripts",
       "src": ["startup.coffee"],
       "dest": "static/scripts"
+    },
+    {
+      "cwd": "translations",
+      "src": ["messages.pot"],
+      "dest": "translations"
+    },
+    {
+      "cwd": "translations/zh/LC_MESSAGES",
+      "src": ["messages.mo"],
+      "dest": "translations/zh/LC_MESSAGES"
     },
     {
       "cwd": "seeds",

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2 class="text-center">所有归档</h2>
+    <h2 class="text-center">{{ gettext('All archives') }}</h2>
     <ul class="archive-list">
         {% for archive in site.archives %}
             <li class="archive">

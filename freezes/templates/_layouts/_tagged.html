@@ -2,6 +2,6 @@
 {% import "_macros/posts.html" as posts %}
 
 {% block content %}
-    <h2 class="text-center">标记有<code>{{ tag }}</code>的所有文章</h2>
+    <h2 class="text-center">{{ gettext('All articles tagged with <code>%(value)s</code>',value=tag) }} </h2>
      {{ posts.list(site.tagged(tag)) }}
 {% endblock %}

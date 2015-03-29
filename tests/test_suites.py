@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import unittest
 import re
 import json
@@ -101,7 +104,7 @@ class FreezesTestCase(unittest.TestCase):
         post_objects = json.loads(res.data)
         self.assertGreater(len(post_objects['posts']), 0)
 
-    def test_localize_menus(self):
+    def test_localization(self):
         m.page('zh-cn')
         m.page('zh-cn/documents')
         m.page('zh-cn/contacts')
@@ -109,6 +112,9 @@ class FreezesTestCase(unittest.TestCase):
 
         items = self.site.menus('zh-cn')
         self.assertEqual(len(items), 4)
+
+        res = self.app.get('/zh-cn/')
+        self.assertTrue(re.search('联系信息',res.data))
 
     def test_empty_tags(self):
         m.prepare().pages()
