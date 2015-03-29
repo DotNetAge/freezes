@@ -1,0 +1,133 @@
+# Chinese translations for PROJECT.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# Ray <csharp2002@hotmail>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: csharp2002@hotmail.com\n"
+"POT-Creation-Date: 2015-03-29 22:46+0800\n"
+"PO-Revision-Date: 2015-03-29 21:49+0800\n"
+"Last-Translator: Ray <csharp2002@hotmail.com>\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+
+#: views.py:103
+#, python-format
+msgid "Articles tagged with:%(value)s"
+msgstr "标记有 <code>%(value)s</code> 的文章"
+
+#: views.py:113 templates/_layouts/_archives.html:3
+msgid "All archives"
+msgstr "全部档案"
+
+#: views.py:128
+#, python-format
+msgid "Archive:%(value)s"
+msgstr "<code>%(value)s</code> 归档"
+
+#: views.py:136
+msgid "Page not found"
+msgstr "没有找到页面"
+
+#: views.py:166
+msgid "Recent posts"
+msgstr "最近的更新"
+
+#: templates/_layouts/_archived.html:4
+#, python-format
+msgid "Archived of %(value)s"
+msgstr "%(value)s 归档"
+
+#: templates/_layouts/_archived.html:5
+#, python-format
+msgid "Total %(value)s"
+msgstr "%(value)s 归档的文章"
+
+#: templates/_layouts/_error.html:9
+msgid "OOPS!"
+msgstr "很抱歉！"
+
+#: templates/_layouts/_error.html:11
+msgid "SOMETHING WENT WRONG, OR THAT PAGE DOESN'T EXIST... YET"
+msgstr "可能出了某些不可预期的问题或者是你所浏览的页面并不存在。"
+
+#: templates/_layouts/_error.html:14
+msgid "Back to home"
+msgstr "返回首页"
+
+#: templates/_layouts/_tagged.html:5
+#, python-format
+msgid "All articles tagged with <code>%(value)s</code>"
+msgstr "全部标记有 <code>%(value)s</code> 主题的文章"
+
+#: templates/_layouts/_tags.html:3
+msgid "All tags"
+msgstr "全部的主题词"
+
+#: templates/_includes/_footer.html:5
+msgid "Contacts"
+msgstr "联系信息"
+
+#: templates/_includes/_footer.html:16
+#, fuzzy
+msgid "Archives"
+msgstr "全部档案"
+
+#: templates/_includes/_footer.html:29
+#, fuzzy
+msgid "Popular tags"
+msgstr "全部的主题词"
+
+#: templates/_includes/_footer.html:40
+#, fuzzy, python-format
+msgid "© copyright by %(value)s"
+msgstr "%(value)s 归档的文章"
+
+#: templates/_includes/_navbar.html:5
+msgid "Toggle navigation"
+msgstr "折叠导航栏"
+
+#: templates/_includes/_navbar.html:23
+msgid "Follow me on facebook"
+msgstr "关于我的Facebook"
+
+#: templates/_includes/_navbar.html:29
+msgid "Follow me on twitter"
+msgstr "关于我的Twitter"
+
+#: templates/_includes/_navbar.html:35
+msgid "Fork me on github"
+msgstr ""
+
+#: templates/_includes/_navbar.html:40
+msgid "Subscript changes"
+msgstr "订阅更新"
+
+#: templates/_includes/_navbar.html:42
+msgid "Subscript"
+msgstr "订阅"
+
+#: templates/_includes/_post_nav.html:4
+#, fuzzy, python-format
+msgid "Prev:%(value)s"
+msgstr "<code>%(value)s</code> 归档"
+
+#: templates/_includes/_post_nav.html:7
+#, fuzzy, python-format
+msgid "Next:%(value)s"
+msgstr "<code>%(value)s</code> 归档"
+
+#: templates/_macros/posts.html:23
+msgid "Learn more"
+msgstr "阅读全文"
+
+#: templates/_macros/posts.html:72
+msgid "Further reading"
+msgstr "相关阅读"
+
