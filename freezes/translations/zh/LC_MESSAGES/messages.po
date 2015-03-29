@@ -20,16 +20,16 @@ msgstr ""
 #: views.py:103
 #, python-format
 msgid "Articles tagged with:%(value)s"
-msgstr "标记有 <code>%(value)s</code> 的文章"
+msgstr "标记%(value)s主题的文章"
 
 #: views.py:113 templates/_layouts/_archives.html:3
 msgid "All archives"
-msgstr "全部档案"
+msgstr "全部归案"
 
 #: views.py:128
 #, python-format
 msgid "Archive:%(value)s"
-msgstr "<code>%(value)s</code> 归档"
+msgstr "%(value)s归档"
 
 #: views.py:136
 msgid "Page not found"
@@ -42,12 +42,12 @@ msgstr "最近的更新"
 #: templates/_layouts/_archived.html:4
 #, python-format
 msgid "Archived of %(value)s"
-msgstr "%(value)s 归档"
+msgstr "<code>%(value)s</code> 归档"
 
 #: templates/_layouts/_archived.html:5
 #, python-format
 msgid "Total %(value)s"
-msgstr "%(value)s 归档的文章"
+msgstr "共 %(value)s 篇文章"
 
 #: templates/_layouts/_error.html:9
 msgid "OOPS!"
@@ -64,30 +64,28 @@ msgstr "返回首页"
 #: templates/_layouts/_tagged.html:5
 #, python-format
 msgid "All articles tagged with <code>%(value)s</code>"
-msgstr "全部标记有 <code>%(value)s</code> 主题的文章"
+msgstr "标记 <code>%(value)s</code> 主题的文章"
 
 #: templates/_layouts/_tags.html:3
 msgid "All tags"
-msgstr "全部的主题词"
+msgstr "全部主题"
 
 #: templates/_includes/_footer.html:5
 msgid "Contacts"
 msgstr "联系信息"
 
 #: templates/_includes/_footer.html:16
-#, fuzzy
 msgid "Archives"
-msgstr "全部档案"
+msgstr "全部归档"
 
 #: templates/_includes/_footer.html:29
-#, fuzzy
 msgid "Popular tags"
-msgstr "全部的主题词"
+msgstr "热门主题"
 
 #: templates/_includes/_footer.html:40
-#, fuzzy, python-format
+#, python-format
 msgid "© copyright by %(value)s"
-msgstr "%(value)s 归档的文章"
+msgstr "©版权所有 %(value)s"
 
 #: templates/_includes/_navbar.html:5
 msgid "Toggle navigation"
@@ -114,14 +112,14 @@ msgid "Subscript"
 msgstr "订阅"
 
 #: templates/_includes/_post_nav.html:4
-#, fuzzy, python-format
+#, python-format
 msgid "Prev:%(value)s"
-msgstr "<code>%(value)s</code> 归档"
+msgstr "上一篇:%(value)s"
 
 #: templates/_includes/_post_nav.html:7
-#, fuzzy, python-format
+#, python-format
 msgid "Next:%(value)s"
-msgstr "<code>%(value)s</code> 归档"
+msgstr "下一篇:%(value)s"
 
 #: templates/_macros/posts.html:23
 msgid "Learn more"

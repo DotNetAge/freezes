@@ -19,7 +19,8 @@
       "cwd": "",
       "src": [
         "__init__.py",
-        "_config.yml"
+        "_config.yml",
+        "babel.cfg"
       ],
       "dest": ""
     },

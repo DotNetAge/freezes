@@ -123,11 +123,47 @@ class SkeletonGenerator(Command):
         # ManageAssets(self.app.assets_env).run(['build'])
 
 
+class LanguageGenerator(Command):
+    def __init__(self, app):
+        self.app = app
+
+    def get_options(self):
+        return [
+            Option('-c', '--code', dest='code', default='', required=False),
+            Option('-a', '--action', dest='action', default='', required=False)
+        ]
+
+    def run(self, code=None, action=None):
+        import os
+        import sys
+
+        if code is None and action is None:
+            print "usage: freezes lang [-c <language-code>] | [-a <compile|update>]"
+            sys.exit(1)
+
+        tran_path = path.join(self.app.path, 'translations')
+        pot_file = path.join(tran_path, 'messages.pot')
+        babel_cfg = path.join(self.app.path, 'babel.cfg')
+
+        if code is not None:
+            os.system('pybabel init -i %s -d %s -l %s' % (pot_file, tran_path, code))
+
+        if action == 'compile':
+            os.system('pybabel compile -d %s' % tran_path)
+
+        elif action == 'update':
+            os.system('pybabel update -i %s -d %s' % (pot_file, tran_path))
+
+        elif action == 'renew':
+            os.system('pybabel extract -F %s -o %s .' % (babel_cfg, pot_file))
+
+
 def create_scripts(app):
     manager = Manager(app)
     manager.add_command("assets", ManageAssets(app.assets_env))
     manager.add_command("build", SiteGenerator(app))
     manager.add_command("new", SkeletonGenerator(app))
+    manager.add_command("lang", LanguageGenerator(app))
 
     @manager.command
     def serve():

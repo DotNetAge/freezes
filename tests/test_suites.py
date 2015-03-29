@@ -7,7 +7,7 @@ import json
 from flask import current_app
 from helper import init_test_case, create_test_app, clean_builds, clean
 from mocks import m
-from freezes.scripts import SiteGenerator, SkeletonGenerator
+from freezes.scripts import SiteGenerator, SkeletonGenerator, LanguageGenerator
 
 
 class FreezesTestCase(unittest.TestCase):
@@ -114,7 +114,8 @@ class FreezesTestCase(unittest.TestCase):
         self.assertEqual(len(items), 4)
 
         res = self.app.get('/zh-cn/')
-        self.assertTrue(re.search('联系信息',res.data))
+        self.assertTrue(re.search('联系信息', res.data))
+        self.assertTrue(re.search('热门主题', res.data))
 
     def test_empty_tags(self):
         m.prepare().pages()
@@ -124,6 +125,20 @@ class FreezesTestCase(unittest.TestCase):
         clean_builds()
         sg = SiteGenerator(self.app_context.app)
         sg.run()
+
+    def test_lang_command(self):
+        from os import path
+
+        lang_cmd = LanguageGenerator(self.app_context.app)
+
+        lang_cmd.run(code='de')
+        self.assertTrue(path.exists(path.join(self.app_context.app.path, 'translations', 'de')))
+
+        lang_cmd.run(action='compile')
+        self.assertTrue(
+            path.exists(path.join(self.app_context.app.path, 'translations', 'de', 'LC_MESSAGES', 'messages.mo')))
+
+        lang_cmd.run(action='update')
 
 
 if (__name__ == '__main__'):
