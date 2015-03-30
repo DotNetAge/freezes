@@ -140,6 +140,31 @@ class FreezesTestCase(unittest.TestCase):
 
         lang_cmd.run(action='update')
 
+    def test_site_additional_data(self):
+        from shutil import copytree, rmtree
+        from os import path
+
+        _app_path = self.app_context.app.path
+        src = path.join(path.dirname(__file__), path.join('data'))
+        dst = path.join(_app_path, 'data')
+        rmtree(dst)
+        copytree(src, dst)
+
+        self.assertIsNotNone(self.site.data.deps)
+
+        self.assertIsNotNone(self.site.data.deps.hr)
+        self.assertIsNotNone(self.site.data.deps.hr.contacts)
+        self.assertGreater(self.site.data.deps.hr.contacts, 0)
+
+        self.assertIsNotNone(self.site.data.deps.marketing)
+
+        # Test yaml data
+        self.assertIsNotNone(self.site.data.members)
+        self.assertGreater(self.site.data.members, 0)
+
+        # Test csv data
+        self.assertTrue(hasattr(self.site.data, 'empolyees'))
+
 
 if (__name__ == '__main__'):
     unittest.main()

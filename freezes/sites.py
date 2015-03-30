@@ -1,7 +1,10 @@
 from flask import current_app
 from datetime import datetime
-import re
 from os import walk
+
+import csv
+import re
+
 
 truly = lambda expr: expr is True
 falsely = lambda expr: expr is False
@@ -31,6 +34,17 @@ def _extract_local(terms):
         return results.group(0)
     else:
         ''
+
+
+def fix_name(n):
+    'Fixes a string to be nicer (usable) variable names.'
+    return n.replace(' ', '_').replace('.', '_')
+
+
+def read_csv(csv_file):
+    from_csv_line = lambda l, h: dict(zip(h, l))
+    iter = csv.reader(csv_file).__iter__()
+    return [from_csv_line(i, map(fix_name, iter.next())) for i in iter]
 
 
 class Site(object):
@@ -117,25 +131,53 @@ class Site(object):
         if self._data is not None:
             return self._data
 
-        self._data = dict()
+        class FriendlyDict(dict):
+            def __getattr__(self, item):
+                return self.get(item, None)
 
-        for root, dirs, files in walk(path.join(current_app.path, 'data')):
-            for f in files:
-                file_name = path.join(root, f)
-                ext = path.splitext(file_name)[1]
+            def __getitem__(self, name):
+                return self.get(name, None)
 
-                try:
-                    with open(file_name) as file:
-                        obj_name = path.basename(path.splitext(file_name)[0])
-                        if ext == '.json':
-                            self._data.update({obj_name: json.load(file)})
-                        if ext == '.yml':
-                            self._data.update({obj_name: yaml.load(file.read())})
-                except Exception as e:
-                    logging.getLogger()
-                    logging.error(e.message)
-                    continue
+        self._data = FriendlyDict()
+        data_path = path.join(current_app.path, 'data')
 
+        # Define data file loaders
+        _yml_loader = lambda p, n, f: p.update({n: yaml.load(f.read())})
+        _csv_loader = lambda p, n, f: p.update({n: read_csv(f)})
+
+        _loaders_ = {
+            '.json': lambda p, n, f: p.update({n: json.load(f)}),
+            '.yml': _yml_loader,
+            '.yaml': _yml_loader,
+            '.csv': _csv_loader
+        }
+
+        logging.getLogger()
+
+        def load_data_objects(parent, dst_path):
+            for root, dirs, files in walk(dst_path):
+
+                def __load_dirs__(d):
+                    parent.update({d: FriendlyDict()})
+                    load_data_objects(parent.get(d), path.join(root, d))
+
+                def __load_files__(f):
+                    file_name = path.join(root, f)
+                    ext = path.splitext(file_name)[1]
+
+                    try:
+                        with open(file_name) as file:
+                            obj_name = path.basename(path.splitext(file_name)[0])
+                            (_loaders_.get(ext, None) is not None) and _loaders_.get(ext)(parent, obj_name, file)
+                    except Exception as e:
+                        logging.error(e.message)
+                    finally:
+                        pass
+
+                [__load_dirs__(d) for d in dirs if parent.get(d) is None and root == dst_path]
+                [__load_files__(f) for f in files if root == dst_path]
+
+        load_data_objects(self._data, data_path)
         return self._data
 
     @property

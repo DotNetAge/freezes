@@ -43,16 +43,14 @@ def create_app(config):
             return app
 
         cwd = app.path
-        # getcwd()
+
         config_file = path.join(cwd, '_config.yml')
         asset_file = path.join(cwd, "_assets.yml")
 
         if path.exists(config_file):
             settings = yaml.load(open(config_file).read())
             app.site = Site(**settings)
-            if app.site.lang != '':
-                g.lang = app.site.lang
-                app.config['BABEL_DEFAULT_LOCALE'] = g.lang
+            app.config['BABEL_DEFAULT_LOCALE'] = getattr(app.site,'lang','en')
         else:
             raise IOError('System initialize fail: the `_config.yml` can not be found in the root of current website.')
 
