@@ -1,7 +1,10 @@
-from flask import current_app
+# -*- coding: utf-8 -*-
+# !/usr/bin/python
+
+from flask import current_app, request
 from datetime import datetime
 from os import walk
-
+from werkzeug.utils import cached_property
 import csv
 import re
 
@@ -41,10 +44,17 @@ def fix_name(n):
     return n.replace(' ', '_').replace('.', '_')
 
 
+def unicode_csv_reader(utf8_data, dialect=csv.excel, **kwargs):
+    csv_reader = csv.reader(utf8_data, dialect=dialect, **kwargs)
+    for row in csv_reader:
+        yield [unicode(cell, 'utf-8') for cell in row]
+
+
 def read_csv(csv_file):
     from_csv_line = lambda l, h: dict(zip(h, l))
-    iter = csv.reader(csv_file).__iter__()
-    return [from_csv_line(i, map(fix_name, iter.next())) for i in iter]
+    iter = unicode_csv_reader(csv_file).__iter__()
+    headers = map(fix_name, iter.next())
+    return [from_csv_line(i, headers) for i in iter]
 
 
 class Site(object):
@@ -118,7 +128,7 @@ class Site(object):
         _posts = (p for p in current_app.pages if p._has_title and p._is_post)
         return sorted(_posts, reverse=True, key=lambda p: p.published)
 
-    @property
+    @cached_property
     def data(self):
         """ Auto load the data files (`/data` folder) into dict
         :return:
@@ -128,8 +138,8 @@ class Site(object):
         import yaml
         import logging
 
-        if self._data is not None:
-            return self._data
+        # if self._data is not None:
+        # return self._data
 
         class FriendlyDict(dict):
             def __getattr__(self, item):

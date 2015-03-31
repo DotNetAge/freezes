@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# !/usr/bin/python
+
 __author__ = 'Ray'
 
 from flask import g, render_template, send_from_directory, Blueprint, current_app, url_for, jsonify
@@ -141,18 +144,15 @@ def __init_views(main, app):
     def page_not_found(e):
         return render_404(), 404
 
-
     @main.route('/404.html')
     def static_404():
         return render_404()
-
 
     @app.route('/sitemap.xml')
     def sitemap():
         locations = [(lambda p: (post.url, post.last_updated))(post) for post in current_app.pages]
         sites = [(current_app.site.url + l[0], l[1]) for l in locations]
         return render_template('sitemap.xml', sites=sites), 200, {'Content-Type': 'application/xml; charset=utf-8'}
-
 
     @app.route('/feeds/<path:name>.xml')
     def feed(name='recent'):

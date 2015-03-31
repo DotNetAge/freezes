@@ -22,7 +22,7 @@ with open('README.rst') as readme_file:
     README = readme_file.read().strip()
 
 PROJECT = README.strip('#').split('\n')[0].strip().split()[0].lower()
-DESCRIPTION = README.split('\n')[3]
+DESCRIPTION = "Transform the plain text or blog to static website"
 
 with open('requirements.txt') as reqs_file:
     REQS = reqs_file.read()

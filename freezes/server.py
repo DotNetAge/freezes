@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
 # !/usr/bin/python
 
 __author__ = 'Ray'
@@ -75,12 +75,16 @@ def create_app(config):
 
     @babel.localeselector
     def get_local():
-        _lang = getattr(g, 'lang', '')
+
+        if hasattr(g,'lang'):
+            _lang = getattr(g, 'lang', 'en')
+        else :
+            _lang = getattr(app.site, 'lang', 'en')
 
         if _lang != '':
-            return g.lang
-
-        return getattr(app.site, 'lang', 'en')
+            return _lang
+        else:
+            return 'en'
 
     return app
 

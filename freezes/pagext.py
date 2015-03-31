@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 from flask import current_app, url_for
 from markdown import markdown
 from flask_flatpages import Page
