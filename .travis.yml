@@ -8,7 +8,7 @@ python:
   - "pypy"
 # command to install dependencies
 install:
-  - pip install -r tests/requirement.txt
+  - pip install -r tests/requirements.txt
   - python setup.py -q install
 
 # command to run tests
