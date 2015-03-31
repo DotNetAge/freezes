@@ -126,20 +126,6 @@ class FreezesTestCase(unittest.TestCase):
         sg = SiteGenerator(self.app_context.app)
         sg.run()
 
-    def test_lang_command(self):
-        from os import path
-
-        lang_cmd = LanguageGenerator(self.app_context.app)
-
-        lang_cmd.run(code='de')
-        self.assertTrue(path.exists(path.join(self.app_context.app.path, 'translations', 'de')))
-
-        lang_cmd.run(action='compile')
-        self.assertTrue(
-            path.exists(path.join(self.app_context.app.path, 'translations', 'de', 'LC_MESSAGES', 'messages.mo')))
-
-        lang_cmd.run(action='update')
-
     def test_site_additional_data(self):
         from shutil import copytree, rmtree
         from os import path
