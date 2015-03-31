@@ -2,7 +2,6 @@
 .webassets-cache
 *.pyc
 *.pypirc
-README.rst
 
 # Packages
 *.egg
