@@ -8,8 +8,7 @@ python:
   - "pypy"
 # command to install dependencies
 install:
-  - pip install -r tests/requirements.txt
   - python setup.py -q install
 
 # command to run tests
-script: python tests/test_suites.py
+script: nosetests
