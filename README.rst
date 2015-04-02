@@ -37,7 +37,9 @@ Installation
 
 The quick way:
 
-    pip install freezes
+```bash
+$ pip install freezes
+```
 
 For more details see the install section in the documentation:
 http://freezes.dotnetage.com/documents/quick-started/
