@@ -15,4 +15,3 @@ install:
 script:
   - mkdir my-test-web && cd $_
   - freezes new
-  - freezes build
