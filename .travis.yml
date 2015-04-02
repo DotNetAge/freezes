@@ -10,3 +10,9 @@ before_install:
 install:
   - pip install -r tests/requirements.txt
   - pip install freezes
+
+# command to run tests
+script:
+  - mkdir my-test-web && cd $_
+  - freezes new
+  - freezes build
