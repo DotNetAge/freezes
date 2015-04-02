@@ -13,11 +13,11 @@ Freezes
     :target: https://pypi.python.org/pypi/freezes/
     :alt: Development Status
 
-. image:: https://pypip.in/version/freezes/badge.svg
+.. image:: https://pypip.in/version/freezes/badge.svg
     :target: https://pypi.python.org/pypi/freezes/
     :alt: Latest Version
 
-. image:: https://pypip.in/license/freezes/badge.svg
+.. image:: https://pypip.in/license/freezes/badge.svg
     :target: https://pypi.python.org/pypi/freezes/
     :alt: License
 
