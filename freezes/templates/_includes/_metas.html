@@ -5,15 +5,19 @@
       rel="alternate"
       title="Recent posts"
       type="application/atom+xml">
-{% if page != None %}
-     {% if page.descripton!= None %}
-        <meta name="description" content="{{ page.description }}" >
-     {% else %}
-         {% if page.summary!=None %}
-            <meta name="description" content="{{ page.summary }}" >
-         {% endif %}
-     {% endif %}
-     {% if page.tags !=None %}
-         <meta name="keywords" content="{{ page.tags }}">
-     {% endif %}
+{% if page is defined %}
+    {% if page.descripton is defined %}
+        <meta name="description" content="{{ page.description }}">
+    {% else %}
+        {% if page.summary is defined %}
+            <meta name="description" content="{{ page.summary }}">
+        {% endif %}
+    {% endif %}
+    {% if page.tags is defined %}
+        <meta name="keywords" content="{{ page.tags }}">
+    {% endif %}
+
+    {% if page.ref_to is defined %}
+        <meta http-equiv="refresh" content="{{ page.wait if page.wait is defined else 0 }};url={{ page.ref_to }}">
+    {% endif %}
 {% endif %}

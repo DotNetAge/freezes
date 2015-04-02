@@ -117,8 +117,8 @@ def __init_views(main, app):
                                locale=locale_name,
                                site=current_app.site)
 
-    @main.route('/<regex("[a-z]{2}-[A-Z]{2}"):locale_name>/archives/<name>')
-    @main.route('/archives/<name>')
+    @main.route('/<regex("[a-z]{2}-[A-Z]{2}"):locale_name>/archives/<name>/')
+    @main.route('/archives/<name>/')
     def archive(name, locale_name=''):
 
         set_lang(locale_name)
@@ -154,7 +154,7 @@ def __init_views(main, app):
         sites = [(current_app.site.url + l[0], l[1]) for l in locations]
         return render_template('sitemap.xml', sites=sites), 200, {'Content-Type': 'application/xml; charset=utf-8'}
 
-    @app.route('/feeds/<path:name>.xml')
+    @app.route('/feeds/<path:name>.atom')
     def feed(name='recent'):
         _feed_url = url_for('.feed', name=name, _external=True)
 
