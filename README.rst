@@ -35,11 +35,10 @@ Requirements
 Installation
 ------------
 
-The quick way:
+The quick way ::
 
-```bash
-$ pip install freezes
-```
+    $ pip install freezes
+
 
 For more details see the install section in the documentation:
 http://freezes.dotnetage.com/documents/quick-started/
