@@ -1,7 +1,5 @@
 language: python
-python:
-  - "2.7"
-  - "pypy"
+python: "2.7"
 
 # commands to install packages
 before_install:
@@ -11,7 +9,7 @@ before_install:
 # command to install dependencies
 install:
   - pip install -r tests/requirements.txt
-  - python setup.py -q install
+  - pip install freezes
 
 # command to run tests
 script: python tests/test_suites.py
