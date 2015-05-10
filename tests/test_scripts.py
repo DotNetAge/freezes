@@ -1,7 +1,6 @@
 import unittest
 import re
 import json
-
 from flask import current_app
 from helper import init_test_case
 from mocks import m

@@ -51,11 +51,6 @@ class SiteGenerator(Command):
                                 if path.exists(f_p):
                                     yield p.url + '/' + f
 
-        @freezer.register_generator
-        def generate_archives():
-            for archive in app.site.archives:
-                yield '/archives/%s' % archive.title
-
         freezer.freeze()
         logging.info('Generation completed.Doing cleanup....')
 

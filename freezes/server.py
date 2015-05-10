@@ -99,7 +99,7 @@ def keep_alive(app, build_func):
     # ['pages', 'static', 'templates', '_assets.yml', '_config.yml']]
 
     live_server.watch(app.path)
-    live_server.serve()
+    live_server.serve(open_url=True)
 
 
 def main():
@@ -112,7 +112,7 @@ def main():
     if len(sys.argv[1:]) > 0:
         create_scripts(app).run()
     else:
-        import webbrowser
+        #import webbrowser
         # from subprocess import Popen
 
         app.init()
@@ -125,7 +125,7 @@ def main():
             site_generator = SiteGenerator(app)
             site_generator.run()
 
-        webbrowser.open_new_tab('http://localhost:5500')
+        #webbrowser.open_new_tab('http://localhost:5500')
         keep_alive(app, live_rebuild)
 
     return app
