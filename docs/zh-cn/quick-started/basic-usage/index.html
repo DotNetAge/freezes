@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <title>Freezes - 基本用法</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/feeds/recent.atom"
+      rel="alternate"
+      title="Recent posts"
+      type="application/atom+xml">
+
+    
+        
+            <meta name="description" content="Freezes 提供的简单命令行工具">
+        
+    
+    
+
+    
+
+    
+    
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"
+              media="screen">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+        
+            <link rel="stylesheet" href="/static/site.min.css?4de4a314">
+        
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+        <script type="text/javascript" src="/static/site.min.js?7693760b"></script>
+    
+</head>
+<body >
+
+    <div class="belt"></div>
+    
+<div class="container">
+    <div class="page-wrapper">
+        
+            
+<div class="lang-dropdown">
+
+    <ol class="breadcrumb">
+        <li><a href="/"><span class="fa fa-home"></span> Freezes
+        </a></li>
+        
+            
+                <li><a href="/zh-cn/">首页</a></li>
+            
+                <li><a href="/zh-cn/quick-started/">快速开始</a></li>
+            
+        
+    </ol>
+ 
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-expanded="true">
+            
+                中文 (简体)
+            
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/zh-cn/">中文 (简体)</a></li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/">English (US)</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page-header">
+    
+        <h1>
+            
+                <div>基本用法</div>
+            
+
+        </h1>
+        <p class="lead">Freezes 提供的简单命令行工具</p>
+    
+</div>
+        
+        
+            <div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">折叠导航栏</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                
+                    
+                        <li >
+                            <a href="/zh-cn/">首页</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/quick-started/">快速开始</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/documents/">相关文档</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/about/">关于</a></li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="divider visible-xs"></li>
+                
+                
+                
+                    <li data-toggle="tooltip" data-placement="top" title="Fork me on github">
+                        <a href="http://www.github.com/dotnetage" target="_blank" rel="nofollow"><i
+                                class="fa fa-github"></i> <span class="visible-xs-inline">me@github</span></a>
+                    </li>
+                
+                <li data-toggle="tooltip" data-placement="top" title="订阅更新">
+                    <a href="/feeds/recent.atom"><i class="fa fa-rss"></i> <span
+                            class="visible-xs-inline">订阅</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+        <div class="page-content">
+            
+    
+            
+            <p>Freezes 是一个基于 <a href="www.python.org">python</a> 编写的命令行工引导工具。如果您正在使用Linux或者OSX，那么恭喜你！你的平台中已经预装有 python 的运行环境，可以直接 freezes 的指令。如果您是一位Windows的用户，那么还请先点击下载 <a href="https://www.python.org/downloads/release/python-279/">python 2.7</a></p>
+<h2 id="_1">创建站点</h2>
+<p>创建一个目录并使用 <code>new</code> 参数运行 <code>freezes</code>，Freezes 将自动在当前中为你建立站点所需要目录和文件。</p>
+<pre><code class="bash">(venv) my-site$ freezes new
+</code></pre>
+
+<h2 id="_2">运行站点</h2>
+<p>直接执行 <code>freezes</code> 指令将会运行一个自带的Web服务，并会在您的默认浏览器内自动访问该本地网站地址(默认为:http://localhost:5500)。</p>
+<pre><code>(venv) my-site$ freezes
+</code></pre>
+
+<p>Freezes 带有自动加载更新的功能，也就是说如果当前目录内的任何文件发生了变化，被Freezes打开的浏览器页面都会执行自动刷新。如此一来，无论你是在写作还是在做设计都可以即时看到最终的输出效果而无需要进行人工刷新。</p>
+<h2 id="_3">生成静态化站点</h2>
+<p>当完成了所有的写作或者设计工作准备将站点部署到外部服务器，那么请在终端内运行以下指令：</p>
+<pre><code>(venv) my-site$ freezes build
+</code></pre>
+
+<p>指令执行完成后，当前站点的所有的输出页面都被静态化为html并放置于 <code>builds</code> 目录下，将此目录下的全部文件直接拷贝至您的Web服务器就可完全所有的部署工作了。</p>
+            
+    
+
+
+    <div class="line-holder">
+    
+        
+            <a href="/zh-cn/quick-started/requirements-installed/"><span class="fa fa-arrow-left"></span> 上一篇:安装要求</a>
+        
+        
+            <a href="/zh-cn/quick-started/directory-structure/" class="pull-right">下一篇:目录结构 <span
+                    class="fa fa-arrow-right"></span></a>
+        
+    
+</div>
+
+        </div>
+    </div>
+</div>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>联系信息</h3>
+                <ul class="list-unstyled">
+                    <li>Freezes</li>
+                    
+                    <li><a href="mailto:csharp2002@hotmail.com"><span class="fa fa-mail"></span> csharp2002@hotmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="http://ray.dotnetage.com">Ray's blog</a></li>
+                    <li><a href="http://www.dotnetage.com">DotNetAge</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <p class="text-center">Powered by <a href="http://freezes.dotnetage.com">Freezes</a></p>
+</footer>
+
+
+
+
+</body>
+</html>

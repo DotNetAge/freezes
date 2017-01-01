@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <title>Freezes - 自定义局布</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/feeds/recent.atom"
+      rel="alternate"
+      title="Recent posts"
+      type="application/atom+xml">
+
+    
+        
+            <meta name="description" content="HTML+变量标记">
+        
+    
+    
+
+    
+
+    
+    
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"
+              media="screen">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+        
+            <link rel="stylesheet" href="/static/site.min.css?4de4a314">
+        
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+        <script type="text/javascript" src="/static/site.min.js?7693760b"></script>
+    
+</head>
+<body >
+
+    <div class="belt"></div>
+    
+<div class="container">
+    <div class="page-wrapper">
+        
+            
+<div class="lang-dropdown">
+
+    <ol class="breadcrumb">
+        <li><a href="/"><span class="fa fa-home"></span> Freezes
+        </a></li>
+        
+            
+                <li><a href="/zh-cn/">首页</a></li>
+            
+                <li><a href="/zh-cn/documents/">相关文档</a></li>
+            
+                <li><a href="/zh-cn/documents/customization/">定制化</a></li>
+            
+        
+    </ol>
+ 
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-expanded="true">
+            
+                中文 (简体)
+            
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/zh-cn/">中文 (简体)</a></li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/">English (US)</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page-header">
+    
+        <h1>
+            
+                <div>自定义局布</div>
+            
+
+        </h1>
+        <p class="lead">HTML+变量标记</p>
+    
+</div>
+        
+        
+            <div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">折叠导航栏</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                
+                    
+                        <li >
+                            <a href="/zh-cn/">首页</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/quick-started/">快速开始</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/documents/">相关文档</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/about/">关于</a></li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="divider visible-xs"></li>
+                
+                
+                
+                    <li data-toggle="tooltip" data-placement="top" title="Fork me on github">
+                        <a href="http://www.github.com/dotnetage" target="_blank" rel="nofollow"><i
+                                class="fa fa-github"></i> <span class="visible-xs-inline">me@github</span></a>
+                    </li>
+                
+                <li data-toggle="tooltip" data-placement="top" title="订阅更新">
+                    <a href="/feeds/recent.atom"><i class="fa fa-rss"></i> <span
+                            class="visible-xs-inline">订阅</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+        <div class="page-content">
+            
+    
+            
+            <p>Freezes 提供了很自由的布局方式，从局布的修改到整个页面的修改甚至全面重新定义都是可以的，而且我们并没有“重新发明轮子”，只是采用了最成熟的技术目的是将学习成本降至最低。</p>
+<p>首先要介绍一些Freezes在页面布局上的设计理念和一些采用的基础技术。</p>
+<ul>
+<li>HTML - 这是一切的基础</li>
+<li><a href="http://jinja.pocoo.org/">Jinja</a> 页面引擎语法 </li>
+</ul>
+<p>Freezes 基于 python 时下非常流行的微框架 <a href="http://flask.pocoo.org/">Flask</a> 开发的。基于此框架 Freezes 也采用了 Jinja 作为页面模板的输出引擎。如果你是一位 Flask 开发者那么恭喜你！以下的内容你只需要花很少时间就能了解透彻。如果不是那也并不用担心，因为要学的内容并不是很多，学习难度也被 Freezes 极力地减少了。</p>
+<p>Freezes 的布局页是存放在 <code>templates/layouts</code> 目录下的，新增的布局文件都可以在文稿中使用 <code>layout</code> 元数据指定（不带文件扩展名）。文稿与布局之间只存在极为微弱的关联关系，这样一来文稿内容与展现方式就被有效地分离。</p>
+<h2 id="_1">布局页面的组成</h2>
+<p>Freezes 的布局页面都继承于 <code>base.html</code> 母板，该母板存在于 Freezes 的安装目录中，你并不需要去修改它，它只是将一个网页划分成为很多个区域，同时也加入了SEO的优化在其中，所以我们强烈建议你使用该母板来制作你的自定义布局。</p>
+<h3 id="_2">引用文件</h3>
+<p>在 <code>tempaltes</code>内有一个名为 <code>includes</code> 的空目录，此处是存放引用文件的。当你需要对站点的某些公共区域进行修改，而且又不希望去修改站点母板或者做自己的母板（这是一个巨大的修改工作）时，可以考虑修改引用文件。</p>
+<p>修改的方法就是加入新的引用文件，Freezes 会自动忽略原用的引用文件转而采用你所添加的文件。以下是可以重写 Freezes 引用文件的名称（必须以以下名称命名，其它的文件将被Freezes忽略）</p>
+<table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>metas.html</code></td>
+<td>定义每个页面的在 <code>&lt;head&gt;</code> 标记内的输出内容</td>
+</tr>
+<tr>
+<td><code>header.html</code></td>
+<td>定义每个页面顶部区域的输出内容</td>
+</tr>
+<tr>
+<td><code>navbar.html</code></td>
+<td>定义每个页面的导航菜单</td>
+</tr>
+<tr>
+<td><code>footer.html</code></td>
+<td>定义每个页面的页脚部分的输出内容</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="base.html布局示意图" src="base_layout.png" /></p>
+<h3 id="basehtml">使用 <code>base.html</code></h3>
+<p>继承 <code>base.html</code> 母板的方法如下：加入一个新的布局页面文件到 <code>layouts</code> 目录，然后在页面中加入以下代码:</p>
+<pre><code class="html">{% extends &quot;base.html&quot; %}
+{% block content %}
+&lt;!-- 此处是你定义的块的内容 --&gt;
+{% endblock %}
+</code></pre>
+
+<p><code>base.html</code> 内定义了很多的块，你都可以在继承的布局页面内采用 <code>{% block 块名称 %} 自定义内容 {% endblock%}</code> 的方法对指定块的内容重写替换。</p>
+<p>以下是 <code>base.html</code> 的块定义:</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>html_attrs</td>
+<td>定义 <code>&lt;html&gt;</code> 标记内的属性</td>
+</tr>
+<tr>
+<td>title</td>
+<td>定义浏览器窗口标题栏文字，也即是 <code>&lt;title&gt;</code> 内的内容</td>
+</tr>
+<tr>
+<td>styles</td>
+<td>定义页面的样式引用块</td>
+</tr>
+<tr>
+<td>scripts</td>
+<td>定义页面脚本引用块</td>
+</tr>
+<tr>
+<td>body_attr</td>
+<td>定义 <code>&lt;body&gt;</code> 标记内的属性</td>
+</tr>
+<tr>
+<td>body</td>
+<td>定义整个页面<code>&lt;body&gt;</code>标记内的所有页面内容</td>
+</tr>
+<tr>
+<td>header</td>
+<td>页头区域</td>
+</tr>
+<tr>
+<td>navbar</td>
+<td>导航栏区域</td>
+</tr>
+<tr>
+<td>content</td>
+<td>正文区域</td>
+</tr>
+<tr>
+<td>footer</td>
+<td>页脚区域</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="base.html块示意图" src="base_blocks.png" /></p>
+<h2 id="_3">标准布局说明</h2>
+<p>Freezes 提供以下几种布局方式</p>
+<h3 id="recent">recent</h3>
+<p>显示站点标题并且将<code>posts</code>目录内的文章从新到旧排列文章, 多用于首页</p>
+<h3 id="page">page</h3>
+<p><code>posts</code> 目录以外的文章都将自动使用此布局，此布局按以下顺序显示</p>
+<ul>
+<li>页标题</li>
+<li>概述 (summary)</li>
+<li>页位置导航</li>
+<li>
+<p>页面正文 <code>page.html</code></p>
+</li>
+<li>
+<p>本页分类目录下的文章列表</p>
+</li>
+</ul>
+<h3 id="post">post</h3>
+<p>显示文章详细内容，站点标题将会被缩小，<code>&lt;h1&gt;</code>显示文章标题，此布局按以下顺序显示</p>
+<ul>
+<li>文章标题</li>
+<li>封面 (如果有设定)</li>
+<li>概述 (summary)</li>
+<li>正文 (html)</li>
+<li>相关文章 (具有与当前文章相关的<code>tag</code>)</li>
+<li>讨论 (集成disgus widget )</li>
+</ul>
+<h2 id="_4">源码参考</h2>
+<ul>
+<li><a href="sourcecode/metas/">_metas.html</a></li>
+<li><a href="sourcecode/header/">_header.html</a></li>
+<li><a href="sourcecode/navbar/">_navbar.html</a></li>
+<li><a href="sourcecode/footer/">_footer.html</a></li>
+<li><a href="sourcecode/base/">base.html 代码块定义</a></li>
+</ul>
+            
+    
+
+
+    <div class="line-holder">
+    
+        
+            <a href="/zh-cn/documents/customization/styles/"><span class="fa fa-arrow-left"></span> 上一篇:自定义样式</a>
+        
+        
+            <a href="/zh-cn/documents/customization/variables/" class="pull-right">下一篇:变量 <span
+                    class="fa fa-arrow-right"></span></a>
+        
+    
+</div>
+
+        </div>
+    </div>
+</div>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>联系信息</h3>
+                <ul class="list-unstyled">
+                    <li>Freezes</li>
+                    
+                    <li><a href="mailto:csharp2002@hotmail.com"><span class="fa fa-mail"></span> csharp2002@hotmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="http://ray.dotnetage.com">Ray's blog</a></li>
+                    <li><a href="http://www.dotnetage.com">DotNetAge</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <p class="text-center">Powered by <a href="http://freezes.dotnetage.com">Freezes</a></p>
+</footer>
+
+
+
+
+</body>
+</html>

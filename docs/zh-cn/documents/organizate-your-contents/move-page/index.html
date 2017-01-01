@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <title>Freezes - 页面的搬移</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/feeds/recent.atom"
+      rel="alternate"
+      title="Recent posts"
+      type="application/atom+xml">
+
+    
+        
+            <meta name="description" content="维护页面的URL">
+        
+    
+    
+
+    
+
+    
+    
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"
+              media="screen">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+        
+            <link rel="stylesheet" href="/static/site.min.css?4de4a314">
+        
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+        <script type="text/javascript" src="/static/site.min.js?7693760b"></script>
+    
+</head>
+<body >
+
+    <div class="belt"></div>
+    
+<div class="container">
+    <div class="page-wrapper">
+        
+            
+<div class="lang-dropdown">
+
+    <ol class="breadcrumb">
+        <li><a href="/"><span class="fa fa-home"></span> Freezes
+        </a></li>
+        
+            
+                <li><a href="/zh-cn/">首页</a></li>
+            
+                <li><a href="/zh-cn/documents/">相关文档</a></li>
+            
+                <li><a href="/zh-cn/documents/organizate-your-contents/">内容组织</a></li>
+            
+        
+    </ol>
+ 
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-expanded="true">
+            
+                中文 (简体)
+            
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/zh-cn/">中文 (简体)</a></li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/">English (US)</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page-header">
+    
+        <h1>
+            
+                <div>页面的搬移</div>
+            
+
+        </h1>
+        <p class="lead">维护页面的URL</p>
+    
+</div>
+        
+        
+            <div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">折叠导航栏</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                
+                    
+                        <li >
+                            <a href="/zh-cn/">首页</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/quick-started/">快速开始</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/documents/">相关文档</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/about/">关于</a></li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="divider visible-xs"></li>
+                
+                
+                
+                    <li data-toggle="tooltip" data-placement="top" title="Fork me on github">
+                        <a href="http://www.github.com/dotnetage" target="_blank" rel="nofollow"><i
+                                class="fa fa-github"></i> <span class="visible-xs-inline">me@github</span></a>
+                    </li>
+                
+                <li data-toggle="tooltip" data-placement="top" title="订阅更新">
+                    <a href="/feeds/recent.atom"><i class="fa fa-rss"></i> <span
+                            class="visible-xs-inline">订阅</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+        <div class="page-content">
+            
+    
+            
+            <p>当网站发布后，为了能在搜索引擎上获取得良好的排名，通常都会将 <code>sitemap.xml</code> 提交给搜索引擎以进行全站索引以提高爬网的效率。</p>
+<p>但我们不得不面临这样的一个问题，我们会经常整理我们的文章内容，例如将博客中的一系列文章整理成为一个系列，这样会更容易阅读与归类。但是由于页面的移动将可能直接导致URL的变更, 将会造成页面PR值直接消失，这样是无法让站长们接受的。在传统的博客中会采用 Permalink（永久链接） 或者直接作冗余复制以保留旧有的页面，而对于此Freeze将会提供何种解决方法呢？</p>
+<p>Freezes 提供了一种很方便的作法，Freezes的页面都可以通过 Finder或者文件管理器直接移动和整理。对于旧有页面可以只保留 元数据并在增加两个元数据就能完成旧有页面的重定向。</p>
+<p>只要在老文件中加入以下的元数据完成重定向:</p>
+<p><code>ref_to</code> - 指向新的文档页面地址<br />
+<code>wait</code> - 当用户访问当前文档时，允许用户在本页停留的时间(秒)，默认为 0</p>
+<p>示例: 将 posts/old.md 转向 new_collection/new.md</p>
+<pre><code class="markdown">title: &quot;原文&quot;
+ref_to: &quot;/new_collection/new/&quot;
+wait: 10
+
+这里可以保留前三段作为文章摘要
+</code></pre>
+            
+    
+
+
+    <div class="line-holder">
+    
+        
+        
+            <a href="/zh-cn/documents/organizate-your-contents/markdown-syntax/" class="pull-right">下一篇:文字格式 <span
+                    class="fa fa-arrow-right"></span></a>
+        
+    
+</div>
+
+        </div>
+    </div>
+</div>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>联系信息</h3>
+                <ul class="list-unstyled">
+                    <li>Freezes</li>
+                    
+                    <li><a href="mailto:csharp2002@hotmail.com"><span class="fa fa-mail"></span> csharp2002@hotmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="http://ray.dotnetage.com">Ray's blog</a></li>
+                    <li><a href="http://www.dotnetage.com">DotNetAge</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <p class="text-center">Powered by <a href="http://freezes.dotnetage.com">Freezes</a></p>
+</footer>
+
+
+
+
+</body>
+</html>

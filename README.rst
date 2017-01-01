@@ -30,6 +30,8 @@ Requirements
 ------------
 
 * Python 2.7
+* Less
+* CoffeeScript
 * Works on Linux, Windows, Mac OSX, BSD
 
 Installation

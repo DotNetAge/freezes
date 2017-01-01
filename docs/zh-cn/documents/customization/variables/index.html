@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <title>Freezes - 变量</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/feeds/recent.atom"
+      rel="alternate"
+      title="Recent posts"
+      type="application/atom+xml">
+
+    
+        
+            <meta name="description" content="在页面内提取数据">
+        
+    
+    
+
+    
+
+    
+    
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"
+              media="screen">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+        
+            <link rel="stylesheet" href="/static/site.min.css?4de4a314">
+        
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+        <script type="text/javascript" src="/static/site.min.js?7693760b"></script>
+    
+</head>
+<body >
+
+    <div class="belt"></div>
+    
+<div class="container">
+    <div class="page-wrapper">
+        
+            
+<div class="lang-dropdown">
+
+    <ol class="breadcrumb">
+        <li><a href="/"><span class="fa fa-home"></span> Freezes
+        </a></li>
+        
+            
+                <li><a href="/zh-cn/">首页</a></li>
+            
+                <li><a href="/zh-cn/documents/">相关文档</a></li>
+            
+                <li><a href="/zh-cn/documents/customization/">定制化</a></li>
+            
+        
+    </ol>
+ 
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-expanded="true">
+            
+                中文 (简体)
+            
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/zh-cn/">中文 (简体)</a></li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/">English (US)</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page-header">
+    
+        <h1>
+            
+                <div>变量</div>
+            
+
+        </h1>
+        <p class="lead">在页面内提取数据</p>
+    
+</div>
+        
+        
+            <div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">折叠导航栏</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                
+                    
+                        <li >
+                            <a href="/zh-cn/">首页</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/quick-started/">快速开始</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/documents/">相关文档</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/about/">关于</a></li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="divider visible-xs"></li>
+                
+                
+                
+                    <li data-toggle="tooltip" data-placement="top" title="Fork me on github">
+                        <a href="http://www.github.com/dotnetage" target="_blank" rel="nofollow"><i
+                                class="fa fa-github"></i> <span class="visible-xs-inline">me@github</span></a>
+                    </li>
+                
+                <li data-toggle="tooltip" data-placement="top" title="订阅更新">
+                    <a href="/feeds/recent.atom"><i class="fa fa-rss"></i> <span
+                            class="visible-xs-inline">订阅</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+        <div class="page-content">
+            
+    
+            
+            <p>当你在定制布局页时必不可少地需要从Freezes中获取一些数据显示在页面中，本文将详细地列出在布局页内所使用使用的所有的变量对象以及成员的使用说明。</p>
+<h2 id="-site">站点 - <code>Site</code></h2>
+<p>特性说明</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pages</code></td>
+<td><code>Page</code> 列表</td>
+<td>返回当前站点内所有页面</td>
+</tr>
+<tr>
+<td><code>posts</code></td>
+<td><code>Page</code> 列表</td>
+<td>返回当前站点内所有的博客文章</td>
+</tr>
+<tr>
+<td><code>data</code></td>
+<td><code>Object</code></td>
+<td>返回数据区加载的对象引用</td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>字符串 字典</td>
+<td>返回当前站点内所有的主题标签</td>
+</tr>
+<tr>
+<td><code>archives</code></td>
+<td><code>Archive</code> 列表</td>
+<td>返回当前站点内所有的归档对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_1">方法参考</h3>
+<h4 id="menussearch_path"><code>menus(search_path='')</code> 方法</h4>
+<p>查询指定参考路径下用于显示于菜单的所有页面的对象集合。</p>
+<p><strong>参数</strong></p>
+<ul>
+<li><code>search_path</code> - 字符串 指定参考路径</li>
+</ul>
+<p><strong>返回值</strong></p>
+<p>返回当前参考路径下的所有的子页面对象集合</p>
+<hr />
+<h4 id="get_pages_pathcontext_path"><code>get_pages_path(context_path)</code> 方法</h4>
+<p>根据指定上下文路径返回该路径下的页面列表</p>
+<p><strong>参数</strong></p>
+<ul>
+<li><code>context_path</code> - 字符串 用于查询的上下文路径</li>
+</ul>
+<p><strong>返回值</strong></p>
+<p>页对象列表</p>
+<hr />
+<h4 id="locale_postslocale"><code>locale_posts(locale='')</code> 方法</h4>
+<p>获取指定语言的所有博客文章</p>
+<p><strong>参数</strong></p>
+<ul>
+<li><code>locale</code> - 字符串 指定语言</li>
+</ul>
+<p><strong>返回值</strong></p>
+<p>页对象列表</p>
+<hr />
+<h4 id="querysearch_pathallfalsesortid"><code>query(search_path,all=False,sort='id')</code> 方法</h4>
+<p>查的指定路径下所有的页面</p>
+<p><strong>参数</strong></p>
+<ul>
+<li><code>search_path</code> - 字符串 指定查询路径</li>
+<li><code>all</code> - 布尔值 当为真是反回路径下所有的子代页</li>
+<li><code>sort</code> - 字符串 指定排序用的元数据</li>
+</ul>
+<p><strong>返回值</strong></p>
+<p>页对象列表</p>
+<hr />
+<h4 id="taggedtaglocale"><code>tagged(tag,locale='')</code> 方法</h4>
+<p>返回指定 <em>主题词</em> 的所有页面列表</p>
+<p><strong>参数</strong></p>
+<ul>
+<li><code>tag</code> - 字符串 指定参考路径</li>
+<li><code>locale</code> - 字符串 指定语言</li>
+</ul>
+<p><strong>返回值</strong><br />
+页面列表对象</p>
+<h2 id="-post">页 - <code>Post</code></h2>
+<p>特性说明</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>字符串</td>
+<td>页标题文字</td>
+</tr>
+<tr>
+<td><code>summary</code></td>
+<td>字符串</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td><code>meta</code></td>
+<td>字典</td>
+<td>元数据字典</td>
+</tr>
+<tr>
+<td><code>excerpt</code></td>
+<td>字符串</td>
+<td>概述</td>
+</tr>
+<tr>
+<td><code>relatives</code></td>
+<td><code>Page</code> 列表</td>
+<td>相关文章列表</td>
+</tr>
+<tr>
+<td><code>next</code></td>
+<td><code>Page</code></td>
+<td>下一页对象</td>
+</tr>
+<tr>
+<td><code>prev</code></td>
+<td><code>Page</code></td>
+<td>上一页对象</td>
+</tr>
+<tr>
+<td><code>url</code></td>
+<td>字符串</td>
+<td>URL</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>字符串</td>
+<td>页文件名（不包含扩展名）</td>
+</tr>
+<tr>
+<td><code>wordcount</code></td>
+<td>整数</td>
+<td>字数</td>
+</tr>
+<tr>
+<td><code>created</code></td>
+<td>日期</td>
+<td>创建日期</td>
+</tr>
+<tr>
+<td><code>last_updated</code></td>
+<td>日期</td>
+<td>最后修改日期</td>
+</tr>
+<tr>
+<td><code>published</code></td>
+<td>日期</td>
+<td>发表日期</td>
+</tr>
+</tbody>
+</table>
+            
+    
+
+
+    <div class="line-holder">
+    
+        
+            <a href="/zh-cn/documents/customization/layouts/"><span class="fa fa-arrow-left"></span> 上一篇:自定义局布</a>
+        
+        
+            <a href="/zh-cn/documents/customization/macros/" class="pull-right">下一篇:使用宏 <span
+                    class="fa fa-arrow-right"></span></a>
+        
+    
+</div>
+
+        </div>
+    </div>
+</div>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>联系信息</h3>
+                <ul class="list-unstyled">
+                    <li>Freezes</li>
+                    
+                    <li><a href="mailto:csharp2002@hotmail.com"><span class="fa fa-mail"></span> csharp2002@hotmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="http://ray.dotnetage.com">Ray's blog</a></li>
+                    <li><a href="http://www.dotnetage.com">DotNetAge</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <p class="text-center">Powered by <a href="http://freezes.dotnetage.com">Freezes</a></p>
+</footer>
+
+
+
+
+</body>
+</html>

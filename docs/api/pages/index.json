@@ -1,0 +1,19 @@
+{
+  "body": "Freeze is the tools to transform plaintext or blog to static website. And we focus on use the **pure markdown syntax** to write your high quantity articles.\n\n\n## Get up and running in seconds.\n\n<div class=\"quickstart\">\n<div class=\"code\">\n  <p class=\"title\">Terminal</p>\n  <div class=\"shell\">\n    <p class=\"line\">\n      <span class=\"path\">~</span>\n      <span class=\"prompt\">$</span>\n      <span class=\"command\">pip install freezes</span>\n    </p>\n    <p class=\"line\">\n      <span class=\"path\">~</span>\n      <span class=\"prompt\">$</span>\n      <span class=\"command\">mkdir my-site && cd $_</span>\n    </p>\n    <p class=\"line\">\n      <span class=\"path\">~/my-site</span>\n      <span class=\"prompt\">$</span>\n      <span class=\"command\">freezes new</span>\n    </p>\n    <p class=\"line\">\n      <span class=\"path\">~/my-site</span>\n      <span class=\"prompt\">$</span>\n      <span class=\"command\">freezes</span>\n    </p>\n    <p class=\"line\">\n      <span class=\"output\"># =&gt; Now freezes will open browser to http://localhost:5500</span>\n    </p>\n</div>\n</div>\n</div>\n", 
+  "created": "Sun, 22 Mar 2015 15:39:38 GMT", 
+  "excerpt": "<p>Freeze is the tools to transform plaintext or blog to static website. And we focus on use the <strong>pure markdown syntax</strong> to write your high quantity articles.</p>", 
+  "id": 0, 
+  "last_updated": "Sun, 22 Mar 2015 15:39:38 GMT", 
+  "meta": {
+    "id": 0, 
+    "layout": "recent", 
+    "summary": "We focus to generate the high quantity web content.", 
+    "title": "Home"
+  }, 
+  "name": "index", 
+  "pages": [], 
+  "path": "index", 
+  "published": "Sun, 22 Mar 2015 15:39:38 GMT", 
+  "tags": [], 
+  "url": "/index/"
+}

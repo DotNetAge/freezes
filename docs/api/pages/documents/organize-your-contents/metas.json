@@ -1,0 +1,18 @@
+{
+  "body": "## Design philosopy\n\n- A good document should be able to describe itself cleanly. \n- A human readable doucment should not contain nonstandard markups.\n- Do not use the document as a web page template.\n\nFreezes is a tools working with pure markdown documents. So we can use markdown's meta data feature to define the aditional data. \n\n## What is meta data ?\n\nMeta data is a group of human readable data on the top of the document body. And the meta data is a common markdown standard so it can be parsed by any Markdown text engines or editos.\n\nFor example\n\n\ttitle: About me\n\tsummary: The text to introduce yourself.\n\tauthor: Ray\n\t\n\tHere is the content.\n\t\nFreezes can be parsed the metas below\uff1a\n\nMeta | Description\n--|--\n`title`| Article/Page title text (Require).\n`description`| Page description text  that render in  `<meta>` Maximum 255 characters.\n`summary`| The summary of the article. It also can be use as sub-title \n`cover` | Article cover image file url\n`author` | Author name.\n`date` | Publish date\uff0cThe format is : yyyy-MM-dd hh:mm:dd\u3002Freezes will use the file lastupdte date if this meta not found.\n`layout` | Specified the layout page file name without extension that in `templates/layouts`\n`tags` | Tags. If you need to specified multiple tags you should use comma separated.\n`id` | The position index. \n\n\n### Recommendations\n\n- You should add `tags`,`summary` to your documents becasuse they will rendered in `<meta>` of the <output page that can be enhanced the SEO\u3002\n- In order to sort the articles by datetime you should add `date` meta.\n- `tags` should be accurate and do not use over 10 tags.\n\n\n\n\n\n", 
+  "created": "Thu, 02 Apr 2015 00:43:45 GMT", 
+  "excerpt": "<ul>\n<li>A good document should be able to describe itself cleanly. </li>\n<li>A human readable doucment should not contain nonstandard markups.</li>\n</ul>", 
+  "id": 1, 
+  "last_updated": "Thu, 02 Apr 2015 00:43:45 GMT", 
+  "meta": {
+    "id": 1, 
+    "summary": "The self-describable document", 
+    "title": "Metas"
+  }, 
+  "name": "metas", 
+  "pages": [], 
+  "path": "documents/organize-your-contents/metas", 
+  "published": "Thu, 02 Apr 2015 00:43:45 GMT", 
+  "tags": [], 
+  "url": "/documents/organize-your-contents/metas/"
+}

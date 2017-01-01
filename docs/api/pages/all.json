@@ -1,0 +1,808 @@
+{
+  "pages": [
+    {
+      "body": "Freeze is the tools to transform plaintext or blog to static website. And we focus on use the **pure markdown syntax** to write your high quantity articles.\n\n\n## Get up and running in seconds.\n\n<div class=\"quickstart\">\n<div class=\"code\">\n  <p class=\"title\">Terminal</p>\n  <div class=\"shell\">\n    <p class=\"line\">\n      <span class=\"path\">~</span>\n      <span class=\"prompt\">$</span>\n      <span class=\"command\">pip install freezes</span>\n    </p>\n    <p class=\"line\">\n      <span class=\"path\">~</span>\n      <span class=\"prompt\">$</span>\n      <span class=\"command\">mkdir my-site && cd $_</span>\n    </p>\n    <p class=\"line\">\n      <span class=\"path\">~/my-site</span>\n      <span class=\"prompt\">$</span>\n      <span class=\"command\">freezes new</span>\n    </p>\n    <p class=\"line\">\n      <span class=\"path\">~/my-site</span>\n      <span class=\"prompt\">$</span>\n      <span class=\"command\">freezes</span>\n    </p>\n    <p class=\"line\">\n      <span class=\"output\"># =&gt; Now freezes will open browser to http://localhost:5500</span>\n    </p>\n</div>\n</div>\n</div>\n", 
+      "created": "Sun, 22 Mar 2015 15:39:38 GMT", 
+      "excerpt": "<p>Freeze is the tools to transform plaintext or blog to static website. And we focus on use the <strong>pure markdown syntax</strong> to write your high quantity articles.</p>", 
+      "id": 0, 
+      "last_updated": "Sun, 22 Mar 2015 15:39:38 GMT", 
+      "meta": {
+        "id": 0, 
+        "layout": "recent", 
+        "summary": "We focus to generate the high quantity web content.", 
+        "title": "Home"
+      }, 
+      "name": "index", 
+      "path": "index", 
+      "published": "Sun, 22 Mar 2015 15:39:38 GMT", 
+      "tags": [], 
+      "url": "/index/"
+    }, 
+    {
+      "body": "\nFreeze \u662f\u4e00\u4e2a\u9759\u6001\u7f51\u7ad9\u751f\u6210\u5de5\u5177\u3002\u5982\u679c\u60a8\u662f\u4e00\u4e2a\u4e13\u4e1a\u4f5c\u8005\uff0c\u90a3\u4e48\u5b83\u5c31\u662f\u4e00\u4e2a\u4e13\u6ce8\u4e8e\u9ad8\u8d28\u91cf\u5199\u4f5c\u4f53\u9a8c\uff0c\u7edd\u4e0d\u4ee5\u81ea\u5b9a\u683c\u5f0f\u4ee3\u7801\u6c61\u67d3\u60a8\u7684\u6587\u6863\uff1b\u5982\u679c\u60a8\u4e00\u4f4d\u524d\u7aef\u5f00\u53d1\u8005\uff0cFreezes\u5219\u662f\u4e3a\u4f60\u7b80\u5316\u4e86\u4e00\u5207\u5e38\u89c4\u5316\u7684\u914d\u7f6e\u5de5\u4f5c\uff0c\u63d0\u4f9b\u4e30\u5bcc\u7684\u7a0b\u5e8f\u8bbe\u8ba1\u529f\u80fd\uff1b\n\n\n## \u5feb\u901f\u5b89\u88c5\n\u53ea\u9700\u8981\u51e0\u6b65\u5c31\u80fd\u9a6c\u4e0a\u4f53\u9a8cFreezes\u4e3a\u60a8\u6240\u5e26\u6765\u7684\u9ad8\u8d28\u91cf\u5199\u4f5c\u4f53\u9a8c\uff1a\n\n<div class=\"quickstart\">\n<div class=\"code\">\n  <p class=\"title\">\u7ec8\u7aef</p>\n  <div class=\"shell\">\n    <p class=\"line\">\n      <span class=\"path\">~</span>\n      <span class=\"prompt\">$</span>\n      <span class=\"command\">pip install freezes</span>\n    </p>\n    <p class=\"line\">\n      <span class=\"path\">~</span>\n      <span class=\"prompt\">$</span>\n      <span class=\"command\">mkdir my-web && cd $ _</span>\n    </p>\n    <p class=\"line\">\n      <span class=\"path\">~/my-web</span>\n      <span class=\"prompt\">$</span>\n      <span class=\"command\">freezes new</span>\n    </p>\n    <p class=\"line\">\n      <span class=\"path\">~/my-web</span>\n      <span class=\"prompt\">$</span>\n      <span class=\"command\">freezes</span>\n    </p>\n    <p class=\"line\">\n      <span class=\"output\"># =&gt; Now freezes will open browser to http://localhost:5500</span>\n    </p>\n</div>\n</div>\n</div>\n\n## \u4e3a\u4f55\u4f7f\u7528 Freezes ?\n\n\u6211\u5e76\u4e0d\u60f3\u91cd\u65b0\u53d1\u660e\u8f6e\u5b50\uff0c\u5948\u4f55\u4e3a\u4e86\u80fd\u4f7f\u7528 markdown \u5199\u4f5c\u5e76\u5171\u4eab\u5230\u81ea\u5df1\u7684\u7ad9\u70b9\u65f6\u5219\u9047\u5230\u5404\u79cd\u7684\u95ee\u9898\uff1a\n\n1. \u5927\u591a\u535a\u5ba2\u5de5\u5177\u90fd\u8981\u5b89\u88c5\u548c\u914d\u7f6e\u5404\u79cd\u670d\u52a1\u5668\u73af\u5883\uff0c\u5982\u6570\u636e\u5e93\u3001\u914d\u7f6e Web \u670d\u52a1\u5668\uff0c\u4ec5\u4ec5\u5171\u4eab\u6587\u5b57\u4fe1\u606f\u5219\u5c06\u5927\u91cf\u65f6\u95f4\u82b1\u5728\u914d\u7f6e\u4e0a\uff0c\u540c\u65f6\u53c8\u8981\u4e3a\u7279\u5b9a\u7684\u7a0b\u5e8f\u8fd0\u884c\u73af\u5883\u548c\u6570\u636e\u5e93\u7a7a\u95f4\u4ed8\u8d39\u3002\n2. \u57fa\u4e8eWeb\u7684 markdown \u5de5\u5177\u4e0e\u672c\u5730\u5316\u7684 markdown \u5de5\u5177\u7684\u4f7f\u7528\u4f53\u9a8c\u5b9e\u5728\u76f8\u5dee\u592a\u8fdc\u3002\n3. \u4e3a\u4e86\u8ba9\u7ad9\u70b9\u53d8\u5f97\u66f4\u52a0\u7f8e\u89c2\u5438\u5f15\u8981\u4e48\u81ea\u5df1\u52a8\u624b\u5b66\u4e60\u535a\u5ba2\u5e73\u53f0\u7684\u5404\u79cd\u5b9a\u5236\u5316\u8981\u6c42\uff0c\u8981\u4e48\u5c31\u5f97\u5230\u5904\u5bfb\u627e\u7279\u5b9a\u7684\u4e3b\u9898\u6837\u5f0f\u3002\n4. \u5e76\u4e0d\u662f\u6240\u6709\u7684\u4e3b\u9898\u5916\u89c2\u90fd\u80fd\u652f\u6301\u63d0\u4f9b\u826f\u597d\u7684\u9605\u8bfb\u4f53\u9a8c\uff0c\u7531\u5176\u662f\u6587\u5b57\u7684\u683c\u5f0f\u4e0e\u4ee3\u7801\u7684\u683c\u5f0f\u3002\n5. \u4e0d\u77e5\u662f\u53d7\u5230\u8fc7\u65f6\u7684WIKI\u5f71\u54cd\u8fd8\u662f\u4e3a\u4e86\u5f00\u53d1\u65b9\u4fbf\uff0c\u5f88\u591a\u652f\u6301markdown\u6216\u57fa\u4e8emarkdown\u5199\u4f5c\u7684\u9759\u6001\u5316\u7ad9\u70b9\u5de5\u5177\u8981\u6211\u5728 markdown \u6587\u672c\u5185\u52a0\u5165\u4ed6\u4eec\u5b9a\u5236\u7684\u7279\u5b9a\u6807\u8bb0\uff0c\u8fd9\u65e0\u7591\u662f\u4e00\u79cd\u6c61\u67d3\uff0c\u4e00\u79cd\u6781\u5927\u589e\u52a0\u989d\u5916\u5de5\u4f5c\u91cf\u7684\u7528\u6cd5\u3002\n\n\u4e3a\u6b64\u6211\u5f00\u53d1\u4e86 **Freezes** , \u4e00\u4e2a\u53ef\u4ee5\u7528\u7eaf\u51c0\u7684markdown\u5199\u4f5c\uff0c\u6ca1\u6709\u81ea\u5b9a\u6807\u8bb0\u6df7\u6742\uff0c\u5141\u8bb8\u4f7f\u7528\u5404\u79cd\u7684 markdown \u7f16\u8f91\u5668\uff0c\u53ef\u4ee5\u968f\u610f\u4f7f\u7528 ___less___ , ___sass___ , ___coffee___ , ___javascript___ \u81ea\u5df2\u52a8\u624b\u8bbe\u8ba1\u4e0e\u7f8e\u5316\u7ad9\u70b9\u7684\u9759\u6001\u5316\u7ad9\u70b9\u5de5\u5177\uff01\n\n## Freezes \u7684 ___\u8bbe\u8ba1\u76ee\u6807___ \uff1a\n\n- \u5bf9\u4e8e\u4f5c\u8005\u53ef\u4ee5\u7528\u81ea\u5df1\u559c\u7231\u7684 markdown \u5de5\u5177,\u5c06\u65f6\u95f4\u6295\u6ce8\u4e8e\u5199\u4f5c\u4e4b\u4e2d\u3002\n- \u5bf9\u4e8e\u7f51\u9875\u8bbe\u8ba1\u8005\u8fdc\u79bb\u7e41\u6742\u7684\u914d\u7f6e\u3001\u8fdc\u79bb\u9661\u5ced\u7684\u5b66\u4e60\u66f2\u7ebf\u3001\u5c06\u5df2\u6709\u7684\u8bbe\u8ba1\u6280\u672f\u6dcb\u6f13\u5c3d\u81f4\u5730\u53d1\u6325\u5982\u4e00\u3002\n- \u65e0\u914d\u7f6e\u90e8\u7f72\uff0c\u5728\u6700\u5ec9\u4ef7\u7684\u670d\u52a1\u5668\u4e0a\u5171\u4eab\u7f8e\u89c2\u7684\u7ad9\u70b9\u4e0e\u9ad8\u8d28\u91cf\u5185\u5bb9\u3002\n", 
+      "created": "Wed, 01 Apr 2015 23:51:16 GMT", 
+      "excerpt": "<p>Freeze \u662f\u4e00\u4e2a\u9759\u6001\u7f51\u7ad9\u751f\u6210\u5de5\u5177\u3002\u5982\u679c\u60a8\u662f\u4e00\u4e2a\u4e13\u4e1a\u4f5c\u8005\uff0c\u90a3\u4e48\u5b83\u5c31\u662f\u4e00\u4e2a\u4e13\u6ce8\u4e8e\u9ad8\u8d28\u91cf\u5199\u4f5c\u4f53\u9a8c\uff0c\u7edd\u4e0d\u4ee5\u81ea\u5b9a\u683c\u5f0f\u4ee3\u7801\u6c61\u67d3\u60a8\u7684\u6587\u6863\uff1b\u5982\u679c\u60a8\u4e00\u4f4d\u524d\u7aef\u5f00\u53d1\u8005\uff0cFreezes\u5219\u662f\u4e3a\u4f60\u7b80\u5316\u4e86\u4e00\u5207\u5e38\u89c4\u5316\u7684\u914d\u7f6e\u5de5\u4f5c\uff0c\u63d0\u4f9b\u4e30\u5bcc\u7684\u7a0b\u5e8f\u8bbe\u8ba1\u529f\u80fd\uff1b</p>", 
+      "id": 0, 
+      "last_updated": "Wed, 01 Apr 2015 23:51:16 GMT", 
+      "meta": {
+        "layout": "recent", 
+        "summary": "\u4e00\u6b3e\u7b80\u5355\u3001\u9ad8\u6548\u7684\u7f51\u7ad9\u9759\u6001\u5316\u5de5\u5177", 
+        "title": "\u9996\u9875"
+      }, 
+      "name": "zh-cn", 
+      "path": "zh-cn", 
+      "published": "Wed, 01 Apr 2015 23:51:16 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/"
+    }, 
+    {
+      "body": "\u5f53\u7f51\u7ad9\u53d1\u5e03\u540e\uff0c\u4e3a\u4e86\u80fd\u5728\u641c\u7d22\u5f15\u64ce\u4e0a\u83b7\u53d6\u5f97\u826f\u597d\u7684\u6392\u540d\uff0c\u901a\u5e38\u90fd\u4f1a\u5c06 `sitemap.xml` \u63d0\u4ea4\u7ed9\u641c\u7d22\u5f15\u64ce\u4ee5\u8fdb\u884c\u5168\u7ad9\u7d22\u5f15\u4ee5\u63d0\u9ad8\u722c\u7f51\u7684\u6548\u7387\u3002\n\n\u4f46\u6211\u4eec\u4e0d\u5f97\u4e0d\u9762\u4e34\u8fd9\u6837\u7684\u4e00\u4e2a\u95ee\u9898\uff0c\u6211\u4eec\u4f1a\u7ecf\u5e38\u6574\u7406\u6211\u4eec\u7684\u6587\u7ae0\u5185\u5bb9\uff0c\u4f8b\u5982\u5c06\u535a\u5ba2\u4e2d\u7684\u4e00\u7cfb\u5217\u6587\u7ae0\u6574\u7406\u6210\u4e3a\u4e00\u4e2a\u7cfb\u5217\uff0c\u8fd9\u6837\u4f1a\u66f4\u5bb9\u6613\u9605\u8bfb\u4e0e\u5f52\u7c7b\u3002\u4f46\u662f\u7531\u4e8e\u9875\u9762\u7684\u79fb\u52a8\u5c06\u53ef\u80fd\u76f4\u63a5\u5bfc\u81f4URL\u7684\u53d8\u66f4, \u5c06\u4f1a\u9020\u6210\u9875\u9762PR\u503c\u76f4\u63a5\u6d88\u5931\uff0c\u8fd9\u6837\u662f\u65e0\u6cd5\u8ba9\u7ad9\u957f\u4eec\u63a5\u53d7\u7684\u3002\u5728\u4f20\u7edf\u7684\u535a\u5ba2\u4e2d\u4f1a\u91c7\u7528 Permalink\uff08\u6c38\u4e45\u94fe\u63a5\uff09 \u6216\u8005\u76f4\u63a5\u4f5c\u5197\u4f59\u590d\u5236\u4ee5\u4fdd\u7559\u65e7\u6709\u7684\u9875\u9762\uff0c\u800c\u5bf9\u4e8e\u6b64Freeze\u5c06\u4f1a\u63d0\u4f9b\u4f55\u79cd\u89e3\u51b3\u65b9\u6cd5\u5462\uff1f\n\nFreezes \u63d0\u4f9b\u4e86\u4e00\u79cd\u5f88\u65b9\u4fbf\u7684\u4f5c\u6cd5\uff0cFreezes\u7684\u9875\u9762\u90fd\u53ef\u4ee5\u901a\u8fc7 Finder\u6216\u8005\u6587\u4ef6\u7ba1\u7406\u5668\u76f4\u63a5\u79fb\u52a8\u548c\u6574\u7406\u3002\u5bf9\u4e8e\u65e7\u6709\u9875\u9762\u53ef\u4ee5\u53ea\u4fdd\u7559 \u5143\u6570\u636e\u5e76\u5728\u589e\u52a0\u4e24\u4e2a\u5143\u6570\u636e\u5c31\u80fd\u5b8c\u6210\u65e7\u6709\u9875\u9762\u7684\u91cd\u5b9a\u5411\u3002\n\n\u53ea\u8981\u5728\u8001\u6587\u4ef6\u4e2d\u52a0\u5165\u4ee5\u4e0b\u7684\u5143\u6570\u636e\u5b8c\u6210\u91cd\u5b9a\u5411:\n\n`ref_to` - \u6307\u5411\u65b0\u7684\u6587\u6863\u9875\u9762\u5730\u5740\n`wait` - \u5f53\u7528\u6237\u8bbf\u95ee\u5f53\u524d\u6587\u6863\u65f6\uff0c\u5141\u8bb8\u7528\u6237\u5728\u672c\u9875\u505c\u7559\u7684\u65f6\u95f4(\u79d2)\uff0c\u9ed8\u8ba4\u4e3a 0\n\n\u793a\u4f8b: \u5c06 posts/old.md \u8f6c\u5411 new_collection/new.md\n\n```markdown\ntitle: \"\u539f\u6587\"\nref_to: \"/new_collection/new/\"\nwait: 10\n\n\u8fd9\u91cc\u53ef\u4ee5\u4fdd\u7559\u524d\u4e09\u6bb5\u4f5c\u4e3a\u6587\u7ae0\u6458\u8981\n```\n", 
+      "created": "Thu, 02 Apr 2015 11:53:48 GMT", 
+      "excerpt": "<p>\u5f53\u7f51\u7ad9\u53d1\u5e03\u540e\uff0c\u4e3a\u4e86\u80fd\u5728\u641c\u7d22\u5f15\u64ce\u4e0a\u83b7\u53d6\u5f97\u826f\u597d\u7684\u6392\u540d\uff0c\u901a\u5e38\u90fd\u4f1a\u5c06 <code>sitemap.xml</code> \u63d0\u4ea4\u7ed9\u641c\u7d22\u5f15\u64ce\u4ee5\u8fdb\u884c\u5168\u7ad9\u7d22\u5f15\u4ee5\u63d0\u9ad8\u722c\u7f51\u7684\u6548\u7387\u3002</p>\n<p>\u4f46\u6211\u4eec\u4e0d\u5f97\u4e0d\u9762\u4e34\u8fd9\u6837\u7684\u4e00\u4e2a\u95ee\u9898\uff0c\u6211\u4eec\u4f1a\u7ecf\u5e38\u6574\u7406\u6211\u4eec\u7684\u6587\u7ae0\u5185\u5bb9\uff0c\u4f8b\u5982\u5c06\u535a\u5ba2\u4e2d\u7684\u4e00\u7cfb\u5217\u6587\u7ae0\u6574\u7406\u6210\u4e3a\u4e00\u4e2a\u7cfb\u5217\uff0c\u8fd9\u6837\u4f1a\u66f4\u5bb9\u6613\u9605\u8bfb\u4e0e\u5f52\u7c7b\u3002\u4f46\u662f\u7531\u4e8e\u9875\u9762\u7684\u79fb\u52a8\u5c06\u53ef\u80fd\u76f4\u63a5\u5bfc\u81f4URL\u7684\u53d8\u66f4, \u5c06\u4f1a\u9020\u6210\u9875\u9762PR\u503c\u76f4\u63a5\u6d88\u5931\uff0c\u8fd9\u6837\u662f\u65e0\u6cd5\u8ba9\u7ad9\u957f\u4eec\u63a5\u53d7\u7684\u3002\u5728\u4f20\u7edf\u7684\u535a\u5ba2\u4e2d\u4f1a\u91c7\u7528 Permalink\uff08\u6c38\u4e45\u94fe\u63a5\uff09 \u6216\u8005\u76f4\u63a5\u4f5c\u5197\u4f59\u590d\u5236\u4ee5\u4fdd\u7559\u65e7\u6709\u7684\u9875\u9762\uff0c\u800c\u5bf9\u4e8e\u6b64Freeze\u5c06\u4f1a\u63d0\u4f9b\u4f55\u79cd\u89e3\u51b3\u65b9\u6cd5\u5462\uff1f</p>", 
+      "id": 0, 
+      "last_updated": "Thu, 02 Apr 2015 11:53:48 GMT", 
+      "meta": {
+        "summary": "\u7ef4\u62a4\u9875\u9762\u7684URL", 
+        "title": "\u9875\u9762\u7684\u642c\u79fb"
+      }, 
+      "name": "move-page", 
+      "path": "zh-cn/documents/organizate-your-contents/move-page", 
+      "published": "Thu, 02 Apr 2015 11:53:48 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/organizate-your-contents/move-page/"
+    }, 
+    {
+      "body": "\n## \u73af\u5883\u8981\u6c42\n\n\u5728\u5f00\u59cb\u5b89\u88c5Freezes\u4e4b\u524d\uff0c\u6709\u4e00\u4e9b\u57fa\u672c\u7684\u73af\u5883\u8981\u6c42\n\n- [Python 2.7](www.python.org)\n- [pip](https://pip.pypa.io/en/latest/installing.html)\n- virtualenv\n- Linux, Unix, or Mac OS X\n- [CoffeeScript](http://coffeescript.org)\n- [Less](http://lesscss.org)\n- [Sass](http://sass-lang.com)  (\u53ef\u9009\uff0c\u7528\u4e8e\u652f\u6301 Sass\u8d44\u6e90).\n\n## Python\nFreezes \u662f\u57fa\u4e8e Python 2.7 \u73af\u5883\u4e0b\u5f00\u53d1\uff0cOSX\u5df2\u642d\u8f7d python 2.7 \u800c\u65e0\u9700\u5b89\u88c5\uff0c\u5bf9\u4e8e Linux (Ubuntu) \u5219\u9700\u8981\u8fd0\u884c\u4ee5\u4e0b\u6307\u4ee4\n\n```bash\nsudo apt-get install python-dev\n```\n\n## pip \u548c easy_install\n\nFreezes \u7684\u5b89\u88c5\u9700\u8981\u8fd0\u884c `pip` \u548c `easy_install` \u6307\u4ee4\uff0c\u5b83\u4eec\u5de5\u5177\u5e76\u4e0d\u662fpython\u4e2d\u7684\u6807\u51c6\u642d\u8f7d\u5de5\u5177\uff0cOSX\u548cLinux\u7528\u6237\u53ef\u4ee5\u5206\u522b\u6309\u4ee5\u4e0b\u65b9\u5f0f\u5b89\u88c5\n\n**Mac OSX** \u548c **Windows** \u7528\u6237\u9700\u8981\u5728\u5148\u4e0b\u8f7d [get-pip.py](https://bootstrap.pypa.io/get-pip.py) \u6587\u4ef6\uff0c\u7136\u540e\u8fd0\u884c\n\n```bash\npython get-pip.py\n```\n\n** Debian \u548c Ubuntu **\n\n```bash\nsudo apt-get install python-pip\n```\n\n** Fedora **\n\n```bash\nsudo yum install python-pip\n```\n\n## virtualenv\n\nPython\u7684\u80cc\u540e\u6709\u7740\u5e9e\u5927\u7684\u5f00\u6e90\u793e\u533a\u652f\u6301\uff0c\u4f46\u662f\u6709\u4e00\u4e2a\u7f3a\u70b9\u5c31\u662f\u6bcf\u4e2a\u5305\u7684\u8d28\u91cf\u90fd\u53c2\u5dee\u4e0d\u9f50\uff0c\u5982\u679c\u6211\u4eec\u5728\u5de5\u4f5c\u670d\u52a1\u5668\u4e0a\u53bb\u6d4b\u8bd5\u5b89\u88c5\u6bcf\u4e2a\u5305\uff0c\u5c31\u4f1a\u9020\u6210\u6574\u4e2a\u7684\u670d\u52a1\u5668\u5f62\u6210\u5e9e\u5927\u590d\u6742\u7684\u7b2c\u4e09\u65b9\u5305\u4f9d\u8d56\u3002\n\nvirtualenv \u5c31\u662f\u4e3a\u4e86\u89e3\u51b3\u8fd9\u4e2a\u95ee\u9898\u800c\u751f\uff0c\u4ed6\u53ef\u4ee5\u5728\u6211\u4eec\u7684\u76ee\u5f55\u4e0a\u751f\u6210\u82e5\u5e72\u4e2a\u72ec\u7acb\u7684\u865a\u62df\u73af\u5883\uff0c\u8fd9\u4e9b\u865a\u62df\u73af\u5883\u548c\u6b63\u5f0f\u73af\u5883\u4e00\u6837\u3002\u56e0\u4e3a\u4e86\u907f\u514d\u4e0e\u60a8\u673a\u5668\u4e0a\u5176\u5b83\u6b63\u5728\u4f7f\u7528python\u73af\u5883\u8fd0\u884c\u7684\u9879\u76ee\u6216\u7a0b\u5e8f\u4ea7\u751f\u51b2\u7a81\uff0c\u6211\u4eec\u5f3a\u70c8\u5730\u5efa\u8bae\u4f60\u4f7f\u7528 virtualenv \u5efa\u7acb\u4e00\u4e2a\u9694\u79bb\u3001\u6e05\u7ed3\u7684python\u73af\u5883\u3002\n\n\u5982\u679c\u4f60\u6b63\u5728\u4f7f\u7528 **Mac OSX** \u90a3\u4e48\u53ea\u9700\u8981\u5728\u7ec8\u7aef\u5185\u8fd0\u884c\u4ee5\u4e0b\u7684\u6307\u4ee4\n\n```bash\n$ sudo easy_install virtualenv\n```\n\n\u6216\u8005\n\n```bash\n$ sudo pip install virtualenv\n```\n\n\u5982\u679c\u4f60\u6b63\u5728\u4f7f\u7528 **Linux (Ubuntu)** \u90a3\u4e48\u8bf7\u5c1d\u8bd5\uff1a\n\n```bash\n$ sudo apt-get install python-virtualenv\n```\n\n\u5f53 virtualenv \u5b89\u88c5\u6210\u529f\u540e\uff0c\u5728\u4f7f\u7528Freezes\u5efa\u7acb\u60a8\u7684\u7ad9\u70b9\u4e4b\u524d\u8bf7\u7528\u4ee5\u4e0b\u6307\u4ee4\u6fc0\u6d3b virtualenv \u73af\u5883:\n\n```bash\n$ mkdir <\u4f60\u7684\u7ad9\u70b9\u76ee\u5f55\u540d> && cd $_\n<\u4f60\u7684\u7ad9\u70b9\u76ee\u5f55\u540d> $ virtualenv venv\n<\u4f60\u7684\u7ad9\u70b9\u76ee\u5f55\u540d> $ source venv/bin/activate\n```\n\n\u6210\u529f\u6fc0\u6d3b\u540e\u4f1a\u5728\u547d\u4ee4\u7b26\u4e4b\u524d\u51fa\u73b0 (venv)\uff1a\n\n```base\n(venv)<\u4f60\u7684\u7ad9\u70b9\u76ee\u5f55\u540d> $ \n```\n\u6b64\u65f6\u5c31\u53ef\u4ee5\u4f7f\u7528 `pip` \u5de5\u5177\u5b89\u88c5 Freezes \u4e86\n\n## Less \n\n\u9ed8\u8ba4\u60c5\u51b5\u4e0b Freezes \u662f\u4f7f\u7528 [Less](http://lesscss.org) \u5f00\u53d1\u7f51\u7ad9\u6837\u5f0f\u7684\uff0cFreezes\u7684\u81ea\u5e26\u9ed8\u8ba4\u6837\u5f0f\u4e5f\u662f\u91c7\u7528 Less \u5f00\u53d1\u7684\u3002\u5982\u679c\u60a8\u7684\u673a\u5668\u4e0a\u6ca1\u6709\u5b89\u88c5 Less \u7684\u7f16\u8bd1\u5668\u53ef\u80fd\u4f1a\u5bfc\u81f4 Freezes \u65e0\u6cd5\u6b63\u786e\u4e3a\u60a8\u5c06 *.less \u6837\u5f0f\u8d44\u6e90\u751f\u6210\u6700\u7ec8\u7684 css\u6837\u5f0f\u8868\u3002\n\n\u4e3a\u4e86\u907f\u514d\u8fd9\u4e2a\u60c5\u51b5\u53d1\u751f\uff0c\u90a3\u4e48\u8bf7\u4f7f\u7528 `npm` \u5b89\u88c5\u4e00\u4e2aless\u7684\u7f16\u8bd1\u5668\u5230\u60a8\u5168\u5c40\u73af\u5883\u4e2d:\n\n**Mac OSX**\n\n```bash\n$ npm install -g less\n```\n\n**Linux Ubuntu**\n\n```bash\n$ sudo apt-get install node-less\n```\n\n\n\u5982\u679c\u4f60\u60f3\u7528\u60f3\u7528less\u90a3\u4e48\u8bf7\u5728\u8d44\u6e90\u914d\u7f6e\u6587\u4ef6( `\u7f51\u7ad9\u76ee\u5f55/_assets.yml`) \u5185\u5c06 `css` \u7684\u914d\u7f6e\u6309\u4ee5\u4e0b\u7684\u65b9\u5f0f\u4fee\u6539:\n\n```yml\ncss:\n    output: \"your-website-root/site.min.css\"\n    contents: \"your-website-root/styles/*.css\"\n    filters: cssprefixer,cssmin\n```\n\n> **your-website-root** \u662f\u5f53\u524d\u76ee\u5f55\u7684\u540d\u79f0\uff0cFreezes \u5efa\u7acb\u7ad9\u70b9\u65f6\u5df2\u4e3a\u60a8\u8bbe\u7f6e\u597d\uff0c\u5207\u52ff\u76f4\u63a5\u5c06\u4ee3\u7801\u76f4\u63a5\u62f7\u8d1d\u3002\n\n## CoffeeScript\n\n\u91c7\u7528CoffeeScript \u5199\u811a\u672c\u53ef\u4ee5\u6bd4\u76f4\u63a5\u5199javascript\u8282\u77012/3\u4ee5\u4e0a\u7684\u4ee3\u7801\u91cf\uff0c\u6240\u4ee5Freezes\u662f\u9ed8\u8ba4\u652f\u6301 CoffeeScript \u7684\u3002\u540c\u4e0a\uff0c\u5982\u679c\u60a8\u8fd8\u6ca1\u6709\u5b89\u88c5CoffeeScript\u7f16\u8bd1\u5668\uff0c\u90a3\u4e48\u8bf7\u8fd0\u884c\u4ee5\u4e0b\u7684\u6307\u4ee4\uff1a\n\n**Mac OSX**\n\n```bash\n$ npm install -g coffee-script\n```\n\n**Linux Ubuntu**\n\n```bash\n$ sudo apt-get install coffeescript\n```\n\n\u5982\u679c\u4f60\u60f3\u91c7\u7528javascript\u4f5c\u811a\u672c\u5f00\u53d1\u53ef\u4ee5\u5728\u8d44\u6e90\u914d\u7f6e\u6587\u4ef6( `\u7f51\u7ad9\u76ee\u5f55/_assets.yml`) \u5185\u5c06 `js` \u7684\u914d\u7f6e\u6309\u4ee5\u4e0b\u7684\u65b9\u5f0f\u4fee\u6539\n```yml\njs:\n    output: \"your-website-root/site.min.js\"\n    contents: \"your-website-root/scripts/*.js\"\n    filters: jsmin\n```\n \n", 
+      "created": "Sun, 22 Mar 2015 16:37:28 GMT", 
+      "excerpt": "<p>\u5728\u5f00\u59cb\u5b89\u88c5Freezes\u4e4b\u524d\uff0c\u6709\u4e00\u4e9b\u57fa\u672c\u7684\u73af\u5883\u8981\u6c42</p>", 
+      "id": 1, 
+      "last_updated": "Tue, 24 Mar 2015 23:58:41 GMT", 
+      "meta": {
+        "id": 1, 
+        "summary": "Freezes\u8fd0\u884c\u7684\u6700\u57fa\u672c\u652f\u6491\u73af\u5883", 
+        "title": "\u5b89\u88c5\u8981\u6c42"
+      }, 
+      "name": "requirements-installed", 
+      "path": "zh-cn/quick-started/requirements-installed", 
+      "published": "Tue, 24 Mar 2015 23:58:41 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/quick-started/requirements-installed/"
+    }, 
+    {
+      "body": "## Design philosopy\n\n- A good document should be able to describe itself cleanly. \n- A human readable doucment should not contain nonstandard markups.\n- Do not use the document as a web page template.\n\nFreezes is a tools working with pure markdown documents. So we can use markdown's meta data feature to define the aditional data. \n\n## What is meta data ?\n\nMeta data is a group of human readable data on the top of the document body. And the meta data is a common markdown standard so it can be parsed by any Markdown text engines or editos.\n\nFor example\n\n\ttitle: About me\n\tsummary: The text to introduce yourself.\n\tauthor: Ray\n\t\n\tHere is the content.\n\t\nFreezes can be parsed the metas below\uff1a\n\nMeta | Description\n--|--\n`title`| Article/Page title text (Require).\n`description`| Page description text  that render in  `<meta>` Maximum 255 characters.\n`summary`| The summary of the article. It also can be use as sub-title \n`cover` | Article cover image file url\n`author` | Author name.\n`date` | Publish date\uff0cThe format is : yyyy-MM-dd hh:mm:dd\u3002Freezes will use the file lastupdte date if this meta not found.\n`layout` | Specified the layout page file name without extension that in `templates/layouts`\n`tags` | Tags. If you need to specified multiple tags you should use comma separated.\n`id` | The position index. \n\n\n### Recommendations\n\n- You should add `tags`,`summary` to your documents becasuse they will rendered in `<meta>` of the <output page that can be enhanced the SEO\u3002\n- In order to sort the articles by datetime you should add `date` meta.\n- `tags` should be accurate and do not use over 10 tags.\n\n\n\n\n\n", 
+      "created": "Thu, 02 Apr 2015 00:43:45 GMT", 
+      "excerpt": "<ul>\n<li>A good document should be able to describe itself cleanly. </li>\n<li>A human readable doucment should not contain nonstandard markups.</li>\n</ul>", 
+      "id": 1, 
+      "last_updated": "Thu, 02 Apr 2015 00:43:45 GMT", 
+      "meta": {
+        "id": 1, 
+        "summary": "The self-describable document", 
+        "title": "Metas"
+      }, 
+      "name": "metas", 
+      "path": "documents/organize-your-contents/metas", 
+      "published": "Thu, 02 Apr 2015 00:43:45 GMT", 
+      "tags": [], 
+      "url": "/documents/organize-your-contents/metas/"
+    }, 
+    {
+      "body": "\n\u4e00\u5207\u6807\u51c6\u7684 Markdown \u6587\u672c\u53ef\u88ab Freezes \u7528\u4e8e\u751f\u6210\u7ad9\u70b9\uff0c\u540c\u6837\u5730 Freezes \u5185\u7684 Markdown \u53ef\u4ee5\u4f7f\u7528\u4efb\u4f55\u4f5c\u8005\u559c\u7231\u7684\u7f16\u8f91\u5668\u5199\u4f5c\u3002\n\n\u7531\u4e8e [Daring FireBarll]( http://daringfireball.net/projects/markdown/syntax \"markdown-syntax\") \u6240\u5236\u5b9a\u7684 Markdown \u8bed\u6cd5\u8fc7\u4e8e\u7b80\u7ed3\uff0c\u5e76\u4e0d\u80fd\u5b8c\u5168\u9002\u5e94\u4e8e\u751f\u6210\u4e30\u5bcc\u7684\u7f51\u9875\u5185\u5bb9\u3002\u60bb\u7136\uff0cgithub \u7684\u6d41\u884c\u5e76\u5bf9 markdown \u6269\u5c55\u8bed\u6cd5 (Extra) \u4e0d\u9057\u4f59\u529b\u7684\u63a8\u5e7f\uff0cmarkdown extra \u5df2\u9010\u6e10\u6210\u4e3a\u5927\u4f17\u6240\u8ba4\u540c\u7684\u65b0\u7684\u516c\u5171\u6807\u51c6\u3002\u56e0\u6b64 Freezes \u9664\u4e86\u652f\u6301 \u6807\u51c6Markdown\u8bed\u6cd5\u5916\u8fd8\u80fd\u652f\u6301\u4ee5\u4e0b\u7684\u8fd9\u4e9bMarkdown\u6269\u5c55\u683c\u5f0f\uff1a\n\n### \u4ee3\u7801\u6269\u5c55 ( fenced code blocks)\n\n\u6b64\u6269\u5c55\u53ef\u751f\u6210\u5e26\u6709\u6837\u5f0f\u7c7b\u7684\u4ee3\u7801\u5757\uff0c\u4e0e\u6807\u51c6\u8bed\u6cd5\u6240\u4e0d\u540c\u7684\u662f\u6ca1\u67094\u4e2a\u7a7a\u683c\u6216\u662f1\u4e2atab\u7684\u7f29\u8fdb\u5360\u4eec\u7b26\uff0c\u53d6\u800c\u4ee3\u4e4b\u7684\u662f\u4ee5 \\```\u6837\u5f0f\u7c7b\u540d+\u6362\u884c\u7b26(\u56de\u8f66) \u4f5c\u4e3a\u8d77\u59cb\uff0c\u4ee5 \\```+\u6362\u884c\u7b26(\u56de\u8f66) \u4f5c\u4e3a\u7ed3\u675f\u7b26\n\n\t```class-name\n\t block code here\n\t```\n\u683c\u5f0f\u5316\u4ee3\u7801\u8f93\u51fa\u540e\uff0cFreezes \u91c7\u7528 [highlight](highlightjs.org) \u5bf9\u4ee3\u7801\u8fdb\u884c\u9ad8\u4eae\u683c\u5f0f\u5316\uff0c\u53ef\u4ee5\u652f\u630124\u79cd\u5e38\u89c4\u8bed\u8a00\u683c\u5f0f\uff0c\u4e14\u53ef\u6269\u5c55\u81f3\u652f\u6301\u8d85\u8fc7100\u79cd\u4ee5\u4e0a\u7684\u5f00\u53d1\u8bed\u8a00\u3002\n\n### \u76ee\u5f55\u7d22\u5f15\nFreezes \u4e0d\u4f46\u7b80\u5355\u5730\u652f\u6301\u8f93\u51fa\u4e0a\u4e0b\u6587\u7d22\u5f15\u76ee\u5f55\uff0c\u4e3a\u4e86\u589e\u52a0\u9605\u8bfb\u7684\u4f53\u9a8c\u7279\u522b\u5bf9\u76ee\u5f55\u7d22\u5f15\u7684\u8f93\u51fa\u589e\u5f3a\u4e86\u6eda\u52a8\u8bc6\u522b\u4e0e\u81ea\u52a8\u9ad8\u4eae\u529f\u80fd\u3002\n\n    [TOC]\n    \n### \u8868\u683c\n\u6807\u51c6markdown\u662f\u6ca1\u6709\u8868\u683c\u683c\u5f0f\u7684,\u8868\u683c\u6269\u5c55\u53ef\u652f\u6301\u4ee5\u4e0b\u7684\u683c\u5f0f\n\n\tFirst Header  | Second Header\n\t------------- | -------------\n\tContent Cell  | Content Cell\n\tContent Cell  | Content Cell\n\t\n\u901a\u8fc7\u5bf9\u5217\u58f0\u660e\u5bf9\u9f50\u7b26\n\n\tFirst Header | Second Header | Third Header\n\t:----------- | :-----------: | -----------:\n\tLeft         | Center        | Right\n\tLeft         | Center        | Right\n\n### \u811a\u6ce8\n\n\u811a\u6ce8\u7ecf\u5e38\u7528\u4f5c\u5f15\u7528\u6ce8\u89e3\uff0c\u662f\u4f18\u8d28\u6587\u6863\u4e0d\u53ef\u7f3a\u5931\u7684\u5185\u5bb9\u3002\u811a\u6ce8\u53ef\u4ee5\u968f\u610f\u6807\u8bb0\uff0cFreezes\u4f1a\u7edf\u4e00\u5c06\u6240\u6709\u7684\u811a\u6ce8\u7f16\u6392\u8f93\u51fa\u81f3\u9875\u9762\u7684\u5e95\u90e8\u4ee5\u9002\u5e94\u4eba\u4eec\u666e\u904d\u7684\u9605\u8bfb\u4e60\u60ef\u3002\n\n    \u8fd9\u91cc\u9700\u8981\u6ce8\u89e3\u7684\u5185\u5bb9[^1]\n    [^1]:\u6b64\u5904\u662f\u5bf9\u4e0a\u8ff0\u811a\u6ce8\u6807\u8bb0\u7684\u8be6\u7ec6\u6ce8\u91ca\n        \n\u5728 `[^1]` \u5185 `^` \u540e\u9762\u7684\u5185\u5bb9\u662f\u968f\u610f\u586b\u5199\u7684\uff0cFreezes \u4f1a\u81ea\u52a8\u5bf9\u811a\u6ce8\u6dfb\u52a0\u987a\u5e8f\u53f7\n\n### \u5220\u9664\u7ebf\n\u683c\u5f0f\uff1a\n\n\t~~~\u8fd9\u662f\u5177\u6709\u5220\u9664\u7ebf\u7684\u6587\u5b57~~~\n \n > \u6ce8 \u5bf9\u4e8e\u5177\u6709\u591a\u4e2a\u6837\u5f0f\u7c7b\u7684\u884c\u5185\u6587\u5b57\u5757\u8bf7\u7528\u7b2c\u4e00\u79cd\u683c\u5f0f\u4e66\u5199\uff0c\u4ee5`()`\u62ec\u4f4f\u591a\u4e2a\u6837\u5f0f\u540d\u79f0\uff0c\u6837\u5f0f\u540d\u79f0\u4e4b\u95f4\u4ee5\u7a7a\u683c\u9694\u5f00\n \n### \u951a\u70b9\n\n\u951a\u70b9\u7528\u4e8e\u751f\u6210\u9875\u5185\u8f6c\u8df3\u7684\u94fe\u63a5\u6587\u672c\n\n\t## [\u8fd9\u662f\u4e00\u4e2a\u4f8b\u5b50](id:author1)\n\n\u951a\u70b9\u5fc5\u987b\u6307\u5b9a\u4e00\u4e2a\u5177\u4f53\u7684\u6307\u5411\u7684\u6807\u8bc6\uff08\u67d0\u4e2a\u5177\u6709\u660e\u786e\u6807\u8bc6\u7684\u94fe\u63a5\u5185\u5bb9\uff09\u5982:\n\n\t[link](#author1)\n\t\t\n### \u667a\u80fd\u94fe\u63a5\u8bc6\u522b\nFreezes \u53ef\u81ea\u52a8\u8bc6\u522b\u6240\u6709\u7684\u5408\u6cd5\u7684 URL \u5e76\u81ea\u52a8\u751f\u6210\u94fe\u63a5\u6807\u8bb0", 
+      "created": "Fri, 27 Mar 2015 17:56:04 GMT", 
+      "excerpt": "<p>\u4e00\u5207\u6807\u51c6\u7684 Markdown \u6587\u672c\u53ef\u88ab Freezes \u7528\u4e8e\u751f\u6210\u7ad9\u70b9\uff0c\u540c\u6837\u5730 Freezes \u5185\u7684 Markdown \u53ef\u4ee5\u4f7f\u7528\u4efb\u4f55\u4f5c\u8005\u559c\u7231\u7684\u7f16\u8f91\u5668\u5199\u4f5c\u3002</p>", 
+      "id": 1, 
+      "last_updated": "Sun, 22 Mar 2015 18:54:34 GMT", 
+      "meta": {
+        "id": 1, 
+        "summary": "Markdown \u6807\u51c6\u53c2\u8003", 
+        "title": "\u6587\u5b57\u683c\u5f0f"
+      }, 
+      "name": "markdown-syntax", 
+      "path": "zh-cn/documents/organizate-your-contents/markdown-syntax", 
+      "published": "Sun, 22 Mar 2015 18:54:34 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/organizate-your-contents/markdown-syntax/"
+    }, 
+    {
+      "body": "```django\n<meta charset=\"utf-8\">\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<link href=\"{{ url_for('feed',name='recent') }}\"\n      rel=\"alternate\"\n      title=\"Recent posts\"\n      type=\"application/atom+xml\">\n{% if page != None %}\n     {% if page.descripton!= None %}\n        <meta name=\"description\" content=\"{{ page.description }}\" >\n     {% else %}\n         {% if page.summary!=None %}\n            <meta name=\"description\" content=\"{{ page.summary }}\" >\n         {% endif %}\n     {% endif %}\n     {% if page.tags !=None %}\n         <meta name=\"keywords\" content=\"{{ page.tags }}\">\n     {% endif %}\n{% endif %}\n```", 
+      "created": "Tue, 31 Mar 2015 10:32:36 GMT", 
+      "excerpt": "<p>```django\n<meta charset=\"utf-8\">\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"></p>", 
+      "id": 1, 
+      "last_updated": "Tue, 31 Mar 2015 10:32:36 GMT", 
+      "meta": {
+        "id": 1, 
+        "title": "_metas.html \u6e90\u7801"
+      }, 
+      "name": "metas", 
+      "path": "zh-cn/documents/customization/layouts/sourcecode/metas", 
+      "published": "Tue, 31 Mar 2015 10:32:36 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/customization/layouts/sourcecode/metas/"
+    }, 
+    {
+      "body": "\nFreezes loads [bootstrap](getbootstrap.com) \u548c (fontawesome)[fontawesome.io] , \u9ed8\u8ba4\u652f\u6301 [Less](lesscss.org) \u4f5c\u4e3a\u6837\u5f0f\u8bed\u8a00 `static/style` \u4e0b\u7684\u6837\u5f0f\u6587\u4ef6\u5c06\u4f1a\u88ab\u81ea\u52a8\u7f16\u8bd1\u5e76\u5408\u6210\u3001\u538b\u7f29\u4e3a\u4e00\u4e2a css \u81ea\u52a8\u5f15\u5165\u5230\u9875\u9762\u5185\uff0c\u5982\u679c\u60a8\u9700\u8981\u4f7f\u7528 sass \u6216\u8005 css \u4f5c\u4e3a\u6837\u5f0f\u7f16\u8f91\u8bed\u8a00 \u8bf7\u53c2\u8003\uff1a[\u5982\u4f55\u914d\u7f6e\u751f\u6210\u8d44\u6e90]\n", 
+      "created": "Wed, 11 Mar 2015 10:09:22 GMT", 
+      "excerpt": "<p>Freezes loads <a href=\"getbootstrap.com\">bootstrap</a> \u548c (fontawesome)[fontawesome.io] , \u9ed8\u8ba4\u652f\u6301 <a href=\"lesscss.org\">Less</a> \u4f5c\u4e3a\u6837\u5f0f\u8bed\u8a00 <code>static/style</code> \u4e0b\u7684\u6837\u5f0f\u6587\u4ef6\u5c06\u4f1a\u88ab\u81ea\u52a8\u7f16\u8bd1\u5e76\u5408\u6210\u3001\u538b\u7f29\u4e3a\u4e00\u4e2a css \u81ea\u52a8\u5f15\u5165\u5230\u9875\u9762\u5185\uff0c\u5982\u679c\u60a8\u9700\u8981\u4f7f\u7528 sass \u6216\u8005 css \u4f5c\u4e3a\u6837\u5f0f\u7f16\u8f91\u8bed\u8a00 \u8bf7\u53c2\u8003\uff1a[\u5982\u4f55\u914d\u7f6e\u751f\u6210\u8d44\u6e90]</p>", 
+      "id": 1, 
+      "last_updated": "Thu, 26 Mar 2015 23:30:12 GMT", 
+      "meta": {
+        "id": 1, 
+        "title": "Customize styles"
+      }, 
+      "name": "styles", 
+      "path": "documents/customization/styles", 
+      "published": "Thu, 26 Mar 2015 23:30:12 GMT", 
+      "tags": [], 
+      "url": "/documents/customization/styles/"
+    }, 
+    {
+      "body": "\nFreezes \u9ed8\u8ba4\u642d\u8f7d [bootstrap](getbootstrap.com) \u548c [fontawesome](fontawesome.io) , \u9ed8\u8ba4\u652f\u6301 [Less](lesscss.org) \u4f5c\u4e3a\u6837\u5f0f\u8bed\u8a00 `static/styles` \u4e0b\u7684\u6837\u5f0f\u6587\u4ef6\u5c06\u4f1a\u88ab\u81ea\u52a8\u7f16\u8bd1\u5e76\u5408\u6210\u3001\u538b\u7f29\u4e3a\u4e00\u4e2a css \u81ea\u52a8\u5f15\u5165\u5230\u9875\u9762\u5185\u3002\n\n\u4f60\u53ef\u4ee5\u4fee\u6539 `static/styles/site.less` \u5185\u7684\u6837\u5f0f\u6548\u679c\uff0c\u6216\u8005\u9009\u62e9\u76f4\u63a5\u4f7f\u7528 bootstrap \u63d0\u4f9b\u6807\u51c6\u6837\u5f0f\u7c7b\u3002\u5bf9\u6b64 Freezes \u5e76\u6ca1\u6709\u4f5c\u51fa\u4efb\u4f55\u7684\u9650\u5236\uff0c\u53ea\u8981\u4f60\u559c\u6b22\u4f60\u751a\u81f3\u53ef\u4ee5\u5c06\u6240\u7684\u9ed8\u8ba4\u5e03\u5c40\u65b9\u5f0f\u6539\u6389\u6362\u6210\u4f60\u6240\u9700\u8981\u7684\u6837\u5b50\u3002\n\n\u5728 `static/styles/` \u76ee\u5f55\u4e0b\u7684\u6240\u6709`*.less`\u6587\u4ef6\u90fd\u4f1a\u8fdb\u884c\u5408\u5e76\u7f16\u8bd1\uff0c\u5982\u679c\u8981\u589e\u52a0\u65b0\u7684\u6837\u5f0f\u5f15\u7528\uff0c\u53ef\u4ee5\u5728\u8be5\u76ee\u5f55\u4e0b\u589e\u52a0\u4f60\u7684\u5b50\u76ee\u5f55\uff0c\u7136\u540e\u6253\u5f00 `_assets.yml` \u914d\u7f6e\u6587\u4ef6\u589e\u52a0\u65b0\u7684\u7f16\u8bd1\u914d\u7f6e\u3002\n\n\n\u5982\u679c\u4f60\u8ba4\u4e3a\u8fd9\u6837\u505a\u5f88\u590d\u6742\uff0c\u90a3\u4e48\u4f60\u53ef\u4ee5\u76f4\u63a5\u5728 `static` \u76ee\u5f55\u5185\u76f4\u63a5\u653e\u7f6e css \u6587\u4ef6\uff08\u5f53\u7136\u6211\u4eec\u5e76\u4e0d\u5efa\u8bae\u8fd9\u6837\u505a\uff09\uff0c\u7136\u540e\u5728\u9875\u9762\u5e03\u5c40\u4e2d\u7528 `<link>` \u6807\u5f15\u5165\u8be5\u6587\u4ef6\uff1a\n\n\u8303\u4f8b\uff1a\u5047\u5982\u5728 `static` \u76ee\u5f55\u4e2d\u589e\u52a0\u4e86\u4e00\u4e2a `my_style.css` \u7684\u6587\u4ef6\uff0c\u90a3\u4e48\u5c31\u53ef\u4ee5\u5728\u9700\u8981\u5f15\u7528\u8be5\u6837\u5f0f\u7684\u5e03\u5c40\u5185\u52a0\u5165\u4ee5\u4e0b\u4ee3\u7801\uff1a\n\n\u8303\u4f8b\u5e03\u5c40 `templates/layouts/my_page_layout.html`\n\n```html\n{% extends \"_layouts/_page.html\" %}\n<!--\u6b64\u5904\u662f\u589e\u52a0\u5bf9my_style.css\u6587\u4ef6\u7684\u5f15\u7528-->\n{% block styles %}\n\t{{ super() }}\n\t<link ref=\"stylesheet\" \n\t\t  type=\"text/css\" \n\t\t  href=\"{{ url_for('static',filename=\"my_style.css\") }}\" />\n{% endblock%}\n<!---->\n```\n\n\u672c\u4f8b\u4e2d\u7684 `{{ super() }}` \u662f\u6307\u4f7f\u7528Freezes\u6bcd\u677f\u5185\u7684\u539f\u6709\u6837\u5f0f\uff0c\u5982\u679c\u4e0d\u52a0\u4e0a\u6b64\u6807\u8bb0\u6240\u6709\u7684\u6837\u5f0f\u5c06\u4e0d\u4f1a\u88ab\u6dfb\u52a0\u5230\u5f53\u524d\u5e03\u5c40\u9875\u3002", 
+      "created": "Fri, 27 Mar 2015 17:56:04 GMT", 
+      "excerpt": "<p>Freezes \u9ed8\u8ba4\u642d\u8f7d <a href=\"getbootstrap.com\">bootstrap</a> \u548c <a href=\"fontawesome.io\">fontawesome</a> , \u9ed8\u8ba4\u652f\u6301 <a href=\"lesscss.org\">Less</a> \u4f5c\u4e3a\u6837\u5f0f\u8bed\u8a00 <code>static/styles</code> \u4e0b\u7684\u6837\u5f0f\u6587\u4ef6\u5c06\u4f1a\u88ab\u81ea\u52a8\u7f16\u8bd1\u5e76\u5408\u6210\u3001\u538b\u7f29\u4e3a\u4e00\u4e2a css \u81ea\u52a8\u5f15\u5165\u5230\u9875\u9762\u5185\u3002</p>", 
+      "id": 1, 
+      "last_updated": "Sun, 22 Mar 2015 23:19:30 GMT", 
+      "meta": {
+        "id": 1, 
+        "summary": "\u57fa\u7840\u4e0a\u7684\u8c03\u8282", 
+        "title": "\u81ea\u5b9a\u4e49\u6837\u5f0f"
+      }, 
+      "name": "styles", 
+      "path": "zh-cn/documents/customization/styles", 
+      "published": "Sun, 22 Mar 2015 23:19:30 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/customization/styles/"
+    }, 
+    {
+      "body": "\nGetting Freezes installed and ready-to-go should only take a few minutes. If it ever becomes a pain in the ass, please file an issue (or submit a pull request) describing the issue you encountered and how we might make the process easier.\n\n\n## Requirements\n\nInstalling Freezes is easy and straight-forward, but there are a few requirements you\u2019ll need to make sure your system has before you start.\n\n- [Python](www.python.org)\n- [pip](https://pip.pypa.io/en/latest/installing.html)\n- virtualenv\n- Linux, Unix, or Mac OS X\n- [CoffeeScript](http://coffeescript.org)\n- [Less](http://lesscss.org)\n- [Sass](http://sass-lang.com)  (Optional, for Sass support).\n\n## virtualenv\n\nVirtualenv is probably what you want to use during development, and if you have shell access to your production machines, you\u2019ll probably want to use it there, too.\n\nWhat problem does virtualenv solve? If you like Python as much as I do, chances are you want to use it for other projects besides Flask-based web applications. But the more projects you have, the more likely it is that you will be working with different versions of Python itself, or at least different versions of Python libraries. Let\u2019s face it: quite often libraries break backwards compatibility, and it\u2019s unlikely that any serious application will have zero dependencies. So what do you do if two or more of your projects have conflicting dependencies?\n\nVirtualenv to the rescue! Virtualenv enables multiple side-by-side installations of Python, one for each project. It doesn\u2019t actually install separate copies of Python, but it does provide a clever way to keep different project environments isolated. Let\u2019s see how virtualenv works.\n\nIf you are on Mac OS X or Linux, chances are that one of the following two commands will work for you:\n\n```bash\n$ sudo easy_install virtualenv\n```\nor even better:\n\n```bash\n$ sudo pip install virtualenv\n```\n\nOne of these will probably install virtualenv on your system. Maybe it\u2019s even in your package manager. If you use Ubuntu, try:\n\n```bash\n$ sudo apt-get install python-virtualenv\n```\n\nIf you are on Windows and don\u2019t have the easy_install command, you must install it first.  Once you have it installed, run the same commands as above, but without the sudo prefix.\n\n\n## Less \nBy default Freezes use the less to write stylesheets. So that you need to install the less compiler before you run Freezes.\n\nThe easiest way to install Less on the server, is via npm, the node.js package manager, as so:\n\n```bash\n$ npm install -g less\n```\n\nIf you want to use css you can change the assets ( `your-website-root/_assets.yml`) configurations like below:\n\n```yml\ncss:\n    output: \"your-website-root/site.min.css\"\n    contents: \"your-website-root/styles/*.css\"\n    filters: cssprefixer,cssmin\n```\n\n## CoffeeScript\n\nFreezes use CoffeeScript to instead javascript that you also need to install the coffeescript compiler before your run.\n\n```bash\n$ npm install -g coffee-script\n```\n\nTo disable the CoffeeScript you should try to change the assets configurations like below:\n\n```yml\njs:\n    output: \"your-website-root/site.min.js\"\n    contents: \"your-website-root/scripts/*.js\"\n    filters: jsmin\n```\n \n", 
+      "created": "Mon, 30 Mar 2015 01:28:53 GMT", 
+      "excerpt": "<p>Getting Freezes installed and ready-to-go should only take a few minutes. If it ever becomes a pain in the ass, please file an issue (or submit a pull request) describing the issue you encountered and how we might make the process easier.</p>", 
+      "id": 1, 
+      "last_updated": "Mon, 30 Mar 2015 01:28:53 GMT", 
+      "meta": {
+        "id": 1, 
+        "title": "Installation"
+      }, 
+      "name": "requirements-installed", 
+      "path": "documents/quick-started/requirements-installed", 
+      "published": "Mon, 30 Mar 2015 01:28:53 GMT", 
+      "tags": [], 
+      "url": "/documents/quick-started/requirements-installed/"
+    }, 
+    {
+      "body": "## Quick install\n\nFreezes offers the simple way to setup the runtime environment by setup script. \n\nDownload one of setup script below \n\n- [Freezes setup script for Linux (linux-install.sh)](/zh-cn/quick-started/linux-install.sh)\n- [Freezes setup script for OSX (mac-linstall.sh)](/zh-cn/quick-started/mac-install.sh)\n\nand runt the command below in your terminal:\n\n** Ubuntu **\n\n```bash\n$ . linux-install.sh\n```\n\n** OSX **\n\n```bash\n$ . mac-install.sh\n```\n\nthat's all!\n\n\n## Installation Manual\n\nYou can also install Freeze by manual.\n\nRun the commands below in your terminal:\n\n```bash\n$ virtualenv venv\n$ source venv/bin/activate\n(venv)$ pip install freeze\n(venv)$ mkdir my-website && cd $_\n(venv)$ freezes new\n(venv)$ freezes\n```\n\nThat\u2019s nothing, though. The real magic happens when you start creating blog posts, using the front matter to control templates and layouts, and taking advantage of all the awesome configuration options Frezzes makes available.\n\nIf you\u2019re running into problems, ensure you have all the [requirements installed](requirements-installed).\n\n", 
+      "created": "Thu, 02 Apr 2015 00:04:40 GMT", 
+      "excerpt": "<p>Freezes offers the simple way to setup the runtime environment by setup script. </p>", 
+      "id": 1, 
+      "last_updated": "Thu, 02 Apr 2015 00:04:40 GMT", 
+      "meta": {
+        "id": 1, 
+        "summary": "Only few steps to setup your freezes website", 
+        "title": "Quick start"
+      }, 
+      "name": "quick-started", 
+      "path": "documents/quick-started", 
+      "published": "Thu, 02 Apr 2015 00:04:40 GMT", 
+      "tags": [], 
+      "url": "/documents/quick-started/"
+    }, 
+    {
+      "body": "", 
+      "created": "Tue, 31 Mar 2015 11:00:22 GMT", 
+      "excerpt": "", 
+      "id": 1, 
+      "last_updated": "Tue, 31 Mar 2015 11:00:22 GMT", 
+      "meta": {
+        "id": 1, 
+        "summary": "Start to write your pure markdown", 
+        "title": "Organize Contents"
+      }, 
+      "name": "organize-your-contents", 
+      "path": "documents/organize-your-contents", 
+      "published": "Tue, 31 Mar 2015 11:00:22 GMT", 
+      "tags": [], 
+      "url": "/documents/organize-your-contents/"
+    }, 
+    {
+      "body": "\u6211\u4eec\u7684\u8bbe\u8ba1\u54f2\u5b66\u8ba4\u4e3a\uff1a\u201c\u6587\u6863\u5373\u662f\u6570\u636e\u201d\u6240\u4ee5 Freezes \u662f\u4e00\u4e2a\u65e0\u6570\u636e\u5e93\u7684\u73af\u5883\u3002markdown \u6587\u7a3f\u5c31\u662fFreezes\u7684\u6570\u636e\u3002\u60a8\u53ef\u4ee5\u901a\u8fc7Markdown Extra \u6269\u5c55\u89c4\u8303\u4e2d\u7684 \u5143\u6570\u636e\uff08metadata\uff09\u544a\u8bc9 Freezes \u5e94\u8be5\u4ee5\u4f55\u79cd\u65b9\u5f0f\u663e\u793a\u7684\u6587\u7a3f\uff0c\u8bf8\u5982 **\u6587\u7ae0\u6807\u9898** , **\u5c01\u9762** \uff0c **\u9875\u9762\u5e03\u5c40** \uff0c**\u4e3b\u9898\u8bcd** \u3002\n\n## \u4ec0\u4e48\u662f\u5143\u6570\u636e\n\n\u5143\u6570\u636e\u5c5e\u4e8e Markdown Extra \u7684\u4e00\u79cd\u53ef\u7528\u4e8eseo\u7684\u7279\u6b8a\u683c\u5f0f\u6587\u6cd5\uff0c\u5143\u6570\u636e\u7684\u5185\u5bb9\u4e00\u822c\u4e0d\u4f1a\u88ab\u663e\u793a\u4e8e\u6b63\u6587\u4e2d\uff0c\u5bf9\u4e8e\u63a7\u4e2a\u7528\u4e8e\u63a7\u5236\u9875\u9762\u8f93\u51fa\u7684\u7279\u5b9a\u5143\u6570\u636e\u5916\uff0c\u5176\u5b83\u7684\u5143\u6570\u636e\u53ef\u4ee5\u901a\u8fc7\u9875\u9762\u53d8\u91cf\u8bbf\u95ee\u3002\n\n\u5143\u6570\u636e\u7684\u5b9a\u4e49\u9700\u8981\u5728\u6587\u672c\u7684\u9996\u884c\u52a0\u5165\uff0c\u4e0e\u6b63\u6587\u4e4b\u95f4\u901a\u8fc7\u4e00\u4e2a\u7a7a\u884c\u5206\u9694\uff0c\u793a\u4f8b\u5982\u4e0b\uff1a\n\n\ttitle: \u6807\u9898\n\tdescription: \u6587\u7ae0\u7684\u7b80\u8ff0\n\tauthor: \u4f5c\u8005\n\t\n\t\u6b64\u5904\u4e3a\u6587\u7ae0\u6b63\u6587\n\t\nFreezes \u6240\u652f\u6301\u7684\u5143\u6570\u636e\u5982\u4e0b\uff1a\n\n\u5143\u6570\u636e | \u8bf4\u660e\n--|--\n`title`| \u6587\u7ae0\u4e0e\u9875\u7684\u6807\u9898\uff08\u5fc5\u9009\uff09\uff0c\u5982\u679c\u4e0d\u586b\u5c06\u4e0d\u4f1a\u663e\u793a\u4e8e\u83dc\u5355\u5185\u3002\n`description`| \u8f93\u51fa\u81f3\u9875\u9762 `<meta>` \u6807\u8bb0\u5185\u7684\u6587\u5b57\uff0c\u9650\u5b9a\u4e3a 255\u4e2a\u5b57\u7b26\n`summary`| \u6587\u7ae0\u7684\u6458\u8981\uff0c\u663e\u793a\u4e8e\u6587\u7ae0\u5217\u8868\u4e2d\uff0c\u4e5f\u53ef\u4ee5\u4f5c\u4e3a\u526f\u6807\u9898\u4f7f\u7528\n`cover` | \u6587\u7ae0\u5c01\u9762\u56fe\u7247\u5730\u5740\uff0c\u6b64\u5904\u4e0d\u9700\u8981\u58f0\u660e\u6587\u4ef6\u7684\u5168\u8def\u5f84\uff0c\u53ea\u9700\u5c06\u56fe\u7247\u653e\u7f6e\u4e8e\u4e0e\u6587\u672c\u6587\u4ef6\u540c\u540d\u76ee\u5f55\u4e0b\u5373\u53ef\uff0c\u5177\u4f53\u8bf7\u89c1\u4e0b\u6587[\u94fe\u63a5\u8d44\u6e90]\n`author` | \u6587\u7ae0\u7684\u4f5c\u8005\u540d\u79f0\n`date` | \u6587\u7ae0\u7684\u53d1\u8868\u65e5\u671f\uff0c\u5fc5\u987b\u4ee5 yyyy-MM-dd hh:mm:dd \u7684\u4e25\u683c\u683c\u5f0f\u8bbe\u5b9a\uff0c\u5982 2015-01-01 00:00:00\u3002\u5982\u679c\u4e0d\u586b\u5199\u6b64\u65e5\u671f Freezes \u5c06\u4ee5\u6587\u672c\u7684\u6700\u540e\u66f4\u65b0\u65e5\u671f\u4f5c\u4e3a\u53d1\u8868\u65e5\u671f\u3002\n`layout` | \u6307\u5b9a\u6587\u672c\u4ee5\u4f55\u79cd\u5e03\u5c40\u9875\u663e\u793a\uff0c\u8be5\u540d\u79f0\u6307\u5411\u4e0e`templates/layouts`\u76ee\u5f55\u4e0b\u540c\u540d\u7684\u9875\u9762\uff0c\u6307\u5b9a\u65f6\u65e0\u987b\u540e\u7f00\u540d\u3002\u4e0d\u6307\u5b9a\u65f6 Freezes \u5c06\u667a\u80fd\u8bc6\u522b\u5e94\u91c7\u7528\u4f55\u7528\u5e03\u5c40\u3002\n`tags` | \u6587\u7ae0\u7684\u4e3b\u9898\u6807\u7b7e\uff0c\u591a\u4e2a\u6807\u7b7e\u53ef\u901a\u8fc7 `,` \u5206\u9694\uff0c\u6307\u5b9a\u540e\u53ef\u5728 `/tags` \u9875\u9762\u5185\u663e\u793a\u5e76\u88ab\u8fc7\u6ee4\u7b5b\u9009\u3002\u6dfb\u52a0\u540e\u4f1a\u81ea\u52a8\u8f93\u51fa\u81f3\u9875\u9762\u7684 `<meta name=\"keyword\" />` \u5143\u6570\u636e\u6807\u7b7e\u5185\u589e\u5f3aSEO\u6548\u679c\u3002\n`id` | \u6307\u5b9a\u6587\u7ae0\u7684\u7d22\u5f15\u53f7\uff0c\u5728 `posts` \u76ee\u5f55\u5916\u7684\u6240\u6709\u7684\u6587\u7ae0\u4f1a\u6309\u6b64\u503c\u7531\u5c0f\u5230\u5927\u6392\u5e8f\n\n<div class=\"alert alert-danger\"> \n<b>\u6ce8\u610f</b>\n<ul>\n<li> \u5143\u6570\u636e\u6807\u7b7e<code>:</code> \u540e\u9762\u5fc5\u987b\u7d27\u8ddf\u4e00\u4e2a\u7a7a\u683c\uff0c\u5426\u5219\u5c06\u88ab\u89c6\u4e3a\u683c\u5f0f\u9519\u8bef\u3002</li>\n<li> \u5982\u679c\u5143\u6570\u636e\u5185\u9700\u8981\u91c7\u7528\u7531\u5b57\u6bcd\u4e0e\u6570\u5b57\u4e4b\u5916\u7684\u7b26\u53f7\uff08\u5982\u4e2d\u6587\uff09\u8bf7\u5305\u62ec\u5728 <code>\u201c\u201d</code> \u4e4b\u5185 </li> \n</ul>\n</div>\n\n\n### \u4f7f\u7528\u5efa\u8bae\n\n- \u6bcf\u4e2a\u6587\u4ef6\u90fd\u589e\u52a0 `tags` \u4e0e `description` \u6216 `summary` \u8fd9\u4e24\u5143\u6570\u636e\u5c06\u81ea\u52a8\u8f93\u51fa\u81f3\u9875\u9762\u7684 `<meta>` \u5185\uff0c\u4ee5\u589e\u52a0\u9875\u9762\u7684SEO\u6548\u679c\u3002\n- \u4e3a\u6bcf\u4e2a\u6587\u4ef6\u589e\u52a0\u53d1\u5e03\u65e5\u671f\uff0c\u53ef\u4ee5\u65b9\u4fbf\u4e8e\u6587\u7ae0\u7684\u6392\u5e8f\n- `tags` \u5e94\u8be5\u51c6\u786e\uff0c\u4e14\u5e94\u7531\u5927\u5206\u7c7b\u5411\u5c0f\u5206\u7c7b\u7684\u65b9\u5f0f\u6392\u5e8f\uff0c\u4e14\u4e0d\u9002\u4e8e\u6807\u8bb0\u8d85\u8fc710\u4e2a\u4ee5\u4e0a\u7684\u5173\u952e\u8bcd\uff0c\u4ee5\u907f\u514d\u964d\u4f4eSEO\u7684\u6548\u679c\u3002\n", 
+      "created": "Fri, 27 Mar 2015 17:56:04 GMT", 
+      "excerpt": "<p>\u6211\u4eec\u7684\u8bbe\u8ba1\u54f2\u5b66\u8ba4\u4e3a\uff1a\u201c\u6587\u6863\u5373\u662f\u6570\u636e\u201d\u6240\u4ee5 Freezes \u662f\u4e00\u4e2a\u65e0\u6570\u636e\u5e93\u7684\u73af\u5883\u3002markdown \u6587\u7a3f\u5c31\u662fFreezes\u7684\u6570\u636e\u3002\u60a8\u53ef\u4ee5\u901a\u8fc7Markdown Extra \u6269\u5c55\u89c4\u8303\u4e2d\u7684 \u5143\u6570\u636e\uff08metadata\uff09\u544a\u8bc9 Freezes \u5e94\u8be5\u4ee5\u4f55\u79cd\u65b9\u5f0f\u663e\u793a\u7684\u6587\u7a3f\uff0c\u8bf8\u5982 <strong>\u6587\u7ae0\u6807\u9898</strong> , <strong>\u5c01\u9762</strong> \uff0c <strong>\u9875\u9762\u5e03\u5c40</strong> \uff0c<strong>\u4e3b\u9898\u8bcd</strong> \u3002</p>", 
+      "id": 1, 
+      "last_updated": "Sun, 22 Mar 2015 18:53:06 GMT", 
+      "meta": {
+        "id": 1, 
+        "summary": "\u81ea\u63cf\u8ff0\u5f0f\u7684\u6587\u6863", 
+        "title": "\u5143\u6570\u636e"
+      }, 
+      "name": "metas", 
+      "path": "zh-cn/documents/organizate-your-contents/metas", 
+      "published": "Sun, 22 Mar 2015 18:53:06 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/organizate-your-contents/metas/"
+    }, 
+    {
+      "body": "\n## \u5feb\u6377\u5b89\u88c5\n\n\u5982\u679c\u4f60\u7684\u673a\u5668\u5b8c\u5168\u6ca1\u6709\u914d\u7f6e python \u73af\u5883\u548c\u76f8\u5173\u7684\u5e94\u7528\u5305\uff0c\u90a3\u4e48\u53ef\u4ee5\u4f7f\u7528\u6211\u4eec\u63d0\u4f9b\u7684\u5feb\u901f\u5b89\u88c5\u811a\u672c\uff0c\u5b89\u88c5\u811a\u672c\u5c06\u4e3a\u4f60\u5c06\u652f\u6301\u73af\u5883\u548cFreezes\u4e00\u5e76\u5b89\u88c5\u3002\n\n\u5b89\u88c5\u811a\u672c\uff1a\n\n- [Freezes for Linux \u5b89\u88c5\u811a\u672c (linux-install.sh)](linux-install.sh)\n- [Freezes for OSX \u5b89\u88c5\u811a\u672c (mac-linstall.sh)](mac-install.sh)\n\n\u4e0b\u8f7d\u540e\u5728\u7ec8\u7aef\u76f4\u63a5\u8fd0\u884c:\n\n** Ubuntu **\n\n```bash\n$ . linux-install.sh\n```\n\n** OSX **\n\n```bash\n$ . mac-install.sh\n```\n\nFreezes \u7684\u4f7f\u7528\u5c31\u8fd9\u4e48\u7b80\u5355\uff01\u5f53\u4f60\u5f00\u59cb\u5199\u4f5c\u6216\u8005\u8fdb\u884c\u8bbe\u8ba1\u65f6\u4f60\u5c06\u4f1a\u66f4\u52a0\u6df1\u5c42\u5730\u4f53\u9a8c\u5230\u5979\u4e3a\u60a8\u5e26\u6765\u7684\u65b9\u4fbf\u3002\n\n\n## \u624b\u5de5\u5b89\u88c5\n\n\u5982\u679c\u4f60\u662f\u4e2a\u6307\u4ee4\u63a7\uff0c\u90a3\u4e48\u4e5f\u53ef\u4ee5\u5728\u60a8\u7684\u7535\u8111 **\u7ec8\u7aef\u7a0b\u5e8f** \u952e\u5165\u4ee5\u4e0b\u7684\u547d\u4ee4\uff1a\n\n```bash\n$ virtualenv venv\n$ source venv/bin/activate\n(venv)$ pip install freeze\n(venv)$ mkdir my-website && cd $_\n(venv)$ freezes new\n(venv)$ freezes\n```\n\n\u4f46\u9700\u8981\u5148\u5b89\u88c5 Freezes \u7684\u8fd0\u884c\u4f9d\u8d56\u73af\u5883\n\n\u5982\u679c\u5728\u5b89\u88c5\u8fc7\u7a0b\u4e2d\u51fa\u73b0\u4e86\u95ee\u9898\uff0c\u8bf7\u53c2\u8003[\u5b89\u88c5\u8981\u6c42](requirements-installed)\u3002\n\n\n\n", 
+      "created": "Wed, 01 Apr 2015 18:15:51 GMT", 
+      "excerpt": "<p>\u5982\u679c\u4f60\u7684\u673a\u5668\u5b8c\u5168\u6ca1\u6709\u914d\u7f6e python \u73af\u5883\u548c\u76f8\u5173\u7684\u5e94\u7528\u5305\uff0c\u90a3\u4e48\u53ef\u4ee5\u4f7f\u7528\u6211\u4eec\u63d0\u4f9b\u7684\u5feb\u901f\u5b89\u88c5\u811a\u672c\uff0c\u5b89\u88c5\u811a\u672c\u5c06\u4e3a\u4f60\u5c06\u652f\u6301\u73af\u5883\u548cFreezes\u4e00\u5e76\u5b89\u88c5\u3002</p>", 
+      "id": 1, 
+      "last_updated": "Wed, 01 Apr 2015 18:15:51 GMT", 
+      "meta": {
+        "id": 1, 
+        "summary": "\u4e00\u6b65\u5230\u4f4d\uff0c\u4e00\u5b66\u5c31\u4f1a", 
+        "title": "\u5feb\u901f\u5f00\u59cb"
+      }, 
+      "name": "quick-started", 
+      "path": "zh-cn/quick-started", 
+      "published": "Wed, 01 Apr 2015 18:15:51 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/quick-started/"
+    }, 
+    {
+      "body": "\n\n## Part I. Standard Markdown\nYou can visit [Daring FireBarll]( http://daringfireball.net/projects/markdown/syntax \"markdown-syntax\") to read the original markdown definitions.\n \n### Strong and Emphasize\n\n```markdown\n*emphasize*   **strong**\n_emphasize_   __strong__\n```\n\n### Links and Email\nInline:\n\n```markdown\nAn [example](http://url.com/ \"Title\")\n```\n\nReference-style labels (titles are optional):\n\n```markdown\nAn [example][id]. Then, anywhere\nelse in the doc, define the link:\n\n  [id]: http://example.com/  \"Title\"\n```\nEmail:\n\n```markdown\nAn email <example@example.com> link.\n```\n\n\n### Images\nInline (titles are optional):\n\n```markdown\n![alt text](/path/img.jpg \"Title\")\n```\n\nReference-style:\n\n```markdown\n![alt text][id]\n\n[id]: /url/to/img.jpg \"Title\"\n```\n\n### Headers\nSetext-style:\n\n```markdown\nHeader 1\n========\n\nHeader 2\n--------\n```\n\natx-style (closing #\u2019s are optional):\n\n```markdown\n# Header 1 #\n\n## Header 2 ##\n\n###### Header 6\n```\n\n### Lists\nOrdered, without paragraphs:\n\n```markdown\n1.  Foo\n2.  Bar\n```\n\nUnordered, with paragraphs:\n\n```markdown\n*   A list item.\n\n    With multiple paragraphs.\n\n*   Bar\n```\n\nYou can nest them:\n\n```markdown\n*   Abacus\n    * answer\n*   Bubbles\n    1.  bunk\n    2.  bupkis\n        * BELITTLER\n    3. burper\n*   Cunning\n```\n\n### Blockquotes\n\n```markdown\n> Email-style angle brackets\n> are used for blockquotes.\n\n> > And, they can be nested.\n\n> #### Headers in blockquotes\n> \n> * You can quote a list.\n> * Etc.\n\n```\n\n#### Inline Code\n\n```markdown\n`<code>` spans are delimited\nby backticks.\n\nYou can include literal backticks\nlike `` `this` ``.\n```\n\n#### Block Code\nIndent every line of a code block by at least 4 spaces or 1 tab.\n\n```markdown\nThis is a normal paragraph.\n\n    This is a preformatted\n    code block.\n```\n    \nYou can also specified the language name to enabling the code highlight features\n\n    ```python\n    def hello():\n        print 'Hello world'\n    ```\n    \n    ```coffee\n    hello=->\n        console.log 'Hello world'\n    ```\n    \n### Horizontal Rules\nThree or more dashes or asterisks:\n\n```markdown\n---\n\n* * *\n\n- - - - \n```\n\n### Hard Line Breaks\nEnd a line with two or more spaces:\n\n```markdown\nRoses are red,   \nViolets are blue.\n```\n\n## Part II. Extras Syntax\n\n### Footnotes\nFootnotes work mostly like reference-style links. A footnote is made of two things: a marker in the text that will become a superscript number; a footnote definition that will be placed in a list of footnotes at the end of the document. A footnote looks like this:\n\n```markdown\nThat's some text with a footnote.[^1]\n\n[^1]: And that's the footnote.\n```\n\n\n### Strikethrough\nWrap with 2 tilde ~ characters:\n\n```markdown\n~~Strikethrough~~\n```\n\n\n### Tables\nA simple table looks like this:\n\n```markdown\nFirst Header | Second Header | Third Header\n------------ | ------------- | ------------\nContent Cell | Content Cell  | Content Cell\nContent Cell | Content Cell  | Content Cell\n```\n\nIf you wish, you can add a leading and tailing pipe to each line of the table:\n\n```markdown\n| First Header | Second Header | Third Header |\n| ------------ | ------------- | ------------ |\n| Content Cell | Content Cell  | Content Cell |\n| Content Cell | Content Cell  | Content Cell |\n```\n\nSpecify alignement for each column by adding colons to separator lines:\n\n```markdown\nFirst Header | Second Header | Third Header\n:----------- | :-----------: | -----------:\nLeft         | Center        | Right\nLeft         | Center        | Right\n```\n\n### Anchor\nYou can also add an anchor for an element such as Headers, then you can link to this anchor anywhere, when you click that link in the Preview view, it'll auto scroll to the place of the destination anchor.\n\nFor example below is a normal h2 Header:\n\n```\n## This is an example\n```\n\n### Table of Content\n\n```\n[TOC]\n```", 
+      "created": "Tue, 31 Mar 2015 11:44:15 GMT", 
+      "excerpt": "<p>You can visit <a href=\"http://daringfireball.net/projects/markdown/syntax\" title=\"markdown-syntax\">Daring FireBarll</a> to read the original markdown definitions.</p>", 
+      "id": 1, 
+      "last_updated": "Tue, 31 Mar 2015 11:44:15 GMT", 
+      "meta": {
+        "id": 1, 
+        "summary": "Markdown syntax references", 
+        "title": "Markdown"
+      }, 
+      "name": "markdown-syntax", 
+      "path": "documents/organize-your-contents/markdown-syntax", 
+      "published": "Tue, 31 Mar 2015 11:44:15 GMT", 
+      "tags": [], 
+      "url": "/documents/organize-your-contents/markdown-syntax/"
+    }, 
+    {
+      "body": "\n\u6587\u7a3f\u662f\u901a\u8fc7\u5728\u5143\u6570\u636e\u4e2d\u52a0\u5165 `layout` \u6307\u5b9a\u4f7f\u7528\u54ea\u4e00\u79cd\u90e8\u5c40\u65b9\u5f0f\u663e\u793a\u6587\u7a3f\u5185\u5bb9\uff0c\u4e3b\u8981\u63d0\u4f9b\u4ee5\u4e0b\u51e0\u79cd\u5e03\u5c40\u65b9\u5f0f\n\n\n## recent\n\n\u663e\u793a\u7ad9\u70b9\u6807\u9898\u5e76\u4e14\u5c06`posts`\u76ee\u5f55\u5185\u7684\u6587\u7ae0\u4ece\u65b0\u5230\u65e7\u6392\u5217\u6587\u7ae0, \u591a\u7528\u4e8e\u9996\u9875\n\n## page\n`posts` \u76ee\u5f55\u4ee5\u5916\u7684\u6587\u7ae0\u90fd\u5c06\u81ea\u52a8\u4f7f\u7528\u6b64\u5e03\u5c40\uff0c\u6b64\u5e03\u5c40\u6309\u4ee5\u4e0b\u987a\u5e8f\u663e\u793a\n\n- \u9875\u6807\u9898\n- \u6982\u8ff0 (summary)\n- \u9875\u4f4d\u7f6e\u5bfc\u822a\n- \u9875\u9762\u6b63\u6587 `page.html`\n\n- \u672c\u9875\u5206\u7c7b\u76ee\u5f55\u4e0b\u7684\u6587\u7ae0\u5217\u8868\n\n## post\n\n\u663e\u793a\u6587\u7ae0\u8be6\u7ec6\u5185\u5bb9\uff0c\u7ad9\u70b9\u6807\u9898\u5c06\u4f1a\u88ab\u7f29\u5c0f\uff0c`<h1>`\u663e\u793a\u6587\u7ae0\u6807\u9898\uff0c\u6b64\u5e03\u5c40\u6309\u4ee5\u4e0b\u987a\u5e8f\u663e\u793a\n\n- \u6587\u7ae0\u6807\u9898\n- \u5c01\u9762 (\u5982\u679c\u6709\u8bbe\u5b9a)\n- \u6982\u8ff0 (summary)\n- \u6b63\u6587 (html)\n- \u76f8\u5173\u6587\u7ae0 (\u5177\u6709\u4e0e\u5f53\u524d\u6587\u7ae0\u76f8\u5173\u7684`tag`)\n- \u8ba8\u8bba (\u96c6\u6210disgus widget )\n\n\n## base.html\n\u57fa\u7840\u5e03\u5c40\u6a21\u677f\n\n", 
+      "created": "Wed, 11 Mar 2015 10:18:33 GMT", 
+      "excerpt": "<p>\u6587\u7a3f\u662f\u901a\u8fc7\u5728\u5143\u6570\u636e\u4e2d\u52a0\u5165 <code>layout</code> \u6307\u5b9a\u4f7f\u7528\u54ea\u4e00\u79cd\u90e8\u5c40\u65b9\u5f0f\u663e\u793a\u6587\u7a3f\u5185\u5bb9\uff0c\u4e3b\u8981\u63d0\u4f9b\u4ee5\u4e0b\u51e0\u79cd\u5e03\u5c40\u65b9\u5f0f</p>", 
+      "id": 2, 
+      "last_updated": "Thu, 26 Mar 2015 23:27:13 GMT", 
+      "meta": {
+        "id": 2, 
+        "summary": "HTML + Page variables", 
+        "title": "Customize layouts"
+      }, 
+      "name": "layouts", 
+      "path": "documents/customization/layouts", 
+      "published": "Thu, 26 Mar 2015 23:27:13 GMT", 
+      "tags": [], 
+      "url": "/documents/customization/layouts/"
+    }, 
+    {
+      "body": "\n## \u83b7\u53d6\u9875\u9762\u6570\u636e  \n\n**\u83b7\u53d6\u6240\u6709\u7684\u9875\u9762\u6570\u636e**\n\n\tHTTP GET /api/pages/all.json\n\n**\u83b7\u53d6\u6307\u5b9a\u5730\u5740\u9875\u7684\u6570\u636e**\n\n\tHTTP GET /api/pages/<path>.json\n\n\n## Posts\n\n\u83b7\u53d6\u6240\u6709\u535a\u5ba2\u6570\u636e\n\n\tHTTP GET /api/posts.json\n\n\n## \u8fd4\u56de\u503c\n\n\n\u540d\u79f0|\u7c7b\u578b|\u8bf4\u660e\n--|--|--\n`id`|`int` | \u9875\u9762\u7d22\u5f15\u53f7\n`name`|`String` | \u9875\u9762\u540d\u79f0\n`path`| `String` | \u76f8\u5bf9\u8def\u5f84\n`url`| `String` | URL\u5730\u5740\n`excerpt`| `String` | \u6982\u8981\n`body`| `String` | \u9875\u9762\u6b63\u6587\n`tags`| `Array` | \u4e3b\u9898\u8bcd\n`created`| `Date` | \u521b\u5efa\u65e5\u671f\n`last_updated`| `Date` | \u6700\u540e\u4fee\u6539\u65f6\u95f4\n`published` | `Date` | \u53d1\u8868\u65f6\u95f4\n`meta`| `Object` | \u9875\u9762\u5143\u6570\u636e\u5b57\u5178", 
+      "created": "Wed, 11 Mar 2015 13:19:55 GMT", 
+      "excerpt": "<p><strong>\u83b7\u53d6\u6240\u6709\u7684\u9875\u9762\u6570\u636e</strong></p>", 
+      "id": 2, 
+      "last_updated": "Thu, 26 Mar 2015 22:55:57 GMT", 
+      "meta": {
+        "id": 2, 
+        "summary": "\u4e3a\u7f16\u5199\u811a\u672c\u548cSPA\u7a0b\u5e8f\u63d0\u4f9b\u4fbf\u5229", 
+        "title": "JSON \u6570\u636e"
+      }, 
+      "name": "json", 
+      "path": "zh-cn/documents/data-files/json", 
+      "published": "Thu, 26 Mar 2015 22:55:57 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/data-files/json/"
+    }, 
+    {
+      "body": "", 
+      "created": "Tue, 31 Mar 2015 10:43:40 GMT", 
+      "excerpt": "", 
+      "id": 2, 
+      "last_updated": "Tue, 31 Mar 2015 10:43:40 GMT", 
+      "meta": {
+        "id": 2, 
+        "title": "Documents"
+      }, 
+      "name": "documents", 
+      "path": "documents", 
+      "published": "Tue, 31 Mar 2015 10:43:40 GMT", 
+      "tags": [], 
+      "url": "/documents/"
+    }, 
+    {
+      "body": "\u4f17\u6240\u5468\u77e5\u4f20\u7edf\u535a\u5ba2\u7684\u5206\u4ee5 **\u5206\u7c7b** (Category), **\u4e3b\u9898\u6807\u7b7e** (Tag)\u4f5c\u4e3a\u6587\u7ae0\u7684\u5206\u7c7b\u4f9d\u636e\u3002\u4f5c\u4e3a\u7528\u6237\u5219\u9700\u8981\u5148\u901a\u8fc7\u7f51\u7ad9\u540e\u53f0\u5efa\u7acb\u5206\u7c7b\u76ee\u5f55\uff0c\u5728\u5199\u4f5c\u65f6\u624d\u5c06\u6587\u7ae0\u5f52\u5165\u67d0\u4e00\u9884\u5148\u5b9a\u7acb\u7684\u5206\u7c7b\u4e2d\u3002\u6211\u4eec\u8ba4\u4e3a\u8fd9\u79cd\u505a\u6cd5\u662f\u975e\u5e38\u4f4e\u6548\u7684\uff0c\u5728\u7535\u8111\u4e0a\u4e0d\u540c\u79cd\u7c7b\u7684\u6587\u4ef6\u4f1a\u91c7\u7528\u6587\u4ef6\u76ee\u5f55\u52a0\u4ee5\u5206\u7c7b\uff0c\u8fd9\u662f\u6700\u79d1\u5b66\u548c\u6700\u81ea\u7136\u7684\u505a\u6cd5\u3002\u8fd9\u79cd\u6587\u4ef6\u6574\u7406\u7684\u65b9\u5f0f\u662f\u5728\u5199\u4f5c\u7ed3\u675f\u540e\u6839\u636e\u6587\u4ef6\u7684\u8bed\u5883\u6216\u8303\u56f4\u7ec6\u5206\uff0c\u6240\u4ee5\u5206\u7c7b\u4f1a\u975e\u5e38\u6e05\u6670\uff0cFreezes \u5219\u662f\u5e9f\u5f03\u4f20\u7edf\u535a\u5ba2\u7684\u505a\u6cd5\u800c\u91c7\u7528\u66f4\u52a0\u81ea\u7136\u7684\u6587\u4ef6\u76ee\u5f55\u5206\u7c7b\u6cd5\u3002\n\nFreezes \u7684\u6587\u7a3f\u662f\u5b58\u653e\u5728 `pages` \u76ee\u5f55\u4e0b\u7684\u3002Freezes \u53ea\u5c06 `posts` \u4f5c\u4e3a\u4fdd\u7559\u76ee\u5f55\u5b58\u653e\u4e0e\u65f6\u95f4\u76f8\u5173\u7684\u6587\u7ae0\u4ee5\u517c\u5bb9\u4f20\u7edf\u7684\u535a\u5ba2\u6587\u7a3f\u3002\n\n`pages` \u76ee\u5f55\u4e0b\u6240\u6709\u7684\u5e26\u6709 `title` \u5143\u6570\u636e\u5b9a\u4e49\u7684\u6587\u7a3f\u90fd\u4f1a\u81ea\u52a8\u663e\u793a\u5728\u4e8e\u7ad9\u70b9\u7684\u5bfc\u822a\u83dc\u5355\u5185\u3002`pages` \u76ee\u5f55\u4e0b\u5fc5\u987b\u8981\u5177\u6709\u4e00\u4e2a `index.md` \u6587\u4ef6\u4f5c\u4e3a\u7ad9\u70b9\u9996\u9875\u3002\u663e\u793a\u5728\u5bfc\u822a\u83dc\u5355\u5185\u7684\u9875\u9762\u6211\u4eec\u79f0\u4e4b\u4e3a**\u9876\u5c42\u9875\u9762**\u3002\n\n\u5982\u679c\u9700\u8981\u5728\u9876\u5c42\u9875\u9762\u4e0b\u6dfb\u52a0\u5b50\u5206\u7c7b\uff0c\u90a3\u4e48\u53ea\u9700\u8981\u5efa\u7acb\u4e00\u4e2a\u4e0e\u9876\u5c42\u9875\u9762\u540c\u540d\u7684\u76ee\u5f55\uff0c\u5e76\u5728\u76ee\u5f55\u5185\u6dfb\u52a0\u76f8\u5173\u7684 markdown \u6587\u4ef6\uff0c\u90a3\u4e48\u5f53\u7528\u6237\u6253\u5f00\u9876\u5c42\u9875\u65f6\uff0c\u8be5\u9875\u4e0b\u6240\u6709\u7684\u4ece\u5c5e\u9875\u9762\u5c31\u4f1a\u81ea\u52a8\u5728\u8be5\u9875\u5185\u5bb9\u6b63\u6587\u7684\u4e0b\u65b9\u663e\u793a\u3002\u5982\uff1a\n\n\u5982\uff1a\u9876\u5c42\u9875\u9762 \u201c\u6211\u7684\u4e13\u680f\u201d \u4e0b \u6dfb\u52a0\u5404\u79cd\u7684\u4e13\u680f\u6587\u6458\uff0c\u90a3\u4e48\u76ee\u5f55\u7ed3\u6784\u5c06\u5982\u4e0b\u6240\u793a\uff1a\n\n\n```bash\n.\n\u251c\u2500\u2500 pages\n|   \u251c\u2500\u2500 columns // \u6211\u7684\u4e13\u680f\u4e0b\u7684\u6587\u7a3f\n|   |     \u251c\u2500\u2500 my-design-philosophy.md\n|   |     \u251c\u2500\u2500 ...\n|   |     \u2514\u2500\u2500 why-programmer-should-write-books.md\n|   \u251c\u2500\u2500 columns.md  // \u6211\u7684\u4e13\u680f   \n|   \u2514\u2500\u2500 index.md\n\u251c\u2500\u2500 static\n\u251c\u2500\u2500 templates\n\u2514\u2500\u2500 __init__.py\n```\n\n## \u4e3b\u9898\u6807\u7b7e\n\nFreezes \u652f\u6301\u5bf9\u6240\u6709\u6587\u7a3f\u7684\u4e3b\u9898\u6807\u7b7e\u5206\u7c7b\u65b9\u5f0f\uff0c\u53ea\u8981\u5728\u6587\u7a3f\u5185\u4f7f\u7528 `tags` \u5143\u6570\u636e\u5373\u53ef\u58f0\u660e\u4e3b\u9898\u8bcd\u3002Freezes \u5c06\u81ea\u52a8\u5408\u5e76\u91cd\u590d\u7684\u4e3b\u9898\u8bcd\uff0c\u5e76\u5728\u6bcf\u9875\u7684\u4e0b\u65b9\u7684 \u201c\u70ed\u95e8\u6807\u7b7e\u201d \u4e2d\u663e\u793a\u4e3b\u9898\u8bcd\u5217\u8868\uff0c\u6216\u8005\u76f4\u63a5\u8bbf\u95ee `http://localhost:5500/tags` \u5730\u5740\u8fdb\u5165\u4e3b\u9898\u8bcd\u5206\u7c7b\u9875\u3002\n\n## \u5f52\u6863\n\u6b64\u529f\u80fd\u7528\u4e8e\u517c\u5bb9\u4f20\u7edf\u7684\u535a\u5ba2\u5f52\u6863\u529f\u80fd\uff0c\u53ef\u76f4\u63a5\u8bbf\u95ee `http://localhost:5500/archives/`\u8fdb\u5165\u3002\u6b64\u529f\u80fd\u53ea\u5bf9\u5b58\u4e8e `posts` \u76ee\u5f55\u4e0b\u7684\u535a\u5ba2\u6587\u7ae0\u6309\u6708\u4efd\u8fdb\u884c\u5f52\u6863\u5206\u7c7b\u3002\n\n## \u547d\u540d\u7684\u5efa\u8bae\n\n\u826f\u597d\u7684\u547d\u540d\u80fd\u63d0\u4f9bSEO\u7684\u6548\u679c\u5e76\u4e14\u66f4\u52a0\u6613\u4e8e\u7ba1\u7406\u4e0e\u67e5\u627e\u6587\u7ae0\uff0c\u6839\u636e\u621115\u5e74\u6765\u79ef\u7d2f\u7684\u4e92\u8054\u7f51\u5f00\u53d1\u7ecf\u9a8c\uff0c\u5efa\u8bae\u91c7\u7528\u4ee5\u4e0b\u7684\u65b9\u5f0f\u5bf9\u6587\u4ef6\u4e0e\u76ee\u5f55\u8fdb\u884c\u547d\u540d\uff1a\n\n1. \u540d\u79f0\u7531\u6570\u5b57\u4e0e\u82f1\u6587\u7ec4\u6210\n2. \u8bcd\u4e0e\u8bcd\u4e4b\u95f4\u7528 `-` \u5206\u5f00\uff0c\u8fd9\u6837\u505a\u66f4\u5bb9\u6613\u8ba9\u641c\u7d22\u5f15\u64ce\u8bc6\u522b\n3. `posts` \u76ee\u5f55\u4e0b\u7684\u6587\u7ae0\u4ee5\u65e5\u671f\u683c\u5f0f\u5efa\u7acb\u76ee\u5f55\u5206\u7c7b\u6587\u7ae0 \u5982\uff1a`2014-01-01` \uff0c\u5982\u679c\u60a8\u7684\u6587\u7ae0\u8f83\u591a\u8bdd\u53ef\u4ee5\u91c7\u7528\u6df1\u5c42\u6b21\u76ee\u5f55\u65b9\u5f0f\uff1a`2014/01/01` \n4. \u4e0d\u8981\u91c7\u7528\u62fc\u97f3\u547d\u540d\u6587\u4ef6\u6216\u76ee\u5f55\uff0c\u8fd9\u6837\u53ea\u4f1a\u964d\u4f4e\u641c\u7d22\u5f15\u64ce\u7684\u7d22\u5f15\u6548\u679c\u3002", 
+      "created": "Thu, 02 Apr 2015 00:46:48 GMT", 
+      "excerpt": "<p>\u4f17\u6240\u5468\u77e5\u4f20\u7edf\u535a\u5ba2\u7684\u5206\u4ee5 <strong>\u5206\u7c7b</strong> (Category), <strong>\u4e3b\u9898\u6807\u7b7e</strong> (Tag)\u4f5c\u4e3a\u6587\u7ae0\u7684\u5206\u7c7b\u4f9d\u636e\u3002\u4f5c\u4e3a\u7528\u6237\u5219\u9700\u8981\u5148\u901a\u8fc7\u7f51\u7ad9\u540e\u53f0\u5efa\u7acb\u5206\u7c7b\u76ee\u5f55\uff0c\u5728\u5199\u4f5c\u65f6\u624d\u5c06\u6587\u7ae0\u5f52\u5165\u67d0\u4e00\u9884\u5148\u5b9a\u7acb\u7684\u5206\u7c7b\u4e2d\u3002\u6211\u4eec\u8ba4\u4e3a\u8fd9\u79cd\u505a\u6cd5\u662f\u975e\u5e38\u4f4e\u6548\u7684\uff0c\u5728\u7535\u8111\u4e0a\u4e0d\u540c\u79cd\u7c7b\u7684\u6587\u4ef6\u4f1a\u91c7\u7528\u6587\u4ef6\u76ee\u5f55\u52a0\u4ee5\u5206\u7c7b\uff0c\u8fd9\u662f\u6700\u79d1\u5b66\u548c\u6700\u81ea\u7136\u7684\u505a\u6cd5\u3002\u8fd9\u79cd\u6587\u4ef6\u6574\u7406\u7684\u65b9\u5f0f\u662f\u5728\u5199\u4f5c\u7ed3\u675f\u540e\u6839\u636e\u6587\u4ef6\u7684\u8bed\u5883\u6216\u8303\u56f4\u7ec6\u5206\uff0c\u6240\u4ee5\u5206\u7c7b\u4f1a\u975e\u5e38\u6e05\u6670\uff0cFreezes \u5219\u662f\u5e9f\u5f03\u4f20\u7edf\u535a\u5ba2\u7684\u505a\u6cd5\u800c\u91c7\u7528\u66f4\u52a0\u81ea\u7136\u7684\u6587\u4ef6\u76ee\u5f55\u5206\u7c7b\u6cd5\u3002</p>\n<p>Freezes \u7684\u6587\u7a3f\u662f\u5b58\u653e\u5728 <code>pages</code> \u76ee\u5f55\u4e0b\u7684\u3002Freezes \u53ea\u5c06 <code>posts</code> \u4f5c\u4e3a\u4fdd\u7559\u76ee\u5f55\u5b58\u653e\u4e0e\u65f6\u95f4\u76f8\u5173\u7684\u6587\u7ae0\u4ee5\u517c\u5bb9\u4f20\u7edf\u7684\u535a\u5ba2\u6587\u7a3f\u3002</p>", 
+      "id": 2, 
+      "last_updated": "Thu, 02 Apr 2015 00:46:48 GMT", 
+      "meta": {
+        "id": 2, 
+        "summary": "Categorize and tags", 
+        "title": "Categorize"
+      }, 
+      "name": "categorize-your-contents", 
+      "path": "documents/organize-your-contents/categorize-your-contents", 
+      "published": "Thu, 02 Apr 2015 00:46:48 GMT", 
+      "tags": [], 
+      "url": "/documents/organize-your-contents/categorize-your-contents/"
+    }, 
+    {
+      "body": "Freezes \u662f\u4e00\u4e2a\u57fa\u4e8e [python](www.python.org) \u7f16\u5199\u7684\u547d\u4ee4\u884c\u5de5\u5f15\u5bfc\u5de5\u5177\u3002\u5982\u679c\u60a8\u6b63\u5728\u4f7f\u7528Linux\u6216\u8005OSX\uff0c\u90a3\u4e48\u606d\u559c\u4f60\uff01\u4f60\u7684\u5e73\u53f0\u4e2d\u5df2\u7ecf\u9884\u88c5\u6709 python \u7684\u8fd0\u884c\u73af\u5883\uff0c\u53ef\u4ee5\u76f4\u63a5 freezes \u7684\u6307\u4ee4\u3002\u5982\u679c\u60a8\u662f\u4e00\u4f4dWindows\u7684\u7528\u6237\uff0c\u90a3\u4e48\u8fd8\u8bf7\u5148\u70b9\u51fb\u4e0b\u8f7d [python 2.7](https://www.python.org/downloads/release/python-279/)\n\n## \u521b\u5efa\u7ad9\u70b9\n\n\u521b\u5efa\u4e00\u4e2a\u76ee\u5f55\u5e76\u4f7f\u7528 `new` \u53c2\u6570\u8fd0\u884c `freezes`\uff0cFreezes \u5c06\u81ea\u52a8\u5728\u5f53\u524d\u4e2d\u4e3a\u4f60\u5efa\u7acb\u7ad9\u70b9\u6240\u9700\u8981\u76ee\u5f55\u548c\u6587\u4ef6\u3002\n\n```bash\n(venv) my-site$ freezes new\n```\n\n## \u8fd0\u884c\u7ad9\u70b9\n\n\u76f4\u63a5\u6267\u884c `freezes` \u6307\u4ee4\u5c06\u4f1a\u8fd0\u884c\u4e00\u4e2a\u81ea\u5e26\u7684Web\u670d\u52a1\uff0c\u5e76\u4f1a\u5728\u60a8\u7684\u9ed8\u8ba4\u6d4f\u89c8\u5668\u5185\u81ea\u52a8\u8bbf\u95ee\u8be5\u672c\u5730\u7f51\u7ad9\u5730\u5740(\u9ed8\u8ba4\u4e3a:http://localhost:5500)\u3002\n\n```\n(venv) my-site$ freezes\n```\n\nFreezes \u5e26\u6709\u81ea\u52a8\u52a0\u8f7d\u66f4\u65b0\u7684\u529f\u80fd\uff0c\u4e5f\u5c31\u662f\u8bf4\u5982\u679c\u5f53\u524d\u76ee\u5f55\u5185\u7684\u4efb\u4f55\u6587\u4ef6\u53d1\u751f\u4e86\u53d8\u5316\uff0c\u88abFreezes\u6253\u5f00\u7684\u6d4f\u89c8\u5668\u9875\u9762\u90fd\u4f1a\u6267\u884c\u81ea\u52a8\u5237\u65b0\u3002\u5982\u6b64\u4e00\u6765\uff0c\u65e0\u8bba\u4f60\u662f\u5728\u5199\u4f5c\u8fd8\u662f\u5728\u505a\u8bbe\u8ba1\u90fd\u53ef\u4ee5\u5373\u65f6\u770b\u5230\u6700\u7ec8\u7684\u8f93\u51fa\u6548\u679c\u800c\u65e0\u9700\u8981\u8fdb\u884c\u4eba\u5de5\u5237\u65b0\u3002\n\n## \u751f\u6210\u9759\u6001\u5316\u7ad9\u70b9\n\n\u5f53\u5b8c\u6210\u4e86\u6240\u6709\u7684\u5199\u4f5c\u6216\u8005\u8bbe\u8ba1\u5de5\u4f5c\u51c6\u5907\u5c06\u7ad9\u70b9\u90e8\u7f72\u5230\u5916\u90e8\u670d\u52a1\u5668\uff0c\u90a3\u4e48\u8bf7\u5728\u7ec8\u7aef\u5185\u8fd0\u884c\u4ee5\u4e0b\u6307\u4ee4\uff1a\n\n```\n(venv) my-site$ freezes build\n```\n\n\u6307\u4ee4\u6267\u884c\u5b8c\u6210\u540e\uff0c\u5f53\u524d\u7ad9\u70b9\u7684\u6240\u6709\u7684\u8f93\u51fa\u9875\u9762\u90fd\u88ab\u9759\u6001\u5316\u4e3ahtml\u5e76\u653e\u7f6e\u4e8e `builds` \u76ee\u5f55\u4e0b\uff0c\u5c06\u6b64\u76ee\u5f55\u4e0b\u7684\u5168\u90e8\u6587\u4ef6\u76f4\u63a5\u62f7\u8d1d\u81f3\u60a8\u7684Web\u670d\u52a1\u5668\u5c31\u53ef\u5b8c\u5168\u6240\u6709\u7684\u90e8\u7f72\u5de5\u4f5c\u4e86\u3002\n", 
+      "created": "Fri, 27 Mar 2015 17:56:04 GMT", 
+      "excerpt": "<p>Freezes \u662f\u4e00\u4e2a\u57fa\u4e8e <a href=\"www.python.org\">python</a> \u7f16\u5199\u7684\u547d\u4ee4\u884c\u5de5\u5f15\u5bfc\u5de5\u5177\u3002\u5982\u679c\u60a8\u6b63\u5728\u4f7f\u7528Linux\u6216\u8005OSX\uff0c\u90a3\u4e48\u606d\u559c\u4f60\uff01\u4f60\u7684\u5e73\u53f0\u4e2d\u5df2\u7ecf\u9884\u88c5\u6709 python \u7684\u8fd0\u884c\u73af\u5883\uff0c\u53ef\u4ee5\u76f4\u63a5 freezes \u7684\u6307\u4ee4\u3002\u5982\u679c\u60a8\u662f\u4e00\u4f4dWindows\u7684\u7528\u6237\uff0c\u90a3\u4e48\u8fd8\u8bf7\u5148\u70b9\u51fb\u4e0b\u8f7d <a href=\"https://www.python.org/downloads/release/python-279/\">python 2.7</a></p>", 
+      "id": 2, 
+      "last_updated": "Sun, 22 Mar 2015 17:11:23 GMT", 
+      "meta": {
+        "id": 2, 
+        "summary": "Freezes \u63d0\u4f9b\u7684\u7b80\u5355\u547d\u4ee4\u884c\u5de5\u5177", 
+        "title": "\u57fa\u672c\u7528\u6cd5"
+      }, 
+      "name": "basic-usage", 
+      "path": "zh-cn/quick-started/basic-usage", 
+      "published": "Sun, 22 Mar 2015 17:11:23 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/quick-started/basic-usage/"
+    }, 
+    {
+      "body": "The Freezes makes `freezes` command tools to run or build your website. \n\n## Run Freezes\n\nFreezes will run a self-host server and open to the default browser after `freezes` executed.\n\nFreezes loads a livereload server that can be auto reload the browser page when contents change.\n\n```\n(venv) my-site$ freezes\n```\n\n## Transform to static website\nIn order to get high performances when you writing posts/pages , design web styles or customize layouts Freezes disable the auto static page generation feature.\n \nSo when you need to build your static website manually :\n\n```\n(venv) my-site$ freezes build\n```\n\nAfter the command run. The website is build to `builds` folder under current working folder. \n\n## Force assets rebuild \n\n```\n(venv) my-site$ freezes assets --build\n```", 
+      "created": "Sat, 21 Mar 2015 17:04:22 GMT", 
+      "excerpt": "<p>The Freezes makes <code>freezes</code> command tools to run or build your website. </p>", 
+      "id": 2, 
+      "last_updated": "Sat, 21 Mar 2015 17:04:22 GMT", 
+      "meta": {
+        "id": 2, 
+        "summary": "The command line tools", 
+        "title": "Basic usage"
+      }, 
+      "name": "basic-usage", 
+      "path": "documents/quick-started/basic-usage", 
+      "published": "Sat, 21 Mar 2015 17:04:22 GMT", 
+      "tags": [], 
+      "url": "/documents/quick-started/basic-usage/"
+    }, 
+    {
+      "body": "\nYou can easy to customize your website layouts and styles without any limitations\n\nYou can specified the `layout` meta to change the page default layout.\n\n  \u9ed8\u8ba4\u5b89\u88c5\u540e\u4f1a\u63d0\u4f9b\u4e00\u4e2a\u7b80\u7ea6\u7684\u7f51\u9875\u98ce\u683c\u3002\u6bcf\u4e2a\u6587\u7a3f\u53ef\u4ee5\u901a\u8fc7\u5143\u6570\u636e `layout` \u6307\u5b9a\u5f53\u524d\u6587\u7a3f\u7528\u4ec0\u4e48\u9875\u9762\u5e03\u5c40\u663e\u793a\u3002\u9ed8\u8ba4\u60c5\u51b5\u4e0b\u5f53\u6587\u7a3f\u5185\u6ca1\u6709\u91c7\u7528 layout\u5143\u6570\u636e\u6307\u5b9a\u5e03\u5c40\u65f6\uff0c Freezes \u5c06\u4e3a\u4f60\u7684\u6587\u7a3f\u81ea\u52a8\u9009\u62e9\u4e00\u79cd\u6700\u5408\u9002\u7684\u5e03\u5c40\u65b9\u5f0f\u3002\n\nFreezes offers 3 default layouts: \n\nLayout|Description\n--|--\n`recent` | Show recently posts after the content body.\n`page` | Show a sub articles list after the content body. \n`post` | Show a disqus comments on the bottom of the page.\n\nFor example:\n\n```yml\nlayout: recent\ntitle: \"About\"\n\nHere is the content body.\n```\n\n---\n\nIf you are web site designer or front-end developer you may like:", 
+      "created": "Tue, 31 Mar 2015 10:59:24 GMT", 
+      "excerpt": "<p>You can easy to customize your website layouts and styles without any limitations</p>", 
+      "id": 2, 
+      "last_updated": "Tue, 31 Mar 2015 10:59:24 GMT", 
+      "meta": {
+        "id": 2, 
+        "summary": "Change looks and feels", 
+        "title": "Customize"
+      }, 
+      "name": "customization", 
+      "path": "documents/customization", 
+      "published": "Tue, 31 Mar 2015 10:59:24 GMT", 
+      "tags": [], 
+      "url": "/documents/customization/"
+    }, 
+    {
+      "body": "\nFreezes \u63d0\u4f9b\u4e86\u5f88\u81ea\u7531\u7684\u5e03\u5c40\u65b9\u5f0f\uff0c\u4ece\u5c40\u5e03\u7684\u4fee\u6539\u5230\u6574\u4e2a\u9875\u9762\u7684\u4fee\u6539\u751a\u81f3\u5168\u9762\u91cd\u65b0\u5b9a\u4e49\u90fd\u662f\u53ef\u4ee5\u7684\uff0c\u800c\u4e14\u6211\u4eec\u5e76\u6ca1\u6709\u201c\u91cd\u65b0\u53d1\u660e\u8f6e\u5b50\u201d\uff0c\u53ea\u662f\u91c7\u7528\u4e86\u6700\u6210\u719f\u7684\u6280\u672f\u76ee\u7684\u662f\u5c06\u5b66\u4e60\u6210\u672c\u964d\u81f3\u6700\u4f4e\u3002\n\n\u9996\u5148\u8981\u4ecb\u7ecd\u4e00\u4e9bFreezes\u5728\u9875\u9762\u5e03\u5c40\u4e0a\u7684\u8bbe\u8ba1\u7406\u5ff5\u548c\u4e00\u4e9b\u91c7\u7528\u7684\u57fa\u7840\u6280\u672f\u3002\n\n- HTML - \u8fd9\u662f\u4e00\u5207\u7684\u57fa\u7840\n- [Jinja](http://jinja.pocoo.org/) \u9875\u9762\u5f15\u64ce\u8bed\u6cd5 \n\nFreezes \u57fa\u4e8e python \u65f6\u4e0b\u975e\u5e38\u6d41\u884c\u7684\u5fae\u6846\u67b6 [Flask](http://flask.pocoo.org/) \u5f00\u53d1\u7684\u3002\u57fa\u4e8e\u6b64\u6846\u67b6 Freezes \u4e5f\u91c7\u7528\u4e86 Jinja \u4f5c\u4e3a\u9875\u9762\u6a21\u677f\u7684\u8f93\u51fa\u5f15\u64ce\u3002\u5982\u679c\u4f60\u662f\u4e00\u4f4d Flask \u5f00\u53d1\u8005\u90a3\u4e48\u606d\u559c\u4f60\uff01\u4ee5\u4e0b\u7684\u5185\u5bb9\u4f60\u53ea\u9700\u8981\u82b1\u5f88\u5c11\u65f6\u95f4\u5c31\u80fd\u4e86\u89e3\u900f\u5f7b\u3002\u5982\u679c\u4e0d\u662f\u90a3\u4e5f\u5e76\u4e0d\u7528\u62c5\u5fc3\uff0c\u56e0\u4e3a\u8981\u5b66\u7684\u5185\u5bb9\u5e76\u4e0d\u662f\u5f88\u591a\uff0c\u5b66\u4e60\u96be\u5ea6\u4e5f\u88ab Freezes \u6781\u529b\u5730\u51cf\u5c11\u4e86\u3002\n\nFreezes \u7684\u5e03\u5c40\u9875\u662f\u5b58\u653e\u5728 `templates/layouts` \u76ee\u5f55\u4e0b\u7684\uff0c\u65b0\u589e\u7684\u5e03\u5c40\u6587\u4ef6\u90fd\u53ef\u4ee5\u5728\u6587\u7a3f\u4e2d\u4f7f\u7528 `layout` \u5143\u6570\u636e\u6307\u5b9a\uff08\u4e0d\u5e26\u6587\u4ef6\u6269\u5c55\u540d\uff09\u3002\u6587\u7a3f\u4e0e\u5e03\u5c40\u4e4b\u95f4\u53ea\u5b58\u5728\u6781\u4e3a\u5fae\u5f31\u7684\u5173\u8054\u5173\u7cfb\uff0c\u8fd9\u6837\u4e00\u6765\u6587\u7a3f\u5185\u5bb9\u4e0e\u5c55\u73b0\u65b9\u5f0f\u5c31\u88ab\u6709\u6548\u5730\u5206\u79bb\u3002\n\n\n## \u5e03\u5c40\u9875\u9762\u7684\u7ec4\u6210\n\nFreezes \u7684\u5e03\u5c40\u9875\u9762\u90fd\u7ee7\u627f\u4e8e `base.html` \u6bcd\u677f\uff0c\u8be5\u6bcd\u677f\u5b58\u5728\u4e8e Freezes \u7684\u5b89\u88c5\u76ee\u5f55\u4e2d\uff0c\u4f60\u5e76\u4e0d\u9700\u8981\u53bb\u4fee\u6539\u5b83\uff0c\u5b83\u53ea\u662f\u5c06\u4e00\u4e2a\u7f51\u9875\u5212\u5206\u6210\u4e3a\u5f88\u591a\u4e2a\u533a\u57df\uff0c\u540c\u65f6\u4e5f\u52a0\u5165\u4e86SEO\u7684\u4f18\u5316\u5728\u5176\u4e2d\uff0c\u6240\u4ee5\u6211\u4eec\u5f3a\u70c8\u5efa\u8bae\u4f60\u4f7f\u7528\u8be5\u6bcd\u677f\u6765\u5236\u4f5c\u4f60\u7684\u81ea\u5b9a\u4e49\u5e03\u5c40\u3002\n\n### \u5f15\u7528\u6587\u4ef6\n\n\u5728 `tempaltes`\u5185\u6709\u4e00\u4e2a\u540d\u4e3a `includes` \u7684\u7a7a\u76ee\u5f55\uff0c\u6b64\u5904\u662f\u5b58\u653e\u5f15\u7528\u6587\u4ef6\u7684\u3002\u5f53\u4f60\u9700\u8981\u5bf9\u7ad9\u70b9\u7684\u67d0\u4e9b\u516c\u5171\u533a\u57df\u8fdb\u884c\u4fee\u6539\uff0c\u800c\u4e14\u53c8\u4e0d\u5e0c\u671b\u53bb\u4fee\u6539\u7ad9\u70b9\u6bcd\u677f\u6216\u8005\u505a\u81ea\u5df1\u7684\u6bcd\u677f\uff08\u8fd9\u662f\u4e00\u4e2a\u5de8\u5927\u7684\u4fee\u6539\u5de5\u4f5c\uff09\u65f6\uff0c\u53ef\u4ee5\u8003\u8651\u4fee\u6539\u5f15\u7528\u6587\u4ef6\u3002\n\n\u4fee\u6539\u7684\u65b9\u6cd5\u5c31\u662f\u52a0\u5165\u65b0\u7684\u5f15\u7528\u6587\u4ef6\uff0cFreezes \u4f1a\u81ea\u52a8\u5ffd\u7565\u539f\u7528\u7684\u5f15\u7528\u6587\u4ef6\u8f6c\u800c\u91c7\u7528\u4f60\u6240\u6dfb\u52a0\u7684\u6587\u4ef6\u3002\u4ee5\u4e0b\u662f\u53ef\u4ee5\u91cd\u5199 Freezes \u5f15\u7528\u6587\u4ef6\u7684\u540d\u79f0\uff08\u5fc5\u987b\u4ee5\u4ee5\u4e0b\u540d\u79f0\u547d\u540d\uff0c\u5176\u5b83\u7684\u6587\u4ef6\u5c06\u88abFreezes\u5ffd\u7565\uff09\n\n\u6587\u4ef6\u540d|\u4f5c\u7528\n--|--\n`metas.html` | \u5b9a\u4e49\u6bcf\u4e2a\u9875\u9762\u7684\u5728 `<head>` \u6807\u8bb0\u5185\u7684\u8f93\u51fa\u5185\u5bb9\n`header.html` | \u5b9a\u4e49\u6bcf\u4e2a\u9875\u9762\u9876\u90e8\u533a\u57df\u7684\u8f93\u51fa\u5185\u5bb9\n`navbar.html` | \u5b9a\u4e49\u6bcf\u4e2a\u9875\u9762\u7684\u5bfc\u822a\u83dc\u5355\n`footer.html` | \u5b9a\u4e49\u6bcf\u4e2a\u9875\u9762\u7684\u9875\u811a\u90e8\u5206\u7684\u8f93\u51fa\u5185\u5bb9\n\n\n![base.html\u5e03\u5c40\u793a\u610f\u56fe](base_layout.png)\n\n### \u4f7f\u7528 `base.html`\n\u7ee7\u627f `base.html` \u6bcd\u677f\u7684\u65b9\u6cd5\u5982\u4e0b\uff1a\u52a0\u5165\u4e00\u4e2a\u65b0\u7684\u5e03\u5c40\u9875\u9762\u6587\u4ef6\u5230 `layouts` \u76ee\u5f55\uff0c\u7136\u540e\u5728\u9875\u9762\u4e2d\u52a0\u5165\u4ee5\u4e0b\u4ee3\u7801:\n\n```html\n{% extends \"base.html\" %}\n{% block content %}\n<!-- \u6b64\u5904\u662f\u4f60\u5b9a\u4e49\u7684\u5757\u7684\u5185\u5bb9 -->\n{% endblock %}\n```\n\n`base.html` \u5185\u5b9a\u4e49\u4e86\u5f88\u591a\u7684\u5757\uff0c\u4f60\u90fd\u53ef\u4ee5\u5728\u7ee7\u627f\u7684\u5e03\u5c40\u9875\u9762\u5185\u91c7\u7528 `{% block \u5757\u540d\u79f0 %} \u81ea\u5b9a\u4e49\u5185\u5bb9 {% endblock%}` \u7684\u65b9\u6cd5\u5bf9\u6307\u5b9a\u5757\u7684\u5185\u5bb9\u91cd\u5199\u66ff\u6362\u3002\n\n\u4ee5\u4e0b\u662f `base.html` \u7684\u5757\u5b9a\u4e49:\n\n\u540d\u79f0|\u4f5c\u7528\n--|--\nhtml_attrs|\u5b9a\u4e49 `<html>` \u6807\u8bb0\u5185\u7684\u5c5e\u6027\ntitle | \u5b9a\u4e49\u6d4f\u89c8\u5668\u7a97\u53e3\u6807\u9898\u680f\u6587\u5b57\uff0c\u4e5f\u5373\u662f `<title>` \u5185\u7684\u5185\u5bb9\nstyles| \u5b9a\u4e49\u9875\u9762\u7684\u6837\u5f0f\u5f15\u7528\u5757\nscripts|\u5b9a\u4e49\u9875\u9762\u811a\u672c\u5f15\u7528\u5757\nbody_attr|\u5b9a\u4e49 `<body>` \u6807\u8bb0\u5185\u7684\u5c5e\u6027\nbody|\u5b9a\u4e49\u6574\u4e2a\u9875\u9762`<body>`\u6807\u8bb0\u5185\u7684\u6240\u6709\u9875\u9762\u5185\u5bb9\nheader|\u9875\u5934\u533a\u57df \nnavbar|\u5bfc\u822a\u680f\u533a\u57df \ncontent|\u6b63\u6587\u533a\u57df \nfooter|\u9875\u811a\u533a\u57df \n\n\n![base.html\u5757\u793a\u610f\u56fe](base_blocks.png)\n\n## \u6807\u51c6\u5e03\u5c40\u8bf4\u660e\n\nFreezes \u63d0\u4f9b\u4ee5\u4e0b\u51e0\u79cd\u5e03\u5c40\u65b9\u5f0f\n\n### recent\n\n\u663e\u793a\u7ad9\u70b9\u6807\u9898\u5e76\u4e14\u5c06`posts`\u76ee\u5f55\u5185\u7684\u6587\u7ae0\u4ece\u65b0\u5230\u65e7\u6392\u5217\u6587\u7ae0, \u591a\u7528\u4e8e\u9996\u9875\n\n### page\n`posts` \u76ee\u5f55\u4ee5\u5916\u7684\u6587\u7ae0\u90fd\u5c06\u81ea\u52a8\u4f7f\u7528\u6b64\u5e03\u5c40\uff0c\u6b64\u5e03\u5c40\u6309\u4ee5\u4e0b\u987a\u5e8f\u663e\u793a\n\n- \u9875\u6807\u9898\n- \u6982\u8ff0 (summary)\n- \u9875\u4f4d\u7f6e\u5bfc\u822a\n- \u9875\u9762\u6b63\u6587 `page.html`\n\n- \u672c\u9875\u5206\u7c7b\u76ee\u5f55\u4e0b\u7684\u6587\u7ae0\u5217\u8868\n\n### post\n\n\u663e\u793a\u6587\u7ae0\u8be6\u7ec6\u5185\u5bb9\uff0c\u7ad9\u70b9\u6807\u9898\u5c06\u4f1a\u88ab\u7f29\u5c0f\uff0c`<h1>`\u663e\u793a\u6587\u7ae0\u6807\u9898\uff0c\u6b64\u5e03\u5c40\u6309\u4ee5\u4e0b\u987a\u5e8f\u663e\u793a\n\n- \u6587\u7ae0\u6807\u9898\n- \u5c01\u9762 (\u5982\u679c\u6709\u8bbe\u5b9a)\n- \u6982\u8ff0 (summary)\n- \u6b63\u6587 (html)\n- \u76f8\u5173\u6587\u7ae0 (\u5177\u6709\u4e0e\u5f53\u524d\u6587\u7ae0\u76f8\u5173\u7684`tag`)\n- \u8ba8\u8bba (\u96c6\u6210disgus widget )\n\n## \u6e90\u7801\u53c2\u8003\n\n- [_metas.html](sourcecode/metas/)\n- [_header.html](sourcecode/header/)\n- [_navbar.html](sourcecode/navbar/)\n- [_footer.html](sourcecode/footer/)\n- [base.html \u4ee3\u7801\u5757\u5b9a\u4e49](sourcecode/base/)", 
+      "created": "Tue, 31 Mar 2015 10:36:39 GMT", 
+      "excerpt": "<p>Freezes \u63d0\u4f9b\u4e86\u5f88\u81ea\u7531\u7684\u5e03\u5c40\u65b9\u5f0f\uff0c\u4ece\u5c40\u5e03\u7684\u4fee\u6539\u5230\u6574\u4e2a\u9875\u9762\u7684\u4fee\u6539\u751a\u81f3\u5168\u9762\u91cd\u65b0\u5b9a\u4e49\u90fd\u662f\u53ef\u4ee5\u7684\uff0c\u800c\u4e14\u6211\u4eec\u5e76\u6ca1\u6709\u201c\u91cd\u65b0\u53d1\u660e\u8f6e\u5b50\u201d\uff0c\u53ea\u662f\u91c7\u7528\u4e86\u6700\u6210\u719f\u7684\u6280\u672f\u76ee\u7684\u662f\u5c06\u5b66\u4e60\u6210\u672c\u964d\u81f3\u6700\u4f4e\u3002</p>", 
+      "id": 2, 
+      "last_updated": "Tue, 31 Mar 2015 10:36:39 GMT", 
+      "meta": {
+        "id": 2, 
+        "summary": "HTML+\u53d8\u91cf\u6807\u8bb0", 
+        "title": "\u81ea\u5b9a\u4e49\u5c40\u5e03"
+      }, 
+      "name": "layouts", 
+      "path": "zh-cn/documents/customization/layouts", 
+      "published": "Tue, 31 Mar 2015 10:36:39 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/customization/layouts/"
+    }, 
+    {
+      "body": "\u4f17\u6240\u5468\u77e5\u4f20\u7edf\u535a\u5ba2\u7684\u5206\u4ee5 **\u5206\u7c7b** (Category), **\u4e3b\u9898\u6807\u7b7e** (Tag)\u4f5c\u4e3a\u6587\u7ae0\u7684\u5206\u7c7b\u4f9d\u636e\u3002\u4f5c\u4e3a\u7528\u6237\u5219\u9700\u8981\u5148\u901a\u8fc7\u7f51\u7ad9\u540e\u53f0\u5efa\u7acb\u5206\u7c7b\u76ee\u5f55\uff0c\u5728\u5199\u4f5c\u65f6\u624d\u5c06\u6587\u7ae0\u5f52\u5165\u67d0\u4e00\u9884\u5148\u5b9a\u7acb\u7684\u5206\u7c7b\u4e2d\u3002\u6211\u4eec\u8ba4\u4e3a\u8fd9\u79cd\u505a\u6cd5\u662f\u975e\u5e38\u4f4e\u6548\u7684\uff0c\u5728\u7535\u8111\u4e0a\u4e0d\u540c\u79cd\u7c7b\u7684\u6587\u4ef6\u4f1a\u91c7\u7528\u6587\u4ef6\u76ee\u5f55\u52a0\u4ee5\u5206\u7c7b\uff0c\u8fd9\u662f\u6700\u79d1\u5b66\u548c\u6700\u81ea\u7136\u7684\u505a\u6cd5\u3002\u8fd9\u79cd\u6587\u4ef6\u6574\u7406\u7684\u65b9\u5f0f\u662f\u5728\u5199\u4f5c\u7ed3\u675f\u540e\u6839\u636e\u6587\u4ef6\u7684\u8bed\u5883\u6216\u8303\u56f4\u7ec6\u5206\uff0c\u6240\u4ee5\u5206\u7c7b\u4f1a\u975e\u5e38\u6e05\u6670\uff0cFreezes \u5219\u662f\u5e9f\u5f03\u4f20\u7edf\u535a\u5ba2\u7684\u505a\u6cd5\u800c\u91c7\u7528\u66f4\u52a0\u81ea\u7136\u7684\u6587\u4ef6\u76ee\u5f55\u5206\u7c7b\u6cd5\u3002\n\nFreezes \u7684\u6587\u7a3f\u662f\u5b58\u653e\u5728 `pages` \u76ee\u5f55\u4e0b\u7684\u3002Freezes \u53ea\u5c06 `posts` \u4f5c\u4e3a\u4fdd\u7559\u76ee\u5f55\u5b58\u653e\u4e0e\u65f6\u95f4\u76f8\u5173\u7684\u6587\u7ae0\u4ee5\u517c\u5bb9\u4f20\u7edf\u7684\u535a\u5ba2\u6587\u7a3f\u3002\n\n`pages` \u76ee\u5f55\u4e0b\u6240\u6709\u7684\u5e26\u6709 `title` \u5143\u6570\u636e\u5b9a\u4e49\u7684\u6587\u7a3f\u90fd\u4f1a\u81ea\u52a8\u663e\u793a\u5728\u4e8e\u7ad9\u70b9\u7684\u5bfc\u822a\u83dc\u5355\u5185\u3002`pages` \u76ee\u5f55\u4e0b\u5fc5\u987b\u8981\u5177\u6709\u4e00\u4e2a `index.md` \u6587\u4ef6\u4f5c\u4e3a\u7ad9\u70b9\u9996\u9875\u3002\u663e\u793a\u5728\u5bfc\u822a\u83dc\u5355\u5185\u7684\u9875\u9762\u6211\u4eec\u79f0\u4e4b\u4e3a**\u9876\u5c42\u9875\u9762**\u3002\n\n\u5982\u679c\u9700\u8981\u5728\u9876\u5c42\u9875\u9762\u4e0b\u6dfb\u52a0\u5b50\u5206\u7c7b\uff0c\u90a3\u4e48\u53ea\u9700\u8981\u5efa\u7acb\u4e00\u4e2a\u4e0e\u9876\u5c42\u9875\u9762\u540c\u540d\u7684\u76ee\u5f55\uff0c\u5e76\u5728\u76ee\u5f55\u5185\u6dfb\u52a0\u76f8\u5173\u7684 markdown \u6587\u4ef6\uff0c\u90a3\u4e48\u5f53\u7528\u6237\u6253\u5f00\u9876\u5c42\u9875\u65f6\uff0c\u8be5\u9875\u4e0b\u6240\u6709\u7684\u4ece\u5c5e\u9875\u9762\u5c31\u4f1a\u81ea\u52a8\u5728\u8be5\u9875\u5185\u5bb9\u6b63\u6587\u7684\u4e0b\u65b9\u663e\u793a\u3002\u5982\uff1a\n\n\u5982\uff1a\u9876\u5c42\u9875\u9762 \u201c\u6211\u7684\u4e13\u680f\u201d \u4e0b \u6dfb\u52a0\u5404\u79cd\u7684\u4e13\u680f\u6587\u6458\uff0c\u90a3\u4e48\u76ee\u5f55\u7ed3\u6784\u5c06\u5982\u4e0b\u6240\u793a\uff1a\n\n\n```bash\n.\n\u251c\u2500\u2500 pages\n|   \u251c\u2500\u2500 columns // \u6211\u7684\u4e13\u680f\u4e0b\u7684\u6587\u7a3f\n|   |     \u251c\u2500\u2500 my-design-philosophy.md\n|   |     \u251c\u2500\u2500 ...\n|   |     \u2514\u2500\u2500 why-programmer-should-write-books.md\n|   \u251c\u2500\u2500 columns.md  // \u6211\u7684\u4e13\u680f   \n|   \u2514\u2500\u2500 index.md\n\u251c\u2500\u2500 static\n\u251c\u2500\u2500 templates\n\u2514\u2500\u2500 __init__.py\n```\n\n## \u4e3b\u9898\u6807\u7b7e\n\nFreezes \u652f\u6301\u5bf9\u6240\u6709\u6587\u7a3f\u7684\u4e3b\u9898\u6807\u7b7e\u5206\u7c7b\u65b9\u5f0f\uff0c\u53ea\u8981\u5728\u6587\u7a3f\u5185\u4f7f\u7528 `tags` \u5143\u6570\u636e\u5373\u53ef\u58f0\u660e\u4e3b\u9898\u8bcd\u3002Freezes \u5c06\u81ea\u52a8\u5408\u5e76\u91cd\u590d\u7684\u4e3b\u9898\u8bcd\uff0c\u5e76\u5728\u6bcf\u9875\u7684\u4e0b\u65b9\u7684 \u201c\u70ed\u95e8\u6807\u7b7e\u201d \u4e2d\u663e\u793a\u4e3b\u9898\u8bcd\u5217\u8868\uff0c\u6216\u8005\u76f4\u63a5\u8bbf\u95ee `http://localhost:5500/tags` \u5730\u5740\u8fdb\u5165\u4e3b\u9898\u8bcd\u5206\u7c7b\u9875\u3002\n\n## \u5f52\u6863\n\u6b64\u529f\u80fd\u7528\u4e8e\u517c\u5bb9\u4f20\u7edf\u7684\u535a\u5ba2\u5f52\u6863\u529f\u80fd\uff0c\u53ef\u76f4\u63a5\u8bbf\u95ee `http://localhost:5500/archives/`\u8fdb\u5165\u3002\u6b64\u529f\u80fd\u53ea\u5bf9\u5b58\u4e8e `posts` \u76ee\u5f55\u4e0b\u7684\u535a\u5ba2\u6587\u7ae0\u6309\u6708\u4efd\u8fdb\u884c\u5f52\u6863\u5206\u7c7b\u3002\n\n## \u547d\u540d\u7684\u5efa\u8bae\n\n\u826f\u597d\u7684\u547d\u540d\u80fd\u63d0\u4f9bSEO\u7684\u6548\u679c\u5e76\u4e14\u66f4\u52a0\u6613\u4e8e\u7ba1\u7406\u4e0e\u67e5\u627e\u6587\u7ae0\uff0c\u6839\u636e\u621115\u5e74\u6765\u79ef\u7d2f\u7684\u4e92\u8054\u7f51\u5f00\u53d1\u7ecf\u9a8c\uff0c\u5efa\u8bae\u91c7\u7528\u4ee5\u4e0b\u7684\u65b9\u5f0f\u5bf9\u6587\u4ef6\u4e0e\u76ee\u5f55\u8fdb\u884c\u547d\u540d\uff1a\n\n1. \u540d\u79f0\u7531\u6570\u5b57\u4e0e\u82f1\u6587\u7ec4\u6210\n2. \u8bcd\u4e0e\u8bcd\u4e4b\u95f4\u7528 `-` \u5206\u5f00\uff0c\u8fd9\u6837\u505a\u66f4\u5bb9\u6613\u8ba9\u641c\u7d22\u5f15\u64ce\u8bc6\u522b\n3. `posts` \u76ee\u5f55\u4e0b\u7684\u6587\u7ae0\u4ee5\u65e5\u671f\u683c\u5f0f\u5efa\u7acb\u76ee\u5f55\u5206\u7c7b\u6587\u7ae0 \u5982\uff1a`2014-01-01` \uff0c\u5982\u679c\u60a8\u7684\u6587\u7ae0\u8f83\u591a\u8bdd\u53ef\u4ee5\u91c7\u7528\u6df1\u5c42\u6b21\u76ee\u5f55\u65b9\u5f0f\uff1a`2014/01/01` \n4. \u4e0d\u8981\u91c7\u7528\u62fc\u97f3\u547d\u540d\u6587\u4ef6\u6216\u76ee\u5f55\uff0c\u8fd9\u6837\u53ea\u4f1a\u964d\u4f4e\u641c\u7d22\u5f15\u64ce\u7684\u7d22\u5f15\u6548\u679c\u3002", 
+      "created": "Fri, 27 Mar 2015 17:56:04 GMT", 
+      "excerpt": "<p>\u4f17\u6240\u5468\u77e5\u4f20\u7edf\u535a\u5ba2\u7684\u5206\u4ee5 <strong>\u5206\u7c7b</strong> (Category), <strong>\u4e3b\u9898\u6807\u7b7e</strong> (Tag)\u4f5c\u4e3a\u6587\u7ae0\u7684\u5206\u7c7b\u4f9d\u636e\u3002\u4f5c\u4e3a\u7528\u6237\u5219\u9700\u8981\u5148\u901a\u8fc7\u7f51\u7ad9\u540e\u53f0\u5efa\u7acb\u5206\u7c7b\u76ee\u5f55\uff0c\u5728\u5199\u4f5c\u65f6\u624d\u5c06\u6587\u7ae0\u5f52\u5165\u67d0\u4e00\u9884\u5148\u5b9a\u7acb\u7684\u5206\u7c7b\u4e2d\u3002\u6211\u4eec\u8ba4\u4e3a\u8fd9\u79cd\u505a\u6cd5\u662f\u975e\u5e38\u4f4e\u6548\u7684\uff0c\u5728\u7535\u8111\u4e0a\u4e0d\u540c\u79cd\u7c7b\u7684\u6587\u4ef6\u4f1a\u91c7\u7528\u6587\u4ef6\u76ee\u5f55\u52a0\u4ee5\u5206\u7c7b\uff0c\u8fd9\u662f\u6700\u79d1\u5b66\u548c\u6700\u81ea\u7136\u7684\u505a\u6cd5\u3002\u8fd9\u79cd\u6587\u4ef6\u6574\u7406\u7684\u65b9\u5f0f\u662f\u5728\u5199\u4f5c\u7ed3\u675f\u540e\u6839\u636e\u6587\u4ef6\u7684\u8bed\u5883\u6216\u8303\u56f4\u7ec6\u5206\uff0c\u6240\u4ee5\u5206\u7c7b\u4f1a\u975e\u5e38\u6e05\u6670\uff0cFreezes \u5219\u662f\u5e9f\u5f03\u4f20\u7edf\u535a\u5ba2\u7684\u505a\u6cd5\u800c\u91c7\u7528\u66f4\u52a0\u81ea\u7136\u7684\u6587\u4ef6\u76ee\u5f55\u5206\u7c7b\u6cd5\u3002</p>\n<p>Freezes \u7684\u6587\u7a3f\u662f\u5b58\u653e\u5728 <code>pages</code> \u76ee\u5f55\u4e0b\u7684\u3002Freezes \u53ea\u5c06 <code>posts</code> \u4f5c\u4e3a\u4fdd\u7559\u76ee\u5f55\u5b58\u653e\u4e0e\u65f6\u95f4\u76f8\u5173\u7684\u6587\u7ae0\u4ee5\u517c\u5bb9\u4f20\u7edf\u7684\u535a\u5ba2\u6587\u7a3f\u3002</p>", 
+      "id": 2, 
+      "last_updated": "Sun, 22 Mar 2015 19:29:50 GMT", 
+      "meta": {
+        "id": 2, 
+        "summary": "\u5206\u7c7b\u76ee\u5f55\u4e0e\u4e3b\u9898\u6807\u7b7e", 
+        "title": "\u5185\u5bb9\u7ba1\u7406"
+      }, 
+      "name": "categorize-your-contents", 
+      "path": "zh-cn/documents/organizate-your-contents/categorize-your-contents", 
+      "published": "Sun, 22 Mar 2015 19:29:50 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/organizate-your-contents/categorize-your-contents/"
+    }, 
+    {
+      "body": "\n\u6211\u4eec\u575a\u6301\u4f7f\u7528\u7eaf\u51c0\u7684 markdown \u6587\u4ef6\u5199\u4f5c\uff0cmarkdown\u8bde\u751f\u7684\u521d\u8877\u662f\u7528\u6700\u7684\u5c11\u7b26\u53f7\u53d6\u4ee3\u7e41\u6742\u7684\u683c\u5f0f\u3002 \u5982\u679c markdown \u5e26\u6709\u7f51\u7ad9\u5f15\u64ce\u4e13\u7528\u7684\u89e3\u91ca\u6807\u8bb0\u5c31\u4f1a\u8fdd\u53cd\u8fd9\u4e00\u539f\u5219 \uff0c\u90a3\u662f\u4e00\u79cd\u6587\u5b57\u7684**\u6c61\u67d3**\uff0cFreezes \u51b3\u4e0d\u8fd9\u6837\u505a\u3002\u5982\u679c\u8fd9\u4e00\u70b9\u4e0e\u60a8\u7684\u54f2\u5b66\u76f8\u6096\uff0c\u90a3\u4e48\u8bf7\u4f7f\u7528\u5176\u5b83\u7684\u5e73\u53f0\u5982 jekyll\u3002\n\n\u4ee5\u4e0b\u7684\u5185\u5bb9\u662f\u539f\u751f\u7684 Markdown \u5728 Freezes\u7684\u4f7f\u7528\u6548\u679c\uff0c\u4f60\u53ea\u9700\u8981\u82b1\u5f88\u5c11\u7684\u65f6\u95f4\u5c31\u80fd\u4e86\u89e3\u8fd9\u4e00\u5207\u3002", 
+      "created": "Wed, 11 Mar 2015 01:40:16 GMT", 
+      "excerpt": "<p>\u6211\u4eec\u575a\u6301\u4f7f\u7528\u7eaf\u51c0\u7684 markdown \u6587\u4ef6\u5199\u4f5c\uff0cmarkdown\u8bde\u751f\u7684\u521d\u8877\u662f\u7528\u6700\u7684\u5c11\u7b26\u53f7\u53d6\u4ee3\u7e41\u6742\u7684\u683c\u5f0f\u3002 \u5982\u679c markdown \u5e26\u6709\u7f51\u7ad9\u5f15\u64ce\u4e13\u7528\u7684\u89e3\u91ca\u6807\u8bb0\u5c31\u4f1a\u8fdd\u53cd\u8fd9\u4e00\u539f\u5219 \uff0c\u90a3\u662f\u4e00\u79cd\u6587\u5b57\u7684<strong>\u6c61\u67d3</strong>\uff0cFreezes \u51b3\u4e0d\u8fd9\u6837\u505a\u3002\u5982\u679c\u8fd9\u4e00\u70b9\u4e0e\u60a8\u7684\u54f2\u5b66\u76f8\u6096\uff0c\u90a3\u4e48\u8bf7\u4f7f\u7528\u5176\u5b83\u7684\u5e73\u53f0\u5982 jekyll\u3002</p>", 
+      "id": 2, 
+      "last_updated": "Sun, 22 Mar 2015 18:01:47 GMT", 
+      "meta": {
+        "id": 2, 
+        "summary": "Markdown \u5728 Freezes \u4e0a\u7684\u8868\u73b0\u6548\u679c", 
+        "title": "\u5185\u5bb9\u7ec4\u7ec7"
+      }, 
+      "name": "organizate-your-contents", 
+      "path": "zh-cn/documents/organizate-your-contents", 
+      "published": "Sun, 22 Mar 2015 18:01:47 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/organizate-your-contents/"
+    }, 
+    {
+      "body": "In addition to the built-in variables available from Freezes, you can specify your own custom data that can be accessed via the template pages.\n\nFreezes supports loading data from **YAML**, **JSON**, and **CSV** files located in the `data` directory. Note that CSV files must contain a header row.\n\nThis powerful feature allows you to avoid repetition in your templates and to set site specific options without changing `_config.yml`.\n\nAs explained on the directory structure page, the `data` folder is where you can store additional data for Freezes to use when generating your site. These files must be **YAML** files (using either the **.yml**, **.json** or **csv** extension) and they will be accessible via `site.data`.\n\n## Example: List of members\n\nHere is a basic example of using Data Files to avoid copy-pasting large chunks of code in your Freezes templates:\n\nIn `data/members.yml`:\n\n```yaml\n- name: Ray\n  github: dotnetage\n\n- name: Editson\n  github: editson\n\n- name: Money\n  github: money\n```\n\nOr `data/members.csv`:\n\n```csv\nname,github\nRay,dotnetage\nEditson,editson\nMoney,money\n```\n\nThis data can be accessed via `site.data.members` (notice that the filename determines the variable name).\n\n\nYou can now render the list of members in a template:\n\n```django\n<ul>\n{% for member in site.data.members %}\n  <li>\n    <a href=\"https://github.com/{{ member.github }}\">\n      {{ member.name }}\n    </a>\n  </li>\n{% endfor %}\n</ul>\n```\n\n## Example: Organizations\n\nData files can also be placed in sub-folders of the `data` folder. Each folder level will be added to a variable\u2019s namespace. The example below shows how GitHub organizations could be defined separately in a file under the orgs folder:\n\nIn `data/orgs/freezes.yml`:\n\n```yaml\nusername: freezes\nname: freezes\nmembers:\n  - name: Ray\n    github: dotnetage\n\n  - name: Editson\n    github: editson\n```\n    \nIn `data/orgs/doeorg.yml`:\n\n```yaml\nusername: doeorg\nname: Doe Org\nmembers:\n  - name: John Doe\n    github: jdoe\n```\n\nThe organizations can then be accessed via `site.data.orgs`, followed by the file name:\n\n```django\n<ul>\n{% for org_hash in site.data.orgs %}\n{% assign org = org_hash[1] %}\n  <li>\n    <a href=\"https://github.com/{{ org.username }}\">\n      {{ org.name }}\n    </a>\n    ({{ org.members | size }} members)\n  </li>\n{% endfor %}\n</ul>\n```", 
+      "created": "Tue, 31 Mar 2015 11:56:00 GMT", 
+      "excerpt": "<p>In addition to the built-in variables available from Freezes, you can specify your own custom data that can be accessed via the template pages.</p>\n<p>Freezes supports loading data from <strong>YAML</strong>, <strong>JSON</strong>, and <strong>CSV</strong> files located in the <code>data</code> directory. Note that CSV files must contain a header row.</p>", 
+      "id": 3, 
+      "last_updated": "Tue, 31 Mar 2015 11:56:00 GMT", 
+      "meta": {
+        "id": 3, 
+        "summary": "The powerful feature to use static data files", 
+        "title": "Data files"
+      }, 
+      "name": "data-files", 
+      "path": "documents/data-files", 
+      "published": "Tue, 31 Mar 2015 11:56:00 GMT", 
+      "tags": [], 
+      "url": "/documents/data-files/"
+    }, 
+    {
+      "body": "\u5f53\u4f60\u5728\u5b9a\u5236\u5e03\u5c40\u9875\u65f6\u5fc5\u4e0d\u53ef\u5c11\u5730\u9700\u8981\u4eceFreezes\u4e2d\u83b7\u53d6\u4e00\u4e9b\u6570\u636e\u663e\u793a\u5728\u9875\u9762\u4e2d\uff0c\u672c\u6587\u5c06\u8be6\u7ec6\u5730\u5217\u51fa\u5728\u5e03\u5c40\u9875\u5185\u6240\u4f7f\u7528\u4f7f\u7528\u7684\u6240\u6709\u7684\u53d8\u91cf\u5bf9\u8c61\u4ee5\u53ca\u6210\u5458\u7684\u4f7f\u7528\u8bf4\u660e\u3002\n\n\n## \u7ad9\u70b9 - `Site`\n\n\u7279\u6027\u8bf4\u660e\n\n\u540d\u79f0|\u7c7b\u578b|\u8bf4\u660e\n--|--|--\n`pages`| `Page` \u5217\u8868|\u8fd4\u56de\u5f53\u524d\u7ad9\u70b9\u5185\u6240\u6709\u9875\u9762\n`posts`| `Page` \u5217\u8868|\u8fd4\u56de\u5f53\u524d\u7ad9\u70b9\u5185\u6240\u6709\u7684\u535a\u5ba2\u6587\u7ae0\n`data`| `Object` |\u8fd4\u56de\u6570\u636e\u533a\u52a0\u8f7d\u7684\u5bf9\u8c61\u5f15\u7528\n`tags`| \u5b57\u7b26\u4e32 \u5b57\u5178 |\u8fd4\u56de\u5f53\u524d\u7ad9\u70b9\u5185\u6240\u6709\u7684\u4e3b\u9898\u6807\u7b7e\n`archives`| `Archive` \u5217\u8868 |\u8fd4\u56de\u5f53\u524d\u7ad9\u70b9\u5185\u6240\u6709\u7684\u5f52\u6863\u5bf9\u8c61\n\n### \u65b9\u6cd5\u53c2\u8003\n\n#### `menus(search_path='')` \u65b9\u6cd5\n\u67e5\u8be2\u6307\u5b9a\u53c2\u8003\u8def\u5f84\u4e0b\u7528\u4e8e\u663e\u793a\u4e8e\u83dc\u5355\u7684\u6240\u6709\u9875\u9762\u7684\u5bf9\u8c61\u96c6\u5408\u3002\n\n**\u53c2\u6570**\n\n- `search_path` - \u5b57\u7b26\u4e32 \u6307\u5b9a\u53c2\u8003\u8def\u5f84\n\n**\u8fd4\u56de\u503c**\n\n\u8fd4\u56de\u5f53\u524d\u53c2\u8003\u8def\u5f84\u4e0b\u7684\u6240\u6709\u7684\u5b50\u9875\u9762\u5bf9\u8c61\u96c6\u5408\n\n---\n\n#### `get_pages_path(context_path)` \u65b9\u6cd5\n\u6839\u636e\u6307\u5b9a\u4e0a\u4e0b\u6587\u8def\u5f84\u8fd4\u56de\u8be5\u8def\u5f84\u4e0b\u7684\u9875\u9762\u5217\u8868\n\n**\u53c2\u6570**\n\n- `context_path` - \u5b57\u7b26\u4e32 \u7528\u4e8e\u67e5\u8be2\u7684\u4e0a\u4e0b\u6587\u8def\u5f84\n\n**\u8fd4\u56de\u503c**\n\n\u9875\u5bf9\u8c61\u5217\u8868\n\n---\n\n#### `locale_posts(locale='')` \u65b9\u6cd5\n\u83b7\u53d6\u6307\u5b9a\u8bed\u8a00\u7684\u6240\u6709\u535a\u5ba2\u6587\u7ae0\n\n**\u53c2\u6570**\n\n- `locale` - \u5b57\u7b26\u4e32 \u6307\u5b9a\u8bed\u8a00\n\n**\u8fd4\u56de\u503c**\n\n\u9875\u5bf9\u8c61\u5217\u8868\n\n\n---\n\n#### `query(search_path,all=False,sort='id')` \u65b9\u6cd5\n\n\u67e5\u7684\u6307\u5b9a\u8def\u5f84\u4e0b\u6240\u6709\u7684\u9875\u9762\n\n\n**\u53c2\u6570**\n\n- `search_path` - \u5b57\u7b26\u4e32 \u6307\u5b9a\u67e5\u8be2\u8def\u5f84\n- `all` - \u5e03\u5c14\u503c \u5f53\u4e3a\u771f\u662f\u53cd\u56de\u8def\u5f84\u4e0b\u6240\u6709\u7684\u5b50\u4ee3\u9875\n- `sort` - \u5b57\u7b26\u4e32 \u6307\u5b9a\u6392\u5e8f\u7528\u7684\u5143\u6570\u636e\n\n\n**\u8fd4\u56de\u503c**\n\n\u9875\u5bf9\u8c61\u5217\u8868\n\n---\n\n#### `tagged(tag,locale='')` \u65b9\u6cd5\n\n\u8fd4\u56de\u6307\u5b9a *\u4e3b\u9898\u8bcd* \u7684\u6240\u6709\u9875\u9762\u5217\u8868\n\n**\u53c2\u6570**\n\n- `tag` - \u5b57\u7b26\u4e32 \u6307\u5b9a\u53c2\u8003\u8def\u5f84\n- `locale` - \u5b57\u7b26\u4e32 \u6307\u5b9a\u8bed\u8a00\n\n**\u8fd4\u56de\u503c**\n\u9875\u9762\u5217\u8868\u5bf9\u8c61\n\n\n## \u9875 - `Post`\n\n\u7279\u6027\u8bf4\u660e\n\n\u540d\u79f0|\u7c7b\u578b|\u8bf4\u660e\n--|--|--\n`title`| \u5b57\u7b26\u4e32 | \u9875\u6807\u9898\u6587\u5b57\n`summary`| \u5b57\u7b26\u4e32 | \u6458\u8981\n`meta`| \u5b57\u5178 | \u5143\u6570\u636e\u5b57\u5178\n`excerpt`| \u5b57\u7b26\u4e32 | \u6982\u8ff0\n`relatives`| `Page` \u5217\u8868| \u76f8\u5173\u6587\u7ae0\u5217\u8868\n`next`| `Page` | \u4e0b\u4e00\u9875\u5bf9\u8c61\n`prev`| `Page`| \u4e0a\u4e00\u9875\u5bf9\u8c61\n`url`| \u5b57\u7b26\u4e32 | URL\n`name`| \u5b57\u7b26\u4e32 | \u9875\u6587\u4ef6\u540d\uff08\u4e0d\u5305\u542b\u6269\u5c55\u540d\uff09\n`wordcount`| \u6574\u6570 | \u5b57\u6570\n`created`| \u65e5\u671f | \u521b\u5efa\u65e5\u671f\n`last_updated`| \u65e5\u671f | \u6700\u540e\u4fee\u6539\u65e5\u671f\n`published`| \u65e5\u671f | \u53d1\u8868\u65e5\u671f\n\n\n\n\n\n\n\n\n\n\n\n", 
+      "created": "Fri, 27 Mar 2015 17:56:34 GMT", 
+      "excerpt": "<p>\u5f53\u4f60\u5728\u5b9a\u5236\u5e03\u5c40\u9875\u65f6\u5fc5\u4e0d\u53ef\u5c11\u5730\u9700\u8981\u4eceFreezes\u4e2d\u83b7\u53d6\u4e00\u4e9b\u6570\u636e\u663e\u793a\u5728\u9875\u9762\u4e2d\uff0c\u672c\u6587\u5c06\u8be6\u7ec6\u5730\u5217\u51fa\u5728\u5e03\u5c40\u9875\u5185\u6240\u4f7f\u7528\u4f7f\u7528\u7684\u6240\u6709\u7684\u53d8\u91cf\u5bf9\u8c61\u4ee5\u53ca\u6210\u5458\u7684\u4f7f\u7528\u8bf4\u660e\u3002</p>", 
+      "id": 3, 
+      "last_updated": "Wed, 25 Mar 2015 00:17:51 GMT", 
+      "meta": {
+        "id": 3, 
+        "summary": "\u5728\u9875\u9762\u5185\u63d0\u53d6\u6570\u636e", 
+        "title": "\u53d8\u91cf"
+      }, 
+      "name": "variables", 
+      "path": "zh-cn/documents/customization/variables", 
+      "published": "Wed, 25 Mar 2015 00:17:51 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/customization/variables/"
+    }, 
+    {
+      "body": "\n\u4f20\u7edf\u7684WIKI\u6216\u8005\u535a\u5ba2\u4e3a\u4e86\u7f16\u7a0b\u65b9\u4fbf\u5f80\u5f80\u559c\u7231\u5c06\u6587\u672c\u6240\u5f15\u7528\u5230\u7684\u56fe\u7247\u6216\u8005\u662f\u89c6\u9891\u8d44\u6e90\u7edf\u4e00\u653e\u7f6e\u5728\u4e00\u4e2a\u76ee\u5f55\u5185\uff0c\u53ea\u8981\u5f15\u7528\u7684\u8d44\u6e90\u8d8a\u6765\u8d8a\u591a\uff0c\u6587\u7ae0\u4e5f\u8d8a\u6765\u8d8a\u591a\u4e4b\u95f4\u51e0\u4e4e\u662f\u65e0\u6cd5\u627e\u5230\u4e0e\u6587\u7ae0\u5f15\u7528\u5bf9\u5e94\u7684\u8d44\u6e90\u6587\u4ef6\u7684\uff0c\u8fd9\u65e0\u7591\u4e3a\u6587\u7a3f\u76f8\u5173\u8d44\u6e90\u7684\u7ba1\u7406\u5e26\u6765\u56f0\u96be\u3002\n\nFreezes\u5141\u8bb8\u4f5c\u8005\u4f7f\u7528\u6700\u5e38\u89c4\u7684\u6587\u4ef6\u4e0e\u8d44\u6e90\u7ba1\u7406\u624b\u6bb5\u5c31\u662f\u901a\u8fc7\u76ee\u5f55\u8fdb\u884c\u5206\u7c7b\u4e0e\u8d44\u6e90\u7ba1\u7406\u3002\u5f53\u6587\u7ae0\u9700\u8981\u5f15\u7528\u989d\u5916\u7684\u56fe\u7247\u6216\u8005\u662f\u5176\u5b83\u8d44\u6e90\u65f6\uff0c\u5e76\u65e0\u9700\u6307\u660e\u56fe\u7247\u7684\u5177\u4f53\u5730\u5740\uff0c\u800c\u53ea\u9700\u8981\u58f0\u660e\u5176\u6587\u4ef6\u540d\uff0c\u540c\u65f6\u5728\u6587\u7ae0\u6240\u5728\u7684\u76ee\u5f55\u4e2d\u5efa\u7acb\u4e00\u4e2a\u540c\u540d\u7684\u6587\u4ef6\u5939\uff0c\u5c06\u8d44\u6e90\u6587\u4ef6\u653e\u7f6e\u5176\u4e2d\u5373\u53ef\u5f15\u7528\u6210\u529f\u3002\n\n\u4f8b\u5982\uff0c\u9700\u8981\u5728`quick-start.md`\u6587\u4ef6\u5185\u5f15\u7528\u4e00\u4e2a`cover.png`\u56fe\u7247,\u76ee\u5f55\u7ed3\u6784\u5219\u5e94\u8be5\u5982\u4e0b\uff1a\n\n```bash\n.\n\u251c\u2500\u2500 pages\n|   \u251c\u2500\u2500 posts\n|   |     \u2514\u2500\u2500 2014-01-01\n|   |           \u251c\u2500 quick-start\n|   |           |      \u2514\u2500 cover.png\n|   |           \u2514\u2500 quick-start.md\n|   |   \n|   \u2514\u2500\u2500 ...\n\u2514\u2500\u2500 ...\n```\n\n\u90a3\u4e48\u5728 `quick-start.md` \u6587\u4ef6\u5185\u5c31\u53ef\u4ee5\u4ee5\u4e0b\u65b9\u5f0f\u5f15\u7528 `cover.png` \u6587\u4ef6:\n\n```\n![Cover](cover.png)\n```\n\n\u540c\u7406\uff0cFreezes \u5bf9\u4e00\u5207\u975e `*.md` \u540e\u7f00\u6587\u4ef6\u653e\u7f6e\u4e8e `pages` \u76ee\u5f55\u90fd\u53ef\u4ee5\u4e0a\u6587\u7684\u65b9\u5f0f\u5f15\u7528\u3002\n\n## \u94fe\u63a5\u5176\u5b83\u7684\u6587\u7a3f\n\n\u6211\u4eec\u5728\u5199\u4f5c\u65f6\u7ecf\u5e38\u4f1a\u94fe\u63a5\u5230\u5176\u5b83\u7684\u76f8\u5173\u6587\u7a3f\u4e0a\uff0cFreezes \u662f\u91c7\u7528\u76f8\u5bf9\u76ee\u5f55\u7684\u65b9\u5f0f\u5f15\u7528\u81f3\u5176\u5b83\u6587\u7a3f\u3002\u6211\u4eec\u5e73\u65f6\u5c31\u662f\u5728\u76ee\u5f55\u4e2d\u7ba1\u7406\u6587\u4ef6\uff0c\u6240\u4ee5\u901a\u8fc7\u76f8\u5bf9\u76ee\u5f55\u5f15\u7528\u76f8\u5173\u6587\u4ef6\u662f\u6700\u81ea\u7136\u7684\u505a\u6cd5\u3002\n\n\u4f8b\u5982\uff1a\u5728 \u201c\u6211\u7684\u4e13\u680f\u201d (columns.md) \u6587\u4ef6\u5185\u6dfb\u52a0\u4e00\u94fe\u63a5\u6307\u5411 `my-design-philosopy.md`\n\n```bash\n.\n\u251c\u2500\u2500 pages\n|   \u251c\u2500\u2500 columns // \u6211\u7684\u4e13\u680f\u4e0b\u7684\u6587\u7a3f\n|   |     \u251c\u2500\u2500 my-design-philosophy.md\n|   |     \u251c\u2500\u2500 ...\n|   |     \u2514\u2500\u2500 why-programmer-should-write-books.md\n|   \u251c\u2500\u2500 columns.md  // \u6211\u7684\u4e13\u680f   \n|   \u2514\u2500\u2500 index.md\n\u2514\u2500\u2500 ...\n\n```\n\n\u5728`columns.md`\u6587\u7a3f\u7684\u6b63\u6587\u5185\u5219\u5e94\u8be5\u50cf\u5982\u4e0b\u65b9\u5f0f\u5904\u7406\uff1a\n\n```markdown\n\u8bf7\u53c2\u8003\uff1a[\u6211\u7684\u8bbe\u8ba1\u54f2\u5b66](my-design-philosophy)\n```\n\n\u53cd\u4e4b\uff0c\u5982\u679c\u5728 `my-design-philosophy.md` \u6587\u7a3f\u5185\u5f15\u7528 `columns.md` \u7684\u8bdd\u5219\u5e94\u8be5\u91c7\u7528 `/` \u4ee5\u52a0\u5165\u5168\u8def\u5f84:\n\n```markdown\n\u8bf7\u53c2\u8003\uff1a[\u6211\u7684\u4e13\u680f](/columns/)\n```\n\n\n", 
+      "created": "Fri, 27 Mar 2015 17:56:04 GMT", 
+      "excerpt": "<p>\u4f20\u7edf\u7684WIKI\u6216\u8005\u535a\u5ba2\u4e3a\u4e86\u7f16\u7a0b\u65b9\u4fbf\u5f80\u5f80\u559c\u7231\u5c06\u6587\u672c\u6240\u5f15\u7528\u5230\u7684\u56fe\u7247\u6216\u8005\u662f\u89c6\u9891\u8d44\u6e90\u7edf\u4e00\u653e\u7f6e\u5728\u4e00\u4e2a\u76ee\u5f55\u5185\uff0c\u53ea\u8981\u5f15\u7528\u7684\u8d44\u6e90\u8d8a\u6765\u8d8a\u591a\uff0c\u6587\u7ae0\u4e5f\u8d8a\u6765\u8d8a\u591a\u4e4b\u95f4\u51e0\u4e4e\u662f\u65e0\u6cd5\u627e\u5230\u4e0e\u6587\u7ae0\u5f15\u7528\u5bf9\u5e94\u7684\u8d44\u6e90\u6587\u4ef6\u7684\uff0c\u8fd9\u65e0\u7591\u4e3a\u6587\u7a3f\u76f8\u5173\u8d44\u6e90\u7684\u7ba1\u7406\u5e26\u6765\u56f0\u96be\u3002</p>", 
+      "id": 3, 
+      "last_updated": "Sun, 22 Mar 2015 19:42:26 GMT", 
+      "meta": {
+        "id": 3, 
+        "summary": "\u5f15\u7528\u5d4c\u5165\u6587\u7a3f\u7684\u8d44\u6e90\uff0c\u94fe\u63a5\u7ad9\u5185\u7684\u5176\u5b83\u6587\u7a3f", 
+        "title": "\u94fe\u63a5\u4e0e\u5f15\u7528"
+      }, 
+      "name": "resources-and-links", 
+      "path": "zh-cn/documents/organizate-your-contents/resources-and-links", 
+      "published": "Sun, 22 Mar 2015 19:42:26 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/organizate-your-contents/resources-and-links/"
+    }, 
+    {
+      "body": "", 
+      "created": "Sat, 04 Apr 2015 06:31:33 GMT", 
+      "excerpt": "", 
+      "id": 3, 
+      "last_updated": "Tue, 31 Mar 2015 11:23:26 GMT", 
+      "meta": {
+        "id": 3, 
+        "title": "\u76f8\u5173\u6587\u6863"
+      }, 
+      "name": "documents", 
+      "path": "zh-cn/documents", 
+      "published": "Tue, 31 Mar 2015 11:23:26 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/"
+    }, 
+    {
+      "body": "Freezes \u9ed8\u8ba4\u5b89\u88c5\u540e\u4f1a\u63d0\u4f9b\u4e00\u4e2a\u7b80\u7ea6\u7684\u7f51\u9875\u98ce\u683c\u3002\u6bcf\u4e2a\u6587\u7a3f\u53ef\u4ee5\u901a\u8fc7\u5143\u6570\u636e `layout` \u6307\u5b9a\u5f53\u524d\u6587\u7a3f\u7528\u4ec0\u4e48\u9875\u9762\u5e03\u5c40\u663e\u793a\u3002\u9ed8\u8ba4\u60c5\u51b5\u4e0b\u5f53\u6587\u7a3f\u5185\u6ca1\u6709\u91c7\u7528 layout\u5143\u6570\u636e\u6307\u5b9a\u5e03\u5c40\u65f6\uff0c Freezes \u5c06\u4e3a\u4f60\u7684\u6587\u7a3f\u81ea\u52a8\u9009\u62e9\u4e00\u79cd\u6700\u5408\u9002\u7684\u5e03\u5c40\u65b9\u5f0f\u3002\n\nFreezes \u63d0\u4f9b\u4e86\u4ee5\u4e0b\u76843\u79cd\u5e03\u5c40\u65b9\u5f0f:\n\n\u5e03\u5c40|\u8bf4\u660e\n--|--\n`recent` | \u4e0a\u65b9\u663e\u793a\u6b63\u6587\uff0c\u4e0b\u65b9\u663e\u793a\u6700\u8fd1\u7ad9\u70b9\u5728 `pages/posts` \u76ee\u5f55\u4e2d\u6700\u65b0\u7684\u6587\u7ae0\n`page` | \u4e0a\u65b9\u663e\u793a\u6b63\u6587\uff0c\u4e0b\u65b9\u663e\u793a\u5b50\u76ee\u5f55\u4e0b\u7684\u6587\u7ae0\n`post` | \u4e0a\u65b9\u663e\u793a\u4e0b\u65b9\uff0c\u5e95\u90e8\u5e26\u6709\u8ba8\u8bba\u529f\u80fd\n\n\u5177\u4f53\u6307\u5b9a\u7684\u65b9\u6cd5\u53ef\u4ee5\u5728\u6587\u7a3f\u5185\u589e\u52a0`layout`\uff0c\u5982\u4e0b\u6240\u793a\uff1a\n\n```yml\nlayout: recent\ntitle: \"\u5173\u4e8e\"\n\n\u6b64\u5904\u662f\u6b63\u6587\n```\n\n---\n\n\u5982\u679c\u4f60\u662f\u4e00\u4f4d\u7f51\u9875\u8bbe\u8ba1\u5e08\uff0c\u53c8\u6216\u8005\u4f60\u662f\u4e00\u4f4d\u524d\u7aef\u5f00\u53d1\u8005\uff0c\u800c\u4e14\u5f53\u4f60\u9700\u8981\u5b9a\u4e49\u81ea\u5df1\u7684\u5e03\u5c40\u65b9\u5f0f\uff0c\u90a3\u4e48\u4f60\u53ef\u4ee5\u9605\u8bfb\u4ee5\u4e0b\u7684\u6587\u7ae0\uff1a\n\n", 
+      "created": "Sun, 22 Mar 2015 22:23:48 GMT", 
+      "excerpt": "<p>Freezes \u9ed8\u8ba4\u5b89\u88c5\u540e\u4f1a\u63d0\u4f9b\u4e00\u4e2a\u7b80\u7ea6\u7684\u7f51\u9875\u98ce\u683c\u3002\u6bcf\u4e2a\u6587\u7a3f\u53ef\u4ee5\u901a\u8fc7\u5143\u6570\u636e <code>layout</code> \u6307\u5b9a\u5f53\u524d\u6587\u7a3f\u7528\u4ec0\u4e48\u9875\u9762\u5e03\u5c40\u663e\u793a\u3002\u9ed8\u8ba4\u60c5\u51b5\u4e0b\u5f53\u6587\u7a3f\u5185\u6ca1\u6709\u91c7\u7528 layout\u5143\u6570\u636e\u6307\u5b9a\u5e03\u5c40\u65f6\uff0c Freezes \u5c06\u4e3a\u4f60\u7684\u6587\u7a3f\u81ea\u52a8\u9009\u62e9\u4e00\u79cd\u6700\u5408\u9002\u7684\u5e03\u5c40\u65b9\u5f0f\u3002</p>\n<p>Freezes \u63d0\u4f9b\u4e86\u4ee5\u4e0b\u76843\u79cd\u5e03\u5c40\u65b9\u5f0f:</p>", 
+      "id": 3, 
+      "last_updated": "Thu, 26 Mar 2015 23:24:06 GMT", 
+      "meta": {
+        "id": 3, 
+        "summary": "\u5f97\u5fc3\u5e94\u624b\u7684\u8bbe\u8ba1\u65b9\u5f0f", 
+        "title": "\u5b9a\u5236\u5316"
+      }, 
+      "name": "customization", 
+      "path": "zh-cn/documents/customization", 
+      "published": "Thu, 26 Mar 2015 23:24:06 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/customization/"
+    }, 
+    {
+      "body": "\n\u5728\u8fd0\u884c `freezes new` \u6307\u4ee4\u540e\uff0cFreezes \u5c06\u81ea\u52a8\u5728\u5f53\u524d\u76ee\u5f55\u4e0b\u521b\u5efa\u7ad9\u70b9\u6240\u9700\u8981\u8fd0\u884c\u7684\u5404\u79cd\u76ee\u5f55\u548c\u6587\u4ef6\uff0c\u7528 **Finder** \u6216 **\u6587\u4ef6\u7ba1\u7406\u5668** \u6253\u5f00\u7684\u8bdd\u5176\u76ee\u5f55\u7ed3\u6784\u5982\u4e0b\uff1a\n\n```bash\n.\n\u251c\u2500\u2500 _config.yml\n\u251c\u2500\u2500 _assets.yml\n\u251c\u2500\u2500 pages\n|   \u251c\u2500\u2500 posts\n|   |     \u2514\u2500\u2500 2014-01-01\n|   |           \u251c\u2500 why-programmer-should-write-books.md\n|   |           \u2514\u2500 why-programmer-should-write-books\n|   \u251c\u2500\u2500 documents     \n|   |   \n|   \u2514\u2500\u2500 index.md\n\u251c\u2500\u2500 builds\n\u251c\u2500\u2500 static\n|   \u251c\u2500\u2500 images\n|   \u251c\u2500\u2500 scripts\n|   \u2514\u2500\u2500 styles\n\u251c\u2500\u2500 templates\n|   \u251c\u2500\u2500 includes\n|   \u251c\u2500\u2500 layouts\n|   \u2514\u2500\u2500 404.html\n\u2514\u2500\u2500 __init__.py\n```\n\n\u4ee5\u4e0b\u662f\u5bf9\u6240\u6709\u7684\u9ed8\u8ba4\u76ee\u5f55\u7684\u5177\u4f53\u8bf4\u660e\n\n\u76ee\u5f55/\u6587\u4ef6|\u4f5c\u7528|\u8bf4\u660e\n--|--|--\n`pages` | \u5de5\u4f5c\u76ee\u5f55 | \u5b58\u653e\u6240\u6709\u7684\u5199\u4f5c\u7684\u6587\u4ef6\uff0c\u4f60\u53ef\u4ee5\u5efa\u7acb\u5404\u79cd\u4f60\u9700\u8981\u7684\u76ee\u5f55\u5bf9\u6587\u4ef6\u8fdb\u884c\u5206\u7c7b(\u8be6\u7ec6\u8bf7\u53c2\u8003[\"\u5185\u5bb9\u7ec4\u7ec7\"](/zh-cn/organizate-your-contents/))\npages/`posts` | \u968f\u7b14(\u535a\u5ba2)\u76ee\u5f55 | \npages/`index.md` | \u9996\u9875 | \u4e0d\u53ef\u5220\u9664\n`static` | \u9759\u6001\u8d44\u6e90\u76ee\u5f55 |\nstatic/`images` | \u56fe\u7247\u8d44\u6e90\u76ee\u5f55|\nstatic/`scripts` | \u811a\u672c\u76ee\u5f55 |\nstatic/`styles` | \u6837\u5f0f\u76ee\u5f55 |\n`templates` | \u9875\u9762\u6a21\u677f\u76ee\u5f55 |\ntemplates/`includes`| \u5b58\u653e\u5305\u542b\u6587\u4ef6 |\ntemplates/`layouts`| \u5b58\u653e\u5e03\u5c40\u9875\u9762\u6587\u4ef6 |\n`builds` | \u751f\u6210\u76ee\u5f55 | \u7ad9\u70b9\u9759\u6001\u5316\u540e\u7684\u6700\u7ec8\u6587\u4ef6\u8f93\u51fa\u76ee\u5f55\n`_config.yml` | \u7ad9\u70b9\u914d\u7f6e\u6587\u4ef6 | \u8be6\u7ec6\u914d\u7f6e\u8bf7\u53c2\u8003\uff1a[\"\u914d\u7f6e\u8bf4\u660e\"](configurations)\n`_assets.yml` | \u8d44\u6e90\u914d\u7f6e |\n\n", 
+      "created": "Fri, 27 Mar 2015 17:56:04 GMT", 
+      "excerpt": "<p>\u5728\u8fd0\u884c <code>freezes new</code> \u6307\u4ee4\u540e\uff0cFreezes \u5c06\u81ea\u52a8\u5728\u5f53\u524d\u76ee\u5f55\u4e0b\u521b\u5efa\u7ad9\u70b9\u6240\u9700\u8981\u8fd0\u884c\u7684\u5404\u79cd\u76ee\u5f55\u548c\u6587\u4ef6\uff0c\u7528 <strong>Finder</strong> \u6216 <strong>\u6587\u4ef6\u7ba1\u7406\u5668</strong> \u6253\u5f00\u7684\u8bdd\u5176\u76ee\u5f55\u7ed3\u6784\u5982\u4e0b\uff1a</p>", 
+      "id": 3, 
+      "last_updated": "Sun, 22 Mar 2015 17:47:46 GMT", 
+      "meta": {
+        "id": 3, 
+        "summary": "\u7ad9\u70b9\u5404\u79cd\u76ee\u5f55\u4e0e\u6587\u4ef6\u7684\u8be6\u7ec6\u8bf4\u660e", 
+        "title": "\u76ee\u5f55\u7ed3\u6784"
+      }, 
+      "name": "directory-structure", 
+      "path": "zh-cn/quick-started/directory-structure", 
+      "published": "Sun, 22 Mar 2015 17:47:46 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/quick-started/directory-structure/"
+    }, 
+    {
+      "body": "", 
+      "created": "Wed, 11 Mar 2015 10:19:32 GMT", 
+      "excerpt": "", 
+      "id": 3, 
+      "last_updated": "Thu, 26 Mar 2015 23:29:03 GMT", 
+      "meta": {
+        "id": 3, 
+        "summary": "The helper methods for pages", 
+        "title": "Macros"
+      }, 
+      "name": "macros", 
+      "path": "documents/customization/macros", 
+      "published": "Thu, 26 Mar 2015 23:29:03 GMT", 
+      "tags": [], 
+      "url": "/documents/customization/macros/"
+    }, 
+    {
+      "body": "\u5728\u67d0\u4e9b\u573a\u666f\u4e0b\u4f60\u53ef\u80fd\u9700\u8981\u5728\u9875\u9762\u4e2d\u76f4\u63a5\u8f93\u51faExcel\u4e2d\u7684\u6570\u636e\uff0c\u6216\u8005\u662f\u67d0\u4e9b**csv**\u683c\u5f0f\u6587\u4ef6\u4e2d\u7684\u6570\u636e\u3002Freezes \u63d0\u4f9b\u4e86\u4e00\u4e2a\u7b80\u5355\u7684\u6570\u636e\u5165\u53e3\uff0c\u53ef\u4ee5\u5c06\u5916\u90e8\u6570\u636e\u6587\u4ef6\u8bfb\u5165\u81f3\u9875\u9762\u7684\u4e0a\u4e0b\u6587\u5bf9\u8c61\u5185\uff0c\u5e76\u901a\u8fc7 `site.data.\u6587\u4ef6\u540d` \u83b7\u53d6\u3002\n\n\u53ea\u8981\u5c06\u6570\u636e\u6587\u4ef6\u653e\u7f6e\u4e8eFreezes \u7ad9\u70b9\u6839\u76ee\u5f55\u4e0b\u7684`data`\u5185, Freezes \u5728\u8fd0\u884c\u65f6\u5c06\u4f1a\u81ea\u52a8\u628a\u6570\u636e\u6587\u4ef6\u52a0\u8f7d\u81f3 `site.data` \u53d8\u91cf\u5185\uff0c\u63d0\u4f9b\u6a21\u677f\u5185\u5f15\u7528\u3002 Freezes \u53ef\u4ee5\u652f\u6301 **YAML**, **JSON** \u548c **CSV** \u683c\u5f0f\u7684\u6570\u636e\u683c\u5f0f\u6587\u4ef6\u3002(\u6ce8\uff1aCSV\u6587\u4ef6\u7684\u9996\u884c\u5fc5\u987b\u4e3a\u5217\u540d\u79f0)\n\n\u4e3a\u4e86\u66f4\u597d\u5730\u89e3\u91ca\u5982\u4f55\u6765\u4f7f\u7528\u8fd9\u4e2a\u5f3a\u5927\u7684\u6587\u672c\u5316\u6570\u636e\u7279\u8272\uff0c\u4ee5\u4e0b\u5c06\u5206\u522b\u4ee5 **YML**, **JSON** \u548c **CSV** \u6570\u636e\u6587\u4ef6\u7684\u4f7f\u7528\u4e3e\u4f8b\uff1a\n\n## \u793a\u4f8b: \u6210\u5458\u5217\u8868\n\n\u9996\u5148\u5206\u522b\u51c6\u5907**YML**\u6216**CSV**\u683c\u5f0f\u7684\u6570\u636e\u6587\u4ef6\uff0c\u672c\u4f8b\u540d\u4e3a `members.yml`/`members.csv` \u5e76\u653e\u7f6e\u4e8e `data` \u76ee\u5f55\u4e2d\n\n`data/members.yml`:\n\n```yaml\n- name: Ray\n  github: dotnetage\n\n- name: Edison\n  github: edison\n\n- name: Money\n  github: money\n```\n\n\u6216\u8005\u4f7f\u7528 `data/members.csv`:\n\n```csv\nname,github\nRay,dotnetage\nEdison,edison\nMoney,money\n```\n\n\u63a5\u4e0b\u6765\u5c31\u53ef\u4ee5\u5728\u9875\u9762\u5e03\u5c40\u6a21\u677f\u4e2d\u901a\u8fc7 `site.data.members` \u8bbf\u95ee\u6587\u4ef6\u5185\u7684\u6570\u636e\u4e86\u3002\n\n> \u6ce8: \u53d8\u91cf\u5bf9\u8c61\u7684\u540d\u79f0\u5c31\u662f\u6587\u4ef6\u540d\n\n```django\n<ul>\n{% for member in site.data.members %}\n  <li>\n    <a href=\"https://github.com/{{ member.github }}\">\n      {{ member.name }}\n    </a>\n  </li>\n{% endfor %}\n</ul>\n```\n\n## \u793a\u4f8b: \u7ec4\u7ec7\n\n\u6570\u636e\u76ee\u5f55\u4e2d\u53ef\u4ee5\u4f7f\u7528\u5b50\u76ee\u5f55\uff0c\u6240\u6709\u7684\u5b50\u76ee\u5f55\u4f1a\u88ab Freezes \u4f5c\u4e3a\u4e00\u4e2a\u5bf9\u8c61\u52a0\u8f7d\u81f3 `site.data` \u53d8\u91cf\u4e4b\u5185\uff0c\u5982\u679c\u4f60\u7684\u6570\u636e\u6587\u4ef6\u5f88\u591a\u7684\u65f6\u5019\u8fd9\u4f1a\u662f\u4e00\u4e2a\u975e\u5e38\u6709\u7528\u7684\u529f\u80fd\uff0c\u88ab\u521b\u5efa\u7684\u76ee\u5f55\u5bf9\u8c61\u53ef\u4ee5\u5f53\u4f5c\u5206\u7c7b\u5bf9\u8c61\u6216\u8005\u547d\u540d\u7a7a\u95f4\u4f7f\u7528\u3002\n \n\n\u6570\u636e\u6587\u4ef6 `data/orgs/freezes.yml`:\n\n```yaml\nusername: freezes\nname: freezes\nmembers:\n  - name: Ray\n    github: dotnetage\n\n  - name: Edison\n    github: edison\n```\n    \n\u518d\u589e\u52a0\u4e00\u4e2a\u6570\u636e\u6587\u4ef6 `data/orgs/doeorg.yml`:\n\n```yaml\nusername: doeorg\nname: Doe Org\nmembers:\n  - name: John Doe\n    github: jdoe\n```\n\n\u6b64\u65f6 `orgs` \u8fd9\u4e2a\u76ee\u5f55\u5c31\u53ef\u4ee5\u901a\u8fc7 `site.data.orgs` \u6765\u8bbf\u95ee:\n\n```django\n<ul>\n{% for org_hash in site.data.orgs %}\n{% assign org = org_hash[1] %}\n  <li>\n    <a href=\"https://github.com/{{ org.username }}\">\n      {{ org.name }}\n    </a>\n    ({{ org.members | size }} members)\n  </li>\n{% endfor %}\n</ul>\n```", 
+      "created": "Wed, 01 Apr 2015 23:12:28 GMT", 
+      "excerpt": "<p>\u5728\u67d0\u4e9b\u573a\u666f\u4e0b\u4f60\u53ef\u80fd\u9700\u8981\u5728\u9875\u9762\u4e2d\u76f4\u63a5\u8f93\u51faExcel\u4e2d\u7684\u6570\u636e\uff0c\u6216\u8005\u662f\u67d0\u4e9b<strong>csv</strong>\u683c\u5f0f\u6587\u4ef6\u4e2d\u7684\u6570\u636e\u3002Freezes \u63d0\u4f9b\u4e86\u4e00\u4e2a\u7b80\u5355\u7684\u6570\u636e\u5165\u53e3\uff0c\u53ef\u4ee5\u5c06\u5916\u90e8\u6570\u636e\u6587\u4ef6\u8bfb\u5165\u81f3\u9875\u9762\u7684\u4e0a\u4e0b\u6587\u5bf9\u8c61\u5185\uff0c\u5e76\u901a\u8fc7 <code>site.data.\u6587\u4ef6\u540d</code> \u83b7\u53d6\u3002</p>\n<p>\u53ea\u8981\u5c06\u6570\u636e\u6587\u4ef6\u653e\u7f6e\u4e8eFreezes \u7ad9\u70b9\u6839\u76ee\u5f55\u4e0b\u7684<code>data</code>\u5185, Freezes \u5728\u8fd0\u884c\u65f6\u5c06\u4f1a\u81ea\u52a8\u628a\u6570\u636e\u6587\u4ef6\u52a0\u8f7d\u81f3 <code>site.data</code> \u53d8\u91cf\u5185\uff0c\u63d0\u4f9b\u6a21\u677f\u5185\u5f15\u7528\u3002 Freezes \u53ef\u4ee5\u652f\u6301 <strong>YAML</strong>, <strong>JSON</strong> \u548c <strong>CSV</strong> \u683c\u5f0f\u7684\u6570\u636e\u683c\u5f0f\u6587\u4ef6\u3002(\u6ce8\uff1aCSV\u6587\u4ef6\u7684\u9996\u884c\u5fc5\u987b\u4e3a\u5217\u540d\u79f0)</p>", 
+      "id": 3, 
+      "last_updated": "Wed, 01 Apr 2015 23:12:28 GMT", 
+      "meta": {
+        "id": 3, 
+        "summary": "\u4fbf\u4e8e\u6269\u5c55\u9875\u9762", 
+        "title": "\u7528\u4e8e\u9875\u9762\u6570\u636e\u6587\u4ef6"
+      }, 
+      "name": "data-for-programming", 
+      "path": "zh-cn/documents/data-files/data-for-programming", 
+      "published": "Wed, 01 Apr 2015 23:12:28 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/data-files/data-for-programming/"
+    }, 
+    {
+      "body": "\n\u4f20\u7edf\u7684WIKI\u6216\u8005\u535a\u5ba2\u4e3a\u4e86\u7f16\u7a0b\u65b9\u4fbf\u5f80\u5f80\u559c\u7231\u5c06\u6587\u672c\u6240\u5f15\u7528\u5230\u7684\u56fe\u7247\u6216\u8005\u662f\u89c6\u9891\u8d44\u6e90\u7edf\u4e00\u653e\u7f6e\u5728\u4e00\u4e2a\u76ee\u5f55\u5185\uff0c\u53ea\u8981\u5f15\u7528\u7684\u8d44\u6e90\u8d8a\u6765\u8d8a\u591a\uff0c\u6587\u7ae0\u4e5f\u8d8a\u6765\u8d8a\u591a\u4e4b\u95f4\u51e0\u4e4e\u662f\u65e0\u6cd5\u627e\u5230\u4e0e\u6587\u7ae0\u5f15\u7528\u5bf9\u5e94\u7684\u8d44\u6e90\u6587\u4ef6\u7684\uff0c\u8fd9\u65e0\u7591\u4e3a\u6587\u7a3f\u76f8\u5173\u8d44\u6e90\u7684\u7ba1\u7406\u5e26\u6765\u56f0\u96be\u3002\n\nFreezes\u5141\u8bb8\u4f5c\u8005\u4f7f\u7528\u6700\u5e38\u89c4\u7684\u6587\u4ef6\u4e0e\u8d44\u6e90\u7ba1\u7406\u624b\u6bb5\u5c31\u662f\u901a\u8fc7\u76ee\u5f55\u8fdb\u884c\u5206\u7c7b\u4e0e\u8d44\u6e90\u7ba1\u7406\u3002\u5f53\u6587\u7ae0\u9700\u8981\u5f15\u7528\u989d\u5916\u7684\u56fe\u7247\u6216\u8005\u662f\u5176\u5b83\u8d44\u6e90\u65f6\uff0c\u5e76\u65e0\u9700\u6307\u660e\u56fe\u7247\u7684\u5177\u4f53\u5730\u5740\uff0c\u800c\u53ea\u9700\u8981\u58f0\u660e\u5176\u6587\u4ef6\u540d\uff0c\u540c\u65f6\u5728\u6587\u7ae0\u6240\u5728\u7684\u76ee\u5f55\u4e2d\u5efa\u7acb\u4e00\u4e2a\u540c\u540d\u7684\u6587\u4ef6\u5939\uff0c\u5c06\u8d44\u6e90\u6587\u4ef6\u653e\u7f6e\u5176\u4e2d\u5373\u53ef\u5f15\u7528\u6210\u529f\u3002\n\n\u4f8b\u5982\uff0c\u9700\u8981\u5728`quick-start.md`\u6587\u4ef6\u5185\u5f15\u7528\u4e00\u4e2a`cover.png`\u56fe\u7247,\u76ee\u5f55\u7ed3\u6784\u5219\u5e94\u8be5\u5982\u4e0b\uff1a\n\n```bash\n.\n\u251c\u2500\u2500 pages\n|   \u251c\u2500\u2500 posts\n|   |     \u2514\u2500\u2500 2014-01-01\n|   |           \u251c\u2500 quick-start\n|   |           |      \u2514\u2500 cover.png\n|   |           \u2514\u2500 quick-start.md\n|   |   \n|   \u2514\u2500\u2500 ...\n\u2514\u2500\u2500 ...\n```\n\n\u90a3\u4e48\u5728 `quick-start.md` \u6587\u4ef6\u5185\u5c31\u53ef\u4ee5\u4ee5\u4e0b\u65b9\u5f0f\u5f15\u7528 `cover.png` \u6587\u4ef6:\n\n```\n![Cover](cover.png)\n```\n\n\u540c\u7406\uff0cFreezes \u5bf9\u4e00\u5207\u975e `*.md` \u540e\u7f00\u6587\u4ef6\u653e\u7f6e\u4e8e `pages` \u76ee\u5f55\u90fd\u53ef\u4ee5\u4e0a\u6587\u7684\u65b9\u5f0f\u5f15\u7528\u3002\n\n## \u94fe\u63a5\u5176\u5b83\u7684\u6587\u7a3f\n\n\u6211\u4eec\u5728\u5199\u4f5c\u65f6\u7ecf\u5e38\u4f1a\u94fe\u63a5\u5230\u5176\u5b83\u7684\u76f8\u5173\u6587\u7a3f\u4e0a\uff0cFreezes \u662f\u91c7\u7528\u76f8\u5bf9\u76ee\u5f55\u7684\u65b9\u5f0f\u5f15\u7528\u81f3\u5176\u5b83\u6587\u7a3f\u3002\u6211\u4eec\u5e73\u65f6\u5c31\u662f\u5728\u76ee\u5f55\u4e2d\u7ba1\u7406\u6587\u4ef6\uff0c\u6240\u4ee5\u901a\u8fc7\u76f8\u5bf9\u76ee\u5f55\u5f15\u7528\u76f8\u5173\u6587\u4ef6\u662f\u6700\u81ea\u7136\u7684\u505a\u6cd5\u3002\n\n\u4f8b\u5982\uff1a\u5728 \u201c\u6211\u7684\u4e13\u680f\u201d (columns.md) \u6587\u4ef6\u5185\u6dfb\u52a0\u4e00\u94fe\u63a5\u6307\u5411 `my-design-philosopy.md`\n\n```bash\n.\n\u251c\u2500\u2500 pages\n|   \u251c\u2500\u2500 columns // \u6211\u7684\u4e13\u680f\u4e0b\u7684\u6587\u7a3f\n|   |     \u251c\u2500\u2500 my-design-philosophy.md\n|   |     \u251c\u2500\u2500 ...\n|   |     \u2514\u2500\u2500 why-programmer-should-write-books.md\n|   \u251c\u2500\u2500 columns.md  // \u6211\u7684\u4e13\u680f   \n|   \u2514\u2500\u2500 index.md\n\u2514\u2500\u2500 ...\n\n```\n\n\u5728`columns.md`\u6587\u7a3f\u7684\u6b63\u6587\u5185\u5219\u5e94\u8be5\u50cf\u5982\u4e0b\u65b9\u5f0f\u5904\u7406\uff1a\n\n```markdown\n\u8bf7\u53c2\u8003\uff1a[\u6211\u7684\u8bbe\u8ba1\u54f2\u5b66](my-design-philosophy)\n```\n\n\u53cd\u4e4b\uff0c\u5982\u679c\u5728 `my-design-philosophy.md` \u6587\u7a3f\u5185\u5f15\u7528 `columns.md` \u7684\u8bdd\u5219\u5e94\u8be5\u91c7\u7528 `/` \u4ee5\u52a0\u5165\u5168\u8def\u5f84:\n\n```markdown\n\u8bf7\u53c2\u8003\uff1a[\u6211\u7684\u4e13\u680f](/columns/)\n```\n\n\n", 
+      "created": "Tue, 31 Mar 2015 11:45:33 GMT", 
+      "excerpt": "<p>\u4f20\u7edf\u7684WIKI\u6216\u8005\u535a\u5ba2\u4e3a\u4e86\u7f16\u7a0b\u65b9\u4fbf\u5f80\u5f80\u559c\u7231\u5c06\u6587\u672c\u6240\u5f15\u7528\u5230\u7684\u56fe\u7247\u6216\u8005\u662f\u89c6\u9891\u8d44\u6e90\u7edf\u4e00\u653e\u7f6e\u5728\u4e00\u4e2a\u76ee\u5f55\u5185\uff0c\u53ea\u8981\u5f15\u7528\u7684\u8d44\u6e90\u8d8a\u6765\u8d8a\u591a\uff0c\u6587\u7ae0\u4e5f\u8d8a\u6765\u8d8a\u591a\u4e4b\u95f4\u51e0\u4e4e\u662f\u65e0\u6cd5\u627e\u5230\u4e0e\u6587\u7ae0\u5f15\u7528\u5bf9\u5e94\u7684\u8d44\u6e90\u6587\u4ef6\u7684\uff0c\u8fd9\u65e0\u7591\u4e3a\u6587\u7a3f\u76f8\u5173\u8d44\u6e90\u7684\u7ba1\u7406\u5e26\u6765\u56f0\u96be\u3002</p>", 
+      "id": 3, 
+      "last_updated": "Tue, 31 Mar 2015 11:45:33 GMT", 
+      "meta": {
+        "id": 3, 
+        "summary": "How to reference link to pages and resources", 
+        "title": "Links and resources"
+      }, 
+      "name": "resources-and-links", 
+      "path": "documents/organize-your-contents/resources-and-links", 
+      "published": "Tue, 31 Mar 2015 11:45:33 GMT", 
+      "tags": [], 
+      "url": "/documents/organize-your-contents/resources-and-links/"
+    }, 
+    {
+      "body": "Freezes is a document-driven website and a text transformation engine.\n\nA basic Freezes site usually looks something like this:\n\n```bash\n.\n\u251c\u2500\u2500 _config.yml\n\u251c\u2500\u2500 _assets.yml\n\u251c\u2500\u2500 pages\n|   \u251c\u2500\u2500 posts\n|   |     \u2514\u2500\u2500 2014-01-01\n|   |           \u251c\u2500 why-programmer-should-write-books.md\n|   |           \u2514\u2500 why-programmer-should-write-books\n|   \u251c\u2500\u2500 documents     \n|   |   \n|   \u2514\u2500\u2500 index.md\n\u251c\u2500\u2500 builds\n\u251c\u2500\u2500 static\n|   \u251c\u2500\u2500 images\n|   \u251c\u2500\u2500 scripts\n|   \u2514\u2500\u2500 styles\n\u251c\u2500\u2500 templates\n|   \u251c\u2500\u2500 includes\n|   \u251c\u2500\u2500 layouts\n|   \u2514\u2500\u2500 404.html\n\u2514\u2500\u2500 __init__.py\n```\n\nAn overview of what each of these does:\n\nFILE / DIRECTORY| DESCRIPTION | REMARKS\n--|--|--\n`pages` | Document folder | Save all markdown files\npages/`posts` | Posts folder | \npages/`index.md` | Home page |\n`static` | Resources | All static resource files\nstatic/`images` | Images|\nstatic/`scripts` | Scripts |\nstatic/`styles` | Styles |\n`templates` | Templates |\ntemplates/`includes`| Includes |\ntemplates/`layouts`| Layouts |\n`builds` | Build | Build result files\n`_config.yml` | Site configuration |\n`_assets.yml` | Asset configuration |\n", 
+      "created": "Mon, 30 Mar 2015 01:28:33 GMT", 
+      "excerpt": "<p>Freezes is a document-driven website and a text transformation engine.</p>\n<p>A basic Freezes site usually looks something like this:</p>", 
+      "id": 3, 
+      "last_updated": "Mon, 30 Mar 2015 01:28:33 GMT", 
+      "meta": {
+        "id": 3, 
+        "title": "Directory structure"
+      }, 
+      "name": "directory-structure", 
+      "path": "documents/quick-started/directory-structure", 
+      "published": "Mon, 30 Mar 2015 01:28:33 GMT", 
+      "tags": [], 
+      "url": "/documents/quick-started/directory-structure/"
+    }, 
+    {
+      "body": "```django\n{% import \"_macros/posts.html\" as posts %}\n\n<div class=\"page-header\">\n    {% if page.path!='' and page._is_default==False %}\n        <h1>\n            {{ posts.crumb(site,page.path) }}\n            <div>{{ page.title }}</div>\n        </h1>\n        <p class=\"lead\">{{ page.summary }}</p>\n    {% else %}\n        <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>\n        <p class=\"lead\">{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}</p>\n    {% endif %}\n</div>\n```", 
+      "created": "Tue, 31 Mar 2015 10:32:53 GMT", 
+      "excerpt": "<p>```django\n{% import \"_macros/posts.html\" as posts %}</p>", 
+      "id": 4, 
+      "last_updated": "Tue, 31 Mar 2015 10:32:53 GMT", 
+      "meta": {
+        "id": 4, 
+        "title": "_header.html \u6e90\u7801"
+      }, 
+      "name": "header", 
+      "path": "zh-cn/documents/customization/layouts/sourcecode/header", 
+      "published": "Tue, 31 Mar 2015 10:32:53 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/customization/layouts/sourcecode/header/"
+    }, 
+    {
+      "body": "## \u9875 - Post\n\n## \u7ad9\u70b9 - Site\n\n## \u6807\u7b7e - Tags\n\n## \u8d44\u6e90 - Assets\n\n## \u6a21\u677f - Templates\n", 
+      "created": "Wed, 11 Mar 2015 10:19:32 GMT", 
+      "excerpt": "", 
+      "id": 4, 
+      "last_updated": "Thu, 26 Mar 2015 23:25:47 GMT", 
+      "meta": {
+        "id": 4, 
+        "title": "Variables"
+      }, 
+      "name": "variables", 
+      "path": "documents/customization/variables", 
+      "published": "Thu, 26 Mar 2015 23:25:47 GMT", 
+      "tags": [], 
+      "url": "/documents/customization/variables/"
+    }, 
+    {
+      "body": "```django\n<footer>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-4\">\n                <h3>{{ gettext('Contacts') }}</h3>\n                <ul class=\"list-unstyled\">\n                    <li>{{ site.title }}</li>\n                    {% if site.tel %}\n                        <li><span class=\"fa fa-tel\"></span> {{ site.tel }}</li>\n                    {% endif %}\n                    <li><a href=\"mailto:{{ site.email }}\"><span class=\"fa fa-mail\"></span> {{ site.email }}</a></li>\n                </ul>\n            </div>\n\n            <div class=\"col-md-4\">\n                <h3><a href=\"{{ url_for('.archives') }}\">{{ gettext('Archives') }}</a></h3>\n                <ul class=\"list-unstyled archives\">\n                    {% for archive in site.archives %}\n                        {% if loop.index <=5 %}\n                            <li><a href=\"{{ url_for('.archive',name=archive.title) }}\"><span\n                                    class=\"fa fa-archive\"></span> <span>{{ archive.title }}</span><span\n                                    class=\"pull-right badge\">{{ archive.count }}</span></a></li>\n                        {% endif %}\n                    {% endfor %}\n                </ul>\n            </div>\n\n            <div class=\"col-md-4\">\n                <h3><a href=\"{{ url_for('.tags') }}\">{{ gettext('Popular tags') }}</a></h3>\n                {% if site.tags|count>0 %}\n                    {% for t in site.tags[0:10] %}\n                        <a href=\"{{ url_for('.tag',name=t) }}\" class=\"label label-info\">{{ t }}</a>\n                    {% endfor %}\n                {% endif %}\n            </div>\n        </div>\n    </div>\n    {% if site.copyright %}\n        <p class=\"text-center\">\n            {{ gettext('\u00a9 copyright by %(value)s',value=site.copyright) }}\n        </p>\n    {% endif %}\n    <p class=\"text-center\">Powered by <a href=\"http://freezes.dotnetage.com\">Freezes</a></p>\n</footer>\n```", 
+      "created": "Tue, 31 Mar 2015 10:32:17 GMT", 
+      "excerpt": "<p>```django\n<footer>\n    <div class=\"container\"></p>", 
+      "id": 4, 
+      "last_updated": "Tue, 31 Mar 2015 10:32:17 GMT", 
+      "meta": {
+        "id": 4, 
+        "title": "_footer.html \u6e90\u7801"
+      }, 
+      "name": "footer", 
+      "path": "zh-cn/documents/customization/layouts/sourcecode/footer", 
+      "published": "Tue, 31 Mar 2015 10:32:17 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/customization/layouts/sourcecode/footer/"
+    }, 
+    {
+      "body": "```django\n<div class=\"navbar navbar-default\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\n                <span class=\"sr-only\">{{ gettext('Toggle navigation') }}</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n        </div>\n        <div class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                {% for p in site.menus(page.path) %}\n                    {% if page.path is defined %}\n                        <li {% if (page.path==p.path and p._top==True) or (p._top==False and page.path.startswith(p.path)) %}class=\"active\"{% endif %}>\n                            <a href=\"{{ url_for('.index',page_path=p.path) }}\">{{ p.title }}</a></li>\n                    {% endif %}\n                {% endfor %}\n            </ul>\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li class=\"divider visible-xs\"></li>\n                {% if site.facebook %}\n                    <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"{{ gettext('Follow me on facebook') }}\">\n                        <a href=\"http://www.facebook.com/{{ site.facebook }}\" target=\"_blank\" rel=\"nofollow\"><i\n                                class=\"fa fa-facebook\"></i> <span class=\"visible-xs-inline\">me@facebook</span></a>\n                    </li>\n                {% endif %}\n                {% if site.twitter %}\n                    <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"{{ gettext('Follow me on twitter') }}\">\n                        <a href=\"http://www.twitter.com/{{ site.twitter }}\" target=\"_blank\" rel=\"nofollow\"><i\n                                class=\"fa fa-twitter\"></i> <span class=\"visible-xs-inline\">me@twitter</span></a>\n                    </li>\n                {% endif %}\n                {% if site.github %}\n                    <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"{{ gettext('Fork me on github') }}\">\n                        <a href=\"http://www.github.com/{{ site.github }}\" target=\"_blank\" rel=\"nofollow\"><i\n                                class=\"fa fa-github\"></i> <span class=\"visible-xs-inline\">me@github</span></a>\n                    </li>\n                {% endif %}\n                <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"{{ gettext('Subscript changes') }}\">\n                    <a href=\"{{ url_for('feed',name='recent') }}\"><i class=\"fa fa-rss\"></i> <span\n                            class=\"visible-xs-inline\">{{ gettext('Subscript') }}</span></a>\n                </li>\n            </ul>\n        </div>\n    </div>\n</div>\n```", 
+      "created": "Tue, 31 Mar 2015 10:33:26 GMT", 
+      "excerpt": "<p>```django\n<div class=\"navbar navbar-default\">\n    <div class=\"container-fluid\"></p>", 
+      "id": 4, 
+      "last_updated": "Tue, 31 Mar 2015 10:33:26 GMT", 
+      "meta": {
+        "id": 4, 
+        "title": "_navbar.html \u6e90\u7801"
+      }, 
+      "name": "navbar", 
+      "path": "zh-cn/documents/customization/layouts/sourcecode/navbar", 
+      "published": "Tue, 31 Mar 2015 10:33:26 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/customization/layouts/sourcecode/navbar/"
+    }, 
+    {
+      "body": "Freezes \u63d0\u4f9b\u4e86\u5c11\u91cf\u5f88\u5b9e\u7528\u7684\u9875\u9762\u5b8f\uff0c\u8f85\u52a9\u60a8\u5feb\u901f\u8f93\u51fa\u67d0\u4e9b\u7279\u5b9a\u529f\u80fd\u5230\u9875\u9762\u4e2d\uff0c\u5728\u5c06\u6765\u7248\u672c\u8fd8\u4f1a\u7ee7\u7eed\u589e\u52a0\u66f4\u591a\u7684\u9884\u5b9a\u5b8f\uff0c\u5982\u679c\u60a8\u6709\u4ec0\u4e48\u66f4\u597d\u7684\u53ef\u5305\u88c5\u4e3a\u5b8f\u7684\u529f\u80fd\u8bf7\u5728[github](https://github.com/DotNetAge/freezes/pulls)\u4e0a\u7ed9\u6211\u7559\u8a00\n\n## `comment`\n`comment`\u5b8f\u5305\u88c5\u4e86 [Disqus](http://Disgus.com) \u7684\u9875\u9762\u8ba8\u8bba\u529f\u80fd\u3002\n\n### \u7528\u6cd5\n\n```django\n{% import '_macros/disgus.html' as disqus %}\n\n{{ disqus.comment('\u4f60\u5728Disqus\u6ce8\u518c\u7684\u7528\u6237\u540d')}}\n```\n\n## `list`\n\u663e\u793a \u9875\u9762/\u6587\u7ae0 \u5bf9\u8c61\u5217\u8868\n\n\u8f93\u5165\u53c2\u6570\u8bf4\u660e\n\n\u53c2\u6570|\u7c7b\u578b|\u8bf4\u660e\n--|--|--\npost_items| `page`\u5bf9\u8c61\u5217\u8868 | \u663e\u793a\u7684\u9875\u9762/\u6587\u7ae0\u5217\u8868\nexcludes|\u5b57\u7b26\u4e32\u5217\u8868 |(\u53ef\u9009)\u4e0d\u663e\u793a\u4e8e\u5217\u8868\u4e2d\u7684\u9875\u9762\u7684 `path` \u5c5e\u6027\u503c\n\n\n### \u7528\u6cd5\n\n```django\n{% import '_macros/posts.html' as posts %}\n\n{{ posts.list(site.query(page.path))}}\n```\n\n## `gallery`\n\n\u5c06\u9875\u9762/\u6587\u7ae0\u4ee5\u56fe\u793a\u5217\u8868\u65b9\u5f0f\u8f93\u51fa\u663e\u793a\u3002\n\n\u8f93\u5165\u53c2\u6570\u8bf4\u660e\n\n\u53c2\u6570|\u7c7b\u578b|\u8bf4\u660e\n--|--|--\npost_items| `page`\u5bf9\u8c61\u5217\u8868 | \u663e\u793a\u7684\u9875\u9762/\u6587\u7ae0\u5217\u8868\nexcludes|\u5b57\u7b26\u4e32\u5217\u8868 |(\u53ef\u9009)\u4e0d\u663e\u793a\u4e8e\u5217\u8868\u4e2d\u7684\u9875\u9762\u7684 `path` \u5c5e\u6027\u503c\n\n### \u7528\u6cd5\n\n```django\n{% import '_macros/posts.html' as posts %}\n\n{{ posts.gallery(site.query(page.path))}}\n```\n\n## `tags`\n\n\u8f93\u5165\u7ad9\u70b9\u5185\u6240\u6709\u7684\u4e3b\u9898\u6807\u7b7e\u5217\u8868\n\n### \u7528\u6cd5\n\n```django\n{% import '_macros/posts.html' as posts %}\n\n{{ posts.tags()}}\n```\n\n## `relatives`\n\n\u8f93\u51fa\u4e0e\u6307\u5b9a\u6587\u7ae0\u76f8\u5173\u7684\u5176\u5b83\u7684\u6587\u7ae0\u7684\u94fe\u63a5\u5217\u8868\n\n\u8f93\u5165\u53c2\u6570\u8bf4\u660e\n\n\u53c2\u6570|\u7c7b\u578b|\u8bf4\u660e\n--|--|--\npost|`page`|\u53c2\u8003\u9875\u9762\u5bf9\u8c61\n\n### \u7528\u6cd5\n\n```django\n{% import '_macros/posts.html' as posts %}\n\n{{ posts.relatives(page)}}\n```\n\n## `crumb`\n\n\u8f93\u5165\u53c2\u6570\u8bf4\u660e\n\n\u53c2\u6570|\u7c7b\u578b|\u8bf4\u660e\n--|--|--\nsite|`site`|\u8f93\u5165\u5f53\u524d\u9875\u9762\u4e0a\u4e0b\u6587\u4e2d\u7684`site`\u5bf9\u8c61\n_path|\u5b57\u7b26\u4e32|\u7528\u4e8e\u67e5\u8be2\u7684\u9875\u9762\u8def\u5f84 `page`\u5bf9\u8c61\u7684`path`\u5c5e\u6027\n\n### \u7528\u6cd5\n\n```django\n{% import '_macros/posts.html' as posts %}\n\n{{ posts.crumb(site,page.path)}}\n```\n\n", 
+      "created": "Fri, 27 Mar 2015 17:56:04 GMT", 
+      "excerpt": "<p>Freezes \u63d0\u4f9b\u4e86\u5c11\u91cf\u5f88\u5b9e\u7528\u7684\u9875\u9762\u5b8f\uff0c\u8f85\u52a9\u60a8\u5feb\u901f\u8f93\u51fa\u67d0\u4e9b\u7279\u5b9a\u529f\u80fd\u5230\u9875\u9762\u4e2d\uff0c\u5728\u5c06\u6765\u7248\u672c\u8fd8\u4f1a\u7ee7\u7eed\u589e\u52a0\u66f4\u591a\u7684\u9884\u5b9a\u5b8f\uff0c\u5982\u679c\u60a8\u6709\u4ec0\u4e48\u66f4\u597d\u7684\u53ef\u5305\u88c5\u4e3a\u5b8f\u7684\u529f\u80fd\u8bf7\u5728<a href=\"https://github.com/DotNetAge/freezes/pulls\">github</a>\u4e0a\u7ed9\u6211\u7559\u8a00</p>\n<p><code>comment</code>\u5b8f\u5305\u88c5\u4e86 <a href=\"http://Disgus.com\">Disqus</a> \u7684\u9875\u9762\u8ba8\u8bba\u529f\u80fd\u3002</p>", 
+      "id": 4, 
+      "last_updated": "Wed, 25 Mar 2015 00:29:03 GMT", 
+      "meta": {
+        "id": 4, 
+        "summary": "\u63d0\u4f9b\u4fbf\u5229\u7684\u9875\u9762\u5de5\u5177", 
+        "title": "\u4f7f\u7528\u5b8f"
+      }, 
+      "name": "macros", 
+      "path": "zh-cn/documents/customization/macros", 
+      "published": "Wed, 25 Mar 2015 00:29:03 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/customization/macros/"
+    }, 
+    {
+      "body": "\nFreezes \u7684\u914d\u7f6e\u9879\u975e\u5e38\u7b80\u5355\uff0c\u53ea\u662f\u7528\u4e8e\u6536\u96c6\u4e00\u4e9b\u7ad9\u70b9\u76f8\u5173\u7684\u6587\u5b57\u4fe1\u606f\u548c\u4f60\u7684\u4e00\u4e9b\u4e2a\u4eba\u8054\u7cfb\u4fe1\u606f\uff0c\u5728\u7ad9\u70b9\u76ee\u5f55\u4e0b\u7684 `_config.yml` \u4e3a\u7ad9\u70b9\u914d\u7f6e\u6587\u4ef6\uff0c\u7528\u6587\u672c\u7f16\u8f91\u5de5\u5177\u6253\u5f00\uff0c\u5185\u5bb9\u5982\u4e0b:\n\n```yaml\ntitle: \"\u7f51\u7ad9\u663e\u793a\u7684\u6807\u9898\u6587\u5b57\" \nemail: your_mail@email.com\ndescription: \"\u7f51\u7ad9\u7684\u7b80\u5355\u63cf\u8ff0\"\nurl: \"http://www.domain.com\"\ntwitter: your-twitter-username\ngithub:  your-github-username\ndisqus_shortname: your-disqus-website-shortname\nga_account: your-ga-accocunt\nlang: en\n```\n\n\u914d\u7f6e\u9879|\u8bf4\u660e\n--|--\n`title` * | \u8bbe\u7f6e\u7f51\u7ad9\u6240\u663e\u793a\u7684\u6807\u9898\n`email` | \u8bbe\u7f6e\u60a8\u7684\u8054\u7cfb\u90ae\u4ef6,\u5982\u679c\u8bbe\u7f6e\u4e86\u5219\u663e\u793a\u4e8e\u7ad9\u70b9\u7684\u8054\u7cfb\u4fe1\u606f\u680f\n`description` | \u7f51\u7ad9\u7684\u57fa\u672c\u63cf\u8ff0 (\u53ef\u9009)\n`url` * | \u9759\u6001\u5316\u540e\u7ad9\u70b9\u90e8\u7f72\u65f6\u4f7f\u7528\u7684url \u4f8b\uff1ahttp://freezes.dotnetage.com \u3002\u6b64\u9009\u9879\u5fc5\u987b\u6b63\u786e\u8bbe\u7f6e\u5426\u5219\u7ad9\u70b9\u88ab\u9759\u6001\u5316\u540e\u53ef\u80fd\u4f1a\u51fa\u73b0\u5c40\u5e03\u7684\u9875\u9762\u94fe\u63a5\u9519\u8bef\u3002\n`twitter` | \u8bbe\u7f6e twitter \u4e0a\u7684\u8054\u7cfb\u7528\u6237\u540d (\u53ef\u9009)\n`github` | \u8bbe\u7f6e github \u4e0a\u7684\u7528\u6237\u540d (\u53ef\u9009)\n`disqus_shortname` | \u8bbe\u7f6e disqus \u7684\u6ce8\u518c\u7ad9\u70b9\u540d\u79f0\uff0c\u53ea\u6709\u8bbe\u7f6e\u540e \u6587\u7ae0\u8bc4\u8bba\u624d\u53ef\u7528\n`ga_account` | \u8bbe\u7f6egoogle\u5206\u6790\u7684\u5e10\u53f7\u540d\uff0c\u8bbe\u7f6e\u540e\u5c06\u81ea\u52a8\u5728\u6bcf\u9875\u5e95\u90e8\u52a0\u4e0a google \u5206\u6790\u7684\u4ee3\u7801\n`lang` | \u9ed8\u8ba4\u8bed\u8a00, \u5982\u679c\u4e0d\u8bbe\u5b9a\u5219\u4e3a 'en'\n\n> \u5f53\u914d\u7f6e\u9879\u5185\u5bb9\u88ab\u66f4\u6539\u540e\u5fc5\u987b\u91cd\u65b0\u542f\u52a8 Freezes \u66f4\u6539\u624d\u80fd\u88ab\u5e94\u7528\uff0c\u4e2d\u6587\u8bf7\u4f7f\u7528 `\"\"`\u3002\n\n", 
+      "created": "Mon, 30 Mar 2015 20:42:21 GMT", 
+      "excerpt": "<p>Freezes \u7684\u914d\u7f6e\u9879\u975e\u5e38\u7b80\u5355\uff0c\u53ea\u662f\u7528\u4e8e\u6536\u96c6\u4e00\u4e9b\u7ad9\u70b9\u76f8\u5173\u7684\u6587\u5b57\u4fe1\u606f\u548c\u4f60\u7684\u4e00\u4e9b\u4e2a\u4eba\u8054\u7cfb\u4fe1\u606f\uff0c\u5728\u7ad9\u70b9\u76ee\u5f55\u4e0b\u7684 <code>_config.yml</code> \u4e3a\u7ad9\u70b9\u914d\u7f6e\u6587\u4ef6\uff0c\u7528\u6587\u672c\u7f16\u8f91\u5de5\u5177\u6253\u5f00\uff0c\u5185\u5bb9\u5982\u4e0b:</p>", 
+      "id": 4, 
+      "last_updated": "Mon, 30 Mar 2015 20:42:21 GMT", 
+      "meta": {
+        "id": 4, 
+        "summary": "\u914d\u7f6e\u6587\u4ef6\u7684\u8be6\u7ec6\u8bf4\u660e", 
+        "title": "\u914d\u7f6e\u8bf4\u660e"
+      }, 
+      "name": "configurations", 
+      "path": "zh-cn/quick-started/configurations", 
+      "published": "Mon, 30 Mar 2015 20:42:21 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/quick-started/configurations/"
+    }, 
+    {
+      "body": "Sites built using Freezes can be deployed in a large number of ways due to the static nature of the generated output. A few of the most common deployment techniques are described below.\n\n## Web hosting providers (FTP)\n\nJust about any traditional web hosting provider will let you upload files to their servers over FTP. To upload a Freezes site to a web host using FTP, simply run the `freezes build` command and copy the generated **builds** folder to the root folder of your hosting account. \n\n\n## SSH\n\n```bash\n$ tar -czvf builds.tgz build\n$ ssh server@example.com\n$ scp builds.tgz server@example.com:/var/www/my-site\n$ mkdir /var/www/my-site\n$ tar -xzvf builds.tgz \n```\n\n## Github\n\n\n```bash\n$ git add . \n$ git commit -m \"Initial commit\"\n$ git remote add origin https://github.com/username/my-freezes-site.git\n$ git push origin gh-pages \n```", 
+      "created": "Thu, 02 Apr 2015 01:16:51 GMT", 
+      "excerpt": "<p>Sites built using Freezes can be deployed in a large number of ways due to the static nature of the generated output. A few of the most common deployment techniques are described below.</p>", 
+      "id": 5, 
+      "last_updated": "Thu, 02 Apr 2015 01:16:51 GMT", 
+      "meta": {
+        "id": 5, 
+        "summary": "Any servers, Any platforms", 
+        "title": "Deploy methods"
+      }, 
+      "name": "deploy-methods", 
+      "path": "documents/deploy-methods", 
+      "published": "Thu, 02 Apr 2015 01:16:51 GMT", 
+      "tags": [], 
+      "url": "/documents/deploy-methods/"
+    }, 
+    {
+      "body": "\u867d\u7136Freezes\u6ca1\u6709\u642d\u8f7d\u4efb\u4f55\u7684\u6570\u636e\u5e93\uff0c\u4f46\u662f\u4f60\u53ef\u5374\u53ef\u4ee5\u7528\u53e6\u4e00\u79cd\u66f4\u4e3a\u4e4b\u7b80\u5355\u76f4\u63a5\u7684\u65b9\u6cd5\u4f7f\u7528\u60a8\u7684\u6570\u636e\u5185\u5bb9\u3002\n", 
+      "created": "Tue, 31 Mar 2015 11:22:32 GMT", 
+      "excerpt": "<p>\u867d\u7136Freezes\u6ca1\u6709\u642d\u8f7d\u4efb\u4f55\u7684\u6570\u636e\u5e93\uff0c\u4f46\u662f\u4f60\u53ef\u5374\u53ef\u4ee5\u7528\u53e6\u4e00\u79cd\u66f4\u4e3a\u4e4b\u7b80\u5355\u76f4\u63a5\u7684\u65b9\u6cd5\u4f7f\u7528\u60a8\u7684\u6570\u636e\u5185\u5bb9\u3002</p>", 
+      "id": 5, 
+      "last_updated": "Tue, 31 Mar 2015 11:22:32 GMT", 
+      "meta": {
+        "id": 5, 
+        "summary": "\u7528\u4e8e\u7f16\u7a0b\u4e0e\u4f9b\u7a3f\u7684\u6570\u636e", 
+        "title": "\u6570\u636e\u6587\u4ef6"
+      }, 
+      "name": "data-files", 
+      "path": "zh-cn/documents/data-files", 
+      "published": "Tue, 31 Mar 2015 11:22:32 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/data-files/"
+    }, 
+    {
+      "body": "## {% block title %}\n\n```django\n{% block title %}{{ site.title }}{% if page %} - {{ page.title }}{% endif %}{% endblock %}\n```\n\n## {% block styles %}\n\n```django\n<link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css\">\n<link href=\"{{ bootstrap_find_resource('css/bootstrap.css', cdn='bootstrap') }}\" rel=\"stylesheet\"\n      media=\"screen\">\n<link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css\">\n{% assets \"css\" %}\n    <link rel=\"stylesheet\" href=\"{{ ASSET_URL }}\">\n{% endassets %}\n```\n\n## {% block scripts %}\n\n```django\n<script src=\"{{ bootstrap_find_resource('jquery.js', cdn='jquery') }}\"></script>\n<script src=\"{{ bootstrap_find_resource('js/bootstrap.js', cdn='bootstrap') }}\"></script>\n<script src=\"//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js\"></script>\n<script src=\"//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js\"></script>\n<script>hljs.initHighlightingOnLoad();</script>\n```\n\n## {% block content %}\n\n```django\n{% if page.cover %}\n<div class=\"page-cover\">\n    <img src=\"{{ page.cover }}\"/>\n</div>\n{% endif %}\n{% autoescape false %}{{ page.html }}{% endautoescape %}\n```", 
+      "created": "Tue, 31 Mar 2015 10:41:17 GMT", 
+      "excerpt": "<p>```django\n{% block title %}{{ site.title }}{% if page %} - {{ page.title }}{% endif %}{% endblock %}</p>", 
+      "id": 5, 
+      "last_updated": "Tue, 31 Mar 2015 10:41:17 GMT", 
+      "meta": {
+        "id": 5, 
+        "title": "base.html \u4ee3\u7801\u5757\u5b9a\u4e49"
+      }, 
+      "name": "base", 
+      "path": "zh-cn/documents/customization/layouts/sourcecode/base", 
+      "published": "Tue, 31 Mar 2015 10:41:17 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/customization/layouts/sourcecode/base/"
+    }, 
+    {
+      "body": "Freezes \u53ef\u4ee5\u4f7f\u7528\u5404\u79cd\u7684\u65b9\u5f0f\u90e8\u7f72\u5230\u4efb\u4f55\u7684Web\u670d\u52a1\u5668\u4e0a\u3002\n\n\n## FTP\n\n\u901a\u8fc7\u4efb\u4f55\u7684FTP\u5de5\u5177\u5c06 Freezes \u7684\u7ad9\u751f\u6210\u76ee\u5f55 `builds` \u76f4\u63a5\u4e0a\u4f20\u81f3\u8fdc\u7aef\u670d\u52a1\u5668\u7684\u7ad9\u70b9\u6839\u76ee\u5f55\u4e0b\u5373\u53ef\u3002\n\n\n## SSH\n\u5982\u679c\u4f60\u7684\u670d\u52a1\u5668\u652f\u6301\u8fdc\u7a0b\u7ec8\u7aef\u64cd\u4f5c\uff0c\u4f8b\u5982\u963f\u91cc\u4e91\u3001\u817e\u8baf\u4e91\u7b49\u3002\u4f60\u53ef\u4ee5\u901a\u5730\u4ee5\u4e0b\u7684\u65b9\u5f0f\u53d1\u8fbe Freezes \u7684\u751f\u6210\u7ad9\u70b9\u3002\n\n```bash\n$ tar -czvf builds.tgz build\n$ ssh server@example.com\n$ scp builds.tgz server@example.com:/var/www/my-site\n$ mkdir /var/www/my-site\n$ tar -xzvf builds.tgz \n```\n\n## Github\n\n\u5f53\u7136\u6700\u5f00\u653e\u540c\u65f6\u4e5f\u662f\u6700\u5ec9\u4ef7\u7684\u53d1\u5e03\u65b9\u5f0f\u65e0\u7591\u662f\u4f7f\u7528 Github page, \u65b9\u5f0f\u4e5f\u662f\u975e\u5e38\u7b80\u5355\uff0c\u9996\u5148\u5728 Github \u5efa\u7acb\u4e00\u4e2a `my-freezes-site` \u7684\u5e93\uff0c\u7136\u540e\u5728\u672c\u673a\u7ec8\u7aef\u5185\u6267\u884c\u4ee5\u4e0b\u7684\u6307\u4ee4\uff1a\n\n```bash\n$ git add . \n$ git commit -m \"Initial commit\"\n$ git remote add origin https://github.com/username/my-freezes-site.git\n$ git push origin gh-pages \n```", 
+      "created": "Thu, 02 Apr 2015 01:25:39 GMT", 
+      "excerpt": "<p>Freezes \u53ef\u4ee5\u4f7f\u7528\u5404\u79cd\u7684\u65b9\u5f0f\u90e8\u7f72\u5230\u4efb\u4f55\u7684Web\u670d\u52a1\u5668\u4e0a\u3002</p>", 
+      "id": 6, 
+      "last_updated": "Thu, 02 Apr 2015 01:25:39 GMT", 
+      "meta": {
+        "id": 6, 
+        "title": "\u90e8\u7f72\u65b9\u6cd5"
+      }, 
+      "name": "deploy-methods", 
+      "path": "zh-cn/documents/deploy-methods", 
+      "published": "Thu, 02 Apr 2015 01:25:39 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/deploy-methods/"
+    }, 
+    {
+      "body": "Freezes \u7684\u4e0e\u522b\u4e0d\u540c\u4e4b\u5904\u662f\u4ed6\u53ef\u4ee5\u751f\u6210\u591a\u8bed\u8a00\u7684\u9759\u6001\u5316\u7ad9\u70b9\u3002\u90a3\u4e48\u5bf9\u4e8e\u6709\u5168\u7403\u5316\u9700\u8981\u7684\u7ad9\u70b9\uff0c\u8fd9\u5c06\u4f1a\u662f\u4e00\u4e2a\u5f88\u68d2\u7684\u529f\u80fd\uff01\u6b63\u5982\u6211\u4eec\u7684\u5b98\u7f51\u4e00\u6837\u3002\n\n\u5168\u7403\u5316\u5185\u5bb9\u5e76\u4e0d\u8981\u6c42\u505a\u4ec0\u4e48\u8bbe\u7f6e\u6216\u8005\u5b66\u4e60\u4e00\u4e9b\u4ec0\u4e48\u989d\u5916\u7684\u6280\u80fd\u3002\u4f60\u53ea\u9700\u8981\u91c7\u7528\u7279\u6b8a\u7684\u76ee\u5f55\u547d\u540d\u5c31\u53ef\u4ee5\u5b8c\u6210\u8fd9\u4e00\u5207\uff01\n\n\u552f\u4e00\u9700\u8981\u4e86\u89e3\u7684\u53ea\u6709\u4e24\u70b9\uff1a\n\n- \u5176\u5b83\u8bed\u8a00\u7248\u672c\u7684\u9996\u9875\n- \u533a\u57df\u5316\u76ee\u5f55\n\nFreezes \u5c06 `pages` \u76ee\u5f55\u4e0b\u7684\u6240\u6709\u7684\u6587\u4ef6\u89c6\u4e3a\u4f7f\u7528 **\u9ed8\u8ba4\u8bed\u8a00**\uff0c\u9047\u5230\u4ee5\u533a\u57df\u5316\u89c4\u5219\u547d\u540d\u7684\u76ee\u5f55\u5219\u89c6\u4e3a\u4f7f\u7528\u533a\u57df\u6027\u8bed\u8a00\u3002\n\n\u4f8b\u5982\uff0c\u5f53\u524d\u7684\u7ad9\u70b9\u662f\u4e2d\u6587\u7684\uff0c\u800c\u9700\u8981\u589e\u52a0\u4e00\u4e2a\u82f1\u8bed\u7248\u672c\u7684\u7ad9\u70b9\uff0c\u5219\u53ea\u9700\u8981\u5728`pages`\u4e0b\u589e\u52a0\u4e00\u4e2a\u540d\u4e3a`en-us`\u533a\u57df\u5316\u76ee\u5f55\uff0c\u800c\u9700\u8981\u5728 `pages` \u76ee\u5f55\u5185\u589e\u52a0\u4e00\u4e2a\u540d\u4e3a `en-us.md` \u7684\u6587\u4ef6\u4f5c\u4e3a\u8be5\u8bed\u8a00\u7248\u672c\u7684 **\u9ed8\u8ba4\u9875**\u3002\u90a3\u4e48\u5f53\u7528\u6237\u8bbf\u95ee \u8fd9\u4e2a\u4e2d\u6587\u7ad9\u65f6 Freezes \u5c06\u4e0d\u4f1a\u52a0\u8f7d `en-us.md` \u6587\u4ef6\u5230\u4e3b\u83dc\u5355\u5185\uff0c\u800c\u9700\u8981\u8bbf\u95ee\u82f1\u6587\u7ad9\u70b9\u53ea\u9700\u8981\u76f4\u63a5\u8bbf\u95ee `http://localhost:5500/en-us/` \u5c06\u81ea\u52a8\u8f6c\u5165\u81f3\u82f1\u6587\u7ad9\u3002\n\n\u6587\u4ef6\u7ed3\u6784\u5982\u4e0b\u6240\u793a\uff1a\n\n```bash\n.\n\u251c\u2500\u2500 pages // \u9ed8\u8ba4\u7ad9\u70b9\n|   \u251c\u2500\u2500 en-us // \u82f1\u6587\u7ad9\u70b9\n|   |     \u251c\u2500\u2500 my-design-philosophy.md\n|   |     \u251c\u2500\u2500 ...\n|   |     \u2514\u2500\u2500 why-programmer-should-write-books.md\n|   \u251c\u2500\u2500 de-de // \u5fb7\u6587\u7ad9\u70b9  \n|   \u251c\u2500\u2500 en-us.md  // \u82f1\u6587\u7ad9\u9996\u9875  \n|   \u251c\u2500\u2500 de-de.md  // \u5fb7\u6587\u7ad9\u9996\u9875   \n|   \u2514\u2500\u2500 index.md  // \u9ed8\u8ba4\u9996\u9875\n\u2514\u2500\u2500 ...\n\n```\n\nFreezes \u4f1a\u77e5\u522b\u5230\u54ea\u4e9b\u6587\u4ef6\u662f\u4f7f\u7528\u54ea\u79cd\u8bed\u8a00\u7684\uff0c\u5f53\u7136\u8fd9\u6837\u505a\u7684\u8bdd\u4f60\u4e5f\u4f1a\u5bb9\u6613\u5728\u540c\u4e00\u4e2a\u7ad9\u70b9\u7ba1\u7406\u591a\u4e2a\u8bed\u8a00\u7248\u672c\u7684markdown \u6587\u7a3f\u5185\u5bb9\u3002\n\n", 
+      "created": "Fri, 27 Mar 2015 17:56:04 GMT", 
+      "excerpt": "<p>Freezes \u7684\u4e0e\u522b\u4e0d\u540c\u4e4b\u5904\u662f\u4ed6\u53ef\u4ee5\u751f\u6210\u591a\u8bed\u8a00\u7684\u9759\u6001\u5316\u7ad9\u70b9\u3002\u90a3\u4e48\u5bf9\u4e8e\u6709\u5168\u7403\u5316\u9700\u8981\u7684\u7ad9\u70b9\uff0c\u8fd9\u5c06\u4f1a\u662f\u4e00\u4e2a\u5f88\u68d2\u7684\u529f\u80fd\uff01\u6b63\u5982\u6211\u4eec\u7684\u5b98\u7f51\u4e00\u6837\u3002</p>\n<p>\u5168\u7403\u5316\u5185\u5bb9\u5e76\u4e0d\u8981\u6c42\u505a\u4ec0\u4e48\u8bbe\u7f6e\u6216\u8005\u5b66\u4e60\u4e00\u4e9b\u4ec0\u4e48\u989d\u5916\u7684\u6280\u80fd\u3002\u4f60\u53ea\u9700\u8981\u91c7\u7528\u7279\u6b8a\u7684\u76ee\u5f55\u547d\u540d\u5c31\u53ef\u4ee5\u5b8c\u6210\u8fd9\u4e00\u5207\uff01</p>", 
+      "id": 6, 
+      "last_updated": "Sun, 22 Mar 2015 22:22:14 GMT", 
+      "meta": {
+        "id": 6, 
+        "summary": "\u4e00\u4e2a\u7ad9\u70b9\uff0c\u591a\u4e2a\u8bed\u8a00\u7248\u672c", 
+        "title": "\u5168\u7403\u5316\u5185\u5bb9"
+      }, 
+      "name": "localization", 
+      "path": "zh-cn/documents/organizate-your-contents/localization", 
+      "published": "Sun, 22 Mar 2015 22:22:14 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/documents/organizate-your-contents/localization/"
+    }, 
+    {
+      "body": "Freezes \u7684\u4e0e\u522b\u4e0d\u540c\u4e4b\u5904\u662f\u4ed6\u53ef\u4ee5\u751f\u6210\u591a\u8bed\u8a00\u7684\u9759\u6001\u5316\u7ad9\u70b9\u3002\u90a3\u4e48\u5bf9\u4e8e\u6709\u5168\u7403\u5316\u9700\u8981\u7684\u7ad9\u70b9\uff0c\u8fd9\u5c06\u4f1a\u662f\u4e00\u4e2a\u5f88\u68d2\u7684\u529f\u80fd\uff01\u6b63\u5982\u6211\u4eec\u7684\u5b98\u7f51\u4e00\u6837\u3002\n\n\u5168\u7403\u5316\u5185\u5bb9\u5e76\u4e0d\u8981\u6c42\u505a\u4ec0\u4e48\u8bbe\u7f6e\u6216\u8005\u5b66\u4e60\u4e00\u4e9b\u4ec0\u4e48\u989d\u5916\u7684\u6280\u80fd\u3002\u4f60\u53ea\u9700\u8981\u91c7\u7528\u7279\u6b8a\u7684\u76ee\u5f55\u547d\u540d\u5c31\u53ef\u4ee5\u5b8c\u6210\u8fd9\u4e00\u5207\uff01\n\n\u552f\u4e00\u9700\u8981\u4e86\u89e3\u7684\u53ea\u6709\u4e24\u70b9\uff1a\n\n- \u5176\u5b83\u8bed\u8a00\u7248\u672c\u7684\u9996\u9875\n- \u533a\u57df\u5316\u76ee\u5f55\n\nFreezes \u5c06 `pages` \u76ee\u5f55\u4e0b\u7684\u6240\u6709\u7684\u6587\u4ef6\u89c6\u4e3a\u4f7f\u7528 **\u9ed8\u8ba4\u8bed\u8a00**\uff0c\u9047\u5230\u4ee5\u533a\u57df\u5316\u89c4\u5219\u547d\u540d\u7684\u76ee\u5f55\u5219\u89c6\u4e3a\u4f7f\u7528\u533a\u57df\u6027\u8bed\u8a00\u3002\n\n\u4f8b\u5982\uff0c\u5f53\u524d\u7684\u7ad9\u70b9\u662f\u4e2d\u6587\u7684\uff0c\u800c\u9700\u8981\u589e\u52a0\u4e00\u4e2a\u82f1\u8bed\u7248\u672c\u7684\u7ad9\u70b9\uff0c\u5219\u53ea\u9700\u8981\u5728`pages`\u4e0b\u589e\u52a0\u4e00\u4e2a\u540d\u4e3a`en-us`\u533a\u57df\u5316\u76ee\u5f55\uff0c\u800c\u9700\u8981\u5728 `pages` \u76ee\u5f55\u5185\u589e\u52a0\u4e00\u4e2a\u540d\u4e3a `en-us.md` \u7684\u6587\u4ef6\u4f5c\u4e3a\u8be5\u8bed\u8a00\u7248\u672c\u7684 **\u9ed8\u8ba4\u9875**\u3002\u90a3\u4e48\u5f53\u7528\u6237\u8bbf\u95ee \u8fd9\u4e2a\u4e2d\u6587\u7ad9\u65f6 Freezes \u5c06\u4e0d\u4f1a\u52a0\u8f7d `en-us.md` \u6587\u4ef6\u5230\u4e3b\u83dc\u5355\u5185\uff0c\u800c\u9700\u8981\u8bbf\u95ee\u82f1\u6587\u7ad9\u70b9\u53ea\u9700\u8981\u76f4\u63a5\u8bbf\u95ee `http://localhost:5500/en-us/` \u5c06\u81ea\u52a8\u8f6c\u5165\u81f3\u82f1\u6587\u7ad9\u3002\n\n\u6587\u4ef6\u7ed3\u6784\u5982\u4e0b\u6240\u793a\uff1a\n\n```bash\n.\n\u251c\u2500\u2500 pages // \u9ed8\u8ba4\u7ad9\u70b9\n|   \u251c\u2500\u2500 en-us // \u82f1\u6587\u7ad9\u70b9\n|   |     \u251c\u2500\u2500 my-design-philosophy.md\n|   |     \u251c\u2500\u2500 ...\n|   |     \u2514\u2500\u2500 why-programmer-should-write-books.md\n|   \u251c\u2500\u2500 de-de // \u5fb7\u6587\u7ad9\u70b9  \n|   \u251c\u2500\u2500 en-us.md  // \u82f1\u6587\u7ad9\u9996\u9875  \n|   \u251c\u2500\u2500 de-de.md  // \u5fb7\u6587\u7ad9\u9996\u9875   \n|   \u2514\u2500\u2500 index.md  // \u9ed8\u8ba4\u9996\u9875\n\u2514\u2500\u2500 ...\n\n```\n\nFreezes \u4f1a\u77e5\u522b\u5230\u54ea\u4e9b\u6587\u4ef6\u662f\u4f7f\u7528\u54ea\u79cd\u8bed\u8a00\u7684\uff0c\u5f53\u7136\u8fd9\u6837\u505a\u7684\u8bdd\u4f60\u4e5f\u4f1a\u5bb9\u6613\u5728\u540c\u4e00\u4e2a\u7ad9\u70b9\u7ba1\u7406\u591a\u4e2a\u8bed\u8a00\u7248\u672c\u7684markdown \u6587\u7a3f\u5185\u5bb9\u3002\n\n", 
+      "created": "Tue, 31 Mar 2015 11:29:37 GMT", 
+      "excerpt": "<p>Freezes \u7684\u4e0e\u522b\u4e0d\u540c\u4e4b\u5904\u662f\u4ed6\u53ef\u4ee5\u751f\u6210\u591a\u8bed\u8a00\u7684\u9759\u6001\u5316\u7ad9\u70b9\u3002\u90a3\u4e48\u5bf9\u4e8e\u6709\u5168\u7403\u5316\u9700\u8981\u7684\u7ad9\u70b9\uff0c\u8fd9\u5c06\u4f1a\u662f\u4e00\u4e2a\u5f88\u68d2\u7684\u529f\u80fd\uff01\u6b63\u5982\u6211\u4eec\u7684\u5b98\u7f51\u4e00\u6837\u3002</p>\n<p>\u5168\u7403\u5316\u5185\u5bb9\u5e76\u4e0d\u8981\u6c42\u505a\u4ec0\u4e48\u8bbe\u7f6e\u6216\u8005\u5b66\u4e60\u4e00\u4e9b\u4ec0\u4e48\u989d\u5916\u7684\u6280\u80fd\u3002\u4f60\u53ea\u9700\u8981\u91c7\u7528\u7279\u6b8a\u7684\u76ee\u5f55\u547d\u540d\u5c31\u53ef\u4ee5\u5b8c\u6210\u8fd9\u4e00\u5207\uff01</p>", 
+      "id": 6, 
+      "last_updated": "Tue, 31 Mar 2015 11:29:37 GMT", 
+      "meta": {
+        "id": 6, 
+        "summary": "Translate your website to multi-languages", 
+        "title": "Globalization"
+      }, 
+      "name": "localization", 
+      "path": "documents/organize-your-contents/localization", 
+      "published": "Tue, 31 Mar 2015 11:29:37 GMT", 
+      "tags": [], 
+      "url": "/documents/organize-your-contents/localization/"
+    }, 
+    {
+      "body": "\n\u6211\u4ece\u4e8b\u4e92\u8054\u7f51\u5f00\u53d1\u5df2\u903e15\u8f7d\uff0c\u4f46\u8bbd\u523a\u7684\u662f\u6211\u4ece\u6765\u6ca1\u6709\u4e3a\u81ea\u5df1\u53bb\u5efa\u7acb\u4e2a\u4eba\u7f51\u7ad9\u6216\u8005\u5199\u535a\u5ba2\u3002\u4f18\u79c0\u7684\u4e2a\u4eba\u5efa\u7ad9\u6216\u8005\u535a\u5ba2\u5de5\u5177\u5374\u5b9e\u4e0d\u5c11\uff0c\u6211\u4e5f\u66fe\u5c1d\u8bd5\u91c7\u7528\u7c7b\u4f3cWordpress \u4e00\u7c7b\u7684\u5de5\u5177\u5efa\u7acb\u81ea\u5df1\u7684\u535a\u5ba2\u53bb\u5206\u4eab\u4e00\u4e9b\u7ecf\u9a8c\u4e0e\u60f3\u6cd5\u3002\u4f46\u6700\u7ec8\u4ecd\u7136\u662f\u4e0d\u4e86\u4e86\u4e4b\uff0c\u8ffd\u5176\u6839\u7531\u5927\u591a\u662f\u56e0\u4e3a\u89c9\u5f97\u90e8\u7f72\u592a\u9ebb\u70e6\uff0c\u6216\u8005\u529f\u80fd\u4e0d\u80fd\u8fbe\u5230\u81ea\u5df1\u7684\u671f\u671b\u3002\n\n\u7ad9\u5728\u4e00\u4e2a\u4f5c\u8005\u7684\u89d2\u5ea6\uff0c\u4e3a\u4e86\u53d1\u8868\u4e00\u4e9b\u8bba\u6587\uff0c\u5206\u4eab\u70b9\u6ef4\u7ecf\u9a8c\u5374\u8981\u6c42\u6211\u82b1\u5927\u91cf\u7684\u65f6\u95f4\u53bb\u5efa\u7acb\u6570\u636e\u5e93\uff0c\u7ba1\u7406\u7528\u6237\u89d2\u8272\uff08\u5185\u90e8\u7528\u6237\u53ea\u6709\u6211\u4e00\u4e2a\uff09\uff0c\u8bbe\u5b9a\u6587\u7ae0\u7684\u8bbf\u95ee\u6743\u9650\uff08\u6211\u7684\u6587\u7ae0\u662f\u516c\u5f00\u7684\uff09\u751a\u81f3\u56e0\u4e3a\u90a3\u4e9b\u7cdf\u7cd5\u7684\u754c\u9762\u8bbe\u8ba1\u6211\u8fd8\u5f97\u82b1\u65f6\u95f4\u53bb\u5199\u4e00\u4e9b`css`\uff0c`html` \u751a\u81f3\u662f\u4ee3\u7801\u8c03\u6574\u81f3\u81ea\u5df1\u6240\u80fd\u6ee1\u610f\u7684\u7a0b\u5ea6\uff0c\u90a3\u8fd8\u4e0d\u5982\u627e\u4e2a\u6280\u672f\u793e\u533a\u5f00\u4e2a\u5e10\u53f7\u6765\u5f97\u8f7b\u677e\u3002\n\n\u4f5c\u4e3a\u4e00\u540d\u4e92\u8054\u7f51\u5f00\u53d1\u8005\uff0c\u6211\u66f4\u8ffd\u6c42\u53ef\u4ee5\u968f\u610f\u5730\u6539\u53d8\u81ea\u5df1\u7f51\u7ad9\u7684\u98ce\u683c\u3001\u5e03\u5c40\u751a\u81f3\u52a0\u5165\u4e9b\u81ea\u5df1\u559c\u6b22\u7684\u529f\u80fd\u4ee5\u4f7f\u5f97\u81ea\u5df1\u7684\u7ad9\u70b9\u80fd\u589e\u52a0\u4e9b\u5c5e\u4e8e\u6211\u4e2a\u4eba\u7684\u7279\u8272\u3002\u5948\u4f55\u8981\u4e0d\u5c31\u81ea\u5df1\u52a8\u624b\u4ece\u5934\u5f00\u53d1\u5c06\u4e2a\u4eba\u7ad9\u70b9\u4f5c\u4e3a\u4e00\u4e2a\u957f\u671f\u7684\u7ef4\u62a4\u7684\u9879\u76ee\u6765\u505a\uff0c\u663e\u7136\u8fd9\u662f\u4e00\u79cd\u81ea\u8650\u884c\u4e3a\u3002\u5176\u6b21\u5c31\u662f\u7528\u73b0\u6709\u7684\u5e73\u53f0\u6765\u642d\u5efa\uff0c\u82b1\u65f6\u95f4\u53bb\u5b66\u4e60\u5404\u79cd\u89c4\u5219\u53ea\u4e3a\u5206\u4eab\u4e00\u4e9b\u77e5\u8bc6\uff0c\u5c06\u65f6\u95f4\u82b1\u5728\u8fd9\u4e9b\u65b9\u9762\u663e\u7136\u662f\u4e00\u79cd\u81ea\u6740\u5f0f\u7684\u884c\u4e3a\u3002\n\n\u6700\u540e\u6211\u9047\u5230\u4e86 jekyll \uff0c\u4ed6\u7684\u9759\u6001\u5316\u7406\u5ff5\u5c31\u662f\u6211\u60f3\u8981\u7684\uff0c\u5168\u740380%\u4ee5\u4e0a\u7684\u7f51\u7ad9\u4e5f\u53ea\u4e0d\u8fc7\u662f\u5728\u5206\u4eab\u4fe1\u606f\uff0c\u90a3\u4e3a\u4ec0\u4e48\u8981\u672c\u672b\u5012\u7f6e\u53c8\u8981\u505a\u5f00\u53d1\u53c8\u8981\u5efa\u7acb\u6570\u636e\u5e93\u8fd8\u5f97\u6298\u817e\u5404\u79cd\u7684\u90e8\u7f72\u914d\u7f6e\u5462\uff1f\u7136\u800c\uff0c\u601d\u60f3\u5bf9\u4e86\u4f46\u4ed6\u4eec\u7684\u663e\u7136\u53ea\u662f\u5c06\u6587\u672c\u4f5c\u4e3a\u522b\u4e00\u79cd\u5f62\u5f0f\u7684HTML\uff0c\u4ece\u4f5c\u8005\u7684\u89d2\u5ea6\u6765\u770b\u8fd9\u662f\u4e00\u79cd\u5bf9**\u6587\u4ef6\u5185\u5bb9\u7684\u6c61\u67d3**\uff01\u8fd9\u5374\u4e0d\u662f\u6211\u60f3\u8981\u7684\u3002\u6211\u6709\u6781\u591a\u7684\u6587\u4ef6\uff0c\u96be\u9053\u8981\u5c06\u6211\u7684\u6587\u4ef6\u5185\u5bb9\u90fd\u6309 jekyll \u6240\u5b9a\u7684\u6587\u4ef6\u6807\u8bb0\u6539\u4e00\u6b21\uff0c\u60f3\u4e00\u60f3\u90fd\u4e0d\u53ef\u80fd\uff0c\u800c\u4e14\u8981\u505a\u4e2a\u50cf\u6837\u4e00\u70b9\u7684\u7ad9\u70b9\u5b9e\u5728\u662f\u592a\u8017\u65f6\u4e86\u3002\n\n\u6700\u540e\uff0c\u8fd8\u662f\u4e0b\u5b9a\u51b3\u5fc3\u81ea\u5df1\u52a8\u624b\u505a\uff1a\u201d\u4e00\u4e2a\u80fd\u8ba9\u4f5c\u8005\u4e13\u6ce8\u4e8e\u5199\u4f5c\u800c\u4e0d\u662f\u5b66**\u6807\u8bb0**,\u8ba9\u5f00\u53d1\u8005\u968f\u5fc3\u5b9a\u5236\u800c\u6ca1\u6709\u5b66\u4e60\u66f2\u7ebf\u7684\u9759\u6001\u5316\u7f51\u7ad9\u8f6c\u5316\u5de5\u5177\u201c\u3002\u57fa\u4e8e Flask \u7684 \"\u5fae\u6846\u67b6\" \u7406\u5ff5\uff0c\u53c2\u8003\u4e86 jekyll \u4f18\u79c0\u7684\u7406\u5ff5\u6700\u540e\u5c31\u8bde\u751f\u4e86 Freezes.\n\n\u5982\u679c\u4f60\u4e5f\u4e0e\u6211\u4e00\u6837\uff0c\u662f\u4e2a\u6280\u672f\u63a7\u6216\u8005\u6587\u5b57\u63a7\uff0c\u90a3\u4e48\u6211\u5f3a\u70c8\u5730\u63a8\u8350\u4f60\u9a6c\u4e0a\u5c1d\u8bd5\u4e00 Freezes, \u5b83\u662f\u4e3a\u4e86**\u5206\u4eab**\u4e0e**\u89e3\u653e\u65f6\u95f4**\u800c\u751f\u7684\uff01\u6211\u5e0c\u671b\u5b83\u4e5f\u80fd\u6210\u4e3a\u4f60\u6700\u5fe0\u5b9e\u7684\u52a9\u624b\u3002\u5982\u679c\u4f60\u5df2\u662f Freezes \u7684\u7528\u6237\uff0c\u65e0\u8bba\u4efb\u4f55\u7684\u6539\u8fdb\u610f\u89c1\u4e0e\u5efa\u8bae\u90a3\u4e48\u4e5f\u8bf7\u5728\u6211\u7684[github](https://github.com/DotNetAge/freezes/pulls)\u4e0a\u4e0d\u541d\u8d50\u6559\u3002\n\n\u6216\u8005\u60f3\u4e0e\u6211\u6709\u8fdb\u4e00\u6b65\u7684\u4ea4\u6d41\u4e5f\u975e\u5e38\u6b22\u8fce\u8bbf\u95ee\u6211\u7684[\u4e2a\u4eba\u535a\u5ba2](http://ray.dotnetage.com)\u3002\n\nThanks\n\nRay", 
+      "created": "Sun, 22 Mar 2015 15:42:29 GMT", 
+      "excerpt": "<p>\u6211\u4ece\u4e8b\u4e92\u8054\u7f51\u5f00\u53d1\u5df2\u903e15\u8f7d\uff0c\u4f46\u8bbd\u523a\u7684\u662f\u6211\u4ece\u6765\u6ca1\u6709\u4e3a\u81ea\u5df1\u53bb\u5efa\u7acb\u4e2a\u4eba\u7f51\u7ad9\u6216\u8005\u5199\u535a\u5ba2\u3002\u4f18\u79c0\u7684\u4e2a\u4eba\u5efa\u7ad9\u6216\u8005\u535a\u5ba2\u5de5\u5177\u5374\u5b9e\u4e0d\u5c11\uff0c\u6211\u4e5f\u66fe\u5c1d\u8bd5\u91c7\u7528\u7c7b\u4f3cWordpress \u4e00\u7c7b\u7684\u5de5\u5177\u5efa\u7acb\u81ea\u5df1\u7684\u535a\u5ba2\u53bb\u5206\u4eab\u4e00\u4e9b\u7ecf\u9a8c\u4e0e\u60f3\u6cd5\u3002\u4f46\u6700\u7ec8\u4ecd\u7136\u662f\u4e0d\u4e86\u4e86\u4e4b\uff0c\u8ffd\u5176\u6839\u7531\u5927\u591a\u662f\u56e0\u4e3a\u89c9\u5f97\u90e8\u7f72\u592a\u9ebb\u70e6\uff0c\u6216\u8005\u529f\u80fd\u4e0d\u80fd\u8fbe\u5230\u81ea\u5df1\u7684\u671f\u671b\u3002</p>", 
+      "id": 7, 
+      "last_updated": "Sun, 22 Mar 2015 16:26:57 GMT", 
+      "meta": {
+        "id": 7, 
+        "summary": "Freezes \u7684\u521b\u4f5c\u521d\u8877\u4e0e\u7531\u6765", 
+        "title": "\u5173\u4e8e"
+      }, 
+      "name": "about", 
+      "path": "zh-cn/about", 
+      "published": "Sun, 22 Mar 2015 16:26:57 GMT", 
+      "tags": [], 
+      "url": "/zh-cn/about/"
+    }
+  ]
+}

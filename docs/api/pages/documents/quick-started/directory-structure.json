@@ -1,0 +1,17 @@
+{
+  "body": "Freezes is a document-driven website and a text transformation engine.\n\nA basic Freezes site usually looks something like this:\n\n```bash\n.\n\u251c\u2500\u2500 _config.yml\n\u251c\u2500\u2500 _assets.yml\n\u251c\u2500\u2500 pages\n|   \u251c\u2500\u2500 posts\n|   |     \u2514\u2500\u2500 2014-01-01\n|   |           \u251c\u2500 why-programmer-should-write-books.md\n|   |           \u2514\u2500 why-programmer-should-write-books\n|   \u251c\u2500\u2500 documents     \n|   |   \n|   \u2514\u2500\u2500 index.md\n\u251c\u2500\u2500 builds\n\u251c\u2500\u2500 static\n|   \u251c\u2500\u2500 images\n|   \u251c\u2500\u2500 scripts\n|   \u2514\u2500\u2500 styles\n\u251c\u2500\u2500 templates\n|   \u251c\u2500\u2500 includes\n|   \u251c\u2500\u2500 layouts\n|   \u2514\u2500\u2500 404.html\n\u2514\u2500\u2500 __init__.py\n```\n\nAn overview of what each of these does:\n\nFILE / DIRECTORY| DESCRIPTION | REMARKS\n--|--|--\n`pages` | Document folder | Save all markdown files\npages/`posts` | Posts folder | \npages/`index.md` | Home page |\n`static` | Resources | All static resource files\nstatic/`images` | Images|\nstatic/`scripts` | Scripts |\nstatic/`styles` | Styles |\n`templates` | Templates |\ntemplates/`includes`| Includes |\ntemplates/`layouts`| Layouts |\n`builds` | Build | Build result files\n`_config.yml` | Site configuration |\n`_assets.yml` | Asset configuration |\n", 
+  "created": "Mon, 30 Mar 2015 01:28:33 GMT", 
+  "excerpt": "<p>Freezes is a document-driven website and a text transformation engine.</p>\n<p>A basic Freezes site usually looks something like this:</p>", 
+  "id": 3, 
+  "last_updated": "Mon, 30 Mar 2015 01:28:33 GMT", 
+  "meta": {
+    "id": 3, 
+    "title": "Directory structure"
+  }, 
+  "name": "directory-structure", 
+  "pages": [], 
+  "path": "documents/quick-started/directory-structure", 
+  "published": "Mon, 30 Mar 2015 01:28:33 GMT", 
+  "tags": [], 
+  "url": "/documents/quick-started/directory-structure/"
+}

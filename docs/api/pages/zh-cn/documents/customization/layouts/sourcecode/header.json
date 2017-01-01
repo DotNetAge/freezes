@@ -1,0 +1,17 @@
+{
+  "body": "```django\n{% import \"_macros/posts.html\" as posts %}\n\n<div class=\"page-header\">\n    {% if page.path!='' and page._is_default==False %}\n        <h1>\n            {{ posts.crumb(site,page.path) }}\n            <div>{{ page.title }}</div>\n        </h1>\n        <p class=\"lead\">{{ page.summary }}</p>\n    {% else %}\n        <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>\n        <p class=\"lead\">{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}</p>\n    {% endif %}\n</div>\n```", 
+  "created": "Tue, 31 Mar 2015 10:32:53 GMT", 
+  "excerpt": "<p>```django\n{% import \"_macros/posts.html\" as posts %}</p>", 
+  "id": 4, 
+  "last_updated": "Tue, 31 Mar 2015 10:32:53 GMT", 
+  "meta": {
+    "id": 4, 
+    "title": "_header.html \u6e90\u7801"
+  }, 
+  "name": "header", 
+  "pages": [], 
+  "path": "zh-cn/documents/customization/layouts/sourcecode/header", 
+  "published": "Tue, 31 Mar 2015 10:32:53 GMT", 
+  "tags": [], 
+  "url": "/zh-cn/documents/customization/layouts/sourcecode/header/"
+}

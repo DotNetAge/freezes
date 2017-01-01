@@ -1,0 +1,17 @@
+{
+  "body": "\nFreezes loads [bootstrap](getbootstrap.com) \u548c (fontawesome)[fontawesome.io] , \u9ed8\u8ba4\u652f\u6301 [Less](lesscss.org) \u4f5c\u4e3a\u6837\u5f0f\u8bed\u8a00 `static/style` \u4e0b\u7684\u6837\u5f0f\u6587\u4ef6\u5c06\u4f1a\u88ab\u81ea\u52a8\u7f16\u8bd1\u5e76\u5408\u6210\u3001\u538b\u7f29\u4e3a\u4e00\u4e2a css \u81ea\u52a8\u5f15\u5165\u5230\u9875\u9762\u5185\uff0c\u5982\u679c\u60a8\u9700\u8981\u4f7f\u7528 sass \u6216\u8005 css \u4f5c\u4e3a\u6837\u5f0f\u7f16\u8f91\u8bed\u8a00 \u8bf7\u53c2\u8003\uff1a[\u5982\u4f55\u914d\u7f6e\u751f\u6210\u8d44\u6e90]\n", 
+  "created": "Wed, 11 Mar 2015 10:09:22 GMT", 
+  "excerpt": "<p>Freezes loads <a href=\"getbootstrap.com\">bootstrap</a> \u548c (fontawesome)[fontawesome.io] , \u9ed8\u8ba4\u652f\u6301 <a href=\"lesscss.org\">Less</a> \u4f5c\u4e3a\u6837\u5f0f\u8bed\u8a00 <code>static/style</code> \u4e0b\u7684\u6837\u5f0f\u6587\u4ef6\u5c06\u4f1a\u88ab\u81ea\u52a8\u7f16\u8bd1\u5e76\u5408\u6210\u3001\u538b\u7f29\u4e3a\u4e00\u4e2a css \u81ea\u52a8\u5f15\u5165\u5230\u9875\u9762\u5185\uff0c\u5982\u679c\u60a8\u9700\u8981\u4f7f\u7528 sass \u6216\u8005 css \u4f5c\u4e3a\u6837\u5f0f\u7f16\u8f91\u8bed\u8a00 \u8bf7\u53c2\u8003\uff1a[\u5982\u4f55\u914d\u7f6e\u751f\u6210\u8d44\u6e90]</p>", 
+  "id": 1, 
+  "last_updated": "Thu, 26 Mar 2015 23:30:12 GMT", 
+  "meta": {
+    "id": 1, 
+    "title": "Customize styles"
+  }, 
+  "name": "styles", 
+  "pages": [], 
+  "path": "documents/customization/styles", 
+  "published": "Thu, 26 Mar 2015 23:30:12 GMT", 
+  "tags": [], 
+  "url": "/documents/customization/styles/"
+}

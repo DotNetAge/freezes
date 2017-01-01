@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <title>Freezes - 元数据</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/feeds/recent.atom"
+      rel="alternate"
+      title="Recent posts"
+      type="application/atom+xml">
+
+    
+        
+            <meta name="description" content="自描述式的文档">
+        
+    
+    
+
+    
+
+    
+    
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"
+              media="screen">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+        
+            <link rel="stylesheet" href="/static/site.min.css?4de4a314">
+        
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+        <script type="text/javascript" src="/static/site.min.js?7693760b"></script>
+    
+</head>
+<body >
+
+    <div class="belt"></div>
+    
+<div class="container">
+    <div class="page-wrapper">
+        
+            
+<div class="lang-dropdown">
+
+    <ol class="breadcrumb">
+        <li><a href="/"><span class="fa fa-home"></span> Freezes
+        </a></li>
+        
+            
+                <li><a href="/zh-cn/">首页</a></li>
+            
+                <li><a href="/zh-cn/documents/">相关文档</a></li>
+            
+                <li><a href="/zh-cn/documents/organizate-your-contents/">内容组织</a></li>
+            
+        
+    </ol>
+ 
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-expanded="true">
+            
+                中文 (简体)
+            
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/zh-cn/">中文 (简体)</a></li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/">English (US)</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page-header">
+    
+        <h1>
+            
+                <div>元数据</div>
+            
+
+        </h1>
+        <p class="lead">自描述式的文档</p>
+    
+</div>
+        
+        
+            <div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">折叠导航栏</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                
+                    
+                        <li >
+                            <a href="/zh-cn/">首页</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/quick-started/">快速开始</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/documents/">相关文档</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/about/">关于</a></li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="divider visible-xs"></li>
+                
+                
+                
+                    <li data-toggle="tooltip" data-placement="top" title="Fork me on github">
+                        <a href="http://www.github.com/dotnetage" target="_blank" rel="nofollow"><i
+                                class="fa fa-github"></i> <span class="visible-xs-inline">me@github</span></a>
+                    </li>
+                
+                <li data-toggle="tooltip" data-placement="top" title="订阅更新">
+                    <a href="/feeds/recent.atom"><i class="fa fa-rss"></i> <span
+                            class="visible-xs-inline">订阅</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+        <div class="page-content">
+            
+    
+            
+            <p>我们的设计哲学认为：“文档即是数据”所以 Freezes 是一个无数据库的环境。markdown 文稿就是Freezes的数据。您可以通过Markdown Extra 扩展规范中的 元数据（metadata）告诉 Freezes 应该以何种方式显示的文稿，诸如 <strong>文章标题</strong> , <strong>封面</strong> ， <strong>页面布局</strong> ，<strong>主题词</strong> 。</p>
+<h2 id="_1">什么是元数据</h2>
+<p>元数据属于 Markdown Extra 的一种可用于seo的特殊格式文法，元数据的内容一般不会被显示于正文中，对于控个用于控制页面输出的特定元数据外，其它的元数据可以通过页面变量访问。</p>
+<p>元数据的定义需要在文本的首行加入，与正文之间通过一个空行分隔，示例如下：</p>
+<pre><code>title: 标题
+description: 文章的简述
+author: 作者
+
+此处为文章正文
+</code></pre>
+<p>Freezes 所支持的元数据如下：</p>
+<table>
+<thead>
+<tr>
+<th>元数据</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>文章与页的标题（必选），如果不填将不会显示于菜单内。</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>输出至页面 <code>&lt;meta&gt;</code> 标记内的文字，限定为 255个字符</td>
+</tr>
+<tr>
+<td><code>summary</code></td>
+<td>文章的摘要，显示于文章列表中，也可以作为副标题使用</td>
+</tr>
+<tr>
+<td><code>cover</code></td>
+<td>文章封面图片地址，此处不需要声明文件的全路径，只需将图片放置于与文本文件同名目录下即可，具体请见下文[链接资源]</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>文章的作者名称</td>
+</tr>
+<tr>
+<td><code>date</code></td>
+<td>文章的发表日期，必须以 yyyy-MM-dd hh:mm:dd 的严格格式设定，如 2015-01-01 00:00:00。如果不填写此日期 Freezes 将以文本的最后更新日期作为发表日期。</td>
+</tr>
+<tr>
+<td><code>layout</code></td>
+<td>指定文本以何种布局页显示，该名称指向与<code>templates/layouts</code>目录下同名的页面，指定时无须后缀名。不指定时 Freezes 将智能识别应采用何用布局。</td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>文章的主题标签，多个标签可通过 <code>,</code> 分隔，指定后可在 <code>/tags</code> 页面内显示并被过滤筛选。添加后会自动输出至页面的 <code>&lt;meta name="keyword" /&gt;</code> 元数据标签内增强SEO效果。</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td>指定文章的索引号，在 <code>posts</code> 目录外的所有的文章会按此值由小到大排序</td>
+</tr>
+</tbody>
+</table>
+<div class="alert alert-danger"> 
+<b>注意</b>
+<ul>
+<li> 元数据标签<code>:</code> 后面必须紧跟一个空格，否则将被视为格式错误。</li>
+<li> 如果元数据内需要采用由字母与数字之外的符号（如中文）请包括在 <code>“”</code> 之内 </li> 
+</ul>
+</div>
+
+<h3 id="_2">使用建议</h3>
+<ul>
+<li>每个文件都增加 <code>tags</code> 与 <code>description</code> 或 <code>summary</code> 这两元数据将自动输出至页面的 <code>&lt;meta&gt;</code> 内，以增加页面的SEO效果。</li>
+<li>为每个文件增加发布日期，可以方便于文章的排序</li>
+<li><code>tags</code> 应该准确，且应由大分类向小分类的方式排序，且不适于标记超过10个以上的关键词，以避免降低SEO的效果。</li>
+</ul>
+            
+    
+
+
+    <div class="line-holder">
+    
+        
+            <a href="/zh-cn/documents/organizate-your-contents/markdown-syntax/"><span class="fa fa-arrow-left"></span> 上一篇:文字格式</a>
+        
+        
+            <a href="/zh-cn/documents/organizate-your-contents/categorize-your-contents/" class="pull-right">下一篇:内容管理 <span
+                    class="fa fa-arrow-right"></span></a>
+        
+    
+</div>
+
+        </div>
+    </div>
+</div>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>联系信息</h3>
+                <ul class="list-unstyled">
+                    <li>Freezes</li>
+                    
+                    <li><a href="mailto:csharp2002@hotmail.com"><span class="fa fa-mail"></span> csharp2002@hotmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="http://ray.dotnetage.com">Ray's blog</a></li>
+                    <li><a href="http://www.dotnetage.com">DotNetAge</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <p class="text-center">Powered by <a href="http://freezes.dotnetage.com">Freezes</a></p>
+</footer>
+
+
+
+
+</body>
+</html>

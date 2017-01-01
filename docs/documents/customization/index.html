@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <title>Freezes - Customize</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/feeds/recent.atom"
+      rel="alternate"
+      title="Recent posts"
+      type="application/atom+xml">
+
+    
+        
+            <meta name="description" content="Change looks and feels">
+        
+    
+    
+
+    
+
+    
+    
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"
+              media="screen">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+        
+            <link rel="stylesheet" href="/static/site.min.css?4de4a314">
+        
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+        <script type="text/javascript" src="/static/site.min.js?7693760b"></script>
+    
+</head>
+<body >
+
+    <div class="belt"></div>
+    
+<div class="container">
+    <div class="page-wrapper">
+        
+            
+<div class="lang-dropdown">
+
+    <ol class="breadcrumb">
+        <li><a href="/"><span class="fa fa-home"></span> Freezes
+        </a></li>
+        
+            
+                <li><a href="/documents/">Documents</a></li>
+            
+        
+    </ol>
+ 
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-expanded="true">
+            
+                English (US)
+            
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/zh-cn/">中文 (简体)</a></li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/">English (US)</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page-header">
+    
+        <h1>
+            
+                <div>Customize</div>
+            
+
+        </h1>
+        <p class="lead">Change looks and feels</p>
+    
+</div>
+        
+        
+            <div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">折叠导航栏</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                
+                    
+                        <li >
+                            <a href="/index/">Home</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/documents/">Documents</a></li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="divider visible-xs"></li>
+                
+                
+                
+                    <li data-toggle="tooltip" data-placement="top" title="Fork me on github">
+                        <a href="http://www.github.com/dotnetage" target="_blank" rel="nofollow"><i
+                                class="fa fa-github"></i> <span class="visible-xs-inline">me@github</span></a>
+                    </li>
+                
+                <li data-toggle="tooltip" data-placement="top" title="订阅更新">
+                    <a href="/feeds/recent.atom"><i class="fa fa-rss"></i> <span
+                            class="visible-xs-inline">订阅</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+        <div class="page-content">
+            
+    
+            
+            <p>You can easy to customize your website layouts and styles without any limitations</p>
+<p>You can specified the <code>layout</code> meta to change the page default layout.</p>
+<p>默认安装后会提供一个简约的网页风格。每个文稿可以通过元数据 <code>layout</code> 指定当前文稿用什么页面布局显示。默认情况下当文稿内没有采用 layout元数据指定布局时， Freezes 将为你的文稿自动选择一种最合适的布局方式。</p>
+<p>Freezes offers 3 default layouts: </p>
+<table>
+<thead>
+<tr>
+<th>Layout</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>recent</code></td>
+<td>Show recently posts after the content body.</td>
+</tr>
+<tr>
+<td><code>page</code></td>
+<td>Show a sub articles list after the content body.</td>
+</tr>
+<tr>
+<td><code>post</code></td>
+<td>Show a disqus comments on the bottom of the page.</td>
+</tr>
+</tbody>
+</table>
+<p>For example:</p>
+<pre><code class="yml">layout: recent
+title: &quot;About&quot;
+
+Here is the content body.
+</code></pre>
+
+<hr />
+<p>If you are web site designer or front-end developer you may like:</p>
+            
+    
+
+<div class="post-item">
+    
+    <h3 class="post-heading">
+        <a href="/documents/customization/styles/">Customize styles</a>
+    </h3>
+    
+    <p class="post-content">
+        
+        <p>Freezes loads <a href="getbootstrap.com">bootstrap</a> 和 (fontawesome)[fontawesome.io] , 默认支持 <a href="lesscss.org">Less</a> 作为样式语言 <code>static/style</code> 下的样式文件将会被自动编译并合成、压缩为一个 css 自动引入到页面内，如果您需要使用 sass 或者 css 作为样式编辑语言 请参考：[如何配置生成资源]</p>
+        
+    </p>
+
+    <p class="post-tools">
+        <a href="/documents/customization/styles/">阅读全文 <span class="fa fa-chevron-right"></span></a>
+    </p>
+    
+    
+</div>
+
+<div class="post-item">
+    
+    <h3 class="post-heading">
+        <a href="/documents/customization/layouts/">Customize layouts</a>
+    </h3>
+    
+        <h4 class="post-summary">HTML + Page variables</h4>
+    
+    <p class="post-content">
+        
+        <p>文稿是通过在元数据中加入 <code>layout</code> 指定使用哪一种部局方式显示文稿内容，主要提供以下几种布局方式</p>
+        
+    </p>
+
+    <p class="post-tools">
+        <a href="/documents/customization/layouts/">阅读全文 <span class="fa fa-chevron-right"></span></a>
+    </p>
+    
+    
+</div>
+
+<div class="post-item">
+    
+    <h3 class="post-heading">
+        <a href="/documents/customization/macros/">Macros</a>
+    </h3>
+    
+        <h4 class="post-summary">The helper methods for pages</h4>
+    
+    <p class="post-content">
+        
+        
+        
+    </p>
+
+    <p class="post-tools">
+        <a href="/documents/customization/macros/">阅读全文 <span class="fa fa-chevron-right"></span></a>
+    </p>
+    
+    
+</div>
+
+<div class="post-item">
+    
+    <h3 class="post-heading">
+        <a href="/documents/customization/variables/">Variables</a>
+    </h3>
+    
+    <p class="post-content">
+        
+        
+        
+    </p>
+
+    <p class="post-tools">
+        <a href="/documents/customization/variables/">阅读全文 <span class="fa fa-chevron-right"></span></a>
+    </p>
+    
+    
+</div>
+
+
+    <div class="line-holder">
+    
+        
+            <a href="/documents/organize-your-contents/"><span class="fa fa-arrow-left"></span> 上一篇:Organize Contents</a>
+        
+        
+            <a href="/documents/data-files/" class="pull-right">下一篇:Data files <span
+                    class="fa fa-arrow-right"></span></a>
+        
+    
+</div>
+
+        </div>
+    </div>
+</div>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>联系信息</h3>
+                <ul class="list-unstyled">
+                    <li>Freezes</li>
+                    
+                    <li><a href="mailto:csharp2002@hotmail.com"><span class="fa fa-mail"></span> csharp2002@hotmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="http://ray.dotnetage.com">Ray's blog</a></li>
+                    <li><a href="http://www.dotnetage.com">DotNetAge</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <p class="text-center">Powered by <a href="http://freezes.dotnetage.com">Freezes</a></p>
+</footer>
+
+
+
+
+</body>
+</html>

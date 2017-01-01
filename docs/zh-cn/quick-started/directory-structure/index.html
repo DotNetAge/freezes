@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <title>Freezes - 目录结构</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/feeds/recent.atom"
+      rel="alternate"
+      title="Recent posts"
+      type="application/atom+xml">
+
+    
+        
+            <meta name="description" content="站点各种目录与文件的详细说明">
+        
+    
+    
+
+    
+
+    
+    
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"
+              media="screen">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+        
+            <link rel="stylesheet" href="/static/site.min.css?4de4a314">
+        
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+        <script type="text/javascript" src="/static/site.min.js?7693760b"></script>
+    
+</head>
+<body >
+
+    <div class="belt"></div>
+    
+<div class="container">
+    <div class="page-wrapper">
+        
+            
+<div class="lang-dropdown">
+
+    <ol class="breadcrumb">
+        <li><a href="/"><span class="fa fa-home"></span> Freezes
+        </a></li>
+        
+            
+                <li><a href="/zh-cn/">首页</a></li>
+            
+                <li><a href="/zh-cn/quick-started/">快速开始</a></li>
+            
+        
+    </ol>
+ 
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-expanded="true">
+            
+                中文 (简体)
+            
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/zh-cn/">中文 (简体)</a></li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/">English (US)</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page-header">
+    
+        <h1>
+            
+                <div>目录结构</div>
+            
+
+        </h1>
+        <p class="lead">站点各种目录与文件的详细说明</p>
+    
+</div>
+        
+        
+            <div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">折叠导航栏</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                
+                    
+                        <li >
+                            <a href="/zh-cn/">首页</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/quick-started/">快速开始</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/documents/">相关文档</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/about/">关于</a></li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="divider visible-xs"></li>
+                
+                
+                
+                    <li data-toggle="tooltip" data-placement="top" title="Fork me on github">
+                        <a href="http://www.github.com/dotnetage" target="_blank" rel="nofollow"><i
+                                class="fa fa-github"></i> <span class="visible-xs-inline">me@github</span></a>
+                    </li>
+                
+                <li data-toggle="tooltip" data-placement="top" title="订阅更新">
+                    <a href="/feeds/recent.atom"><i class="fa fa-rss"></i> <span
+                            class="visible-xs-inline">订阅</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+        <div class="page-content">
+            
+    
+            
+            <p>在运行 <code>freezes new</code> 指令后，Freezes 将自动在当前目录下创建站点所需要运行的各种目录和文件，用 <strong>Finder</strong> 或 <strong>文件管理器</strong> 打开的话其目录结构如下：</p>
+<pre><code class="bash">.
+├── _config.yml
+├── _assets.yml
+├── pages
+|   ├── posts
+|   |     └── 2014-01-01
+|   |           ├─ why-programmer-should-write-books.md
+|   |           └─ why-programmer-should-write-books
+|   ├── documents     
+|   |   
+|   └── index.md
+├── builds
+├── static
+|   ├── images
+|   ├── scripts
+|   └── styles
+├── templates
+|   ├── includes
+|   ├── layouts
+|   └── 404.html
+└── __init__.py
+</code></pre>
+
+<p>以下是对所有的默认目录的具体说明</p>
+<table>
+<thead>
+<tr>
+<th>目录/文件</th>
+<th>作用</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pages</code></td>
+<td>工作目录</td>
+<td>存放所有的写作的文件，你可以建立各种你需要的目录对文件进行分类(详细请参考<a href="/zh-cn/organizate-your-contents/">"内容组织"</a>)</td>
+</tr>
+<tr>
+<td>pages/<code>posts</code></td>
+<td>随笔(博客)目录</td>
+<td></td>
+</tr>
+<tr>
+<td>pages/<code>index.md</code></td>
+<td>首页</td>
+<td>不可删除</td>
+</tr>
+<tr>
+<td><code>static</code></td>
+<td>静态资源目录</td>
+<td></td>
+</tr>
+<tr>
+<td>static/<code>images</code></td>
+<td>图片资源目录</td>
+<td></td>
+</tr>
+<tr>
+<td>static/<code>scripts</code></td>
+<td>脚本目录</td>
+<td></td>
+</tr>
+<tr>
+<td>static/<code>styles</code></td>
+<td>样式目录</td>
+<td></td>
+</tr>
+<tr>
+<td><code>templates</code></td>
+<td>页面模板目录</td>
+<td></td>
+</tr>
+<tr>
+<td>templates/<code>includes</code></td>
+<td>存放包含文件</td>
+<td></td>
+</tr>
+<tr>
+<td>templates/<code>layouts</code></td>
+<td>存放布局页面文件</td>
+<td></td>
+</tr>
+<tr>
+<td><code>builds</code></td>
+<td>生成目录</td>
+<td>站点静态化后的最终文件输出目录</td>
+</tr>
+<tr>
+<td><code>_config.yml</code></td>
+<td>站点配置文件</td>
+<td>详细配置请参考：<a href="configurations">"配置说明"</a></td>
+</tr>
+<tr>
+<td><code>_assets.yml</code></td>
+<td>资源配置</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+            
+    
+
+
+    <div class="line-holder">
+    
+        
+            <a href="/zh-cn/quick-started/basic-usage/"><span class="fa fa-arrow-left"></span> 上一篇:基本用法</a>
+        
+        
+            <a href="/zh-cn/quick-started/configurations/" class="pull-right">下一篇:配置说明 <span
+                    class="fa fa-arrow-right"></span></a>
+        
+    
+</div>
+
+        </div>
+    </div>
+</div>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>联系信息</h3>
+                <ul class="list-unstyled">
+                    <li>Freezes</li>
+                    
+                    <li><a href="mailto:csharp2002@hotmail.com"><span class="fa fa-mail"></span> csharp2002@hotmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="http://ray.dotnetage.com">Ray's blog</a></li>
+                    <li><a href="http://www.dotnetage.com">DotNetAge</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <p class="text-center">Powered by <a href="http://freezes.dotnetage.com">Freezes</a></p>
+</footer>
+
+
+
+
+</body>
+</html>

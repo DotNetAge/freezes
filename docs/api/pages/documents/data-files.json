@@ -1,0 +1,18 @@
+{
+  "body": "In addition to the built-in variables available from Freezes, you can specify your own custom data that can be accessed via the template pages.\n\nFreezes supports loading data from **YAML**, **JSON**, and **CSV** files located in the `data` directory. Note that CSV files must contain a header row.\n\nThis powerful feature allows you to avoid repetition in your templates and to set site specific options without changing `_config.yml`.\n\nAs explained on the directory structure page, the `data` folder is where you can store additional data for Freezes to use when generating your site. These files must be **YAML** files (using either the **.yml**, **.json** or **csv** extension) and they will be accessible via `site.data`.\n\n## Example: List of members\n\nHere is a basic example of using Data Files to avoid copy-pasting large chunks of code in your Freezes templates:\n\nIn `data/members.yml`:\n\n```yaml\n- name: Ray\n  github: dotnetage\n\n- name: Editson\n  github: editson\n\n- name: Money\n  github: money\n```\n\nOr `data/members.csv`:\n\n```csv\nname,github\nRay,dotnetage\nEditson,editson\nMoney,money\n```\n\nThis data can be accessed via `site.data.members` (notice that the filename determines the variable name).\n\n\nYou can now render the list of members in a template:\n\n```django\n<ul>\n{% for member in site.data.members %}\n  <li>\n    <a href=\"https://github.com/{{ member.github }}\">\n      {{ member.name }}\n    </a>\n  </li>\n{% endfor %}\n</ul>\n```\n\n## Example: Organizations\n\nData files can also be placed in sub-folders of the `data` folder. Each folder level will be added to a variable\u2019s namespace. The example below shows how GitHub organizations could be defined separately in a file under the orgs folder:\n\nIn `data/orgs/freezes.yml`:\n\n```yaml\nusername: freezes\nname: freezes\nmembers:\n  - name: Ray\n    github: dotnetage\n\n  - name: Editson\n    github: editson\n```\n    \nIn `data/orgs/doeorg.yml`:\n\n```yaml\nusername: doeorg\nname: Doe Org\nmembers:\n  - name: John Doe\n    github: jdoe\n```\n\nThe organizations can then be accessed via `site.data.orgs`, followed by the file name:\n\n```django\n<ul>\n{% for org_hash in site.data.orgs %}\n{% assign org = org_hash[1] %}\n  <li>\n    <a href=\"https://github.com/{{ org.username }}\">\n      {{ org.name }}\n    </a>\n    ({{ org.members | size }} members)\n  </li>\n{% endfor %}\n</ul>\n```", 
+  "created": "Tue, 31 Mar 2015 11:56:00 GMT", 
+  "excerpt": "<p>In addition to the built-in variables available from Freezes, you can specify your own custom data that can be accessed via the template pages.</p>\n<p>Freezes supports loading data from <strong>YAML</strong>, <strong>JSON</strong>, and <strong>CSV</strong> files located in the <code>data</code> directory. Note that CSV files must contain a header row.</p>", 
+  "id": 3, 
+  "last_updated": "Tue, 31 Mar 2015 11:56:00 GMT", 
+  "meta": {
+    "id": 3, 
+    "summary": "The powerful feature to use static data files", 
+    "title": "Data files"
+  }, 
+  "name": "data-files", 
+  "pages": [], 
+  "path": "documents/data-files", 
+  "published": "Tue, 31 Mar 2015 11:56:00 GMT", 
+  "tags": [], 
+  "url": "/documents/data-files/"
+}

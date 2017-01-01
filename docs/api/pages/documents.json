@@ -1,0 +1,103 @@
+{
+  "body": "", 
+  "created": "Tue, 31 Mar 2015 10:43:40 GMT", 
+  "excerpt": "", 
+  "id": 2, 
+  "last_updated": "Tue, 31 Mar 2015 10:43:40 GMT", 
+  "meta": {
+    "id": 2, 
+    "title": "Documents"
+  }, 
+  "name": "documents", 
+  "pages": [
+    {
+      "body": "## Quick install\n\nFreezes offers the simple way to setup the runtime environment by setup script. \n\nDownload one of setup script below \n\n- [Freezes setup script for Linux (linux-install.sh)](/zh-cn/quick-started/linux-install.sh)\n- [Freezes setup script for OSX (mac-linstall.sh)](/zh-cn/quick-started/mac-install.sh)\n\nand runt the command below in your terminal:\n\n** Ubuntu **\n\n```bash\n$ . linux-install.sh\n```\n\n** OSX **\n\n```bash\n$ . mac-install.sh\n```\n\nthat's all!\n\n\n## Installation Manual\n\nYou can also install Freeze by manual.\n\nRun the commands below in your terminal:\n\n```bash\n$ virtualenv venv\n$ source venv/bin/activate\n(venv)$ pip install freeze\n(venv)$ mkdir my-website && cd $_\n(venv)$ freezes new\n(venv)$ freezes\n```\n\nThat\u2019s nothing, though. The real magic happens when you start creating blog posts, using the front matter to control templates and layouts, and taking advantage of all the awesome configuration options Frezzes makes available.\n\nIf you\u2019re running into problems, ensure you have all the [requirements installed](requirements-installed).\n\n", 
+      "created": "Thu, 02 Apr 2015 00:04:40 GMT", 
+      "excerpt": "<p>Freezes offers the simple way to setup the runtime environment by setup script. </p>", 
+      "id": 1, 
+      "last_updated": "Thu, 02 Apr 2015 00:04:40 GMT", 
+      "meta": {
+        "id": 1, 
+        "summary": "Only few steps to setup your freezes website", 
+        "title": "Quick start"
+      }, 
+      "name": "quick-started", 
+      "path": "documents/quick-started", 
+      "published": "Thu, 02 Apr 2015 00:04:40 GMT", 
+      "tags": [], 
+      "url": "/documents/quick-started/"
+    }, 
+    {
+      "body": "", 
+      "created": "Tue, 31 Mar 2015 11:00:22 GMT", 
+      "excerpt": "", 
+      "id": 1, 
+      "last_updated": "Tue, 31 Mar 2015 11:00:22 GMT", 
+      "meta": {
+        "id": 1, 
+        "summary": "Start to write your pure markdown", 
+        "title": "Organize Contents"
+      }, 
+      "name": "organize-your-contents", 
+      "path": "documents/organize-your-contents", 
+      "published": "Tue, 31 Mar 2015 11:00:22 GMT", 
+      "tags": [], 
+      "url": "/documents/organize-your-contents/"
+    }, 
+    {
+      "body": "\nYou can easy to customize your website layouts and styles without any limitations\n\nYou can specified the `layout` meta to change the page default layout.\n\n  \u9ed8\u8ba4\u5b89\u88c5\u540e\u4f1a\u63d0\u4f9b\u4e00\u4e2a\u7b80\u7ea6\u7684\u7f51\u9875\u98ce\u683c\u3002\u6bcf\u4e2a\u6587\u7a3f\u53ef\u4ee5\u901a\u8fc7\u5143\u6570\u636e `layout` \u6307\u5b9a\u5f53\u524d\u6587\u7a3f\u7528\u4ec0\u4e48\u9875\u9762\u5e03\u5c40\u663e\u793a\u3002\u9ed8\u8ba4\u60c5\u51b5\u4e0b\u5f53\u6587\u7a3f\u5185\u6ca1\u6709\u91c7\u7528 layout\u5143\u6570\u636e\u6307\u5b9a\u5e03\u5c40\u65f6\uff0c Freezes \u5c06\u4e3a\u4f60\u7684\u6587\u7a3f\u81ea\u52a8\u9009\u62e9\u4e00\u79cd\u6700\u5408\u9002\u7684\u5e03\u5c40\u65b9\u5f0f\u3002\n\nFreezes offers 3 default layouts: \n\nLayout|Description\n--|--\n`recent` | Show recently posts after the content body.\n`page` | Show a sub articles list after the content body. \n`post` | Show a disqus comments on the bottom of the page.\n\nFor example:\n\n```yml\nlayout: recent\ntitle: \"About\"\n\nHere is the content body.\n```\n\n---\n\nIf you are web site designer or front-end developer you may like:", 
+      "created": "Tue, 31 Mar 2015 10:59:24 GMT", 
+      "excerpt": "<p>You can easy to customize your website layouts and styles without any limitations</p>", 
+      "id": 2, 
+      "last_updated": "Tue, 31 Mar 2015 10:59:24 GMT", 
+      "meta": {
+        "id": 2, 
+        "summary": "Change looks and feels", 
+        "title": "Customize"
+      }, 
+      "name": "customization", 
+      "path": "documents/customization", 
+      "published": "Tue, 31 Mar 2015 10:59:24 GMT", 
+      "tags": [], 
+      "url": "/documents/customization/"
+    }, 
+    {
+      "body": "In addition to the built-in variables available from Freezes, you can specify your own custom data that can be accessed via the template pages.\n\nFreezes supports loading data from **YAML**, **JSON**, and **CSV** files located in the `data` directory. Note that CSV files must contain a header row.\n\nThis powerful feature allows you to avoid repetition in your templates and to set site specific options without changing `_config.yml`.\n\nAs explained on the directory structure page, the `data` folder is where you can store additional data for Freezes to use when generating your site. These files must be **YAML** files (using either the **.yml**, **.json** or **csv** extension) and they will be accessible via `site.data`.\n\n## Example: List of members\n\nHere is a basic example of using Data Files to avoid copy-pasting large chunks of code in your Freezes templates:\n\nIn `data/members.yml`:\n\n```yaml\n- name: Ray\n  github: dotnetage\n\n- name: Editson\n  github: editson\n\n- name: Money\n  github: money\n```\n\nOr `data/members.csv`:\n\n```csv\nname,github\nRay,dotnetage\nEditson,editson\nMoney,money\n```\n\nThis data can be accessed via `site.data.members` (notice that the filename determines the variable name).\n\n\nYou can now render the list of members in a template:\n\n```django\n<ul>\n{% for member in site.data.members %}\n  <li>\n    <a href=\"https://github.com/{{ member.github }}\">\n      {{ member.name }}\n    </a>\n  </li>\n{% endfor %}\n</ul>\n```\n\n## Example: Organizations\n\nData files can also be placed in sub-folders of the `data` folder. Each folder level will be added to a variable\u2019s namespace. The example below shows how GitHub organizations could be defined separately in a file under the orgs folder:\n\nIn `data/orgs/freezes.yml`:\n\n```yaml\nusername: freezes\nname: freezes\nmembers:\n  - name: Ray\n    github: dotnetage\n\n  - name: Editson\n    github: editson\n```\n    \nIn `data/orgs/doeorg.yml`:\n\n```yaml\nusername: doeorg\nname: Doe Org\nmembers:\n  - name: John Doe\n    github: jdoe\n```\n\nThe organizations can then be accessed via `site.data.orgs`, followed by the file name:\n\n```django\n<ul>\n{% for org_hash in site.data.orgs %}\n{% assign org = org_hash[1] %}\n  <li>\n    <a href=\"https://github.com/{{ org.username }}\">\n      {{ org.name }}\n    </a>\n    ({{ org.members | size }} members)\n  </li>\n{% endfor %}\n</ul>\n```", 
+      "created": "Tue, 31 Mar 2015 11:56:00 GMT", 
+      "excerpt": "<p>In addition to the built-in variables available from Freezes, you can specify your own custom data that can be accessed via the template pages.</p>\n<p>Freezes supports loading data from <strong>YAML</strong>, <strong>JSON</strong>, and <strong>CSV</strong> files located in the <code>data</code> directory. Note that CSV files must contain a header row.</p>", 
+      "id": 3, 
+      "last_updated": "Tue, 31 Mar 2015 11:56:00 GMT", 
+      "meta": {
+        "id": 3, 
+        "summary": "The powerful feature to use static data files", 
+        "title": "Data files"
+      }, 
+      "name": "data-files", 
+      "path": "documents/data-files", 
+      "published": "Tue, 31 Mar 2015 11:56:00 GMT", 
+      "tags": [], 
+      "url": "/documents/data-files/"
+    }, 
+    {
+      "body": "Sites built using Freezes can be deployed in a large number of ways due to the static nature of the generated output. A few of the most common deployment techniques are described below.\n\n## Web hosting providers (FTP)\n\nJust about any traditional web hosting provider will let you upload files to their servers over FTP. To upload a Freezes site to a web host using FTP, simply run the `freezes build` command and copy the generated **builds** folder to the root folder of your hosting account. \n\n\n## SSH\n\n```bash\n$ tar -czvf builds.tgz build\n$ ssh server@example.com\n$ scp builds.tgz server@example.com:/var/www/my-site\n$ mkdir /var/www/my-site\n$ tar -xzvf builds.tgz \n```\n\n## Github\n\n\n```bash\n$ git add . \n$ git commit -m \"Initial commit\"\n$ git remote add origin https://github.com/username/my-freezes-site.git\n$ git push origin gh-pages \n```", 
+      "created": "Thu, 02 Apr 2015 01:16:51 GMT", 
+      "excerpt": "<p>Sites built using Freezes can be deployed in a large number of ways due to the static nature of the generated output. A few of the most common deployment techniques are described below.</p>", 
+      "id": 5, 
+      "last_updated": "Thu, 02 Apr 2015 01:16:51 GMT", 
+      "meta": {
+        "id": 5, 
+        "summary": "Any servers, Any platforms", 
+        "title": "Deploy methods"
+      }, 
+      "name": "deploy-methods", 
+      "path": "documents/deploy-methods", 
+      "published": "Thu, 02 Apr 2015 01:16:51 GMT", 
+      "tags": [], 
+      "url": "/documents/deploy-methods/"
+    }
+  ], 
+  "path": "documents", 
+  "published": "Tue, 31 Mar 2015 10:43:40 GMT", 
+  "tags": [], 
+  "url": "/documents/"
+}

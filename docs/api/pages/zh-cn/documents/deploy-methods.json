@@ -1,0 +1,17 @@
+{
+  "body": "Freezes \u53ef\u4ee5\u4f7f\u7528\u5404\u79cd\u7684\u65b9\u5f0f\u90e8\u7f72\u5230\u4efb\u4f55\u7684Web\u670d\u52a1\u5668\u4e0a\u3002\n\n\n## FTP\n\n\u901a\u8fc7\u4efb\u4f55\u7684FTP\u5de5\u5177\u5c06 Freezes \u7684\u7ad9\u751f\u6210\u76ee\u5f55 `builds` \u76f4\u63a5\u4e0a\u4f20\u81f3\u8fdc\u7aef\u670d\u52a1\u5668\u7684\u7ad9\u70b9\u6839\u76ee\u5f55\u4e0b\u5373\u53ef\u3002\n\n\n## SSH\n\u5982\u679c\u4f60\u7684\u670d\u52a1\u5668\u652f\u6301\u8fdc\u7a0b\u7ec8\u7aef\u64cd\u4f5c\uff0c\u4f8b\u5982\u963f\u91cc\u4e91\u3001\u817e\u8baf\u4e91\u7b49\u3002\u4f60\u53ef\u4ee5\u901a\u5730\u4ee5\u4e0b\u7684\u65b9\u5f0f\u53d1\u8fbe Freezes \u7684\u751f\u6210\u7ad9\u70b9\u3002\n\n```bash\n$ tar -czvf builds.tgz build\n$ ssh server@example.com\n$ scp builds.tgz server@example.com:/var/www/my-site\n$ mkdir /var/www/my-site\n$ tar -xzvf builds.tgz \n```\n\n## Github\n\n\u5f53\u7136\u6700\u5f00\u653e\u540c\u65f6\u4e5f\u662f\u6700\u5ec9\u4ef7\u7684\u53d1\u5e03\u65b9\u5f0f\u65e0\u7591\u662f\u4f7f\u7528 Github page, \u65b9\u5f0f\u4e5f\u662f\u975e\u5e38\u7b80\u5355\uff0c\u9996\u5148\u5728 Github \u5efa\u7acb\u4e00\u4e2a `my-freezes-site` \u7684\u5e93\uff0c\u7136\u540e\u5728\u672c\u673a\u7ec8\u7aef\u5185\u6267\u884c\u4ee5\u4e0b\u7684\u6307\u4ee4\uff1a\n\n```bash\n$ git add . \n$ git commit -m \"Initial commit\"\n$ git remote add origin https://github.com/username/my-freezes-site.git\n$ git push origin gh-pages \n```", 
+  "created": "Thu, 02 Apr 2015 01:25:39 GMT", 
+  "excerpt": "<p>Freezes \u53ef\u4ee5\u4f7f\u7528\u5404\u79cd\u7684\u65b9\u5f0f\u90e8\u7f72\u5230\u4efb\u4f55\u7684Web\u670d\u52a1\u5668\u4e0a\u3002</p>", 
+  "id": 6, 
+  "last_updated": "Thu, 02 Apr 2015 01:25:39 GMT", 
+  "meta": {
+    "id": 6, 
+    "title": "\u90e8\u7f72\u65b9\u6cd5"
+  }, 
+  "name": "deploy-methods", 
+  "pages": [], 
+  "path": "zh-cn/documents/deploy-methods", 
+  "published": "Thu, 02 Apr 2015 01:25:39 GMT", 
+  "tags": [], 
+  "url": "/zh-cn/documents/deploy-methods/"
+}

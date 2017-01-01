@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <title>Freezes - Directory structure</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/feeds/recent.atom"
+      rel="alternate"
+      title="Recent posts"
+      type="application/atom+xml">
+
+    
+        
+    
+    
+
+    
+
+    
+    
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"
+              media="screen">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+        
+            <link rel="stylesheet" href="/static/site.min.css?4de4a314">
+        
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+        <script type="text/javascript" src="/static/site.min.js?7693760b"></script>
+    
+</head>
+<body >
+
+    <div class="belt"></div>
+    
+<div class="container">
+    <div class="page-wrapper">
+        
+            
+<div class="lang-dropdown">
+
+    <ol class="breadcrumb">
+        <li><a href="/"><span class="fa fa-home"></span> Freezes
+        </a></li>
+        
+            
+                <li><a href="/documents/">Documents</a></li>
+            
+                <li><a href="/documents/quick-started/">Quick start</a></li>
+            
+        
+    </ol>
+ 
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-expanded="true">
+            
+                English (US)
+            
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/zh-cn/">中文 (简体)</a></li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/">English (US)</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page-header">
+    
+        <h1>
+            
+                <div>Directory structure</div>
+            
+
+        </h1>
+        <p class="lead"></p>
+    
+</div>
+        
+        
+            <div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">折叠导航栏</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                
+                    
+                        <li >
+                            <a href="/index/">Home</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/documents/">Documents</a></li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="divider visible-xs"></li>
+                
+                
+                
+                    <li data-toggle="tooltip" data-placement="top" title="Fork me on github">
+                        <a href="http://www.github.com/dotnetage" target="_blank" rel="nofollow"><i
+                                class="fa fa-github"></i> <span class="visible-xs-inline">me@github</span></a>
+                    </li>
+                
+                <li data-toggle="tooltip" data-placement="top" title="订阅更新">
+                    <a href="/feeds/recent.atom"><i class="fa fa-rss"></i> <span
+                            class="visible-xs-inline">订阅</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+        <div class="page-content">
+            
+    
+            
+            <p>Freezes is a document-driven website and a text transformation engine.</p>
+<p>A basic Freezes site usually looks something like this:</p>
+<pre><code class="bash">.
+├── _config.yml
+├── _assets.yml
+├── pages
+|   ├── posts
+|   |     └── 2014-01-01
+|   |           ├─ why-programmer-should-write-books.md
+|   |           └─ why-programmer-should-write-books
+|   ├── documents     
+|   |   
+|   └── index.md
+├── builds
+├── static
+|   ├── images
+|   ├── scripts
+|   └── styles
+├── templates
+|   ├── includes
+|   ├── layouts
+|   └── 404.html
+└── __init__.py
+</code></pre>
+
+<p>An overview of what each of these does:</p>
+<table>
+<thead>
+<tr>
+<th>FILE / DIRECTORY</th>
+<th>DESCRIPTION</th>
+<th>REMARKS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pages</code></td>
+<td>Document folder</td>
+<td>Save all markdown files</td>
+</tr>
+<tr>
+<td>pages/<code>posts</code></td>
+<td>Posts folder</td>
+<td></td>
+</tr>
+<tr>
+<td>pages/<code>index.md</code></td>
+<td>Home page</td>
+<td></td>
+</tr>
+<tr>
+<td><code>static</code></td>
+<td>Resources</td>
+<td>All static resource files</td>
+</tr>
+<tr>
+<td>static/<code>images</code></td>
+<td>Images</td>
+<td></td>
+</tr>
+<tr>
+<td>static/<code>scripts</code></td>
+<td>Scripts</td>
+<td></td>
+</tr>
+<tr>
+<td>static/<code>styles</code></td>
+<td>Styles</td>
+<td></td>
+</tr>
+<tr>
+<td><code>templates</code></td>
+<td>Templates</td>
+<td></td>
+</tr>
+<tr>
+<td>templates/<code>includes</code></td>
+<td>Includes</td>
+<td></td>
+</tr>
+<tr>
+<td>templates/<code>layouts</code></td>
+<td>Layouts</td>
+<td></td>
+</tr>
+<tr>
+<td><code>builds</code></td>
+<td>Build</td>
+<td>Build result files</td>
+</tr>
+<tr>
+<td><code>_config.yml</code></td>
+<td>Site configuration</td>
+<td></td>
+</tr>
+<tr>
+<td><code>_assets.yml</code></td>
+<td>Asset configuration</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+            
+    
+
+
+    <div class="line-holder">
+    
+        
+            <a href="/documents/quick-started/basic-usage/"><span class="fa fa-arrow-left"></span> 上一篇:Basic usage</a>
+        
+        
+    
+</div>
+
+        </div>
+    </div>
+</div>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>联系信息</h3>
+                <ul class="list-unstyled">
+                    <li>Freezes</li>
+                    
+                    <li><a href="mailto:csharp2002@hotmail.com"><span class="fa fa-mail"></span> csharp2002@hotmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="http://ray.dotnetage.com">Ray's blog</a></li>
+                    <li><a href="http://www.dotnetage.com">DotNetAge</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <p class="text-center">Powered by <a href="http://freezes.dotnetage.com">Freezes</a></p>
+</footer>
+
+
+
+
+</body>
+</html>

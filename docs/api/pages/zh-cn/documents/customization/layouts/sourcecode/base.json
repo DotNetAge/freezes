@@ -1,0 +1,17 @@
+{
+  "body": "## {% block title %}\n\n```django\n{% block title %}{{ site.title }}{% if page %} - {{ page.title }}{% endif %}{% endblock %}\n```\n\n## {% block styles %}\n\n```django\n<link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css\">\n<link href=\"{{ bootstrap_find_resource('css/bootstrap.css', cdn='bootstrap') }}\" rel=\"stylesheet\"\n      media=\"screen\">\n<link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css\">\n{% assets \"css\" %}\n    <link rel=\"stylesheet\" href=\"{{ ASSET_URL }}\">\n{% endassets %}\n```\n\n## {% block scripts %}\n\n```django\n<script src=\"{{ bootstrap_find_resource('jquery.js', cdn='jquery') }}\"></script>\n<script src=\"{{ bootstrap_find_resource('js/bootstrap.js', cdn='bootstrap') }}\"></script>\n<script src=\"//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js\"></script>\n<script src=\"//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js\"></script>\n<script>hljs.initHighlightingOnLoad();</script>\n```\n\n## {% block content %}\n\n```django\n{% if page.cover %}\n<div class=\"page-cover\">\n    <img src=\"{{ page.cover }}\"/>\n</div>\n{% endif %}\n{% autoescape false %}{{ page.html }}{% endautoescape %}\n```", 
+  "created": "Tue, 31 Mar 2015 10:41:17 GMT", 
+  "excerpt": "<p>```django\n{% block title %}{{ site.title }}{% if page %} - {{ page.title }}{% endif %}{% endblock %}</p>", 
+  "id": 5, 
+  "last_updated": "Tue, 31 Mar 2015 10:41:17 GMT", 
+  "meta": {
+    "id": 5, 
+    "title": "base.html \u4ee3\u7801\u5757\u5b9a\u4e49"
+  }, 
+  "name": "base", 
+  "pages": [], 
+  "path": "zh-cn/documents/customization/layouts/sourcecode/base", 
+  "published": "Tue, 31 Mar 2015 10:41:17 GMT", 
+  "tags": [], 
+  "url": "/zh-cn/documents/customization/layouts/sourcecode/base/"
+}

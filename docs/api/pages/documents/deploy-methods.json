@@ -1,0 +1,18 @@
+{
+  "body": "Sites built using Freezes can be deployed in a large number of ways due to the static nature of the generated output. A few of the most common deployment techniques are described below.\n\n## Web hosting providers (FTP)\n\nJust about any traditional web hosting provider will let you upload files to their servers over FTP. To upload a Freezes site to a web host using FTP, simply run the `freezes build` command and copy the generated **builds** folder to the root folder of your hosting account. \n\n\n## SSH\n\n```bash\n$ tar -czvf builds.tgz build\n$ ssh server@example.com\n$ scp builds.tgz server@example.com:/var/www/my-site\n$ mkdir /var/www/my-site\n$ tar -xzvf builds.tgz \n```\n\n## Github\n\n\n```bash\n$ git add . \n$ git commit -m \"Initial commit\"\n$ git remote add origin https://github.com/username/my-freezes-site.git\n$ git push origin gh-pages \n```", 
+  "created": "Thu, 02 Apr 2015 01:16:51 GMT", 
+  "excerpt": "<p>Sites built using Freezes can be deployed in a large number of ways due to the static nature of the generated output. A few of the most common deployment techniques are described below.</p>", 
+  "id": 5, 
+  "last_updated": "Thu, 02 Apr 2015 01:16:51 GMT", 
+  "meta": {
+    "id": 5, 
+    "summary": "Any servers, Any platforms", 
+    "title": "Deploy methods"
+  }, 
+  "name": "deploy-methods", 
+  "pages": [], 
+  "path": "documents/deploy-methods", 
+  "published": "Thu, 02 Apr 2015 01:16:51 GMT", 
+  "tags": [], 
+  "url": "/documents/deploy-methods/"
+}

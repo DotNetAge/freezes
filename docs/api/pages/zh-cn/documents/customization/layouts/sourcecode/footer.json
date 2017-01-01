@@ -1,0 +1,17 @@
+{
+  "body": "```django\n<footer>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-4\">\n                <h3>{{ gettext('Contacts') }}</h3>\n                <ul class=\"list-unstyled\">\n                    <li>{{ site.title }}</li>\n                    {% if site.tel %}\n                        <li><span class=\"fa fa-tel\"></span> {{ site.tel }}</li>\n                    {% endif %}\n                    <li><a href=\"mailto:{{ site.email }}\"><span class=\"fa fa-mail\"></span> {{ site.email }}</a></li>\n                </ul>\n            </div>\n\n            <div class=\"col-md-4\">\n                <h3><a href=\"{{ url_for('.archives') }}\">{{ gettext('Archives') }}</a></h3>\n                <ul class=\"list-unstyled archives\">\n                    {% for archive in site.archives %}\n                        {% if loop.index <=5 %}\n                            <li><a href=\"{{ url_for('.archive',name=archive.title) }}\"><span\n                                    class=\"fa fa-archive\"></span> <span>{{ archive.title }}</span><span\n                                    class=\"pull-right badge\">{{ archive.count }}</span></a></li>\n                        {% endif %}\n                    {% endfor %}\n                </ul>\n            </div>\n\n            <div class=\"col-md-4\">\n                <h3><a href=\"{{ url_for('.tags') }}\">{{ gettext('Popular tags') }}</a></h3>\n                {% if site.tags|count>0 %}\n                    {% for t in site.tags[0:10] %}\n                        <a href=\"{{ url_for('.tag',name=t) }}\" class=\"label label-info\">{{ t }}</a>\n                    {% endfor %}\n                {% endif %}\n            </div>\n        </div>\n    </div>\n    {% if site.copyright %}\n        <p class=\"text-center\">\n            {{ gettext('\u00a9 copyright by %(value)s',value=site.copyright) }}\n        </p>\n    {% endif %}\n    <p class=\"text-center\">Powered by <a href=\"http://freezes.dotnetage.com\">Freezes</a></p>\n</footer>\n```", 
+  "created": "Tue, 31 Mar 2015 10:32:17 GMT", 
+  "excerpt": "<p>```django\n<footer>\n    <div class=\"container\"></p>", 
+  "id": 4, 
+  "last_updated": "Tue, 31 Mar 2015 10:32:17 GMT", 
+  "meta": {
+    "id": 4, 
+    "title": "_footer.html \u6e90\u7801"
+  }, 
+  "name": "footer", 
+  "pages": [], 
+  "path": "zh-cn/documents/customization/layouts/sourcecode/footer", 
+  "published": "Tue, 31 Mar 2015 10:32:17 GMT", 
+  "tags": [], 
+  "url": "/zh-cn/documents/customization/layouts/sourcecode/footer/"
+}

@@ -1,0 +1,17 @@
+{
+  "body": "```django\n<meta charset=\"utf-8\">\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<link href=\"{{ url_for('feed',name='recent') }}\"\n      rel=\"alternate\"\n      title=\"Recent posts\"\n      type=\"application/atom+xml\">\n{% if page != None %}\n     {% if page.descripton!= None %}\n        <meta name=\"description\" content=\"{{ page.description }}\" >\n     {% else %}\n         {% if page.summary!=None %}\n            <meta name=\"description\" content=\"{{ page.summary }}\" >\n         {% endif %}\n     {% endif %}\n     {% if page.tags !=None %}\n         <meta name=\"keywords\" content=\"{{ page.tags }}\">\n     {% endif %}\n{% endif %}\n```", 
+  "created": "Tue, 31 Mar 2015 10:32:36 GMT", 
+  "excerpt": "<p>```django\n<meta charset=\"utf-8\">\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"></p>", 
+  "id": 1, 
+  "last_updated": "Tue, 31 Mar 2015 10:32:36 GMT", 
+  "meta": {
+    "id": 1, 
+    "title": "_metas.html \u6e90\u7801"
+  }, 
+  "name": "metas", 
+  "pages": [], 
+  "path": "zh-cn/documents/customization/layouts/sourcecode/metas", 
+  "published": "Tue, 31 Mar 2015 10:32:36 GMT", 
+  "tags": [], 
+  "url": "/zh-cn/documents/customization/layouts/sourcecode/metas/"
+}

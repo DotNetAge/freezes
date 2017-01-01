@@ -1,0 +1,68 @@
+{
+  "body": "## Quick install\n\nFreezes offers the simple way to setup the runtime environment by setup script. \n\nDownload one of setup script below \n\n- [Freezes setup script for Linux (linux-install.sh)](/zh-cn/quick-started/linux-install.sh)\n- [Freezes setup script for OSX (mac-linstall.sh)](/zh-cn/quick-started/mac-install.sh)\n\nand runt the command below in your terminal:\n\n** Ubuntu **\n\n```bash\n$ . linux-install.sh\n```\n\n** OSX **\n\n```bash\n$ . mac-install.sh\n```\n\nthat's all!\n\n\n## Installation Manual\n\nYou can also install Freeze by manual.\n\nRun the commands below in your terminal:\n\n```bash\n$ virtualenv venv\n$ source venv/bin/activate\n(venv)$ pip install freeze\n(venv)$ mkdir my-website && cd $_\n(venv)$ freezes new\n(venv)$ freezes\n```\n\nThat\u2019s nothing, though. The real magic happens when you start creating blog posts, using the front matter to control templates and layouts, and taking advantage of all the awesome configuration options Frezzes makes available.\n\nIf you\u2019re running into problems, ensure you have all the [requirements installed](requirements-installed).\n\n", 
+  "created": "Thu, 02 Apr 2015 00:04:40 GMT", 
+  "excerpt": "<p>Freezes offers the simple way to setup the runtime environment by setup script. </p>", 
+  "id": 1, 
+  "last_updated": "Thu, 02 Apr 2015 00:04:40 GMT", 
+  "meta": {
+    "id": 1, 
+    "summary": "Only few steps to setup your freezes website", 
+    "title": "Quick start"
+  }, 
+  "name": "quick-started", 
+  "pages": [
+    {
+      "body": "\nGetting Freezes installed and ready-to-go should only take a few minutes. If it ever becomes a pain in the ass, please file an issue (or submit a pull request) describing the issue you encountered and how we might make the process easier.\n\n\n## Requirements\n\nInstalling Freezes is easy and straight-forward, but there are a few requirements you\u2019ll need to make sure your system has before you start.\n\n- [Python](www.python.org)\n- [pip](https://pip.pypa.io/en/latest/installing.html)\n- virtualenv\n- Linux, Unix, or Mac OS X\n- [CoffeeScript](http://coffeescript.org)\n- [Less](http://lesscss.org)\n- [Sass](http://sass-lang.com)  (Optional, for Sass support).\n\n## virtualenv\n\nVirtualenv is probably what you want to use during development, and if you have shell access to your production machines, you\u2019ll probably want to use it there, too.\n\nWhat problem does virtualenv solve? If you like Python as much as I do, chances are you want to use it for other projects besides Flask-based web applications. But the more projects you have, the more likely it is that you will be working with different versions of Python itself, or at least different versions of Python libraries. Let\u2019s face it: quite often libraries break backwards compatibility, and it\u2019s unlikely that any serious application will have zero dependencies. So what do you do if two or more of your projects have conflicting dependencies?\n\nVirtualenv to the rescue! Virtualenv enables multiple side-by-side installations of Python, one for each project. It doesn\u2019t actually install separate copies of Python, but it does provide a clever way to keep different project environments isolated. Let\u2019s see how virtualenv works.\n\nIf you are on Mac OS X or Linux, chances are that one of the following two commands will work for you:\n\n```bash\n$ sudo easy_install virtualenv\n```\nor even better:\n\n```bash\n$ sudo pip install virtualenv\n```\n\nOne of these will probably install virtualenv on your system. Maybe it\u2019s even in your package manager. If you use Ubuntu, try:\n\n```bash\n$ sudo apt-get install python-virtualenv\n```\n\nIf you are on Windows and don\u2019t have the easy_install command, you must install it first.  Once you have it installed, run the same commands as above, but without the sudo prefix.\n\n\n## Less \nBy default Freezes use the less to write stylesheets. So that you need to install the less compiler before you run Freezes.\n\nThe easiest way to install Less on the server, is via npm, the node.js package manager, as so:\n\n```bash\n$ npm install -g less\n```\n\nIf you want to use css you can change the assets ( `your-website-root/_assets.yml`) configurations like below:\n\n```yml\ncss:\n    output: \"your-website-root/site.min.css\"\n    contents: \"your-website-root/styles/*.css\"\n    filters: cssprefixer,cssmin\n```\n\n## CoffeeScript\n\nFreezes use CoffeeScript to instead javascript that you also need to install the coffeescript compiler before your run.\n\n```bash\n$ npm install -g coffee-script\n```\n\nTo disable the CoffeeScript you should try to change the assets configurations like below:\n\n```yml\njs:\n    output: \"your-website-root/site.min.js\"\n    contents: \"your-website-root/scripts/*.js\"\n    filters: jsmin\n```\n \n", 
+      "created": "Mon, 30 Mar 2015 01:28:53 GMT", 
+      "excerpt": "<p>Getting Freezes installed and ready-to-go should only take a few minutes. If it ever becomes a pain in the ass, please file an issue (or submit a pull request) describing the issue you encountered and how we might make the process easier.</p>", 
+      "id": 1, 
+      "last_updated": "Mon, 30 Mar 2015 01:28:53 GMT", 
+      "meta": {
+        "id": 1, 
+        "title": "Installation"
+      }, 
+      "name": "requirements-installed", 
+      "path": "documents/quick-started/requirements-installed", 
+      "published": "Mon, 30 Mar 2015 01:28:53 GMT", 
+      "tags": [], 
+      "url": "/documents/quick-started/requirements-installed/"
+    }, 
+    {
+      "body": "The Freezes makes `freezes` command tools to run or build your website. \n\n## Run Freezes\n\nFreezes will run a self-host server and open to the default browser after `freezes` executed.\n\nFreezes loads a livereload server that can be auto reload the browser page when contents change.\n\n```\n(venv) my-site$ freezes\n```\n\n## Transform to static website\nIn order to get high performances when you writing posts/pages , design web styles or customize layouts Freezes disable the auto static page generation feature.\n \nSo when you need to build your static website manually :\n\n```\n(venv) my-site$ freezes build\n```\n\nAfter the command run. The website is build to `builds` folder under current working folder. \n\n## Force assets rebuild \n\n```\n(venv) my-site$ freezes assets --build\n```", 
+      "created": "Sat, 21 Mar 2015 17:04:22 GMT", 
+      "excerpt": "<p>The Freezes makes <code>freezes</code> command tools to run or build your website. </p>", 
+      "id": 2, 
+      "last_updated": "Sat, 21 Mar 2015 17:04:22 GMT", 
+      "meta": {
+        "id": 2, 
+        "summary": "The command line tools", 
+        "title": "Basic usage"
+      }, 
+      "name": "basic-usage", 
+      "path": "documents/quick-started/basic-usage", 
+      "published": "Sat, 21 Mar 2015 17:04:22 GMT", 
+      "tags": [], 
+      "url": "/documents/quick-started/basic-usage/"
+    }, 
+    {
+      "body": "Freezes is a document-driven website and a text transformation engine.\n\nA basic Freezes site usually looks something like this:\n\n```bash\n.\n\u251c\u2500\u2500 _config.yml\n\u251c\u2500\u2500 _assets.yml\n\u251c\u2500\u2500 pages\n|   \u251c\u2500\u2500 posts\n|   |     \u2514\u2500\u2500 2014-01-01\n|   |           \u251c\u2500 why-programmer-should-write-books.md\n|   |           \u2514\u2500 why-programmer-should-write-books\n|   \u251c\u2500\u2500 documents     \n|   |   \n|   \u2514\u2500\u2500 index.md\n\u251c\u2500\u2500 builds\n\u251c\u2500\u2500 static\n|   \u251c\u2500\u2500 images\n|   \u251c\u2500\u2500 scripts\n|   \u2514\u2500\u2500 styles\n\u251c\u2500\u2500 templates\n|   \u251c\u2500\u2500 includes\n|   \u251c\u2500\u2500 layouts\n|   \u2514\u2500\u2500 404.html\n\u2514\u2500\u2500 __init__.py\n```\n\nAn overview of what each of these does:\n\nFILE / DIRECTORY| DESCRIPTION | REMARKS\n--|--|--\n`pages` | Document folder | Save all markdown files\npages/`posts` | Posts folder | \npages/`index.md` | Home page |\n`static` | Resources | All static resource files\nstatic/`images` | Images|\nstatic/`scripts` | Scripts |\nstatic/`styles` | Styles |\n`templates` | Templates |\ntemplates/`includes`| Includes |\ntemplates/`layouts`| Layouts |\n`builds` | Build | Build result files\n`_config.yml` | Site configuration |\n`_assets.yml` | Asset configuration |\n", 
+      "created": "Mon, 30 Mar 2015 01:28:33 GMT", 
+      "excerpt": "<p>Freezes is a document-driven website and a text transformation engine.</p>\n<p>A basic Freezes site usually looks something like this:</p>", 
+      "id": 3, 
+      "last_updated": "Mon, 30 Mar 2015 01:28:33 GMT", 
+      "meta": {
+        "id": 3, 
+        "title": "Directory structure"
+      }, 
+      "name": "directory-structure", 
+      "path": "documents/quick-started/directory-structure", 
+      "published": "Mon, 30 Mar 2015 01:28:33 GMT", 
+      "tags": [], 
+      "url": "/documents/quick-started/directory-structure/"
+    }
+  ], 
+  "path": "documents/quick-started", 
+  "published": "Thu, 02 Apr 2015 00:04:40 GMT", 
+  "tags": [], 
+  "url": "/documents/quick-started/"
+}

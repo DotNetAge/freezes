@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <title>Freezes - Markdown</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/feeds/recent.atom"
+      rel="alternate"
+      title="Recent posts"
+      type="application/atom+xml">
+
+    
+        
+            <meta name="description" content="Markdown syntax references">
+        
+    
+    
+
+    
+
+    
+    
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"
+              media="screen">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+        
+            <link rel="stylesheet" href="/static/site.min.css?4de4a314">
+        
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+        <script type="text/javascript" src="/static/site.min.js?7693760b"></script>
+    
+</head>
+<body >
+
+    <div class="belt"></div>
+    
+<div class="container">
+    <div class="page-wrapper">
+        
+            
+<div class="lang-dropdown">
+
+    <ol class="breadcrumb">
+        <li><a href="/"><span class="fa fa-home"></span> Freezes
+        </a></li>
+        
+            
+                <li><a href="/documents/">Documents</a></li>
+            
+                <li><a href="/documents/organize-your-contents/">Organize Contents</a></li>
+            
+        
+    </ol>
+ 
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-expanded="true">
+            
+                English (US)
+            
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/zh-cn/">中文 (简体)</a></li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/">English (US)</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page-header">
+    
+        <h1>
+            
+                <div>Markdown</div>
+            
+
+        </h1>
+        <p class="lead">Markdown syntax references</p>
+    
+</div>
+        
+        
+            <div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">折叠导航栏</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                
+                    
+                        <li >
+                            <a href="/index/">Home</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/documents/">Documents</a></li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="divider visible-xs"></li>
+                
+                
+                
+                    <li data-toggle="tooltip" data-placement="top" title="Fork me on github">
+                        <a href="http://www.github.com/dotnetage" target="_blank" rel="nofollow"><i
+                                class="fa fa-github"></i> <span class="visible-xs-inline">me@github</span></a>
+                    </li>
+                
+                <li data-toggle="tooltip" data-placement="top" title="订阅更新">
+                    <a href="/feeds/recent.atom"><i class="fa fa-rss"></i> <span
+                            class="visible-xs-inline">订阅</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+        <div class="page-content">
+            
+    
+            
+            <h2 id="part-i-standard-markdown">Part I. Standard Markdown</h2>
+<p>You can visit <a href="http://daringfireball.net/projects/markdown/syntax" title="markdown-syntax">Daring FireBarll</a> to read the original markdown definitions.</p>
+<h3 id="strong-and-emphasize">Strong and Emphasize</h3>
+<pre><code class="markdown">*emphasize*   **strong**
+_emphasize_   __strong__
+</code></pre>
+
+<h3 id="links-and-email">Links and Email</h3>
+<p>Inline:</p>
+<pre><code class="markdown">An [example](http://url.com/ &quot;Title&quot;)
+</code></pre>
+
+<p>Reference-style labels (titles are optional):</p>
+<pre><code class="markdown">An [example][id]. Then, anywhere
+else in the doc, define the link:
+
+  [id]: http://example.com/  &quot;Title&quot;
+</code></pre>
+
+<p>Email:</p>
+<pre><code class="markdown">An email &lt;example@example.com&gt; link.
+</code></pre>
+
+<h3 id="images">Images</h3>
+<p>Inline (titles are optional):</p>
+<pre><code class="markdown">![alt text](/path/img.jpg &quot;Title&quot;)
+</code></pre>
+
+<p>Reference-style:</p>
+<pre><code class="markdown">![alt text][id]
+
+[id]: /url/to/img.jpg &quot;Title&quot;
+</code></pre>
+
+<h3 id="headers">Headers</h3>
+<p>Setext-style:</p>
+<pre><code class="markdown">Header 1
+========
+
+Header 2
+--------
+</code></pre>
+
+<p>atx-style (closing #’s are optional):</p>
+<pre><code class="markdown"># Header 1 #
+
+## Header 2 ##
+
+###### Header 6
+</code></pre>
+
+<h3 id="lists">Lists</h3>
+<p>Ordered, without paragraphs:</p>
+<pre><code class="markdown">1.  Foo
+2.  Bar
+</code></pre>
+
+<p>Unordered, with paragraphs:</p>
+<pre><code class="markdown">*   A list item.
+
+    With multiple paragraphs.
+
+*   Bar
+</code></pre>
+
+<p>You can nest them:</p>
+<pre><code class="markdown">*   Abacus
+    * answer
+*   Bubbles
+    1.  bunk
+    2.  bupkis
+        * BELITTLER
+    3. burper
+*   Cunning
+</code></pre>
+
+<h3 id="blockquotes">Blockquotes</h3>
+<pre><code class="markdown">&gt; Email-style angle brackets
+&gt; are used for blockquotes.
+
+&gt; &gt; And, they can be nested.
+
+&gt; #### Headers in blockquotes
+&gt; 
+&gt; * You can quote a list.
+&gt; * Etc.
+
+</code></pre>
+
+<h4 id="inline-code">Inline Code</h4>
+<pre><code class="markdown">`&lt;code&gt;` spans are delimited
+by backticks.
+
+You can include literal backticks
+like `` `this` ``.
+</code></pre>
+
+<h4 id="block-code">Block Code</h4>
+<p>Indent every line of a code block by at least 4 spaces or 1 tab.</p>
+<pre><code class="markdown">This is a normal paragraph.
+
+    This is a preformatted
+    code block.
+</code></pre>
+
+<p>You can also specified the language name to enabling the code highlight features</p>
+<pre><code>```python
+def hello():
+    print 'Hello world'
+```
+
+```coffee
+hello=-&gt;
+    console.log 'Hello world'
+```
+</code></pre>
+<h3 id="horizontal-rules">Horizontal Rules</h3>
+<p>Three or more dashes or asterisks:</p>
+<pre><code class="markdown">---
+
+* * *
+
+- - - - 
+</code></pre>
+
+<h3 id="hard-line-breaks">Hard Line Breaks</h3>
+<p>End a line with two or more spaces:</p>
+<pre><code class="markdown">Roses are red,   
+Violets are blue.
+</code></pre>
+
+<h2 id="part-ii-extras-syntax">Part II. Extras Syntax</h2>
+<h3 id="footnotes">Footnotes</h3>
+<p>Footnotes work mostly like reference-style links. A footnote is made of two things: a marker in the text that will become a superscript number; a footnote definition that will be placed in a list of footnotes at the end of the document. A footnote looks like this:</p>
+<pre><code class="markdown">That's some text with a footnote.[^1]
+
+[^1]: And that's the footnote.
+</code></pre>
+
+<h3 id="strikethrough">Strikethrough</h3>
+<p>Wrap with 2 tilde ~ characters:</p>
+<pre><code class="markdown">~~Strikethrough~~
+</code></pre>
+
+<h3 id="tables">Tables</h3>
+<p>A simple table looks like this:</p>
+<pre><code class="markdown">First Header | Second Header | Third Header
+------------ | ------------- | ------------
+Content Cell | Content Cell  | Content Cell
+Content Cell | Content Cell  | Content Cell
+</code></pre>
+
+<p>If you wish, you can add a leading and tailing pipe to each line of the table:</p>
+<pre><code class="markdown">| First Header | Second Header | Third Header |
+| ------------ | ------------- | ------------ |
+| Content Cell | Content Cell  | Content Cell |
+| Content Cell | Content Cell  | Content Cell |
+</code></pre>
+
+<p>Specify alignement for each column by adding colons to separator lines:</p>
+<pre><code class="markdown">First Header | Second Header | Third Header
+:----------- | :-----------: | -----------:
+Left         | Center        | Right
+Left         | Center        | Right
+</code></pre>
+
+<h3 id="anchor">Anchor</h3>
+<p>You can also add an anchor for an element such as Headers, then you can link to this anchor anywhere, when you click that link in the Preview view, it'll auto scroll to the place of the destination anchor.</p>
+<p>For example below is a normal h2 Header:</p>
+<pre><code>## This is an example
+</code></pre>
+
+<h3 id="table-of-content">Table of Content</h3>
+<pre><code>[TOC]
+</code></pre>
+            
+    
+
+
+    <div class="line-holder">
+    
+        
+            <a href="/documents/organize-your-contents/metas/"><span class="fa fa-arrow-left"></span> 上一篇:Metas</a>
+        
+        
+            <a href="/documents/organize-your-contents/categorize-your-contents/" class="pull-right">下一篇:Categorize <span
+                    class="fa fa-arrow-right"></span></a>
+        
+    
+</div>
+
+        </div>
+    </div>
+</div>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>联系信息</h3>
+                <ul class="list-unstyled">
+                    <li>Freezes</li>
+                    
+                    <li><a href="mailto:csharp2002@hotmail.com"><span class="fa fa-mail"></span> csharp2002@hotmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="http://ray.dotnetage.com">Ray's blog</a></li>
+                    <li><a href="http://www.dotnetage.com">DotNetAge</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <p class="text-center">Powered by <a href="http://freezes.dotnetage.com">Freezes</a></p>
+</footer>
+
+
+
+
+</body>
+</html>

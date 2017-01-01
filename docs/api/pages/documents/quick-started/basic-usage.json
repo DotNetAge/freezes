@@ -1,0 +1,18 @@
+{
+  "body": "The Freezes makes `freezes` command tools to run or build your website. \n\n## Run Freezes\n\nFreezes will run a self-host server and open to the default browser after `freezes` executed.\n\nFreezes loads a livereload server that can be auto reload the browser page when contents change.\n\n```\n(venv) my-site$ freezes\n```\n\n## Transform to static website\nIn order to get high performances when you writing posts/pages , design web styles or customize layouts Freezes disable the auto static page generation feature.\n \nSo when you need to build your static website manually :\n\n```\n(venv) my-site$ freezes build\n```\n\nAfter the command run. The website is build to `builds` folder under current working folder. \n\n## Force assets rebuild \n\n```\n(venv) my-site$ freezes assets --build\n```", 
+  "created": "Sat, 21 Mar 2015 17:04:22 GMT", 
+  "excerpt": "<p>The Freezes makes <code>freezes</code> command tools to run or build your website. </p>", 
+  "id": 2, 
+  "last_updated": "Sat, 21 Mar 2015 17:04:22 GMT", 
+  "meta": {
+    "id": 2, 
+    "summary": "The command line tools", 
+    "title": "Basic usage"
+  }, 
+  "name": "basic-usage", 
+  "pages": [], 
+  "path": "documents/quick-started/basic-usage", 
+  "published": "Sat, 21 Mar 2015 17:04:22 GMT", 
+  "tags": [], 
+  "url": "/documents/quick-started/basic-usage/"
+}

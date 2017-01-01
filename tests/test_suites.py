@@ -112,7 +112,6 @@ class FreezesTestCase(unittest.TestCase):
 
         items = self.site.menus('zh-cn')
         self.assertEqual(len(items), 4)
-
         res = self.app.get('/zh-cn/')
         self.assertTrue(re.search('联系信息', res.data))
         self.assertTrue(re.search('热门主题', res.data))

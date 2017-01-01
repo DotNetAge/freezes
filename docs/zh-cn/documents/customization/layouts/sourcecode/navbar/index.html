@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <title>Freezes - _navbar.html 源码</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/feeds/recent.atom"
+      rel="alternate"
+      title="Recent posts"
+      type="application/atom+xml">
+
+    
+        
+    
+    
+
+    
+
+    
+    
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"
+              media="screen">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+        
+            <link rel="stylesheet" href="/static/site.min.css?4de4a314">
+        
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+        <script type="text/javascript" src="/static/site.min.js?7693760b"></script>
+    
+</head>
+<body >
+
+    <div class="belt"></div>
+    
+<div class="container">
+    <div class="page-wrapper">
+        
+            
+<div class="lang-dropdown">
+
+    <ol class="breadcrumb">
+        <li><a href="/"><span class="fa fa-home"></span> Freezes
+        </a></li>
+        
+            
+                <li><a href="/zh-cn/">首页</a></li>
+            
+                <li><a href="/zh-cn/documents/">相关文档</a></li>
+            
+                <li><a href="/zh-cn/documents/customization/">定制化</a></li>
+            
+                <li><a href="/zh-cn/documents/customization/layouts/">自定义局布</a></li>
+            
+                <li><a href=""></a></li>
+            
+        
+    </ol>
+ 
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-expanded="true">
+            
+                中文 (简体)
+            
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/zh-cn/">中文 (简体)</a></li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/">English (US)</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page-header">
+    
+        <h1>
+            
+                <div>_navbar.html 源码</div>
+            
+
+        </h1>
+        <p class="lead"></p>
+    
+</div>
+        
+        
+            <div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">折叠导航栏</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                
+                    
+                        <li >
+                            <a href="/zh-cn/">首页</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/quick-started/">快速开始</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/documents/">相关文档</a></li>
+                    
+                
+                    
+                        <li >
+                            <a href="/zh-cn/about/">关于</a></li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="divider visible-xs"></li>
+                
+                
+                
+                    <li data-toggle="tooltip" data-placement="top" title="Fork me on github">
+                        <a href="http://www.github.com/dotnetage" target="_blank" rel="nofollow"><i
+                                class="fa fa-github"></i> <span class="visible-xs-inline">me@github</span></a>
+                    </li>
+                
+                <li data-toggle="tooltip" data-placement="top" title="订阅更新">
+                    <a href="/feeds/recent.atom"><i class="fa fa-rss"></i> <span
+                            class="visible-xs-inline">订阅</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+        <div class="page-content">
+            
+    
+            
+            <pre><code class="django">&lt;div class=&quot;navbar navbar-default&quot;&gt;
+    &lt;div class=&quot;container-fluid&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;{{ gettext('Toggle navigation') }}&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                {% for p in site.menus(page.path) %}
+                    {% if page.path is defined %}
+                        &lt;li {% if (page.path==p.path and p._top==True) or (p._top==False and page.path.startswith(p.path)) %}class=&quot;active&quot;{% endif %}&gt;
+                            &lt;a href=&quot;{{ url_for('.index',page_path=p.path) }}&quot;&gt;{{ p.title }}&lt;/a&gt;&lt;/li&gt;
+                    {% endif %}
+                {% endfor %}
+            &lt;/ul&gt;
+            &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+                &lt;li class=&quot;divider visible-xs&quot;&gt;&lt;/li&gt;
+                {% if site.facebook %}
+                    &lt;li data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;{{ gettext('Follow me on facebook') }}&quot;&gt;
+                        &lt;a href=&quot;http://www.facebook.com/{{ site.facebook }}&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;&lt;i
+                                class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visible-xs-inline&quot;&gt;me@facebook&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                {% endif %}
+                {% if site.twitter %}
+                    &lt;li data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;{{ gettext('Follow me on twitter') }}&quot;&gt;
+                        &lt;a href=&quot;http://www.twitter.com/{{ site.twitter }}&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;&lt;i
+                                class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visible-xs-inline&quot;&gt;me@twitter&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                {% endif %}
+                {% if site.github %}
+                    &lt;li data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;{{ gettext('Fork me on github') }}&quot;&gt;
+                        &lt;a href=&quot;http://www.github.com/{{ site.github }}&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;&lt;i
+                                class=&quot;fa fa-github&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visible-xs-inline&quot;&gt;me@github&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                {% endif %}
+                &lt;li data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;{{ gettext('Subscript changes') }}&quot;&gt;
+                    &lt;a href=&quot;{{ url_for('feed',name='recent') }}&quot;&gt;&lt;i class=&quot;fa fa-rss&quot;&gt;&lt;/i&gt; &lt;span
+                            class=&quot;visible-xs-inline&quot;&gt;{{ gettext('Subscript') }}&lt;/span&gt;&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+            
+    
+
+
+    <div class="line-holder">
+    
+        
+            <a href="/zh-cn/documents/customization/layouts/sourcecode/footer/"><span class="fa fa-arrow-left"></span> 上一篇:_footer.html 源码</a>
+        
+        
+            <a href="/zh-cn/documents/customization/layouts/sourcecode/base/" class="pull-right">下一篇:base.html 代码块定义 <span
+                    class="fa fa-arrow-right"></span></a>
+        
+    
+</div>
+
+        </div>
+    </div>
+</div>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>联系信息</h3>
+                <ul class="list-unstyled">
+                    <li>Freezes</li>
+                    
+                    <li><a href="mailto:csharp2002@hotmail.com"><span class="fa fa-mail"></span> csharp2002@hotmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="http://ray.dotnetage.com">Ray's blog</a></li>
+                    <li><a href="http://www.dotnetage.com">DotNetAge</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <p class="text-center">Powered by <a href="http://freezes.dotnetage.com">Freezes</a></p>
+</footer>
+
+
+
+
+</body>
+</html>

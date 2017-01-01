@@ -1,0 +1,17 @@
+{
+  "body": "```django\n<div class=\"navbar navbar-default\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\n                <span class=\"sr-only\">{{ gettext('Toggle navigation') }}</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n        </div>\n        <div class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                {% for p in site.menus(page.path) %}\n                    {% if page.path is defined %}\n                        <li {% if (page.path==p.path and p._top==True) or (p._top==False and page.path.startswith(p.path)) %}class=\"active\"{% endif %}>\n                            <a href=\"{{ url_for('.index',page_path=p.path) }}\">{{ p.title }}</a></li>\n                    {% endif %}\n                {% endfor %}\n            </ul>\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li class=\"divider visible-xs\"></li>\n                {% if site.facebook %}\n                    <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"{{ gettext('Follow me on facebook') }}\">\n                        <a href=\"http://www.facebook.com/{{ site.facebook }}\" target=\"_blank\" rel=\"nofollow\"><i\n                                class=\"fa fa-facebook\"></i> <span class=\"visible-xs-inline\">me@facebook</span></a>\n                    </li>\n                {% endif %}\n                {% if site.twitter %}\n                    <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"{{ gettext('Follow me on twitter') }}\">\n                        <a href=\"http://www.twitter.com/{{ site.twitter }}\" target=\"_blank\" rel=\"nofollow\"><i\n                                class=\"fa fa-twitter\"></i> <span class=\"visible-xs-inline\">me@twitter</span></a>\n                    </li>\n                {% endif %}\n                {% if site.github %}\n                    <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"{{ gettext('Fork me on github') }}\">\n                        <a href=\"http://www.github.com/{{ site.github }}\" target=\"_blank\" rel=\"nofollow\"><i\n                                class=\"fa fa-github\"></i> <span class=\"visible-xs-inline\">me@github</span></a>\n                    </li>\n                {% endif %}\n                <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"{{ gettext('Subscript changes') }}\">\n                    <a href=\"{{ url_for('feed',name='recent') }}\"><i class=\"fa fa-rss\"></i> <span\n                            class=\"visible-xs-inline\">{{ gettext('Subscript') }}</span></a>\n                </li>\n            </ul>\n        </div>\n    </div>\n</div>\n```", 
+  "created": "Tue, 31 Mar 2015 10:33:26 GMT", 
+  "excerpt": "<p>```django\n<div class=\"navbar navbar-default\">\n    <div class=\"container-fluid\"></p>", 
+  "id": 4, 
+  "last_updated": "Tue, 31 Mar 2015 10:33:26 GMT", 
+  "meta": {
+    "id": 4, 
+    "title": "_navbar.html \u6e90\u7801"
+  }, 
+  "name": "navbar", 
+  "pages": [], 
+  "path": "zh-cn/documents/customization/layouts/sourcecode/navbar", 
+  "published": "Tue, 31 Mar 2015 10:33:26 GMT", 
+  "tags": [], 
+  "url": "/zh-cn/documents/customization/layouts/sourcecode/navbar/"
+}
